@@ -1,27 +1,107 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --blue-color: #1e0063;
+  --yellow-color: #f9d229;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.main_heading {
+  color: white;
+  @apply leading-tight font-bold text-6xl;
+}
+.sub_heading {
+  color: var(--heading-color);
+  @apply text-5xl max-[770px]:text-3xl leading-tight font-bold;
+}
+.text_color {
+  color: var(--heading-color);
+}
+.para {
+  color: rgb(100, 96,  96);
+}
+.hero_back {
+  background-color: rgba(0, 0, 0, 0.219);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes zoom-fade {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-zoom-fade {
+  animation: zoom-fade 12s infinite;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.animate-zoom-fade-delay-4 {
+  animation-delay: 4s;
+}
+
+.animate-zoom-fade-delay-8 {
+  animation-delay: 8s;
+}
+
+.fade_right {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+.fade_right::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%; /* Start at 0% width */
+  height: 0.1em;
+  background-color: var(--blue-color);
+  opacity: 0;
+  transform: scaleX(0); /* Scale horizontally */
+  transform-origin: left center; /* Ensure scaling starts from the left */
+  transition: opacity 500ms, transform 500ms, width 500ms;
+}
+
+.fade_right:hover::after,
+.fade_right:focus::after {
+  opacity: 1;
+  width: 100%; /* Full width on hover/focus */
+  transform: scaleX(1); /* Full horizontal scale */
+}
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+  body {
+    @apply flex flex-col items-center;
   }
 }
