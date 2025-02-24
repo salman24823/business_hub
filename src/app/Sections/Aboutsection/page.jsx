@@ -6,7 +6,7 @@ import { GlobeLock, Users } from "lucide-react";
 const AboutSection = () => {
   return (
     <main className="px-[5%]">
-      <div className="grid grid-cols-2 justify-center items-center gap-8">
+      <div className="grid grid-cols-2 justify-center items-center gap-10">
         <div className="my-20">
           <Image src={about_img} className="mt-24" />
         </div>

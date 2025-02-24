@@ -6,7 +6,7 @@ import about_img2 from '../../../../public/about2.jpg'
 const About2 = () => {
   return (
     <main className="px-[5%]">
-      <div className="grid grid-cols-2 justify-center items-center gap-8">
+      <div className="grid grid-cols-2 justify-center items-center gap-10">
         <div className="my-20">
           <p className="text-[#f9d229]">WHY CHOOSE US?</p>
           <h2 className="sub_heading">The Explanation You Mustly Use Us</h2>
