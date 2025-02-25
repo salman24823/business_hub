@@ -54,7 +54,7 @@
   @apply px-6 font-bold py-2 rounded-lg
 }
 .point{
-  @apply font-bold text-[1.1rem]
+  @apply font-bold text-[1.2rem]
 }
 /* =====Hero Section====== */
 @keyframes zoom-fade {

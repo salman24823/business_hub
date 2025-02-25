@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import ceo from "../../../../public/ceo.jpg";
+import test2 from "../../../../public/test2.jpg";
+import test3 from "../../../../public/test3.jpg";
+import test4 from "../../../../public/test4.jpg";
 const TestimonialSection = () => {
   return (
     <div className="p-[5%] space-y-10">
@@ -11,42 +14,56 @@ const TestimonialSection = () => {
       <div className="grid grid-cols-12 grid-rows-2 gap-10">
         <div className="flex flex-col col-span-8 bg-slate-100 p-5 rounded-lg">
           <Image src={ceo} className="w-16 h-16 rounded-full" />
-          <p className="my-4">
+          <p className="para my-4">
             "Cowork has been a game changer for our bussiness the energy here is
-            unmatched and it motivates us to work hard and think out of the
-            box."
+            unmatched and it motivates us to work hard and think out of the box.
+            We can clear our doubts and thoughts which is very effective for the
+            growth of our bussiness."
           </p>
           <p className="para">Creative Director</p>
-          <span className="point">Sarah thompson</span>
+          <div className="flex justify-start items-center gap-1">
+            <div className="bg-black h-0.5 w-5"></div>
+            <span className="point">Sarah thompson</span>
+          </div>
         </div>
         <div className="flex flex-col col-span-4  bg-slate-100 p-5 rounded-lg">
-          <Image src={ceo} className="w-16 h-16 rounded-full" />
-          <p className="my-4">
+          <Image src={test2} className="w-16 h-16 rounded-full" />
+          <p className="para my-4">
             "Cowork has revolutionized the way we work and innovate the
-            collabrative enviroment encourages us to push boundaries everyday
-            its the perfect place for creator to turn there ideas into reality"
+            collabrative enviroment encourages us to push boundaries everyday"
           </p>
           <p className="para">Freelancer</p>
-          <span className="point">John Carter</span>
+          <div className="flex justify-start items-center gap-1">
+            <div className="bg-black h-0.5 w-5"></div>
+            <span className="point">John Carter</span>
+          </div>
         </div>
         <div className="flex flex-col col-span-4 bg-slate-100 p-5 rounded-lg">
-          <Image src={ceo} className="w-16 h-16 rounded-full" />
-          <p className="my-4">
+          <Image src={test3} className="w-16 h-16 rounded-full" />
+          <p className="para my-4">
             "Cowork is more than just a workspace it's a hub for creativity
             Every day is filled with inspiration and new possibilities"
           </p>
-          <p className="para">Freelancer</p>
-          <span className="point">John Carter</span>
+          <p className="para">Designer</p>
+          <div className="flex justify-start items-center gap-1">
+            <div className="bg-black h-0.5 w-5"></div>
+            <span className="point">Emily Carter</span>
+          </div>
         </div>
         <div className="flex flex-col col-span-8 bg-slate-100 p-5 rounded-lg">
-          <Image src={ceo} className="w-16 h-16 rounded-full" />
-          <p className="my-4">
-            "Cowork has been a game changer for our bussiness the energy here is
-            unmatched and it motivates us to work hard and think out of the
-            box."
+          <Image src={test4} className="w-16 h-16 rounded-full" />
+          <p className="para my-4">
+            "The resources and connection at cowork space have been invaluable
+            to my growth. The community is filled with like minded people who
+            push me to do better.Every intraction is an opportunity to learn and
+            expand. I have found network that truly supports my journey and
+            encourages my ambitions."
           </p>
-          <p className="para">Creative Director</p>
-          <span className="point">Sarah thompson</span>
+          <p className="para">Entrepreneur</p>
+          <div className="flex justify-start items-center gap-1">
+            <div className="bg-black h-0.5 w-5"></div>
+            <span className="point">Robert Lee</span>
+          </div>
         </div>
       </div>
     </div>
