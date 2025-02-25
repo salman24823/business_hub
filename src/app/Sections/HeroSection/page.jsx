@@ -3,6 +3,7 @@ import React from "react";
 import slider1 from "../../../../public/slider1.jpg";
 import slider2 from "../../../../public/slider2.jpg";
 import slider3 from "../../../../public/slider3.jpg";
+import { Button } from "@heroui/react";
 const HeroSection = () => {
   return (
     <main>
@@ -41,9 +42,9 @@ const HeroSection = () => {
             repellat veritatis, odio tempora quae? Ipsum, facere iure? Velit a
             recusandae placeat tempore!
           </p>
-          <button className="bg-[#f9d229] px-12 py-2 rounded-lg mt-10">
-            Explore
-          </button>
+          <Button className="web-btn yellow-bg blue mt-10">
+            Explore more
+          </Button> 
         </div>
       </div>
     </main>

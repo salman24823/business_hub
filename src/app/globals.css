@@ -4,12 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --blue-color: #1e0063;
-  --yellow-color: #f9d229;
+  --blue-color: #091020;
+  --yellow-color: #FFE84E;
 }
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", serif;
   margin: 0;
   padding: 0;
 }
@@ -17,20 +17,46 @@
   color: white;
   @apply leading-tight font-bold text-6xl;
 }
+.main_blue{
+  color: var(--blue-color);
+  @apply leading-tight font-bold text-6xl;
+}
 .sub_heading {
   color: var(--heading-color);
+  @apply text-5xl max-[770px]:text-3xl leading-tight font-bold;
+}
+.yellow{
+  color: var(--yellow-color);
+}
+.yellow-bg{
+  background-color: var(--yellow-color);
+}
+.blue_bg{
+  background-color: var(--blue-color);
+}
+.blue{
+  color: var(--blue-color);
+}
+.sub_blue{
+  color: var(--blue-color);
   @apply text-5xl max-[770px]:text-3xl leading-tight font-bold;
 }
 .text_color {
   color: var(--heading-color);
 }
 .para {
-  color: rgb(100, 96,  96);
+  color: gray;
 }
-.hero_back {
-  background-color: rgba(0, 0, 0, 0.219);
+.nav_back {
+  background-color: var(--blue-color);
 }
-
+.web-btn{
+  @apply px-6 font-bold py-2 rounded-lg
+}
+.point{
+  @apply font-bold text-[1.1rem]
+}
+/* =====Hero Section====== */
 @keyframes zoom-fade {
   0% {
     opacity: 0;
@@ -79,7 +105,7 @@
   left: 0;
   width: 0%; /* Start at 0% width */
   height: 0.1em;
-  background-color: var(--blue-color);
+  background-color: var(--yellow-color);
   opacity: 0;
   transform: scaleX(0); /* Scale horizontally */
   transform-origin: left center; /* Ensure scaling starts from the left */
