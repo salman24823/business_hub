@@ -9,7 +9,12 @@ const TestimonialSection = () => {
     <div className="p-[5%] space-y-10">
       <div className="flex flex-col justify-center items-center">
         <h2 className="sub_blue">What Our Client Saying?</h2>
-        <p className="para">Here are some reviews of our clients </p>
+        <p className="para w-1/2 text-center">
+          Our Clients are our first priority beacuse they are just like our
+          family we are here to facilitate our Clients here are some reviews of
+          some of our clients which like an award for us it really matters for
+          us
+        </p>
       </div>
       <div className="grid grid-cols-12 grid-rows-2 gap-10">
         <div className="flex flex-col col-span-8 bg-slate-100 p-5 rounded-lg">
@@ -30,7 +35,7 @@ const TestimonialSection = () => {
           <Image src={test2} className="w-16 h-16 rounded-full" />
           <p className="para my-4">
             "Cowork has revolutionized the way we work and innovate the
-            collabrative enviroment encourages us to push boundaries everyday"
+            collabrative enviroment encourages us to push boundaries everyday."
           </p>
           <p className="para">Freelancer</p>
           <div className="flex justify-start items-center gap-1">
@@ -42,7 +47,7 @@ const TestimonialSection = () => {
           <Image src={test3} className="w-16 h-16 rounded-full" />
           <p className="para my-4">
             "Cowork is more than just a workspace it's a hub for creativity
-            Every day is filled with inspiration and new possibilities"
+            Every day is filled with inspiration and new possibilities."
           </p>
           <p className="para">Designer</p>
           <div className="flex justify-start items-center gap-1">
