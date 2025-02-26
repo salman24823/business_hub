@@ -3,6 +3,8 @@ import HeroSection from "./Sections/HeroSection/page";
 import AboutSection from "./Sections/Aboutsection/page";
 import About2 from "./Sections/About2/page";
 import TestimonialSection from "./Sections/TestimonialSection/page";
+import FeatureSection from "./Sections/FeatureSection/page";
+import AboutUs from "./Sections/AboutUs/page";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <AboutSection />
       <About2 />
       <TestimonialSection />
+      <FeatureSection />
+      <AboutUs />
     </main>
   );
 }

@@ -31,7 +31,7 @@ const HeroSection = () => {
         />
         <div className="absolute hero_back w-full h-[100vh] z-10 flex flex-col justify-center items-center">
           <h1 className="main_heading opacity-[100%]">
-            <span className="text-[#f9d229]">Bussiness Hub</span>
+            <span className="yellow">Bussiness Hub</span>
           </h1>
           <h2 className="sub_heading text-white opacity-[100%]">
             Coworking Creative Space
@@ -42,9 +42,7 @@ const HeroSection = () => {
             repellat veritatis, odio tempora quae? Ipsum, facere iure? Velit a
             recusandae placeat tempore!
           </p>
-          <Button className="web-btn yellow-bg blue mt-10">
-            Explore more
-          </Button> 
+          <Button className="web-btn yellow-bg blue mt-10">Explore more</Button>
         </div>
       </div>
     </main>
