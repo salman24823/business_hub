@@ -5,7 +5,7 @@ import About2 from "./Sections/About2/page";
 import TestimonialSection from "./Sections/TestimonialSection/page";
 import FeatureSection from "./Sections/FeatureSection/page";
 import AboutUs from "./Sections/AboutUs/page";
-
+import Footer from "./components/Footer/page";
 export default function Home() {
   return (
     <main>
