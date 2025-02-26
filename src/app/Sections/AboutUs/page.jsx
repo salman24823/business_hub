@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import abt_img from "../../../../public/abt-hero.jpg";
 import Image from "next/image";
 import {
@@ -11,6 +13,29 @@ import {
   Phone,
 } from "lucide-react";
 import { Button } from "@heroui/react";
+
+// Custom Hook for Animated Counter
+const useCounter = (target, duration = 2000) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const increment = Math.ceil(target / (duration / 16)); // Calculate step size
+    const interval = setInterval(() => {
+      start += increment;
+      if (start >= target) {
+        setCount(target);
+        clearInterval(interval);
+      } else {
+        setCount(start);
+      }
+    }, 16); // ~60fps smooth animation
+
+    return () => clearInterval(interval);
+  }, [target, duration]);
+
+  return count;
+};
 
 const AboutUs = () => {
   return (
@@ -26,13 +51,15 @@ const AboutUs = () => {
             facilis ea quos eos sit accusamus modi commodi tenetur, distinctio
             qui rem!
           </p>
+
+          {/* Stats Counter Section */}
           <div className="grid grid-cols-8 justify-center items-center gap-10 my-10">
             <div className="flex col-span-4 gap-5">
               <div>
                 <HouseWifi className="w-24 h-24 yellow" />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">120</h2>
+                <h2 className="sub_blue">{useCounter(120)}</h2>
                 <p className="para">Office Rooms</p>
               </div>
             </div>
@@ -41,7 +68,7 @@ const AboutUs = () => {
                 <Projector className="w-24 h-24 yellow" />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">80</h2>
+                <h2 className="sub_blue">{useCounter(80)}</h2>
                 <p className="para">Meeting Rooms</p>
               </div>
             </div>
@@ -50,7 +77,7 @@ const AboutUs = () => {
                 <Building2 className="w-24 h-24 yellow" />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">6</h2>
+                <h2 className="sub_blue">{useCounter(6)}</h2>
                 <p className="para">No. of Floors</p>
               </div>
             </div>
@@ -59,24 +86,24 @@ const AboutUs = () => {
                 <Cctv className="w-24 h-24 yellow" />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">24/7</h2>
+                <h2 className="sub_blue">{useCounter(24)}/7</h2>
                 <p className="para">CCTV Security</p>
               </div>
             </div>
           </div>
+
           <div>
             <Button className="web-btn yellow-bg">Read more</Button>
           </div>
         </div>
+
         {/* Right-side */}
         <div className="relative">
           <div className="flex flex-col justify-center items-center absolute w-[300px] h-[200px] top-0 right-0 yellow-bg ">
-            <div className="space-y-2 p-1">
+            <div className="space-y-2 p-3">
               <div className="flex justify-start items-start gap-2">
-                <MapPin className="" />
-                <p className="para">
-                  Location: D-Ground, Satiyana Road
-                </p>
+                <MapPin />
+                <p className="para">Location: D-Ground, Satiyana Road</p>
               </div>
               <div className="flex justify-start items-center gap-2">
                 <Clock />
@@ -88,7 +115,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <Image src={abt_img} />
+          <Image src={abt_img} className="p-10" alt="About Us Image" />
         </div>
       </div>
     </div>
