@@ -36,7 +36,7 @@ const FeatureSection = () => {
           </div>
           <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-100 p-5 rounded-lg">
             <Wifi className="yellow w-16 h-16" />
-            <span className="point">16/7 Wifi</span>
+            <span className="point">24/7 Wifi</span>
             <p className="para text-center">
               We are providing High speed internet for 16/7 for private offices
               or even for open workspaces.
@@ -51,7 +51,7 @@ const FeatureSection = () => {
             </p>
           </div>
           <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-100 p-5 rounded-lg">
-            <Presentation className="yellow w-16 h-16" />
+            <Projector className="yellow w-16 h-16" />
             <span className="point">Conference Rooms</span>
             <p className="para text-center">
               Big wide conference room which is available to held meetings and
@@ -59,7 +59,7 @@ const FeatureSection = () => {
             </p>
           </div>
           <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-100 p-5 rounded-lg">
-            <Projector className="yellow w-16 h-16" />
+            <Presentation className="yellow w-16 h-16" />
             <span className="point">Furnished Office</span>
             <p className="para text-center">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
@@ -70,6 +70,14 @@ const FeatureSection = () => {
             <CircleParking className="yellow w-16 h-16" />
             <span className="point">Parking</span>
             <p className="para  text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+              obcaecati rerum architecto porro deserunt nobis illo, molestias.
+            </p>
+          </div>
+          <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-100 p-5 rounded-lg">
+            <UtensilsCrossed className="yellow w-16 h-16" />
+            <span className="point">Kitchen</span>
+            <p className="para text-center">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
               obcaecati rerum architecto porro deserunt nobis illo, molestias.
             </p>
