@@ -8,7 +8,7 @@ import { PiOfficeChairFill } from "react-icons/pi";
 const AboutSection = () => {
   return (
     <main className="p-[5%] relative">
-      {/* Right-side */}
+      {/* left-side */}
       <div className="grid grid-cols-2 justify-center items-center gap-10 relative">
         <div className="relative flex">
           <div className="absolute w-[150px] h-[150px]  place-self-end flex flex-wrap ">
@@ -56,6 +56,7 @@ const AboutSection = () => {
               <div className="blue_bg h-2 w-[70%]  rounded"></div>
             </div>
           </div>
+          {/* ceo-intro-div */}
           <div className="flex gap-6 mt-12">
             <Image src={ceo} className="w-16 h-16 rounded-full" alt="ceo" />
             <div className="flex flex-col ">

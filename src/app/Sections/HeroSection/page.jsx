@@ -25,6 +25,7 @@ const HeroSection = () => {
     <main className="w-full">
       <div className="hero_section w-full h-[130vh] bg-[url(/slider1.jpg)] bg-cover bg-no-repeat">
         <div className="filter w-full h-[100%] px-[5%] py-[7%] flex flex-col justify-end gap-12">
+          {/* hero-text */}
           <div className="hero_box py-[3%] px-4 nav_back w-[60%]">
             <span className="text-2xl font-semibold text-white yellow">
               BusinessHub Co-working Space
@@ -34,6 +35,7 @@ const HeroSection = () => {
               <span ref={typedRef}></span>{" "}
             </h1>
           </div>
+          {/* hero-icons */}
           <div className="hero_boxes flex w-[60%]">
             <div className="hero_card flex text-white">
               <div className="hero_card_img p-5 blue_bg">

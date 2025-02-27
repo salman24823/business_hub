@@ -26,7 +26,7 @@ const AboutUs = () => {
             qui rem!
           </p>
 
-          {/* Stats Counter Section */}
+          {/* Stats Section */}
           <div className="grid grid-cols-8 justify-center items-center gap-10 my-10">
             <div className="flex col-span-4 gap-5">
               <div>

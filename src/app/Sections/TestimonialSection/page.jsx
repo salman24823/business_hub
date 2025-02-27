@@ -7,6 +7,7 @@ import test4 from "../../../../public/test4.jpg";
 const TestimonialSection = () => {
   return (
     <div className="p-[5%] space-y-10">
+      {/* intro-div */}
       <div className="flex flex-col justify-center items-center">
         <h2 className="sub_blue">What Our Client Saying?</h2>
         <p className="para w-1/2 text-center">
@@ -17,6 +18,7 @@ const TestimonialSection = () => {
         </p>
       </div>
       <div className="grid grid-cols-12 grid-rows-2 gap-5">
+        {/* 1st-review */}
         <div className="flex flex-col col-span-8 bg-slate-200 p-5 ">
           <Image src={ceo} className="w-16 h-16 rounded-full" />
           <p className="para my-4">
@@ -31,6 +33,7 @@ const TestimonialSection = () => {
             <span className="point">Sarah thompson</span>
           </div>
         </div>
+        {/* 2nd review */}
         <div className="flex flex-col col-span-4  bg-slate-200 p-5 ">
           <Image src={test2} className="w-16 h-16 rounded-full" />
           <p className="para my-4">
@@ -43,6 +46,7 @@ const TestimonialSection = () => {
             <span className="point">John Carter</span>
           </div>
         </div>
+        {/* 3rd-review */}
         <div className="flex flex-col col-span-4 bg-slate-200 p-5 ">
           <Image src={test3} className="w-16 h-16 rounded-full" />
           <p className="para my-4">
@@ -55,6 +59,7 @@ const TestimonialSection = () => {
             <span className="point">Emily Carter</span>
           </div>
         </div>
+        {/* 4th-review */}
         <div className="flex flex-col col-span-8 bg-slate-200 p-5 ">
           <Image src={test4} className="w-16 h-16 rounded-full" />
           <p className="para my-4">
