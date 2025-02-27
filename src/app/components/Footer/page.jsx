@@ -11,7 +11,7 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="p-[5%] w-full blue_bg">
-      <div className="flex flex-col justify-center items-center w-full p-[3%]  bg-gray-200 gap-5 rounded">
+      <div className="flex flex-col justify-center items-center w-full p-[3%]  bg-gray-100 gap-5 rounded">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-4">
             <h1 className="sub_blue">Business Hub</h1>
@@ -70,7 +70,7 @@ const Footer = () => {
             <span className="yellow text-2xl font-bold">Newsletter</span>
             <p className="my-2">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis, rerum accusamus.
+              Perspiciatis, rerum.
             </p>
             <form className="my-5 flex flex-col gap-3" action="">
               <input

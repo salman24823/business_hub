@@ -4,7 +4,6 @@ import AboutSection from "./Sections/Aboutsection/page";
 import About2 from "./Sections/About2/page";
 import TestimonialSection from "./Sections/TestimonialSection/page";
 import FeatureSection from "./Sections/FeatureSection/page";
-import AboutUs from "./Sections/AboutUs/page";
 import MenuSection from "./Sections/MenuSection/page";
 export default function Home() {
   return (
@@ -12,10 +11,9 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <About2 />
+      <MenuSection />
       <FeatureSection />
       <TestimonialSection />
-      <AboutUs />
-      <MenuSection />
     </main>
   );
 }

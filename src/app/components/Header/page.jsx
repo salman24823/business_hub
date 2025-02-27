@@ -37,25 +37,25 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-10">
               <div className="nav-links flex gap-6 items-center">
-                <Link href={"/About"} className="fade_right">
+                <Link href={"/"} className="fade_right">
                   Home
                 </Link>
                 <Link href={"/About"} className="fade_right">
                   About
                 </Link>
-                <Link href={"/About"} className="fade_right">
+                <Link href={"/Service"} className="fade_right">
                   Services
                 </Link>
-                <Link href={"/About"} className="fade_right">
+                <Link href={"/Blogs"} className="fade_right">
                   Blogs
                 </Link>
-                <Link href={"/About"} className="fade_right">
+                <Link href={"/Contact"} className="fade_right">
                   Contact Us
                 </Link>
               </div>
               <div>
                 <Link href={"/"}>
-                  <Button className="yellow-bg px-6 font-bold py-2 rounded-lg blue">
+                  <Button className="yellow-bg px-6 font-bold py-2 rounded-none blue">
                     Book Now
                   </Button>
                 </Link>
