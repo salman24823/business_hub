@@ -75,10 +75,12 @@ const Footer = () => {
             <form className="my-5 flex flex-col gap-3" action="">
               <input
                 type="text"
-                className="border border-black w-80 py-2"
+                className="border border-black w-80 py-3"
                 placeholder=" Your Email..."
               />
-              <Button className="w-80 rounded-none yellow-bg">Subscribe</Button>
+              <Button className="w-80 rounded-none yellow-bg py-3">
+                Subscribe
+              </Button>
             </form>
           </div>
         </div>
