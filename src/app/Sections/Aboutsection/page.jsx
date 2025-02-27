@@ -12,7 +12,7 @@ const AboutSection = () => {
         <div className="relative flex">
           <div className="absolute w-[150px] h-[150px]  place-self-end flex flex-wrap ">
             <div className="bg-transparent w-[50%] h-[50%]"></div>
-            <div className="bg-red-500 w-[50%] h-[50%]"></div>
+            <div className="yellow-bg w-[50%] h-[50%]"></div>
             <div className="bg-white w-[50%] h-[50%]"></div>
             <div className="bg-transparent w-[50%] h-[50%]"></div>
           </div>

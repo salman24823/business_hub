@@ -49,13 +49,13 @@ const About2 = () => {
               <div className="w-[50%] h-[50%] bg-white"></div>
               <div className="w-[50%] h-[50%] bg-transparent"></div>
               <div className="w-[50%] h-[50%] bg-transparent"></div>
-              <div className="w-[50%] h-[50%] bg-red-500"></div>
+              <div className="w-[50%] h-[50%] yellow-bg"></div>
             </div>
             <Image src={about_img1} className="w-80 h-[32rem]" />
           </div>
           <div className="relative">
             <div className="absolute flex flex-wrap w-[100px] h-[100px] bottom-0 right-0">
-              <div className="w-[50%] h-[50%] bg-red-500"></div>
+              <div className="w-[50%] h-[50%] yellow-bg"></div>
               <div className="w-[50%] h-[50%] bg-transparent"></div>
               <div className="w-[50%] h-[50%] bg-transparent"></div>
               <div className="w-[50%] h-[50%] bg-white"></div>
