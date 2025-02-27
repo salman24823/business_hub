@@ -5,7 +5,7 @@
 
 :root {
   --blue-color: #091020;
-  --yellow-color: #FFE84E;
+  --yellow-color: #ffe84e;
 }
 * {
   box-sizing: border-box;
@@ -13,14 +13,14 @@
   margin: 0;
   padding: 0;
 }
-.filter{
+.filter {
   background-color: rgba(0, 0, 0, 0.377);
 }
 .main_heading {
   color: white;
   @apply leading-tight font-bold text-7xl;
 }
-.main_blue{
+.main_blue {
   color: var(--blue-color);
   @apply leading-tight font-bold text-6xl;
 }
@@ -28,19 +28,19 @@
   color: var(--heading-color);
   @apply text-5xl max-[770px]:text-3xl leading-tight font-bold;
 }
-.yellow{
+.yellow {
   color: var(--yellow-color);
 }
-.yellow-bg{
+.yellow-bg {
   background-color: var(--yellow-color);
 }
-.blue_bg{
+.blue_bg {
   background-color: var(--blue-color);
 }
-.blue{
+.blue {
   color: var(--blue-color);
 }
-.sub_blue{
+.sub_blue {
   color: var(--blue-color);
   @apply text-5xl max-[770px]:text-3xl leading-tight font-bold;
 }
@@ -53,11 +53,11 @@
 .nav_back {
   background-color: rgba(255, 255, 255, 0.199);
 }
-.web-btn{
-  @apply px-6 font-bold py-2 rounded-lg
+.web-btn {
+  @apply px-6 font-bold py-2;
 }
-.point{
-  @apply font-bold text-[1.2rem]
+.point {
+  @apply font-bold text-[1.2rem];
 }
 /* =====Hero Section====== */
 @keyframes zoom-fade {

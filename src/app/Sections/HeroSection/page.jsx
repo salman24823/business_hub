@@ -5,8 +5,8 @@ import React from "react";
 // import slider3 from "../../../../public/slider3.jpg";
 import { Button } from "@heroui/react";
 import { Airplay, MonitorCheck, PencilRuler } from "lucide-react";
-import { FaLaptopCode } from "react-icons/fa";
-import { PiPencilLight } from "react-icons/pi";
+// import { FaLaptopCode } from "react-icons/fa";
+// import { PiPencilLight } from "react-icons/pi";
 const HeroSection = () => {
   return (
 
