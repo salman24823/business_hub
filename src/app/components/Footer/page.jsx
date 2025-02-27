@@ -90,10 +90,10 @@ const Footer = () => {
             </span>
           </div>
           <div className="flex gap-4">
-            <FaFacebookF className="text-lg cursor-pointer" />
-            <RiWhatsappLine className="text-xl cursor-pointer" />
-            <FaPinterestP className="text-lg cursor-pointer" />
-            <FaInstagram className="text-lg cursor-pointer" />
+            <FaFacebookF className="text-lg cursor-pointer hover:text-[#ffe84e]" />
+            <RiWhatsappLine className="text-xl cursor-pointer hover:text-[#ffe84e]" />
+            <FaPinterestP className="text-lg cursor-pointer hover:text-[#ffe84e]" />
+            <FaInstagram className="text-lg cursor-pointer hover:text-[#ffe84e]" />
           </div>
         </div>
       </div>

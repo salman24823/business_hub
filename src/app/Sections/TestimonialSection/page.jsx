@@ -16,8 +16,8 @@ const TestimonialSection = () => {
           us
         </p>
       </div>
-      <div className="grid grid-cols-12 grid-rows-2 gap-10">
-        <div className="flex flex-col col-span-8 bg-slate-100 p-5 rounded-lg">
+      <div className="grid grid-cols-12 grid-rows-2 gap-5">
+        <div className="flex flex-col col-span-8 bg-slate-200 p-5 rounded-lg">
           <Image src={ceo} className="w-16 h-16 rounded-full" />
           <p className="para my-4">
             "Cowork has been a game changer for our bussiness the energy here is
@@ -31,7 +31,7 @@ const TestimonialSection = () => {
             <span className="point">Sarah thompson</span>
           </div>
         </div>
-        <div className="flex flex-col col-span-4  bg-slate-100 p-5 rounded-lg">
+        <div className="flex flex-col col-span-4  bg-slate-200 p-5 rounded-lg">
           <Image src={test2} className="w-16 h-16 rounded-full" />
           <p className="para my-4">
             "Cowork has revolutionized the way we work and innovate the
@@ -43,7 +43,7 @@ const TestimonialSection = () => {
             <span className="point">John Carter</span>
           </div>
         </div>
-        <div className="flex flex-col col-span-4 bg-slate-100 p-5 rounded-lg">
+        <div className="flex flex-col col-span-4 bg-slate-200 p-5 rounded-lg">
           <Image src={test3} className="w-16 h-16 rounded-full" />
           <p className="para my-4">
             "Cowork is more than just a workspace it's a hub for creativity
@@ -55,7 +55,7 @@ const TestimonialSection = () => {
             <span className="point">Emily Carter</span>
           </div>
         </div>
-        <div className="flex flex-col col-span-8 bg-slate-100 p-5 rounded-lg">
+        <div className="flex flex-col col-span-8 bg-slate-200 p-5 rounded-lg">
           <Image src={test4} className="w-16 h-16 rounded-full" />
           <p className="para my-4">
             "The resources and connection at cowork space have been invaluable

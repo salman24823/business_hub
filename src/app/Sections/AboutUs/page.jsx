@@ -1,6 +1,3 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
 import abt_img from "../../../../public/abt-hero.jpg";
 import Image from "next/image";
 import {
@@ -13,29 +10,6 @@ import {
   Phone,
 } from "lucide-react";
 import { Button } from "@heroui/react";
-
-// Custom Hook for Animated Counter
-const useCounter = (target, duration = 2000) => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let start = 0;
-    const increment = Math.ceil(target / (duration / 16)); // Calculate step size
-    const interval = setInterval(() => {
-      start += increment;
-      if (start >= target) {
-        setCount(target);
-        clearInterval(interval);
-      } else {
-        setCount(start);
-      }
-    }, 16); // ~60fps smooth animation
-
-    return () => clearInterval(interval);
-  }, [target, duration]);
-
-  return count;
-};
 
 const AboutUs = () => {
   return (
@@ -59,7 +33,7 @@ const AboutUs = () => {
                 <HouseWifi className="w-24 h-24 yellow" />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">{useCounter(120)}</h2>
+                <h2 className="sub_blue">120</h2>
                 <p className="para">Office Rooms</p>
               </div>
             </div>
@@ -68,7 +42,7 @@ const AboutUs = () => {
                 <Projector className="w-24 h-24 yellow" />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">{useCounter(80)}</h2>
+                <h2 className="sub_blue">80</h2>
                 <p className="para">Meeting Rooms</p>
               </div>
             </div>
@@ -77,7 +51,7 @@ const AboutUs = () => {
                 <Building2 className="w-24 h-24 yellow" />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">{useCounter(6)}</h2>
+                <h2 className="sub_blue">6</h2>
                 <p className="para">No. of Floors</p>
               </div>
             </div>
@@ -86,7 +60,7 @@ const AboutUs = () => {
                 <Cctv className="w-24 h-24 yellow" />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">{useCounter(24)}/7</h2>
+                <h2 className="sub_blue">24/7</h2>
                 <p className="para">CCTV Security</p>
               </div>
             </div>
