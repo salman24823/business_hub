@@ -121,6 +121,20 @@
   width: 100%; /* Full width on hover/focus */
   transform: scaleX(1); /* Full horizontal scale */
 }
+
+
+.card_hover{
+  position: relative;
+  overflow: hidden;
+}
+.card_hover_animation{
+  position: absolute;
+  top: 100%;
+  transition:all 0.9s;
+}
+.card_hover:hover .card_hover_animation{
+  top: 0;
+}
 @media (min-width: 640px) {
 }
 @media (min-width: 768px) {

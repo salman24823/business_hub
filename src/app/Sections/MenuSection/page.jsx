@@ -5,9 +5,37 @@ const MenuSection = () => {
   return (
     <div className="p-[5%] w-full">
       <div className="grid grid-cols-12 grid-rows-2 gap-5">
-        <div className="col-span-5 row-span-2 h-[100vh] bg-[url(/menu1.jpg)] bg-cover bg-no-repeat"></div>
-        <div className="col-span-4 row-span-1 bg-[url(/menu2.jpg)] bg-cover bg-no-repeat"></div>
-        <div className="col-span-3 row-span-1 bg-[url(/menu3.jpg)] bg-cover bg-no-repeat"></div>
+        <div className="card_hover col-span-5 row-span-2 h-[100vh] bg-[url(/menu1.jpg)] bg-cover bg-no-repeat">
+          <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
+            <div className="gap-5">
+              <h3 className="text-3xl font-bold text-white">Open Spaces</h3>
+              <p className=" text-white w-[80%]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
+                aperiam vitae! Impedit ducimus, placeat sunt at nisi totam?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="card_hover col-span-4 row-span-1 bg-[url(/menu2.jpg)] bg-cover bg-no-repeat">
+          <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
+            <div className="gap-5">
+              <h3 className="text-3xl font-bold text-white">Meeting Rooms</h3>
+              <p className=" text-white w-[80%]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="card_hover col-span-3 row-span-1 bg-[url(/menu3.jpg)] bg-cover bg-no-repeat">
+          <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
+            <div className="gap-5">
+              <h3 className="text-3xl font-bold text-white">Presentation Rooms</h3>
+              <p className=" text-white w-[80%]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="col-span-3 row-span-1 yellow-bg p-10">
           <div className="flex flex-col gap-2">
             <span className="text-3xl font-bold">THE SERVICE</span>
@@ -20,7 +48,17 @@ const MenuSection = () => {
             </Button>
           </div>
         </div>
-        <div className="col-span-4 row-span-1 bg-[url(/menu4.jpg)] bg-cover bg-no-repeat"></div>
+        <div className="card_hover col-span-4 row-span-1 bg-[url(/menu4.jpg)] bg-cover bg-no-repeat">
+          <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
+            <div className="gap-5">
+              <h3 className="text-3xl font-bold text-white">Executive Lounges</h3>
+              <p className=" text-white w-[80%]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
+                aperiam vitae! 
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
