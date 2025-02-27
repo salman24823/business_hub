@@ -41,7 +41,7 @@ const About2 = () => {
               <span className="point">Parking Area</span>
             </div>
           </div>
-          <Button className="web-btn yellow-bg blue mt-10">Explore more</Button>
+          <Button className="web-btn yellow-bg blue mt-10 rounded-none">Explore more</Button>
         </div>
         <div className="relative flex gap-3 items-center">
           <div className="relative">
