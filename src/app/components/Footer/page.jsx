@@ -85,7 +85,9 @@ const Footer = () => {
         <hr className="w-full" />
         <div className="flex justify-between w-full">
           <div>
-            <span className="text-sm">Copyright © BUSINESS HUB 2025. All Rights Reserved.</span>
+            <span className="text-sm">
+              Copyright © BUSINESS HUB 2025. All Rights Reserved.
+            </span>
           </div>
           <div className="flex gap-4">
             <FaFacebookF className="text-lg cursor-pointer" />

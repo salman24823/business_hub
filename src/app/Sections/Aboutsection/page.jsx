@@ -2,7 +2,9 @@ import React from "react";
 import Image from "next/image";
 import ceo from "../../../../public/ceo.jpg";
 import about_img from "../../../../public/about.png";
-import { GlobeLock, Users } from "lucide-react";
+import { HiMiniBuildingOffice2 } from "react-icons/hi2";
+import { PiOfficeChairFill } from "react-icons/pi";
+
 const AboutSection = () => {
   return (
     <main className="p-[5%] relative">
@@ -32,11 +34,11 @@ const AboutSection = () => {
           {/* partation */}
           <div className="mt-8 flex gap-8">
             <div className="flex gap-2">
-              <GlobeLock className="blue" />
+              <HiMiniBuildingOffice2 className="blue text-2xl" />
               <span className="point">Flexiable Private Offices</span>
             </div>
             <div className="flex gap-2">
-              <Users className="blue" />
+              <PiOfficeChairFill className="blue text-2xl" />
               <span className="point">Fully Custom Spaces</span>
             </div>
           </div>
