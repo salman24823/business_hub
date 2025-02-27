@@ -130,7 +130,7 @@
 .card_hover_animation{
   position: absolute;
   top: 100%;
-  transition:all 0.9s;
+  transition:all 0.5s;
 }
 .card_hover:hover .card_hover_animation{
   top: 0;
