@@ -10,8 +10,10 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="p-[5%] w-full blue_bg">
+    <main className="p-[5%] w-full blue_bg">
+      {/* main-div */}
       <div className="flex flex-col justify-center items-center w-full p-[3%]  bg-gray-100 gap-5">
+        {/* 1st-div */}
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-4">
             <h1 className="sub_blue">Business Hub</h1>
@@ -85,6 +87,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="w-full" />
+        {/* 2nd-div */}
         <div className="flex justify-between w-full">
           <div>
             <span className="text-sm">
@@ -99,7 +102,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

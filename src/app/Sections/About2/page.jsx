@@ -8,7 +8,9 @@ const About2 = () => {
   return (
     <main className="px-[5%]">
       <div className="grid grid-cols-2 justify-center items-center gap-10">
-        <div className="my-20">
+        {/* Left-side */}
+        <div className="">
+          {/* content-section */}
           <div>
             <span className="point yellow">WHY CHOOSE US?</span>
             <h2 className="sub_blue">The Explanation You Mustly Use Us</h2>
@@ -21,6 +23,7 @@ const About2 = () => {
               the team
             </p>
           </div>
+          {/* Icons & points */}
           <div className="flex gap-3 mt-8">
             <div className="flex gap-2">
               <SquareCheckBig />
@@ -41,8 +44,12 @@ const About2 = () => {
               <span className="point">Parking Area</span>
             </div>
           </div>
-          <Button className="web-btn yellow-bg blue mt-10 rounded-none">Explore more</Button>
+          <Button className="web-btn yellow-bg blue mt-10 rounded-none">
+            Explore more
+          </Button>
         </div>
+        {/* Right-side */}
+        {/* 2 images is used */}
         <div className="relative flex gap-3 items-center">
           <div className="relative">
             <div className="absolute flex flex-wrap w-[150px] h-[150px] place-content-start">

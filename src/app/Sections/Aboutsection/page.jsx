@@ -8,6 +8,7 @@ import { PiOfficeChairFill } from "react-icons/pi";
 const AboutSection = () => {
   return (
     <main className="p-[5%] relative">
+      {/* Right-side */}
       <div className="grid grid-cols-2 justify-center items-center gap-10 relative">
         <div className="relative flex">
           <div className="absolute w-[150px] h-[150px]  place-self-end flex flex-wrap ">
@@ -18,11 +19,13 @@ const AboutSection = () => {
           </div>
           <Image src={about_img} className="" />
         </div>
+        {/* Right-side */}
         <div className="">
           <div>
             <span className="point yellow">WHO WE ARE?</span>
             <h2 className="sub_blue">Right Space to meet your requirments</h2>
           </div>
+          {/* paragraph-section */}
           <div className="mt-6">
             <p className="para w-3/4">
               Workspace talk to the grouping of home windows for your computer
@@ -48,6 +51,7 @@ const AboutSection = () => {
               <span className="point">Creative space</span>
               <span className="point">70%</span>
             </div>
+            {/* yellow-line */}
             <div className="h-2 w-[100%] yellow-bg rounded">
               <div className="blue_bg h-2 w-[70%]  rounded"></div>
             </div>
