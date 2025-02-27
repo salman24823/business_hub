@@ -1,12 +1,12 @@
 import React from "react";
 import {
   Wifi,
-  UtensilsCrossed,
+  Cctv,
   CircleParking,
   Presentation,
   Projector,
   Building2,
-  Users
+  Users,
 } from "lucide-react";
 import { Button } from "@heroui/react";
 
@@ -59,8 +59,8 @@ const FeatureSection = () => {
             </p>
           </div>
           <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-200 p-5 rounded-lg">
-            <Users className="yellow w-16 h-16" />
-            <span className="point">Office Boys</span>
+            <Cctv  className="yellow w-16 h-16" />
+            <span className="point">CCTV</span>
             <p className="para  text-center">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
               obcaecati rerum architecto porro deserunt nobis illo, molestias.
@@ -75,8 +75,8 @@ const FeatureSection = () => {
             </p>
           </div>
           <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-200 p-5 rounded-lg">
-            <UtensilsCrossed className="yellow w-16 h-16" />
-            <span className="point">Kitchen</span>
+            <Users className="yellow w-16 h-16" />
+            <span className="point">Office Boys</span>
             <p className="para text-center">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
               obcaecati rerum architecto porro deserunt nobis illo, molestias.
