@@ -39,7 +39,7 @@ const MenuSection = () => {
         <div className="col-span-3 row-span-1 yellow-bg p-10">
           <div className="flex flex-col gap-2">
             <span className="text-3xl font-bold">THE SERVICE</span>
-            <p className="text-center">
+            <p className="text-start">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
               commodi!
             </p>
