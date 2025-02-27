@@ -1,10 +1,4 @@
 import React from "react";
-import menu1 from "../../../../public/menu1.jpg";
-import menu2 from "../../../../public/menu2.jpg";
-import menu3 from "../../../../public/menu3.jpg";
-import menu4 from "../../../../public/menu4.jpg";
-import About2 from "../../../../public/about2.jpg";
-import Image from "next/image";
 import { Button } from "@heroui/react";
 
 const MenuSection = () => {
