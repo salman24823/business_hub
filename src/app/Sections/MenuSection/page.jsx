@@ -44,7 +44,7 @@ const MenuSection = () => {
         </div>
         {/* 4th-div */}
 
-        <div className="col-span-3 row-span-1 yellow-bg p-10">
+        <div className="col-span-3 row-span-1  p-10 rounded-lg">
           <div className="flex flex-col gap-3">
             <span className="text-3xl font-bold">THE SERVICE</span>
             <p className="text-start">
@@ -52,7 +52,7 @@ const MenuSection = () => {
               commodi!
             </p>
             <Button className="px-8 py-3 bg-transparent border border-black rounded-none font-bold text-xl">
-              Follow Us
+              Explore More
             </Button>
           </div>
         </div>

@@ -48,7 +48,7 @@ const FeatureSection = () => {
         {/* 4th-div */}
         <div className="feature_cards">
           <Projector className="yellow w-16 h-16" />
-          <span className="point">Conference Rooms</span>
+          <span className="point">Conference Hall</span>
           <p className="para text-center">
             Big wide conference room which is available to held meetings and
             events.
@@ -73,7 +73,7 @@ const FeatureSection = () => {
         {/* 7th-div */}
         <div className="feature_cards">
           <CircleParking className="yellow w-16 h-16" />
-          <span className="point">Parking</span>
+          <span className="point">Meeting Room</span>
           <p className="para text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </p>
