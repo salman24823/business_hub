@@ -8,12 +8,14 @@ import MenuSection from "./Sections/MenuSection/page";
 export default function Home() {
   return (
     <main>
-      <HeroSection />
-      <AboutSection />
-      <About2 />
-      <MenuSection />
-      <FeatureSection />
-      <TestimonialSection />
+      
+        <HeroSection />
+        <AboutSection />
+        <MenuSection />
+        <FeatureSection />
+        <About2 />
+        <TestimonialSection />
+      
     </main>
   );
 }

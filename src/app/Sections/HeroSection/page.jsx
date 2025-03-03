@@ -23,7 +23,7 @@ const HeroSection = () => {
 
   return (
     <main className="w-full">
-      <div className="hero_section w-full h-[130vh] bg-[url(/slider1.jpg)] bg-cover bg-no-repeat">
+      <div className="hero_section w-full h-[130vh] bg-[url(/im.JPG)] bg-cover bg-no-repeat">
         <div className="filter w-full h-[100%] px-[5%] py-[7%] flex flex-col justify-end gap-12">
           {/* hero-text */}
           <div className="hero_box py-[3%] px-4 nav_back w-[60%]">

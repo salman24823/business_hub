@@ -5,7 +5,11 @@
 
 :root {
   --blue-color: #091020;
-  --yellow-color: #ffe84e;
+  /* --yellow-color: #ffe84e; */
+  --yellow-color:   #F7D02E;
+  --heroui-box-shadow-small: 0px 0px 5px 0px rgb(0 0 0 / 0.02), 0px 2px 10px 0px rgb(0 0 0 / 0.06), 0px 0px 1px 0px rgb(0 0 0 / 0.3);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
 }
 * {
   box-sizing: border-box;
@@ -14,7 +18,7 @@
   padding: 0;
 }
 .filter {
-  background-color: rgba(0, 0, 0, 0.377);
+  background-color: rgba(0, 0, 0, 0.541);
 }
 .main_heading {
   color: white;
@@ -22,7 +26,7 @@
 }
 .main_blue {
   color: var(--blue-color);
-  @apply leading-tight font-bold text-6xl;
+  @apply leading-none font-bold text-7xl;
 }
 .sub_heading {
   color: var(--heading-color);
@@ -59,6 +63,11 @@
 .point {
   @apply font-bold text-[1.2rem];
 }
+.feature_cards{
+  --tw-shadow: var(--heroui-box-shadow-small);
+  --tw-shadow-colored: var(--heroui-box-shadow-small);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 /* =====Hero Section====== */
 @keyframes zoom-fade {
   0% {
@@ -83,6 +92,17 @@
   }
 }
 
+/* ====about animation==== */
+.ybh_h{
+  -webkit-text-stroke: 3px var(--yellow-color);
+}
+.arrow_box img{
+    transform: rotate(180deg);  
+    transform: scaleY(-1);
+}
+.abt_btn{
+  border-radius: 5px;
+}
 .animate-zoom-fade {
   animation: zoom-fade 12s infinite;
 }
@@ -135,6 +155,13 @@
 .card_hover:hover .card_hover_animation{
   top: 0;
 }
+.feature_cards{
+  @apply flex flex-col col-span-3 justify-center items-center space-y-3 bg-gray-100 p-5
+}
+
+
+
+
 @media (min-width: 640px) {
 }
 @media (min-width: 768px) {

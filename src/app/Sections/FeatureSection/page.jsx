@@ -21,34 +21,32 @@ const FeatureSection = () => {
           <hr className="w-[50%]" />
           <p className="para">
             We are here to provide a comfortable and relaxing environment for
-            your visitors. Our design is made to be easy to navigate and
-            enjoyable for everyone.
+            your visitors.
           </p>
           <Button className="yellow-bg rounded-none font-bold">
             Read more
           </Button>
-          <hr className="yellow-bg" />
+          <hr color="#F7D02E" />
         </div>
         {/* 2nd-div */}
-        <div className="flex flex-col col-span-3 justify-center items-center space-y-3 bg-slate-200 p-5">
+        <div className="feature_cards">
           <Wifi className="yellow w-16 h-16" />
           <span className="point">24/7 Wifi</span>
           <p className="para text-center">
-            We are providing High speed internet for 16/7 for private offices or
-            even for open workspaces.
+            We are providing High speed internet for 16/7 for private 
           </p>
         </div>
         {/* 3rd-div */}
-        <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-200 p-5 ">
+        <div className="feature_cards">
           <Building2 className="yellow w-16 h-16" />
           <span className="point">Large Building</span>
           <p className="para text-center">
             There are six floors in the Building in which we have multiple type
-            of offices, rooms and openspaces open for your work.
+            
           </p>
         </div>
         {/* 4th-div */}
-        <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-200 p-5 ">
+        <div className="feature_cards">
           <Projector className="yellow w-16 h-16" />
           <span className="point">Conference Rooms</span>
           <p className="para text-center">
@@ -57,39 +55,36 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 5th-div */}
-        <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-200 p-5 ">
+        <div className="feature_cards">
           <Presentation className="yellow w-16 h-16" />
           <span className="point">Furnished Office</span>
           <p className="para text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            obcaecati rerum architecto porro deserunt nobis illo, molestias.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           </p>
         </div>
         {/* 6th-div */}
-        <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-200 p-5 ">
+        <div className="feature_cards">
           <Cctv className="yellow w-16 h-16" />
           <span className="point">CCTV</span>
           <p className="para  text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            obcaecati rerum architecto porro deserunt nobis illo, molestias.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           </p>
         </div>
         {/* 7th-div */}
-        <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-200 p-5 ">
+        <div className="feature_cards">
           <CircleParking className="yellow w-16 h-16" />
           <span className="point">Parking</span>
           <p className="para text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            obcaecati rerum architecto porro deserunt nobis illo, molestias.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
         {/* 8th-div */}
-        <div className="flex flex-col col-span-3 justify-center items-center space-y-3  bg-slate-200 p-5 ">
+        <div className="feature_cards">
           <Users className="yellow w-16 h-16" />
           <span className="point">Office Boys</span>
           <p className="para text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            obcaecati rerum architecto porro deserunt nobis illo, molestias.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            
           </p>
         </div>
       </div>

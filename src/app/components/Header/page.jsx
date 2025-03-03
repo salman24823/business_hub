@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Logo from "./../../../../public/logo.png";
+import Logo from "./../../../../public/logo.svg";
 import Image from "next/image";
 import { Button } from "@heroui/react";
 import { FaFacebookF } from "react-icons/fa";
@@ -30,8 +30,8 @@ const Header = () => {
           </div>
           <div className="nav_back nav_ch_2 flex justify-between px-4 items-center text-white w-full h-[4rem] er">
             <div className="flex items-center justify-center">
-              {/* <Image src={Logo} className="w-10"/> */}
-              <h1 className="text-[2rem] mt-2 flex gap-1">
+              <Image src={Logo} className="w-12"/>
+              <h1 className="text-[2.2rem] mt-2 flex gap-1">
                 BUSINESS <span className="yellow"> HUB</span>
               </h1>
             </div>
