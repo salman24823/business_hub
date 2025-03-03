@@ -73,6 +73,34 @@ const ServiceSection = () => {
             </div>
           </div>
         </div>
+        {/* 6th-div */}
+        <div className="card_hover col-span-8 row-span-1 bg-[url(/im.JPG)] bg-cover bg-no-repeat">
+          <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
+            <div className="space-y-3">
+              <h3 className="text-3xl font-bold text-white">
+                Executive Lounges
+              </h3>
+              <p className=" text-white w-[80%]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
+                aperiam vitae!
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* 7th-div */}
+        <div className="card_hover col-span-4 row-span-1 bg-[url(/slider3.jpg)] bg-cover bg-no-repeat">
+          <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
+            <div className="space-y-3">
+              <h3 className="text-3xl font-bold text-white">
+                Executive Lounges
+              </h3>
+              <p className=" text-white w-[80%]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
+                aperiam vitae!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );

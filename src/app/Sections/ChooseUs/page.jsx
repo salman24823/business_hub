@@ -4,7 +4,7 @@ import Image from "next/image";
 import about_img1 from "../../../../public/about.jpg";
 import about_img2 from "../../../../public/about2.jpg";
 import { Button } from "@heroui/react";
-const About2 = () => {
+const ChooseUs = () => {
   return (
     <main className="px-[5%]">
       <div className="grid grid-cols-2 justify-center items-center gap-10">
@@ -12,7 +12,7 @@ const About2 = () => {
         <div className="">
           {/* content-section */}
           <div>
-            <span className="point yellow">WHY CHOOSE US?</span>
+            <span className="sub_point yellow">WHY CHOOSE US?</span>
             <h2 className="sub_blue">The Explanation You Mustly Use Us</h2>
           </div>
           <div>
@@ -23,25 +23,25 @@ const About2 = () => {
               the team
             </p>
           </div>
-          {/* Icons & points */}
+          {/* Icons & sub_points */}
           <div className="flex gap-3 mt-8">
             <div className="flex gap-2">
               <SquareCheckBig />
-              <span className="point">Modern & Comfartable</span>
+              <span className="sub_point">Modern & Comfartable</span>
             </div>
             <div className="flex gap-2">
               <SquareCheckBig />
-              <span className="point">Customize Space</span>
+              <span className="sub_point">Customize Space</span>
             </div>
           </div>
           <div className="flex gap-3 mt-6">
             <div className="flex gap-2">
               <SquareCheckBig />
-              <span className="point">Saving your time</span>
+              <span className="sub_point">Saving your time</span>
             </div>
             <div className="flex gap-2">
               <SquareCheckBig />
-              <span className="point">Parking Area</span>
+              <span className="sub_point">Parking Area</span>
             </div>
           </div>
           <Button className="web-btn yellow-bg blue mt-10 rounded-none">
@@ -75,4 +75,4 @@ const About2 = () => {
   );
 };
 
-export default About2;
+export default ChooseUs;
