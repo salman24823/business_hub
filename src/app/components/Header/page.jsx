@@ -55,7 +55,7 @@ const Header = () => {
               </div>
               <div>
                 <Link href={"/"}>
-                  <Button className="yellow-bg px-6 font-bold py-2 rounded-none blue">
+                  <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white">
                     Book Now
                   </Button>
                 </Link>
