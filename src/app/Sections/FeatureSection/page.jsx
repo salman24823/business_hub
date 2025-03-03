@@ -24,7 +24,7 @@ const FeatureSection = () => {
             We are here to provide a comfortable and relaxing environment for
             your visitors.
           </p>
-          <Button className="yellow-bg rounded font-bold">
+          <Button className="yellow-bg rounded-lg text-white font-bold">
             Read more
           </Button>
           <hr color="#F7D02E" />

@@ -67,7 +67,7 @@ const AboutUs = () => {
           </div>
 
           <div>
-            <Button className="web-btn yellow-bg">Read more</Button>
+            <Button className="web-btn yellow-bg rounded-lg text-white">Read more</Button>
           </div>
         </div>
 

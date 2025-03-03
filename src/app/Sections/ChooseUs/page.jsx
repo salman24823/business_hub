@@ -44,7 +44,7 @@ const ChooseUs = () => {
               <span className="sub_point">Parking Area</span>
             </div>
           </div>
-          <Button className="web-btn yellow-bg blue mt-10 rounded-none">
+          <Button className="web-btn yellow-bg  mt-10 rounded-lg text-white">
             Explore more
           </Button>
         </div>

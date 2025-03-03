@@ -35,7 +35,7 @@ const AboutSection = () => {
             <span className="blue font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sequi numquam delectus accusamus quidem quo.</span>
             <p className="para w-[100%]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dolor aspernatur adipisci tempore quos soluta dolore fugiat cumque eius quasi. Nihil, ea eaque ab labore nisi sequi amet aut omnis?</p>
             <div>
-            <Button className="yellow-bg abt_btn blue p-8 font-bold">Contact Us</Button>
+            <Button className="yellow-bg abt_btn blue p-8 font-bold rounded-lg text-white">Contact Us</Button>
             </div>
           </div>
         </div>

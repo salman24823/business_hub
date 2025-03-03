@@ -4,9 +4,12 @@ import { Button } from "@heroui/react";
 const ServiceSection = () => {
   return (
     <main className="p-[5%] w-full">
-     <div className="p-[5%]">
-      <h2 className="main_blue uppercase w-full ">what <span className="yellow">we</span> Offers <span className="yellow">...</span></h2>
-     </div>
+      <div className="p-[5%]">
+        <h2 className="main_blue uppercase w-full ">
+          what <span className="yellow">we</span> Offers{" "}
+          <span className="yellow">...</span>
+        </h2>
+      </div>
       <div className="grid grid-cols-12 grid-rows-3 gap-5">
         {/* 1st-div */}
         <div className="card_hover col-span-5 row-span-2 h-[100vh] bg-[url(/menu1.jpg)] bg-cover bg-no-repeat">
@@ -53,7 +56,7 @@ const ServiceSection = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
               commodi!
             </p>
-            <Button className=" yellow-bg rounded font-bold text-lg">
+            <Button className=" yellow-bg rounded-lg text-white font-bold text-lg">
               Explore More
             </Button>
           </div>
