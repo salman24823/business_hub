@@ -6,7 +6,7 @@ import about_img2 from "../../../../public/about2.jpg";
 import { Button } from "@heroui/react";
 const ChooseUs = () => {
   return (
-    <main className="px-[5%]">
+    <main className="p-[5%]">
       <div className="grid grid-cols-2 justify-center items-center gap-10">
         {/* Left-side */}
         <div className="">
