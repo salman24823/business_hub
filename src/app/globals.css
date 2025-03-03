@@ -41,7 +41,7 @@
 .blue_bg {
   background-color: var(--blue-color);
 }
-.blue {
+.blue{
   color: var(--blue-color);
 }
 .sub_blue {
@@ -61,12 +61,20 @@
   @apply px-6 font-bold py-2;
 }
 .point {
+  @apply font-bold text-[1.8rem];
+}
+.sub_point {
   @apply font-bold text-[1.2rem];
 }
 .feature_cards{
   --tw-shadow: var(--heroui-box-shadow-small);
   --tw-shadow-colored: var(--heroui-box-shadow-small);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.ser_card{
+  --tw-shadow: var(--heroui-box-shadow-small);
+  --tw-shadow-colored: var(--heroui-box-shadow-small);
+  box-shadow: var(--tw-ring-offset-shadow, 1px 1px #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 /* =====Hero Section====== */

@@ -18,12 +18,13 @@ const FeatureSection = () => {
         {/* 1st-div */}
         <div className="flex flex-col col-span-3 justify-center items-start space-y-3  p-2 ">
           <span className="point">We Care About Visitors</span>
-          <hr className="w-[50%]" />
+          {/* hr className="w-[50%]" />< */}
+          <div className="line w-full h-[2px] yellow-bg"></div>
           <p className="para">
             We are here to provide a comfortable and relaxing environment for
             your visitors.
           </p>
-          <Button className="yellow-bg rounded-none font-bold">
+          <Button className="yellow-bg rounded font-bold">
             Read more
           </Button>
           <hr color="#F7D02E" />
@@ -31,7 +32,7 @@ const FeatureSection = () => {
         {/* 2nd-div */}
         <div className="feature_cards">
           <Wifi className="yellow w-16 h-16" />
-          <span className="point">24/7 Wifi</span>
+          <span className="sub_point">24/7 Wifi</span>
           <p className="para text-center">
             We are providing High speed internet for 16/7 for private 
           </p>
@@ -39,7 +40,7 @@ const FeatureSection = () => {
         {/* 3rd-div */}
         <div className="feature_cards">
           <Building2 className="yellow w-16 h-16" />
-          <span className="point">Large Building</span>
+          <span className="sub_point">Large Building</span>
           <p className="para text-center">
             There are six floors in the Building in which we have multiple type
             
@@ -48,7 +49,7 @@ const FeatureSection = () => {
         {/* 4th-div */}
         <div className="feature_cards">
           <Projector className="yellow w-16 h-16" />
-          <span className="point">Conference Hall</span>
+          <span className="sub_point">Conference Hall</span>
           <p className="para text-center">
             Big wide conference room which is available to held meetings and
             events.
@@ -57,7 +58,7 @@ const FeatureSection = () => {
         {/* 5th-div */}
         <div className="feature_cards">
           <Presentation className="yellow w-16 h-16" />
-          <span className="point">Furnished Office</span>
+          <span className="sub_point">Furnished Office</span>
           <p className="para text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           </p>
@@ -65,7 +66,7 @@ const FeatureSection = () => {
         {/* 6th-div */}
         <div className="feature_cards">
           <Cctv className="yellow w-16 h-16" />
-          <span className="point">CCTV</span>
+          <span className="sub_point">CCTV</span>
           <p className="para  text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           </p>
@@ -73,7 +74,7 @@ const FeatureSection = () => {
         {/* 7th-div */}
         <div className="feature_cards">
           <CircleParking className="yellow w-16 h-16" />
-          <span className="point">Meeting Room</span>
+          <span className="sub_point">Meeting Room</span>
           <p className="para text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </p>
@@ -81,7 +82,7 @@ const FeatureSection = () => {
         {/* 8th-div */}
         <div className="feature_cards">
           <Users className="yellow w-16 h-16" />
-          <span className="point">Office Boys</span>
+          <span className="sub_point">Office Boys</span>
           <p className="para text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             

@@ -1,11 +1,13 @@
 import React from "react";
 import { Button } from "@heroui/react";
 
-const MenuSection = () => {
+const ServiceSection = () => {
   return (
     <main className="p-[5%] w-full">
-      {/* main-div */}
-      <div className="grid grid-cols-12 grid-rows-2 gap-5">
+     <div className="p-[5%]">
+      <h2 className="main_blue uppercase w-full ">what <span className="yellow">we</span> Offers <span className="yellow">...</span></h2>
+     </div>
+      <div className="grid grid-cols-12 grid-rows-3 gap-5">
         {/* 1st-div */}
         <div className="card_hover col-span-5 row-span-2 h-[100vh] bg-[url(/menu1.jpg)] bg-cover bg-no-repeat">
           <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
@@ -44,14 +46,14 @@ const MenuSection = () => {
         </div>
         {/* 4th-div */}
 
-        <div className="col-span-3 row-span-1  p-10 rounded-lg">
-          <div className="flex flex-col gap-3">
+        <div className="ser_card col-span-3 row-span-1  p-10 rounded-lg ">
+          <div className="flex flex-col justify-between w-[100%] h-[100%] ">
             <span className="text-3xl font-bold">THE SERVICE</span>
             <p className="text-start">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
               commodi!
             </p>
-            <Button className="px-8 py-3 bg-transparent border border-black rounded-none font-bold text-xl">
+            <Button className=" yellow-bg rounded font-bold text-lg">
               Explore More
             </Button>
           </div>
@@ -76,4 +78,4 @@ const MenuSection = () => {
   );
 };
 
-export default MenuSection;
+export default ServiceSection;

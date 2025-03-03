@@ -4,7 +4,7 @@ import HeroSection from '../Sections/HeroSection/page'
 import VisionSection from '../Sections/VisionSection/page'
 
 
-const About = () => {
+const about = () => {
   return (
     <>
     <HeroSection />
@@ -14,4 +14,4 @@ const About = () => {
   )
 }
 
-export default About
+export default about
