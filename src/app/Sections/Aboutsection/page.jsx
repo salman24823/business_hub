@@ -26,7 +26,7 @@ const AboutSection = () => {
       </div>
       <div className="about_3rd_child w-full grid grid-cols-2 gap-20 py-[2%]">
         <div className="abt_img  h-[80vh]  bg-cover bg-no-repeat bg-left rounded-lg overflow-hidden">
-          <img src="/ceo.png" alt="" className="w-full h-[100%" />
+          <img src="/ceo.png" alt="" className="w-full h-[100%]" />
         </div>
         <div className="col-span-1 flex items-end">
         <div className="h-[100%] p-[5%] flex items-end ">
