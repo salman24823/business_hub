@@ -29,8 +29,7 @@
   @apply leading-none font-bold text-7xl;
 }
 .sub_heading {
-  color: var(--heading-color);
-  @apply text-5xl max-[770px]:text-3xl leading-tight font-bold;
+  @apply text-6xl max-[770px]:text-3xl leading-tight font-bold;
 }
 .yellow {
   color: var(--yellow-color);
