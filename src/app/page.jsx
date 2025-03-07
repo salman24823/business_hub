@@ -5,6 +5,8 @@ import ChooseUs from "./Sections/ChooseUs/page";
 import TestimonialSection from "./Sections/TestimonialSection/page";
 import FeatureSection from "./Sections/FeatureSection/page";
 import MenuSection from "./Sections/ServiceSection/page";
+import Form from "./Sections/Form/page";
+import LocationSection from "./Sections/LocationSection/page";
 export default function Home() {
   return (
     <main>
@@ -14,6 +16,8 @@ export default function Home() {
       <FeatureSection />
       <ChooseUs />
       <TestimonialSection />
+      <Form />
+      <LocationSection /> 
     </main>
   );
 }

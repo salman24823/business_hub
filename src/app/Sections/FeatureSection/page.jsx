@@ -14,9 +14,9 @@ const FeatureSection = () => {
   return (
     <main className="p-[5%]">
       {/* main-div */}
-      <div className="grid grid-cols-12 grid-rows-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 xl:grid-rows-2 gap-5">
         {/* 1st-div */}
-        <div className="flex flex-col col-span-3 justify-center items-start space-y-3  p-2 ">
+        <div className="flex flex-col sm:col-span-1 justify-center items-start space-y-3  p-2 ">
           <span className="point">We Care About Visitors</span>
           {/* hr className="w-[50%]" />< */}
           <div className="line w-full h-[2px] yellow-bg"></div>
@@ -30,7 +30,7 @@ const FeatureSection = () => {
           <hr color="#F7D02E" />
         </div>
         {/* 2nd-div */}
-        <div className="feature_cards">
+        <div className="feature_cards sm:col-span-1">
           <Wifi className="yellow w-16 h-16" />
           <span className="sub_point">24/7 Wifi</span>
           <p className="para text-center">
@@ -38,7 +38,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 3rd-div */}
-        <div className="feature_cards">
+        <div className="feature_cards sm:col-span-1">
           <Building2 className="yellow w-16 h-16" />
           <span className="sub_point">Large Building</span>
           <p className="para text-center">
@@ -47,7 +47,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 4th-div */}
-        <div className="feature_cards">
+        <div className="feature_cards sm:col-span-1">
           <Projector className="yellow w-16 h-16" />
           <span className="sub_point">Conference Hall</span>
           <p className="para text-center">
@@ -56,7 +56,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 5th-div */}
-        <div className="feature_cards">
+        <div className="feature_cards sm:col-span-1">
           <Presentation className="yellow w-16 h-16" />
           <span className="sub_point">Furnished Office</span>
           <p className="para text-center">
@@ -64,7 +64,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 6th-div */}
-        <div className="feature_cards">
+        <div className="feature_cards sm:col-span-1">
           <Cctv className="yellow w-16 h-16" />
           <span className="sub_point">CCTV</span>
           <p className="para  text-center">
@@ -72,7 +72,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 7th-div */}
-        <div className="feature_cards">
+        <div className="feature_cards sm:col-span-1">
           <CircleParking className="yellow w-16 h-16" />
           <span className="sub_point">Meeting Room</span>
           <p className="para text-center">
@@ -80,7 +80,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 8th-div */}
-        <div className="feature_cards">
+        <div className="feature_cards sm:col-span-1">
           <Users className="yellow w-16 h-16" />
           <span className="sub_point">Office Boys</span>
           <p className="para text-center">

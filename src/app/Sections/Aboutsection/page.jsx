@@ -9,7 +9,7 @@ import { Button } from "@heroui/react";
 const AboutSection = () => {
   return (
     <section>
-    <div className="about p-[5%] w-full">
+    <div className="about p-[5%] py-[10%] md:p-[5%] w-full">
       <div className="ybh w-full">
         <h2 className="ybh_h text-9xl font-bold text-white">
           Business Hub...
@@ -19,16 +19,16 @@ const AboutSection = () => {
         <span className="point yellow">About Us</span>
       <div className="w-full pl-[5%]  flex gap-10">
         <h2 className="main_blue upper">Build and Inspire <br /> Your <span className="yellow">Business</span>with <br /> <span className="">Business Hub.</span></h2>
-        <div className="arrow_box relative">
-        <img src="/arrow.png" alt="" className="relative top-14 arrow w-48"/>
+        <div className="arrow_box relative max-md:hidden">
+        <img src="/arrow.png" alt="" className="relative top-14 arrow w-48 max-md:hidden"/>
         </div>
       </div>
       </div>
-      <div className="about_3rd_child w-full grid grid-cols-2 gap-20 py-[2%]">
-        <div className="abt_img  h-[80vh]  bg-cover bg-no-repeat bg-left rounded-lg overflow-hidden">
+      <div className="about_3rd_child w-full grid grid-col-1  md:grid-cols-2 gap-20 py-[2%]">
+        <div className="abt_img md:col-span-1 md:h-[80vh] rounded-lg overflow-hidden">
           <img src="/ceo.png" alt="" className="w-full h-[100%]" />
         </div>
-        <div className="col-span-1 flex items-end">
+        <div className="md:col-span-1 flex items-end">
         <div className="h-[100%] p-[5%] flex items-end ">
           <div className="w-full flex flex-col gap-8">
             <span className="point yellow blue uppercase">All in one hub</span>

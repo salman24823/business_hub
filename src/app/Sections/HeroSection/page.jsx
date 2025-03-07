@@ -23,10 +23,10 @@ const HeroSection = () => {
 
   return (
     <main className="w-full">
-      <div className="hero_section w-full h-[130vh] bg-[url(/im.JPG)] bg-cover bg-no-repeat">
-        <div className="filter w-full h-[100%] px-[5%] py-[7%] flex flex-col justify-end gap-12">
+      <div className="hero_section w-full h-[100vh] md:h-[130vh] bg-[url(/im.JPG)] bg-cover bg-no-repeat">
+        <div className="filter w-full h-[100%] px-[5%] py-[7%] flex flex-col justify-end gap-24">
           {/* hero-text */}
-          <div className="hero_box py-[3%] px-4 nav_back w-[60%]">
+          <div className="hero_box py-[3%] px-4 nav_back w-full md:w-[60%]">
             <span className="text-2xl font-semibold text-white yellow">
               BusinessHub Co-working Space
             </span>
@@ -36,7 +36,7 @@ const HeroSection = () => {
             </h1>
           </div>
           {/* hero-icons */}
-          <div className="hero_boxes flex w-[60%]">
+          <div className="hero_boxes flex md:w-[60%] flex-wrap gap-10 md:gap-0 md:flex-nowrap ">
             <div className="hero_card flex text-white">
               <div className="hero_card_img p-5 blue_bg">
                 <MonitorCheck className="w-12 h-12 yellow" />

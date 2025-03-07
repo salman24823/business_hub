@@ -1,50 +1,94 @@
+'use client';
+
 import React from "react";
 import Image from "next/image";
+import Slider from "react-slick";
 import ceo from "../../../../public/ceo.jpg";
 import test2 from "../../../../public/test2.jpg";
 import test3 from "../../../../public/test3.jpg";
 import test4 from "../../../../public/test4.jpg";
 import { Button } from "@heroui/react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const data = [
   {
     id: 1,
-    name: "John Doe",
-    title: "CEO",
+    name: "Lara Croft",
+    work: "Designer",
     image: ceo,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolorum debitis, minima sapiente numquam sequi!",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 2,
     name: "Jane Doe",
-    title: "Marketing Manager",
+    work: "Marketing Manager",
     image: test2,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolorum debitis, minima sapiente numquam sequi!",
   },
   {
     id: 3,
     name: "Mark Johnson",
-    title: "Creative Director",
+    work: "Creative Director",
     image: test3,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolorum debitis, minima sapiente numquam sequi!",
   },
   {
     id: 4,
     name: "Emily Brown",
-    title: "Product Manager",
+    work: "Product Manager",
     image: test4,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolorum debitis, minima sapiente numquam sequi!",
-  }
+  },
 ];
+
 const TestimonialSection = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true, // Enable auto-scroll
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024, // For screens smaller than 768px (typically tablets or mobile)
+        settings: {
+          slidesToShow: 1, // Show 1 slide instead of 2 on smaller screens
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <main className="p-[5%]">
-      <div className="grid grid-cols-12 row-span-1">
-        <div className="col-span-6 ">
-         
+    <main className="w-full overflow-hidden p-[5%]">
+      <div className="testimonial_sec grid  grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-20 w-full">
+        <div className="test_sec_1 col-span-1 md:col-span-6 lg:col-span-7 py-[5%]">
+          <Slider {...settings} className="relative">
+            {data.map((d) => (
+              <div key={d.id} className="testimonial-card relative h-full">
+                <div className="testimonial-para relative flex flex-col items-center p-5">
+                  <p className="text-center">{d.text}</p>
+                </div>
+                <div className="test_data flex flex-col w-full items-center relative">
+                  <div className="test_img relative bottom-10 w-full h-48 overflow-hidden">
+                    <Image 
+                      src={d.image} 
+                      className="object-cover w-full h-full" 
+                      alt={d.name} 
+                    />
+                  </div>
+                  <span className="blue text-[1.6rem] font-semibold relative bottom-10">{d.name}</span>
+                  <span className="yellow relative bottom-10">{d.work}</span>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
         {/* Right-side */}
-        <div className="col-span-6 ">
+        <div className="test_sec_2 col-span-1 md:col-span-6 lg:col-span-5 p-[5%]">
           <div className="space-y-6">
             <h1 className="sub_heading">
               CUSTOMER <span className="yellow">TESTIMONIAL</span>
@@ -53,7 +97,7 @@ const TestimonialSection = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
               dolorum debitis, minima sapiente numquam sequi!
             </p>
-            <Button className="yellow-bg abt_btn  p-8 font-bold rounded-lg text-white">
+            <Button className="yellow-bg abt_btn p-8 font-bold rounded-lg text-white">
               Explore more
             </Button>
           </div>
@@ -64,3 +108,4 @@ const TestimonialSection = () => {
 };
 
 export default TestimonialSection;
+

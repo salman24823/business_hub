@@ -1,73 +1,73 @@
-import { SquareCheckBig } from "lucide-react";
 import React from "react";
 import Image from "next/image";
+import { SquareCheckBig } from "lucide-react";
+import { Button } from "@heroui/react";
 import about_img1 from "../../../../public/about.jpg";
 import about_img2 from "../../../../public/about2.jpg";
-import { Button } from "@heroui/react";
+
+// Reusable Component for the "feature" section
+const Feature = ({ text }) => (
+  <div className="flex gap-2">
+    <SquareCheckBig />
+    <span className="sub_point">{text}</span>
+  </div>
+);
+
 const ChooseUs = () => {
   return (
     <main className="p-[5%]">
-      <div className="grid grid-cols-2 justify-center items-center gap-10">
-        {/* Left-side */}
-        <div className="">
-          {/* content-section */}
-          <div>
+      <div className="grid grid-cols-1 lg:grid-cols-2  gap-10 ">
+        
+        <div className="ch_cnt flex flex-col gap-8 col-span-1">
+          <div className="flex gap-4 flex-col ch_headings">
             <span className="sub_point yellow">WHY CHOOSE US?</span>
-            <h2 className="sub_blue">The Explanation You Mustly Use Us</h2>
+            <h2 className="sub_blue">The Explanation You Must Use Us</h2>
           </div>
-          <div>
-            <p className="para w-3/4 mt-8">
-              We provide you with the state of the art offices and facilities of
-              the 24/7 Electricity and Security Services Coworkspace is the
-              concept of working together in the team and helping eachothers in
-              the team
+
+          <div className="ch_para">
+            <p className="para lg:w-3/4 ">
+              We provide you with state-of-the-art offices and facilities,
+              offering 24/7 Electricity and Security Services. Coworkspace is the
+              concept of working together in teams and helping each other grow.
             </p>
           </div>
-          {/* Icons & sub_points */}
-          <div className="flex gap-3 mt-8">
-            <div className="flex gap-2">
-              <SquareCheckBig />
-              <span className="sub_point">Modern & Comfartable</span>
-            </div>
-            <div className="flex gap-2">
-              <SquareCheckBig />
-              <span className="sub_point">Customize Space</span>
-            </div>
+
+          {/* Features List */}
+          <div className="flex gap-3 flex-wrap">
+            <Feature text="Modern & Comfortable" />
+            <Feature text="Customized Space" />
+            <Feature text="Saving Your Time" />
           </div>
-          <div className="flex gap-3 mt-6">
-            <div className="flex gap-2">
-              <SquareCheckBig />
-              <span className="sub_point">Saving your time</span>
-            </div>
-            <div className="flex gap-2">
-              <SquareCheckBig />
-              <span className="sub_point">Parking Area</span>
-            </div>
-          </div>
-          <Button className="web-btn yellow-bg  mt-10 rounded-lg text-white">
-            Explore more
+
+          <div>
+          <Button className="web-btn yellow-bg  rounded-lg text-white">
+            Explore More
           </Button>
-        </div>
-        {/* Right-side */}
-        {/* 2 images is used */}
-        <div className="relative flex gap-3 items-center">
-          <div className="relative">
-            <div className="absolute flex flex-wrap w-[150px] h-[150px] place-content-start">
-              <div className="w-[50%] h-[50%] bg-white"></div>
-              <div className="w-[50%] h-[50%] bg-transparent"></div>
-              <div className="w-[50%] h-[50%] bg-transparent"></div>
-              <div className="w-[50%] h-[50%] yellow-bg"></div>
-            </div>
-            <Image src={about_img1} className="w-80 h-[32rem]" />
           </div>
-          <div className="relative">
-            <div className="absolute flex flex-wrap w-[100px] h-[100px] bottom-0 right-0">
-              <div className="w-[50%] h-[50%] yellow-bg"></div>
-              <div className="w-[50%] h-[50%] bg-transparent"></div>
-              <div className="w-[50%] h-[50%] bg-transparent"></div>
-              <div className="w-[50%] h-[50%] bg-white"></div>
+        </div>
+
+        {/* Right-side Images Section */}
+        <div  className="chos_img flex relative  md:flex-row gap-3 items-center col-span-1">
+          {/* First Image */}
+          <div className="relative w-[60%] ">
+            <div className="absolute flex flex-wrap w-[90px] h-[90px] md:w-[150px] md:h-[150px] place-content-start">
+              <div className="w-[50%] h-[50%] bg-white" />
+              <div className="w-[50%] h-[50%] bg-transparent" />
+              <div className="w-[50%] h-[50%] bg-transparent" />
+              <div className="w-[50%] h-[50%] yellow-bg" />
             </div>
-            <Image src={about_img2} className="h-80 w-60 " />
+            <Image src={about_img1} alt="Office Image 1" className="w-[full] h-[full]" />
+          </div>
+
+          {/* Second Image */}
+          <div className="relative w-[40%] ">
+            <div className="absolute flex flex-wrap w-[100px] h-[100px] bottom-0 right-0">
+              <div className="w-[50%] h-[50%] yellow-bg" />
+              <div className="w-[50%] h-[50%] bg-transparent" />
+              <div className="w-[50%] h-[50%] bg-transparent" />
+              <div className="w-[50%] h-[50%] bg-white" />
+            </div>
+            <Image src={about_img2} alt="Office Image 2" className="w-[full] h-[full]" />
           </div>
         </div>
       </div>
@@ -76,3 +76,4 @@ const ChooseUs = () => {
 };
 
 export default ChooseUs;
+
