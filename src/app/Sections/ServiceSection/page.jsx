@@ -61,8 +61,8 @@ const ServiceSection = () => {
           <div className="flex flex-col gap-10 md:justify-between w-[100%] h-[100%]">
             <span className="text-xl md:text-3xl font-bold">THE SERVICE</span>
             <p className="text-start">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
-              commodi!
+              Discover a variety of office spaces tailored to your needs From
+              executive suites to open workspaces, find the perfect fit.
             </p>
             <Button className="yellow-bg rounded-lg text-white font-bold text-lg">
               Explore More
