@@ -43,7 +43,7 @@ const HeroSection = () => {
               </div>
               <div className="hero_card_cont px-4 flex flex-col justify-center gap-1">
                 <span className="text-3xl font-bold">IT Start Up</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>An ideal place to grow your business or startup.</p>
               </div>
             </div>
             <div className="hero_card flex text-white">
@@ -52,7 +52,7 @@ const HeroSection = () => {
               </div>
               <div className="hero_card_cont px-4 flex flex-col justify-center gap-1">
                 <span className="text-3xl font-bold">Creative Studio</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Perfect place to build your creative studio.</p>
               </div>
             </div>
           </div>
