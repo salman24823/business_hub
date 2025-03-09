@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -17,28 +17,28 @@ const data = [
     name: "Lara Croft",
     work: "Designer",
     image: ceo,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "Fantastic office space with great amenities! The environment is professional and perfect for growing businesses.",
   },
   {
     id: 2,
     name: "Jane Doe",
     work: "Marketing Manager",
     image: test2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolorum debitis, minima sapiente numquam sequi!",
+    text: "Excellent facilities and supportive staff. The furnished offices and meeting rooms exceeded my expectations!",
   },
   {
     id: 3,
     name: "Mark Johnson",
     work: "Creative Director",
     image: test3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolorum debitis, minima sapiente numquam sequi!",
+    text: "Highly secure and well-maintained workspace. The café and office services make workdays smooth and productive.",
   },
   {
     id: 4,
     name: "Emily Brown",
     work: "Product Manager",
     image: test4,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolorum debitis, minima sapiente numquam sequi!",
+    text: "Perfect location with top-notch facilities. The conference room and office services make business operations seamless.",
   },
 ];
 
@@ -74,13 +74,15 @@ const TestimonialSection = () => {
                 </div>
                 <div className="test_data flex flex-col w-full items-center relative">
                   <div className="test_img relative bottom-10 w-full h-48 overflow-hidden">
-                    <Image 
-                      src={d.image} 
-                      className="object-cover w-full h-full" 
-                      alt={d.name} 
+                    <Image
+                      src={d.image}
+                      className="object-cover w-full h-full"
+                      alt={d.name}
                     />
                   </div>
-                  <span className="blue text-[1.6rem] font-semibold relative bottom-10">{d.name}</span>
+                  <span className="blue text-[1.6rem] font-semibold relative bottom-10">
+                    {d.name}
+                  </span>
                   <span className="yellow relative bottom-10">{d.work}</span>
                 </div>
               </div>
@@ -94,8 +96,9 @@ const TestimonialSection = () => {
               CUSTOMER <span className="yellow">TESTIMONIAL</span>
             </h1>
             <p className="para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-              dolorum debitis, minima sapiente numquam sequi!
+              "See what our satisfied clients have to say about their experience
+              with us. Real feedback from businesses that found their perfect
+              workspace!"
             </p>
             <Button className="yellow-bg abt_btn p-8 font-bold rounded-lg text-white">
               Explore more
@@ -108,4 +111,3 @@ const TestimonialSection = () => {
 };
 
 export default TestimonialSection;
-

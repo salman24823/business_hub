@@ -15,10 +15,13 @@ const ServiceSection = () => {
         <div className="card_hover md:col-span-5 md:row-span-2 h-[50vh] md:h-[100vh] bg-[url(/menu1.jpg)] bg-cover bg-no-repeat">
           <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
             <div className="space-y-3">
-              <h3 className="text-xl md:text-3xl font-bold text-white">Executive Offices</h3>
+              <h3 className="text-xl md:text-3xl font-bold text-white">
+                Executive Offices
+              </h3>
               <p className="text-white w-full md:w-[80%]">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
-                aperiam vitae! Impedit ducimus, placeat sunt at nisi totam?
+                Premium executive offices with modern furnishings, advanced
+                amenities, and a professional environment designed for business
+                success.
               </p>
             </div>
           </div>
@@ -27,9 +30,13 @@ const ServiceSection = () => {
         <div className="card_hover md:col-span-4 md:row-span-1 h-[30vh] md:h-auto bg-[url(/menu2.jpg)] bg-cover bg-no-repeat">
           <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
             <div className="space-y-3">
-              <h3 className="text-xl md:text-3xl font-bold text-white">Meeting Rooms</h3>
+              <h3 className="text-xl md:text-3xl font-bold text-white">
+                Meeting Rooms
+              </h3>
               <p className="text-white w-full md:w-[80%]">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Fully equipped meeting rooms with modern technology, comfortable
+                seating, and a professional atmosphere for productive
+                discussions.
               </p>
             </div>
           </div>
@@ -38,9 +45,13 @@ const ServiceSection = () => {
         <div className="card_hover md:col-span-3 md:row-span-1 h-[30vh] md:h-auto bg-[url(/menu3.jpg)] bg-cover bg-no-repeat">
           <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
             <div className="space-y-3">
-              <h3 className="text-xl md:text-3xl font-bold text-white">Conference Hall</h3>
+              <h3 className="text-xl md:text-3xl font-bold text-white">
+                Conference Hall
+              </h3>
               <p className="text-white w-full md:w-[80%]">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Spacious and well-equipped conference hall, perfect for hosting
+                corporate meetings, seminars, and large business events
+                professionally.
               </p>
             </div>
           </div>
@@ -66,8 +77,9 @@ const ServiceSection = () => {
                 Regular Offices
               </h3>
               <p className="text-white w-full md:w-[80%]">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
-                aperiam vitae!
+                Comfortable and functional regular offices with essential
+                amenities, ideal for businesses seeking a productive and
+                professional workspace.
               </p>
             </div>
           </div>
@@ -77,11 +89,12 @@ const ServiceSection = () => {
           <div className="card_hover_animation filter w-full h-[100%] flex flex-col justify-end gap-5 p-[5%]">
             <div className="space-y-3">
               <h3 className="text-xl md:text-3xl font-bold text-white">
-                Executive Lounges
+                Open Workspace
               </h3>
               <p className="text-white w-full md:w-[80%]">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
-                aperiam vitae!
+                Collaborative open workspace with modern design, flexible
+                seating, and a dynamic environment to enhance creativity and
+                productivity.
               </p>
             </div>
           </div>
@@ -94,8 +107,8 @@ const ServiceSection = () => {
                 Shops
               </h3>
               <p className="text-white w-full md:w-[80%]">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
-                aperiam vitae!
+                Prime retail shops in a high-traffic location, offering
+                excellent visibility and a perfect space to grow your business.
               </p>
             </div>
           </div>
@@ -106,14 +119,6 @@ const ServiceSection = () => {
 };
 
 export default ServiceSection;
-
-
-
-
-
-
-
-
 
 // import React from "react";
 // import { Button } from "@heroui/react";
