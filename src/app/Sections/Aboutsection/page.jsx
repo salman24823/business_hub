@@ -9,40 +9,63 @@ import { Button } from "@heroui/react";
 const AboutSection = () => {
   return (
     <section>
-    <div className="about p-[5%] py-[10%] md:p-[5%] w-full">
-      <div className="ybh w-full">
-        <h2 className="ybh_h text-9xl font-bold text-white">
-          Business Hub...
-        </h2>
-      </div>
-      <div className="about_child_2 flex flex-col gap-5  pt-[5%]">
-        <span className="point yellow">About Us</span>
-      <div className="w-full pl-[5%]  flex gap-10">
-        <h2 className="main_blue upper">Build and Inspire <br /> Your <span className="yellow">Business</span>with <br /> <span className="">Business Hub.</span></h2>
-        <div className="arrow_box relative max-md:hidden">
-        <img src="/arrow.png" alt="" className="relative top-14 arrow w-48 max-md:hidden"/>
+      <div className="about p-[5%] py-[10%] md:p-[5%] w-full">
+        <div className="ybh w-full">
+          <h2 className="ybh_h text-9xl font-bold text-white">
+            Business Hub...
+          </h2>
         </div>
-      </div>
-      </div>
-      <div className="about_3rd_child w-full grid grid-col-1  md:grid-cols-2 gap-20 py-[2%]">
-        <div className="abt_img md:col-span-1 md:h-[80vh] rounded-lg overflow-hidden">
-          <img src="/ceo.png" alt="" className="w-full h-[100%]" />
-        </div>
-        <div className="md:col-span-1 flex items-end">
-        <div className="h-[100%] p-[5%] flex items-end ">
-          <div className="w-full flex flex-col gap-8">
-            <span className="point yellow blue uppercase">All in one hub</span>
-            <span className="blue font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sequi numquam delectus accusamus quidem quo.</span>
-            <p className="para w-[100%]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dolor aspernatur adipisci tempore quos soluta dolore fugiat cumque eius quasi. Nihil, ea eaque ab labore nisi sequi amet aut omnis?</p>
-            <div>
-            <Button className="yellow-bg abt_btn  p-8 font-bold rounded-lg text-white">Contact Us</Button>
+        <div className="about_child_2 flex flex-col gap-5  pt-[5%]">
+          <span className="point yellow">About Us</span>
+          <div className="w-full pl-[5%]  flex gap-10">
+            <h2 className="main_blue upper">
+              Build and Inspire <br /> Your{" "}
+              <span className="yellow">Business</span>with <br />{" "}
+              <span className="">Business Hub.</span>
+            </h2>
+            <div className="arrow_box relative max-md:hidden">
+              <img
+                src="/arrow.png"
+                alt=""
+                className="relative top-14 arrow w-48 max-md:hidden"
+              />
             </div>
           </div>
         </div>
+        <div className="about_3rd_child w-full grid grid-col-1  md:grid-cols-2 gap-20 py-[2%]">
+          <div className="abt_img md:col-span-1 md:h-[80vh] rounded-lg overflow-hidden">
+            <img src="/ceo.png" alt="" className="w-full h-[100%]" />
+          </div>
+          <div className="md:col-span-1 flex items-end">
+            <div className="h-[100%] p-[5%] flex items-end ">
+              <div className="w-full flex flex-col gap-8">
+                <span className="point yellow blue uppercase">
+                  Qari Mehboob anjum <br />
+                  <hr className="w-[60%]" />
+                  Founder
+                </span>
+                <span className="blue font-bold">
+                  A message from our founder, sharing the vision and mission
+                  behind Business Hub. Discover our commitment to providing the
+                  perfect workspace for your success.
+                </span>
+                <p className="para w-[100%]">
+                  At Business Hub, we provide modern, fully equipped workspaces
+                  designed for growth, collaboration, and success. With premium
+                  facilities and flexible solutions, we create the perfect
+                  environment to support businesses at every stage.
+                </p>
+                <div>
+                  <Button className="yellow-bg abt_btn  p-8 font-bold rounded-lg text-white">
+                    Contact Us
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
     // <main className="p-[5%] relative">
     //   {/* left-side */}
     //   <div className="grid grid-cols-2 justify-center items-center gap-10 relative">
