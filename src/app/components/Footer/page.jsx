@@ -49,8 +49,8 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-white pl-4">
-            "Find the perfect office space with premium amenities. Contact us
-            today for inquiries and bookings. Your ideal workspace awaits!"
+            Find the perfect office space with premium amenities. Contact us
+            today for inquiries and bookings. Your ideal workspace awaits!
           </p>
         </div>
         <div className="footer_cards col-span-1 lg:col-span-3 p-5 ">

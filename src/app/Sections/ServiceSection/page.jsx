@@ -61,8 +61,9 @@ const ServiceSection = () => {
           <div className="flex flex-col gap-10 md:justify-between w-[100%] h-[100%]">
             <span className="text-xl md:text-3xl font-bold">THE SERVICE</span>
             <p className="text-start">
-              Discover a variety of office spaces tailored to your needs From
-              executive suites to open workspaces, find the perfect fit.
+              Discover a variety of office spaces tailored to your needs. From
+              executive suites to open workspaces, find the perfect place to fit
+              and start growing.
             </p>
             <Button className="yellow-bg rounded-lg text-white font-bold text-lg">
               Explore More
