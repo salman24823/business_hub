@@ -40,9 +40,7 @@ const AboutSection = () => {
             <div className="h-[100%] p-[5%] flex items-end ">
               <div className="w-full flex flex-col gap-8">
                 <span className="point yellow blue uppercase">
-                  Qari Mehboob anjum <br />
-                  <hr className="w-[60%]" />
-                  Founder
+                  All in one hub
                 </span>
                 <span className="blue font-bold">
                   A message from our founder, sharing the vision and mission
