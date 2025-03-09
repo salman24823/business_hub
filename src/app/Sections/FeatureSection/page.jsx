@@ -2,11 +2,11 @@ import React from "react";
 import {
   Wifi,
   Cctv,
-  CircleParking,
   Presentation,
   Projector,
   Building2,
   Users,
+  Podcast,
 } from "lucide-react";
 import { Button } from "@heroui/react";
 
@@ -34,7 +34,7 @@ const FeatureSection = () => {
           <Wifi className="yellow w-16 h-16" />
           <span className="sub_point">24/7 Wifi</span>
           <p className="para text-center">
-            We are providing High speed internet for 16/7 for private 
+            We are providing High speed internet for 16/7 for private
           </p>
         </div>
         {/* 3rd-div */}
@@ -42,8 +42,8 @@ const FeatureSection = () => {
           <Building2 className="yellow w-16 h-16" />
           <span className="sub_point">Large Building</span>
           <p className="para text-center">
-            There are six floors in the Building in which we have multiple type
-            
+            There are six floors in the building, which are accessible by
+            elevator.
           </p>
         </div>
         {/* 4th-div */}
@@ -51,8 +51,7 @@ const FeatureSection = () => {
           <Projector className="yellow w-16 h-16" />
           <span className="sub_point">Conference Hall</span>
           <p className="para text-center">
-            Big wide conference room which is available to held meetings and
-            events.
+            Spacious conference room available for meetings and events.
           </p>
         </div>
         {/* 5th-div */}
@@ -60,7 +59,7 @@ const FeatureSection = () => {
           <Presentation className="yellow w-16 h-16" />
           <span className="sub_point">Furnished Office</span>
           <p className="para text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Move-in ready offices with premium furniture and amenities.
           </p>
         </div>
         {/* 6th-div */}
@@ -68,24 +67,23 @@ const FeatureSection = () => {
           <Cctv className="yellow w-16 h-16" />
           <span className="sub_point">CCTV</span>
           <p className="para  text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Advanced CCTV system ensuring a safe environment.
           </p>
         </div>
         {/* 7th-div */}
         <div className="feature_cards sm:col-span-1">
-          <CircleParking className="yellow w-16 h-16" />
+          <Podcast className="yellow w-16 h-16" />
           <span className="sub_point">Meeting Room</span>
           <p className="para text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Well-equipped meeting rooms for productive discussions.{" "}
           </p>
         </div>
         {/* 8th-div */}
         <div className="feature_cards sm:col-span-1">
           <Users className="yellow w-16 h-16" />
-          <span className="sub_point">Office Boys</span>
+          <span className="sub_point">Cafe & Office Boys</span>
           <p className="para text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            
+            Enjoy a well-stocked café and professional support staff.
           </p>
         </div>
       </div>
