@@ -9,6 +9,7 @@ import { RiWhatsappLine } from "react-icons/ri";
 import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { TbClockHour8Filled } from "react-icons/tb";
+import { ChevronUp } from "lucide-react";
 
 const Header = () => {
   return (
@@ -48,9 +49,22 @@ const Header = () => {
                 <Link href={"/Service"} className="fade_right">
                   Services
                 </Link>
-                <Link href={"/Blogs"} className="fade_right">
+                <div className="page_dropdown relative">
+                <Link href={"/Blogs"} className="fade_right w-full flex flex-row items-center relative">
+                <span className="flex flex-row items-center relative gap-1">
                   Pages
+                  <span className="drop_arrow">
+                  <ChevronUp />
+                  </span>
+                  </span>
                 </Link>
+                <div className="p_dropdown absolute w-44 flex flex-col gap-2 blue_bg top-12">
+                  <Link href={"/"} className="drop_items px-6 py-3">Home</Link>
+                  <Link href={"/"} className="drop_items px-6 py-3">Space</Link>
+                  <Link href={"/"} className="drop_items px-6 py-3">About</Link>
+                  <Link href={"/"} className="drop_items px-6 py-3">Contact</Link>
+                </div>
+                </div>
                 <Link href={"/Contact"} className="fade_right">
                   Blogs
                 </Link>

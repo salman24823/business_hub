@@ -155,7 +155,7 @@
 .card_hover{
   position: relative;
   overflow: hidden;
-  @apply rounded-lg
+  
 }
 .card_hover_animation{
   position: absolute;
@@ -167,6 +167,13 @@
 }
 .feature_cards{
   @apply flex flex-col col-span-3 justify-center items-center space-y-3 bg-gray-100 p-5
+}
+.s_m{
+  @apply  inset-0  relative h-[250px] rounded-lg overflow-hidden bg-cover bg-center bg-no-repeat  
+}
+
+.s_m_m{
+  @apply absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300
 }
 
 
@@ -187,6 +194,37 @@ textarea:focus{
   outline: none;
 }
 
+
+
+
+/* ======== Drop Down ======== */
+
+.p_dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s; /* Smooth transition */
+  position: absolute;
+  top: 100%; /* Adjust this according to your layout */
+  left: 0;
+}
+
+.page_dropdown:hover .p_dropdown {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0s 0s; /* Makes the element visible on hover */
+}
+.drop_arrow{
+  transition: all .5s; 
+}
+.page_dropdown:hover .drop_arrow{
+  transform: rotate(180deg);
+}
+.drop_items{
+  transition: all .3s
+}
+.drop_items:hover{
+  background-color: rgba(255, 255, 255, 0.24);
+}
 
 /* ====testimonials==== */
 

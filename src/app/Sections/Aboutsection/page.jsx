@@ -32,8 +32,8 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-        <div className="about_3rd_child w-full grid grid-col-1  md:grid-cols-2 gap-20 py-[2%]">
-          <div className="abt_img md:col-span-1 md:h-[80vh] rounded-lg overflow-hidden">
+        <div className="about_3rd_child w-full grid grid-col-1  lg:grid-cols-2 gap-20 py-[2%]">
+          <div className="abt_img md:col-span-1 lg:h-[80vh] rounded-lg overflow-hidden">
             <img src="/ceo.png" alt="" className="w-full h-[100%]" />
           </div>
           <div className="md:col-span-1 flex items-end">
