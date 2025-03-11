@@ -9,12 +9,12 @@ import { RiWhatsappLine } from "react-icons/ri";
 import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { TbClockHour8Filled } from "react-icons/tb";
-import { ChevronUp } from "lucide-react";
+import { ChevronUp, Menu, MenuIcon } from "lucide-react";
 
 const Header = () => {
   return (
     <main className="">
-      <header className="px-[5%] p font-bold text-white bg-transparent absolute w-full z-10">
+      <header className="lg:px-[5%] p font-bold text-white bg-transparent absolute w-full z-10">
         <nav className="">
           <div className="nav_ch_1 flex justify-between items-start p-3">
             <div className="clock flex items-center gap-2">
@@ -32,11 +32,11 @@ const Header = () => {
           </div>
           <div className="blue_bg nav_ch_2 flex justify-between px-4 items-center text-white w-full h-[4rem] er">
             <div className="flex items-center justify-center">
-              <Image src={Logo} className="w-12"/>
+              <Image src={Logo} className="w-6 lg:w-12" />
               <h1 className="yellow text-[2.2rem] mt-2 flex gap-1">
                 BUSINESS <span className=""> HUB</span>
               </h1>
-              <Image src={workspace} className="w-44"/>
+              <Image src={workspace} className="w-20 lg:w-44" />
             </div>
             <div className="flex items-center gap-10">
               <div className="nav-links flex gap-6 items-center">
@@ -50,31 +50,48 @@ const Header = () => {
                   Services
                 </Link>
                 <div className="page_dropdown relative">
-                <Link href={"/Blogs"} className="fade_right w-full flex flex-row items-center relative">
-                <span className="flex flex-row items-center relative gap-1">
-                  Pages
-                  <span className="drop_arrow">
-                  <ChevronUp />
-                  </span>
-                  </span>
-                </Link>
-                <div className="p_dropdown absolute w-44 flex flex-col gap-2 blue_bg top-12">
-                  <Link href={"/"} className="drop_items px-6 py-3">Home</Link>
-                  <Link href={"/"} className="drop_items px-6 py-3">Space</Link>
-                  <Link href={"/"} className="drop_items px-6 py-3">About</Link>
-                  <Link href={"/"} className="drop_items px-6 py-3">Contact</Link>
-                </div>
+                  <Link
+                    href={"/Blogs"}
+                    className="fade_right w-full flex flex-row items-center relative"
+                  >
+                    <span className="flex flex-row items-center relative gap-1">
+                      Pages
+                      <span className="drop_arrow">
+                        <ChevronUp />
+                      </span>
+                    </span>
+                  </Link>
+                  <div className="p_dropdown absolute w-44 flex flex-col gap-2 blue_bg top-12">
+                    <Link href={"/"} className="drop_items px-6 py-3">
+                      Home
+                    </Link>
+                    <Link href={"/"} className="drop_items px-6 py-3">
+                      Space
+                    </Link>
+                    <Link href={"/"} className="drop_items px-6 py-3">
+                      About
+                    </Link>
+                    <Link href={"/"} className="drop_items px-6 py-3">
+                      Contact
+                    </Link>
+                  </div>
                 </div>
                 <Link href={"/Contact"} className="fade_right">
                   Blogs
                 </Link>
               </div>
-              <div>
+              <div className="nav_btn">
                 <Link href={"/"}>
                   <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white">
                     Book Now
                   </Button>
                 </Link>
+              </div>
+              {/* Small screen view */}
+              <div className="menu_bar">
+                <button className="">
+                  <MenuIcon className="h-10 w-10" />
+                </button>
               </div>
             </div>
           </div>

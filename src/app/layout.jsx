@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <HeroUIProvider>
-          {/* <Header /> */}
+          <Header />
           {children}
           {/* <Footer /> */}
         </HeroUIProvider>
