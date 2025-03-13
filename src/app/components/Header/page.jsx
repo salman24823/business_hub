@@ -10,7 +10,7 @@ import { RiWhatsappLine } from "react-icons/ri";
 import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { TbClockHour8Filled } from "react-icons/tb";
-import { ChevronUp, Menu, MenuIcon, X } from "lucide-react";
+import { ChevronUp, MenuIcon, X } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
