@@ -95,7 +95,7 @@ const Header = () => {
               </div>
               {/* Small screen view-btn */}
               <div className="menu_bar">
-                <button className="md:hidden cursor-pointer"
+                <button className=" cursor-pointer"
                 onClick={toggleMenu}
                 >
                   <MenuIcon className="h-7 w-7" />
