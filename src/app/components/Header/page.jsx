@@ -14,8 +14,8 @@ import { ChevronUp, Menu, MenuIcon } from "lucide-react";
 const Header = () => {
   return (
     <main className="">
-      <header className="lg:px-[5%] p font-bold text-white bg-transparent absolute w-full z-10">
-        <nav className="">
+      <header className="px-[5%] font-bold text-white bg-transparent absolute w-full z-10">
+        <nav className="navbar">
           <div className="nav_ch_1 flex justify-between items-start p-3">
             <div className="clock flex items-center gap-2">
               <TbClockHour8Filled className="yellow text-xl" />
@@ -31,12 +31,12 @@ const Header = () => {
             </div>
           </div>
           <div className="blue_bg nav_ch_2 flex justify-between px-4 items-center text-white w-full h-[4rem] er">
-            <div className="flex items-center justify-center">
-              <Image src={Logo} className="w-6 lg:w-12" />
-              <h1 className="yellow text-[2.2rem] mt-2 flex gap-1">
+            <div className="flex items-center justify-center gap-2">
+              <Image src={Logo} className="w-12 lg:w-12  " />
+              <h1 className="yellow text-lg lg:text-[2.2rem] mt-2 flex gap-1">
                 BUSINESS <span className=""> HUB</span>
               </h1>
-              <Image src={workspace} className="w-20 lg:w-44" />
+              <Image src={workspace} className="w-16 lg:w-44 hidden md:block" />
             </div>
             <div className="flex items-center gap-10">
               <div className="nav-links flex gap-6 items-center">
@@ -90,7 +90,7 @@ const Header = () => {
               {/* Small screen view */}
               <div className="menu_bar">
                 <button className="">
-                  <MenuIcon className="h-10 w-10" />
+                  <MenuIcon className="h-7 w-7" />
                 </button>
               </div>
             </div>
