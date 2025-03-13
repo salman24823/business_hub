@@ -1,5 +1,6 @@
+"use client"
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./../../../../public/logo.svg";
 import workspace from "../../../../public/workspace.png";
 import Image from "next/image";
@@ -9,9 +10,14 @@ import { RiWhatsappLine } from "react-icons/ri";
 import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { TbClockHour8Filled } from "react-icons/tb";
-import { ChevronUp, Menu, MenuIcon } from "lucide-react";
+import { ChevronUp, Menu, MenuIcon, X } from "lucide-react";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <main className="">
       <header className="px-[5%] font-bold text-white bg-transparent absolute w-full z-10">
@@ -89,13 +95,35 @@ const Header = () => {
               </div>
               {/* Small screen view-btn */}
               <div className="menu_bar">
-                <button className="cursor-pointer">
+                <button className="md:hidden cursor-pointer"
+                onClick={toggleMenu}
+                >
                   <MenuIcon className="h-7 w-7" />
                 </button>
               </div>
             </div>
           </div>
         </nav>
+        <div className={`fixed top-0 right-0 h-full w-64 bg-gray-900 text-white transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out shadow-lg z-50`}>
+        <div className="flex justify-between items-center p-5 border-b border-gray-700">
+          <h2 className="text-xl font-semibold">Menu</h2>
+          <button onClick={toggleMenu}>
+            <X className="h-7 w-7" />
+          </button>
+        </div>
+        <div className="flex flex-col p-5 space-y-4">
+          <Link href="/" className="text-lg" onClick={toggleMenu}>Home</Link>
+          <Link href="/About" className="text-lg" onClick={toggleMenu}>About</Link>
+          <Link href="/Service" className="text-lg" onClick={toggleMenu}>Services</Link>
+          <Link href="/Blogs" className="text-lg" onClick={toggleMenu}>Blogs</Link>
+          <Link href="/Contact" className="text-lg" onClick={toggleMenu}>Contact</Link>
+          <Link href="/">
+            <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white w-full">
+              Book Now
+            </Button>
+          </Link>
+        </div>
+      </div>
       </header>
     </main>
   );
