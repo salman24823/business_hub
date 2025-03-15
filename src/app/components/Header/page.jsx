@@ -106,7 +106,7 @@ const Header = () => {
         </nav>
         <div className={`fixed top-0 right-0 h-full w-64 bg-gray-900 text-white transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out shadow-lg z-50`}>
         <div className="flex justify-between items-center p-5 border-b border-gray-700">
-          <h2 className="text-xl font-semibold">Menu</h2>
+          <h2 className="text-xl font-semibold"></h2>
           <button onClick={toggleMenu}>
             <X className="h-7 w-7" />
           </button>
