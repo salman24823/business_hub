@@ -49,7 +49,7 @@ const Header = () => {
                 <Link href={"/"} className="fade_right">
                   Home
                 </Link>
-                <Link href={"/About"} className="fade_right">
+                <Link href={"/about"} className="fade_right">
                   About
                 </Link>
                 <Link href={"/Service"} className="fade_right">
@@ -74,7 +74,7 @@ const Header = () => {
                     <Link href={"/"} className="drop_items px-6 py-3">
                       Space
                     </Link>
-                    <Link href={"/"} className="drop_items px-6 py-3">
+                    <Link href={"/about"} className="drop_items px-6 py-3">
                       About
                     </Link>
                     <Link href={"/"} className="drop_items px-6 py-3">
@@ -82,7 +82,7 @@ const Header = () => {
                     </Link>
                   </div>
                 </div>
-                <Link href={"/Contact"} className="fade_right">
+                <Link href={"/contact"} className="fade_right">
                   Blogs
                 </Link>
               </div>
@@ -113,10 +113,10 @@ const Header = () => {
         </div>
         <div className="flex flex-col p-5 space-y-4">
           <Link href="/" className="text-lg" onClick={toggleMenu}>Home</Link>
-          <Link href="/About" className="text-lg" onClick={toggleMenu}>About</Link>
-          <Link href="/Service" className="text-lg" onClick={toggleMenu}>Services</Link>
-          <Link href="/Blogs" className="text-lg" onClick={toggleMenu}>Blogs</Link>
-          <Link href="/Contact" className="text-lg" onClick={toggleMenu}>Contact</Link>
+          <Link href="/about" className="text-lg" onClick={toggleMenu}>About</Link>
+          <Link href="/service" className="text-lg" onClick={toggleMenu}>Services</Link>
+          <Link href="/blogs" className="text-lg" onClick={toggleMenu}>Blogs</Link>
+          <Link href="/contact" className="text-lg" onClick={toggleMenu}>Contact</Link>
           <Link href="/">
             <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white w-full">
               Book Now

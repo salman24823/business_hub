@@ -1,95 +1,97 @@
-import abt_img from "../../../../public/abt-hero.jpg";
+"use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import {
-  HouseWifi,
-  Projector,
-  Building2,
-  Cctv,
-  MapPin,
-  Clock,
-  Phone,
-} from "lucide-react";
+import { HouseWifi, Projector, Building2, Cctv, MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@heroui/react";
+import abt_img from "../../../../public/abt-hero.jpg";
+
+const Counter = ({ target }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const duration = 6000;
+    const stepTime = Math.abs(Math.floor(duration / target));
+    const timer = setInterval(() => {
+      start += 1;
+      setCount(start);
+      if (start >= target) clearInterval(timer);
+    }, stepTime);
+    return () => clearInterval(timer);
+  }, [target]);
+
+  return <h2 className="sub_blue">{count}</h2>;
+};
 
 const AboutUs = () => {
   return (
-    <div className="p-[5%]">
-      <div className="flex justify-center items-center gap-10">
+    <div className="p-6 md:p-[5%]">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
+        
         {/* Left-side */}
-        <div>
+        <div className="text-center lg:text-left order-1 lg:order-none">
           <span className="yellow point">About Us</span>
           <h2 className="sub_blue">LEVELING UP YOUR CREATIVE MIND</h2>
           <p className="para">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-            temporibus repudiandae culpa minus est aut provident dolore adipisci
-            facilis ea quos eos sit accusamus modi commodi tenetur, distinctio
-            qui rem!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem temporibus repudiandae culpa minus est aut provident dolore adipisci facilis ea quos eos sit accusamus modi commodi tenetur, distinctio qui rem!
           </p>
 
           {/* Stats Section */}
-          <div className="grid grid-cols-8 justify-center items-center gap-10 my-10">
-            <div className="flex col-span-4 gap-5">
-              <div>
-                <HouseWifi className="w-24 h-24 yellow" />
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 my-10">
+            {[
+              { icon: HouseWifi, label: "Office Rooms", value: 120 },
+              { icon: Projector, label: "Meeting Rooms", value: 80 },
+              { icon: Building2, label: "No. of Floors", value: 6 },
+              { icon: Cctv, label: "Hours CCTV Security", value: 24 },
+            ].map((stat, index) => (
+              <div key={index} className="flex flex-col items-center gap-2">
+                <stat.icon className="w-16 h-16 yellow" />
+                {typeof stat.value === "number" ? <Counter target={stat.value} /> : <h2 className="sub_blue">{stat.value}</h2>}
+                <p className="para">{stat.label}</p>
               </div>
-              <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">120</h2>
-                <p className="para">Office Rooms</p>
-              </div>
-            </div>
-            <div className="flex col-span-4 gap-5">
-              <div>
-                <Projector className="w-24 h-24 yellow" />
-              </div>
-              <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">80</h2>
-                <p className="para">Meeting Rooms</p>
-              </div>
-            </div>
-            <div className="flex col-span-4 gap-5">
-              <div>
-                <Building2 className="w-24 h-24 yellow" />
-              </div>
-              <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">6</h2>
-                <p className="para">No. of Floors</p>
-              </div>
-            </div>
-            <div className="flex col-span-4 gap-5">
-              <div>
-                <Cctv className="w-24 h-24 yellow" />
-              </div>
-              <div className="flex flex-col justify-center items-center">
-                <h2 className="sub_blue">24/7</h2>
-                <p className="para">CCTV Security</p>
-              </div>
-            </div>
+            ))}
           </div>
 
-          <div>
-            <Button className="web-btn yellow-bg rounded-lg text-white">Read more</Button>
+          <Button className="web-btn yellow-bg rounded-lg text-white">Read more</Button>
+        </div>
+
+        {/* Yellow Section for Small Screens (Moved Below Counter Section) */}
+        <div className="bg-yellow-500 text-white p-4 rounded-lg shadow-lg w-full text-center order-2 lg:hidden">
+          <div className="space-y-2">
+            <div className="flex justify-center items-center gap-2">
+              <MapPin />
+              <p className="para">Location: D-Ground, Satiyana Road</p>
+            </div>
+            <div className="flex justify-center items-center gap-2">
+              <Clock />
+              <p className="para">Time: Mon - Sat : 7am - 8pm</p>
+            </div>
+            <div className="flex justify-center items-center gap-2">
+              <Phone />
+              <p className="para">Phone: +92 301 6669681</p>
+            </div>
           </div>
         </div>
 
-        {/* Right-side */}
-        <div className="relative">
-          <div className="flex flex-col justify-center items-center absolute w-[300px] h-[200px] top-0 right-0 yellow-bg ">
-            <div className="space-y-2 p-3">
-              <div className="flex justify-start items-start gap-2">
+        {/* Right-side (For Larger Screens) */}
+        <div className="relative w-full flex justify-center lg:block hidden">
+          <div className="absolute w-[250px] sm:w-[300px] bg-yellow-500 text-white p-4 rounded-lg top-0 right-0 shadow-lg">
+            <div className="space-y-2">
+              <div className="flex items-center gap-2">
                 <MapPin />
                 <p className="para">Location: D-Ground, Satiyana Road</p>
               </div>
-              <div className="flex justify-start items-center gap-2">
+              <div className="flex items-center gap-2">
                 <Clock />
-                <p className="para">Time : Mon - Sat : 7am - 8pm</p>
+                <p className="para">Time: Mon - Sat : 7am - 8pm</p>
               </div>
-              <div className="flex justify-start items-center gap-2">
+              <div className="flex items-center gap-2">
                 <Phone />
                 <p className="para">Phone: +92 301 6669681</p>
               </div>
             </div>
           </div>
-          <Image src={abt_img} className="p-10" alt="About Us Image" />
+          <Image src={abt_img} className="p-6 md:p-10 w-full max-w-[400px]" alt="About Us Image" />
         </div>
       </div>
     </div>

@@ -1,33 +1,46 @@
-import React from 'react'
-import v1 from '../../../../public/v1.jpg';
-import v2 from '../../../../public/v2.jpg';
-import v3 from '../../../../public/v3.jpg';
-import v4 from '../../../../public/v4.jpg';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
+import v1 from "../../../../public/v1.jpg";
+import v2 from "../../../../public/v2.jpg";
+import v3 from "../../../../public/v3.jpg";
+import v4 from "../../../../public/v4.jpg";
+import { Button } from "@heroui/react";
 
 const VisionSection = () => {
   return (
-    <main className='p-[5%] w-full'>
-      {/* main-div */}
-      <div className='flex'>
-        {/* left-div */}
-        <div className='grid grid-cols-6 grid-rows-2 gap-5 w-[50%]'>
-          <div className='col-span-3 row-span-1'>
-            <Image src={v1} />
+    <main className="p-[5%] w-full">
+      {/* Main Container */}
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
+        {/* Left-side (Images Grid) */}
+        <div className="grid grid-cols-3 grid-rows-2 gap-3 w-full lg:w-1/2">
+          <div className="col-span-1 row-span-1">
+            <Image src={v1} className="w-full h-auto" alt="Vision 1" />
           </div>
-          <div className='col-span-3 row-span-1'>
-            <Image src={v2} className='' />
+          <div className="col-span-2 row-span-1">
+            <Image src={v2} className="w-full h-auto" alt="Vision 2" />
           </div>
-          <div className='col-span-3 row-span-1'>
-            <Image src={v3} />
+          <div className="col-span-2 row-span-1">
+            <Image src={v3} className="w-full h-auto" alt="Vision 3" />
           </div>
-          <div className='col-span-3 row-span-2'>
-            <Image src={v4} />
+          <div className="col-span-1 row-span-1">
+            <Image src={v4} className="w-full h-auto" alt="Vision 4" />
           </div>
+        </div>
+
+        {/* Right-side (Text Content) */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left space-y-3">
+          <span className="point yellow">Our Vision</span>
+          <h2 className="sub_heading blue">One Space for Everyone's Needs</h2>
+          <p className="text-gray-600">
+            We provide dynamic, fully equipped spaces that foster innovation, collaboration, and productivity. 
+            Whether you're a freelancer, a growing team, or an established company, our flexible workspaces 
+            adapt to your evolving business needs.
+          </p>
+          <Button className="web-btn bg-yellow-500 text-white px-6 py-2 rounded-lg">Read More</Button>
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default VisionSection
+export default VisionSection;
