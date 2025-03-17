@@ -240,6 +240,12 @@ textarea:focus {
   margin: 0 10px;
   /* width: 290px; */
 }
+.vision_img{
+  transition: all .3s;
+}
+.vision_img:hover {
+  transform: scale(0.9);
+}
 
 .email_input:focus {
   outline: none;
@@ -294,8 +300,8 @@ textarea:focus {
   .nav_ch_1 {
     display: none;
   }
-  .navbar{
-    @apply py-[2%]
+  .navbar {
+    @apply py-[2%];
   }
 }
 @media (max-width: 1280px) {

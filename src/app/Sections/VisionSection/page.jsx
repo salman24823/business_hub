@@ -14,16 +14,16 @@ const VisionSection = () => {
         {/* Left-side (Images Grid) */}
         <div className="grid grid-cols-3 grid-rows-2 gap-3 w-full lg:w-1/2">
           <div className="col-span-1 row-span-1">
-            <Image src={v1} className="w-full h-auto" alt="Vision 1" />
+            <Image src={v1} className="vision_img w-full h-auto" alt="Vision 1" />
           </div>
           <div className="col-span-2 row-span-1">
-            <Image src={v2} className="w-full h-auto" alt="Vision 2" />
+            <Image src={v2} className="vision_img w-full h-auto" alt="Vision 2" />
           </div>
           <div className="col-span-2 row-span-1">
-            <Image src={v3} className="w-full h-auto" alt="Vision 3" />
+            <Image src={v3} className="vision_img w-full h-auto" alt="Vision 3" />
           </div>
           <div className="col-span-1 row-span-1">
-            <Image src={v4} className="w-full h-auto" alt="Vision 4" />
+            <Image src={v4} className="vision_img w-full h-auto" alt="Vision 4" />
           </div>
         </div>
 
