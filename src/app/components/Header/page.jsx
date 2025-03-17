@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "./../../../../public/logo.svg";
@@ -86,7 +86,7 @@ const Header = () => {
                   Blogs
                 </Link>
               </div>
-              <div className="nav_btn">
+              <div className="nav_btn hidden md:block">
                 <Link href={"/"}>
                   <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white">
                     Book Now
@@ -95,35 +95,51 @@ const Header = () => {
               </div>
               {/* Small screen view-btn */}
               <div className="menu_bar">
-                <button className=" cursor-pointer"
-                onClick={toggleMenu}
-                >
+                <button className=" cursor-pointer" onClick={toggleMenu}>
                   <MenuIcon className="h-7 w-7" />
                 </button>
               </div>
             </div>
           </div>
         </nav>
-        <div className={`fixed top-0 right-0 h-full w-64 bg-gray-900 text-white transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out shadow-lg z-50`}>
-        <div className="flex justify-between items-center p-5 border-b border-gray-700">
-          <h2 className="text-xl font-semibold"></h2>
-          <button onClick={toggleMenu}>
-            <X className="h-7 w-7" />
-          </button>
+        <div
+          className={`fixed top-0 right-0 h-full w-64 bg-gray-900 text-white transform ${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out shadow-lg z-50 flex flex-col justify-between`}
+        >
+          <div>
+            <div className="flex justify-between items-center p-5 border-b border-gray-700">
+              <h2 className="text-xl font-semibold"></h2>
+              <button onClick={toggleMenu}>
+                <X className="h-7 w-7" />
+              </button>
+            </div>
+            <div className="flex flex-col p-5 space-y-4">
+              <Link href="/" className="text-lg" onClick={toggleMenu}>
+                Home
+              </Link>
+              <Link href="/about" className="text-lg" onClick={toggleMenu}>
+                About
+              </Link>
+              <Link href="/service" className="text-lg" onClick={toggleMenu}>
+                Services
+              </Link>
+              <Link href="/blogs" className="text-lg" onClick={toggleMenu}>
+                Blogs
+              </Link>
+              <Link href="/contact" className="text-lg" onClick={toggleMenu}>
+                Contact
+              </Link>
+            </div>
+          </div>
+          <div className="p-5 flex justify-center">
+            <Link href="/">
+              <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white w-full">
+                Book Now
+              </Button>
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col p-5 space-y-4">
-          <Link href="/" className="text-lg" onClick={toggleMenu}>Home</Link>
-          <Link href="/about" className="text-lg" onClick={toggleMenu}>About</Link>
-          <Link href="/service" className="text-lg" onClick={toggleMenu}>Services</Link>
-          <Link href="/blogs" className="text-lg" onClick={toggleMenu}>Blogs</Link>
-          <Link href="/contact" className="text-lg" onClick={toggleMenu}>Contact</Link>
-          <Link href="/">
-            <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white w-full">
-              Book Now
-            </Button>
-          </Link>
-        </div>
-      </div>
       </header>
     </main>
   );
