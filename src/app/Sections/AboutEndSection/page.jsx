@@ -66,10 +66,10 @@ const AboutEndSection = () => {
             Giving You The Best Services
           </h2>
           <p className="para">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
-            illo magni dignissimos consequatur repellat dolorum vero explicabo
-            cumque possimus consequuntur voluptate id hic! Officia, alias
-            debitis nihil dolorem laudantium necessitatibus.
+            We provide top-quality services tailored to your needs, ensuring
+            reliability, efficiency, and satisfaction. Our commitment to
+            excellence guarantees the best experience for businesses and
+            individuals alike. Your success is our priority.
           </p>
         </div>
         {/* right-side */}
