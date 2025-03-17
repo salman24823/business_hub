@@ -39,7 +39,7 @@ const AboutEndSection = () => {
           count < stats[i].percentage ? count + 1 : count
         )
       );
-    }, 50);
+    }, 80);
     return () => clearInterval(interval);
   }, []);
 
@@ -55,6 +55,7 @@ const AboutEndSection = () => {
           </div>
         ))}
       </div>
+      <hr className="w-full hidden md:block" />
       {/* lower-div */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         {/* left-side */}
@@ -77,12 +78,12 @@ const AboutEndSection = () => {
           {stats.map((stat, index) => (
             <div className="w-full" key={index}>
               <div className="flex justify-between w-full">
-                <p className="text-2xl">{stat.label}</p>
-                <p className="text-2xl">{counters[index]}%</p>
+                <p className="text-lg">{stat.label}</p>
+                <p className="text-lg">{counters[index]}%</p>
               </div>
-              <div className="w-full h-5 yellow-bg">
+              <div className="w-full h-2 rounded-full yellow-bg">
                 <div
-                  className={`${stat.width} h-5 blue_bg`}
+                  className={`${stat.width} h-2 rounded-full blue_bg`}
                   style={{ width: `${counters[index]}%` }}
                 ></div>
               </div>
