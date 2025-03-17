@@ -30,7 +30,7 @@ const FeatureSection = () => {
           <hr color="#F7D02E" />
         </div>
         {/* 2nd-div */}
-        <div className="feature_cards sm:col-span-1">
+        <div className="vision_img feature_cards sm:col-span-1">
           <Wifi className="yellow w-16 h-16" />
           <span className="sub_point">24/7 Wifi</span>
           <p className="para text-center">
@@ -38,7 +38,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 3rd-div */}
-        <div className="feature_cards sm:col-span-1">
+        <div className="vision_img feature_cards sm:col-span-1">
           <Building2 className="yellow w-16 h-16" />
           <span className="sub_point">Large Building</span>
           <p className="para text-center">
@@ -47,7 +47,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 4th-div */}
-        <div className="feature_cards sm:col-span-1">
+        <div className="vision_img feature_cards sm:col-span-1">
           <Projector className="yellow w-16 h-16" />
           <span className="sub_point">Conference Hall</span>
           <p className="para text-center">
@@ -55,7 +55,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 5th-div */}
-        <div className="feature_cards sm:col-span-1">
+        <div className="vision_img feature_cards sm:col-span-1">
           <Presentation className="yellow w-16 h-16" />
           <span className="sub_point">Furnished Office</span>
           <p className="para text-center">
@@ -63,7 +63,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 6th-div */}
-        <div className="feature_cards sm:col-span-1">
+        <div className="vision_img feature_cards sm:col-span-1">
           <Cctv className="yellow w-16 h-16" />
           <span className="sub_point">CCTV</span>
           <p className="para  text-center">
@@ -71,7 +71,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 7th-div */}
-        <div className="feature_cards sm:col-span-1">
+        <div className="vision_img feature_cards sm:col-span-1">
           <Podcast className="yellow w-16 h-16" />
           <span className="sub_point">Meeting Room</span>
           <p className="para text-center">
@@ -79,7 +79,7 @@ const FeatureSection = () => {
           </p>
         </div>
         {/* 8th-div */}
-        <div className="feature_cards sm:col-span-1">
+        <div className="vision_img feature_cards sm:col-span-1">
           <Users className="yellow w-16 h-16" />
           <span className="sub_point">Cafe & Office Boys</span>
           <p className="para text-center">

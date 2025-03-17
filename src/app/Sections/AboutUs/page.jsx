@@ -75,19 +75,19 @@ const AboutUs = () => {
 
         {/* Right-side (For Larger Screens) */}
         <div className="relative w-full flex justify-center lg:block hidden">
-          <div className="absolute w-[250px] sm:w-[300px] bg-yellow-500 text-white p-4 rounded-lg top-0 right-0 shadow-lg">
+          <div className="vision_img absolute w-[250px] sm:w-[300px] bg-yellow-500 text-white p-4 rounded-lg top-0 right-0 shadow-lg">
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <MapPin />
-                <p className="para">Location: D-Ground, Satiyana Road</p>
+                <p className="text-white">Location: D-Ground, Satiyana Road</p>
               </div>
               <div className="flex items-center gap-2">
                 <Clock />
-                <p className="para">Time: Mon - Sat : 7am - 8pm</p>
+                <p className="text-white">Time: Mon - Sat : 7am - 8pm</p>
               </div>
               <div className="flex items-center gap-2">
                 <Phone />
-                <p className="para">Phone: +92 301 6669681</p>
+                <p className="text-white">Phone: +92 301 6669681</p>
               </div>
             </div>
           </div>
