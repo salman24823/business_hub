@@ -1,10 +1,11 @@
 "use client";
 import { Building2, HandCoins, Wifi } from "lucide-react";
 import React, { useEffect, useState } from "react";
+import { PiHandCoinsBold } from "react-icons/pi";
 
 const features = [
   {
-    icon: <HandCoins className="w-16 h-16 blue" />,
+    icon: <PiHandCoinsBold className="w-16 h-16 blue" />,
     title: "Competitive Price",
     description:
       "We offer the most competitive rental prices in the market, ensuring affordability without compromising on quality.",
@@ -81,9 +82,9 @@ const AboutEndSection = () => {
                 <p className="text-lg">{stat.label}</p>
                 <p className="text-lg">{counters[index]}%</p>
               </div>
-              <div className="w-full h-2 rounded-full yellow-bg">
+              <div className="w-full h-3 rounded-full yellow-bg">
                 <div
-                  className={`${stat.width} h-2 rounded-full blue_bg`}
+                  className={`${stat.width} h-3 rounded-full blue_bg`}
                   style={{ width: `${counters[index]}%` }}
                 ></div>
               </div>
