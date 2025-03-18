@@ -52,12 +52,12 @@ const Header = () => {
                 <Link href={"/about"} className="fade_right">
                   About
                 </Link>
-                <Link href={"/Service"} className="fade_right">
+                <Link href={"/service"} className="fade_right">
                   Services
                 </Link>
                 <div className="page_dropdown relative">
                   <Link
-                    href={"/Blogs"}
+                    href={"/blogs"}
                     className="fade_right w-full flex flex-row items-center relative"
                   >
                     <span className="flex flex-row items-center relative gap-1">
@@ -71,11 +71,11 @@ const Header = () => {
                     <Link href={"/"} className="drop_items px-6 py-3">
                       Home
                     </Link>
-                    <Link href={"/"} className="drop_items px-6 py-3">
+                    <Link href={"/space"} className="drop_items px-6 py-3">
                       Space
                     </Link>
-                    <Link href={"/about"} className="drop_items px-6 py-3">
-                      About
+                    <Link href={"/gallery"} className="drop_items px-6 py-3">
+                      Gallery
                     </Link>
                     <Link href={"/"} className="drop_items px-6 py-3">
                       Contact
@@ -129,6 +129,9 @@ const Header = () => {
               </Link>
               <Link href="/contact" className="text-lg" onClick={toggleMenu}>
                 Contact
+              </Link>
+              <Link href="/gallery" className="text-lg" onClick={toggleMenu}>
+                Gallery
               </Link>
             </div>
           </div>

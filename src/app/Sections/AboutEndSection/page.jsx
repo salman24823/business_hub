@@ -61,9 +61,7 @@ const AboutEndSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         {/* left-side */}
         <div className="space-y-5">
-          <p className="text-xl yellow font-bold">
-            We want to Achieved our best
-          </p>
+          <p className="text-xl yellow font-bold">Book a Place today!</p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl blue font-bold">
             Giving You The Best Services
           </h2>
