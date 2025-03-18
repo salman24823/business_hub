@@ -88,7 +88,7 @@ const Header = () => {
               </div>
               <div className="nav_btn hidden md:block">
                 <Link href={"/"}>
-                  <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white">
+                  <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white md:hidden lg:block">
                     Book Now
                   </Button>
                 </Link>
