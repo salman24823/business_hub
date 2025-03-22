@@ -32,9 +32,9 @@ const FeatureSection = () => {
         {/* 2nd-div */}
         <div className="vision_img feature_cards sm:col-span-1">
           <Wifi className="yellow w-16 h-16" />
-          <span className="sub_point">24/7 Wifi</span>
+          <span className="sub_point">5G Wifi</span>
           <p className="para text-center">
-            We are providing High speed internet for 16/7 for private
+            We are providing High speed internet for 24/7 for private
           </p>
         </div>
         {/* 3rd-div */}
