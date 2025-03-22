@@ -7,10 +7,13 @@ import FeatureSection from "./Sections/FeatureSection/page";
 import MenuSection from "./Sections/ServiceSection/page";
 import Form from "./Sections/Form/page";
 import LocationSection from "./Sections/LocationSection/page";
+import ServicesCards from "./Sections/ServeiceCrads/page";
+import Blank from "./Sections/Blank/page";
 export default function Home() {
   return (
     <main>
       <HeroSection />
+      <Blank />
       <AboutSection />
       <MenuSection />
       <FeatureSection />
