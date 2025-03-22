@@ -60,15 +60,15 @@ const Form = () => {
   return (
     <main
       id="contact"
-      className="Main_cnt !overflow-hidden sections w-full px-[5%] py-[10%]  md:p-[5%] blue_bg"
+      className="Main_cnt !overflow-hidden sections w-full px-[5%] py-[10%]  md:p-[5%]"
     >
       <div className="contact_section grid grid-rows-1 grid-cols-1 md:grid-cols-[1.5fr,1fr] gap-8">
         <div className="flex flex-col gap-12" data-aos="fade-right">
-          <h2 className="text-white text-3xl font-bold" data-aos="fade-up">
+          <h2 className="text-white text-3xl font-bold blue" data-aos="fade-up">
             <span className="yellow">Have questions?</span> Fill out our form, and we’ll get back to you soon!
           </h2>
           <p
-            className="text-white w-full md:w-[80%]"
+            className="text-white w-full md:w-[80%] blue"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -82,20 +82,20 @@ const Form = () => {
             data-aos-delay="400"
           >
             <ul className="font-bold flex flex-col gap-4">
-              <li className="flex items-center gap-2">
-                <FaRegCheckCircle className="yellow" />
+              <li className="flex items-center gap-2 blue">
+                <FaRegCheckCircle className="blue" />
                 How can I start with Business Hub workspace?
               </li>
-              <li className="flex items-center gap-2">
-                <FaRegCheckCircle className="yellow" />
+              <li className="flex items-center gap-2 blue">
+                <FaRegCheckCircle className="blue" />
                 How can I book?
               </li>
-              <li className="flex items-center gap-2">
-                <FaRegCheckCircle className="yellow" />
+              <li className="flex items-center gap-2 blue">
+                <FaRegCheckCircle className="blue" />
                  Whats Your Terms and Conditions?
               </li>
-              <li className="flex items-center gap-2">
-                <FaRegCheckCircle className="yellow" />
+              <li className="flex items-center gap-2 blue">
+                <FaRegCheckCircle className="blue" />
                 What kind of Services you provide?
               </li>
             </ul>
