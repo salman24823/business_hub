@@ -14,7 +14,7 @@ const ServiceSection = () => {
       <div className="grid grid-cols-1 gap-4 sm:gap-5 md:hidden">
         {/* Executive Offices */}
         <div className="card_hover s_m card_hover bg-[url(/menu1.jpg)]">
-          <div className="card_hover_animation filter flex flex-col justify-end w-full h-full p-4 sm:p-5">
+          <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Executive Offices</h3>
             <p className="text-white text-sm">
               Premium executive offices with modern furnishings, advanced amenities, and a professional environment.
@@ -36,7 +36,7 @@ const ServiceSection = () => {
 
         {/* Meeting Rooms */}
         <div className="s_m card_hover bg-[url(/menu2.jpg)] ">
-          <div className="card_hover_animation filter flex flex-col justify-end w-full h-full p-4 sm:p-5">
+          <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Meeting Rooms</h3>
             <p className="text-white text-sm">
               Fully equipped meeting rooms with modern technology and comfortable seating.
@@ -46,7 +46,7 @@ const ServiceSection = () => {
 
         {/* Conference Hall */}
         <div className="s_m card_hover bg-[url(/menu3.jpg)] ">
-          <div className="card_hover_animation filter flex flex-col justify-end w-full h-full p-4 sm:p-5">
+          <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Conference Hall</h3>
             <p className="text-white text-sm">
               Spacious and well-equipped conference hall for corporate meetings and events.
@@ -56,7 +56,7 @@ const ServiceSection = () => {
 
         {/* Regular Offices */}
         <div className="s_m card_hover bg-[url(/menu4.jpg)] ">
-          <div className="card_hover_animation filter flex flex-col justify-end w-full h-full p-4 sm:p-5">
+          <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Regular Offices</h3>
             <p className="text-white text-sm">Comfortable and functional regular offices with essential amenities.</p>
           </div>
@@ -64,7 +64,7 @@ const ServiceSection = () => {
 
         {/* Open Workspace */}
         <div className="s_m card_hover bg-[url(/im.JPG)] ">
-          <div className="card_hover_animation filter flex flex-col justify-end w-full h-full p-4 sm:p-5">
+          <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Open Workspace</h3>
             <p className="text-white text-sm">
               Collaborative open workspace with modern design and flexible seating.
@@ -74,7 +74,7 @@ const ServiceSection = () => {
 
         {/* Shops */}
         <div className="s_m card_hover bg-[url(/slider3.jpg)] ">
-          <div className="card_hover_animation filter flex flex-col justify-end w-full h-full p-4 sm:p-5">
+          <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Shops</h3>
             <p className="text-white text-sm">
               Prime retail shops in a high-traffic location with excellent visibility.
