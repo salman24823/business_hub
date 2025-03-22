@@ -10,7 +10,7 @@ import { RiWhatsappLine } from "react-icons/ri";
 import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { TbClockHour8Filled } from "react-icons/tb";
-import { ChevronUp, MenuIcon, X } from "lucide-react";
+import { ChevronDown, ChevronUp, MenuIcon, X } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,9 +52,33 @@ const Header = () => {
                 <Link href={"/about"} className="fade_right">
                   About
                 </Link>
-                <Link href={"/service"} className="fade_right">
-                  Services
-                </Link>
+                <div className="page_dropdown relative">
+                  <Link
+                    href={"/blogs"}
+                    className="fade_right w-full flex flex-row items-center relative"
+                  >
+                    <span className="flex flex-row items-center relative gap-1">
+                      Services
+                      <span className="drop_arrow">
+                        <ChevronDown />
+                      </span>
+                    </span>
+                  </Link>
+                  <div className="p_dropdown absolute w-44 flex flex-col gap-2 blue_bg top-12">
+                    <Link href={"/"} className="drop_items px-6 py-3">
+                      Home
+                    </Link>
+                    <Link href={"/space"} className="drop_items px-6 py-3">
+                      Space
+                    </Link>
+                    <Link href={"/gallery"} className="drop_items px-6 py-3">
+                      Gallery
+                    </Link>
+                    <Link href={"/"} className="drop_items px-6 py-3">
+                      Contact
+                    </Link>
+                  </div>
+                </div>
                 <div className="page_dropdown relative">
                   <Link
                     href={"/blogs"}
@@ -63,7 +87,7 @@ const Header = () => {
                     <span className="flex flex-row items-center relative gap-1">
                       Pages
                       <span className="drop_arrow">
-                        <ChevronUp />
+                        <ChevronDown />
                       </span>
                     </span>
                   </Link>
