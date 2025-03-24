@@ -286,7 +286,9 @@ textarea:focus{
 
 
 
-
+.p2para{
+  max-width: 400px;
+}
 
 
 

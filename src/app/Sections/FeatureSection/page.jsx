@@ -11,10 +11,55 @@ import {
 import { Button } from "@heroui/react";
 
 const FeatureSection = () => {
+  const features = [
+    {
+      id: 1,
+      icon: <Wifi className="yellow w-16 h-16" />,
+      title: "5G Wifi",
+      description: "We are providing High speed internet for 24/7 for private",
+    },
+    {
+      id: 2,
+      icon: <Building2 className="yellow w-16 h-16" />,
+      title: "Large Building",
+      description: "There are six floors in the building, which are accessible by elevator.",
+    },
+    {
+      id: 3,
+      icon: <Projector className="yellow w-16 h-16" />,
+      title: "Conference Hall",
+      description: "Spacious conference room available for meetings and events.",
+    },
+    {
+      id: 4,
+      icon: <Presentation className="yellow w-16 h-16" />,
+      title: "Furnished Office",
+      description: "Move-in ready offices with premium furniture and amenities.",
+    },
+    {
+      id: 5,
+      icon: <Cctv className="yellow w-16 h-16" />,
+      title: "CCTV",
+      description: "Advanced CCTV system ensuring a safe environment.",
+    },
+    {
+      id: 6,
+      icon: <Podcast className="yellow w-16 h-16" />,
+      title: "Meeting Room",
+      description: "Well-equipped meeting rooms for productive discussions.",
+    },
+    {
+      id: 7,
+      icon: <Users className="yellow w-16 h-16" />,
+      title: "Cafe & Office Boys",
+      description: "Enjoy a well-stocked café and professional support staff.",
+    },
+  ];
+
   return (
     <main className="p-[5%]">
       {/* main-div */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 xl:grid-rows-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:grid-rows-2 gap-5">
         {/* 1st-div */}
         <div className="flex flex-col sm:col-span-1 justify-center items-start space-y-3  p-2 ">
           <span className="point">We Care About Visitors</span>
@@ -29,63 +74,14 @@ const FeatureSection = () => {
           </Button>
           <hr color="#F7D02E" />
         </div>
-        {/* 2nd-div */}
-        <div className="vision_img feature_cards sm:col-span-1">
-          <Wifi className="yellow w-16 h-16" />
-          <span className="sub_point">5G Wifi</span>
-          <p className="para text-center">
-            We are providing High speed internet for 24/7 for private
-          </p>
-        </div>
-        {/* 3rd-div */}
-        <div className="vision_img feature_cards sm:col-span-1">
-          <Building2 className="yellow w-16 h-16" />
-          <span className="sub_point">Large Building</span>
-          <p className="para text-center">
-            There are six floors in the building, which are accessible by
-            elevator.
-          </p>
-        </div>
-        {/* 4th-div */}
-        <div className="vision_img feature_cards sm:col-span-1">
-          <Projector className="yellow w-16 h-16" />
-          <span className="sub_point">Conference Hall</span>
-          <p className="para text-center">
-            Spacious conference room available for meetings and events.
-          </p>
-        </div>
-        {/* 5th-div */}
-        <div className="vision_img feature_cards sm:col-span-1">
-          <Presentation className="yellow w-16 h-16" />
-          <span className="sub_point">Furnished Office</span>
-          <p className="para text-center">
-            Move-in ready offices with premium furniture and amenities.
-          </p>
-        </div>
-        {/* 6th-div */}
-        <div className="vision_img feature_cards sm:col-span-1">
-          <Cctv className="yellow w-16 h-16" />
-          <span className="sub_point">CCTV</span>
-          <p className="para  text-center">
-            Advanced CCTV system ensuring a safe environment.
-          </p>
-        </div>
-        {/* 7th-div */}
-        <div className="vision_img feature_cards sm:col-span-1">
-          <Podcast className="yellow w-16 h-16" />
-          <span className="sub_point">Meeting Room</span>
-          <p className="para text-center">
-            Well-equipped meeting rooms for productive discussions.{" "}
-          </p>
-        </div>
-        {/* 8th-div */}
-        <div className="vision_img feature_cards sm:col-span-1">
-          <Users className="yellow w-16 h-16" />
-          <span className="sub_point">Cafe & Office Boys</span>
-          <p className="para text-center">
-            Enjoy a well-stocked café and professional support staff.
-          </p>
-        </div>
+        {/* Feature Cards */}
+        {features.map(({ id, icon, title, description }) => (
+          <div key={id} className="vision_img feature_cards sm:col-span-1">
+            {icon}
+            <span className="sub_point">{title}</span>
+            <p className="para text-center">{description}</p>
+          </div>
+        ))}
       </div>
     </main>
   );
