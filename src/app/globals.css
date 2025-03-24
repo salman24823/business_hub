@@ -83,6 +83,13 @@
   --tw-shadow-colored: var(--heroui-box-shadow-small);
   box-shadow: var(--tw-ring-offset-shadow, 1px 1px #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 } 
+.contact_form{
+  --tw-shadow: var(--heroui-box-shadow-small);
+  --tw-shadow-colored: var(--heroui-box-shadow-small);
+  box-shadow: var(--tw-ring-offset-shadow, 1px 1px #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+} 
+
+
 
 /* =====Hero Section====== */
 @keyframes zoom-fade {
@@ -191,7 +198,7 @@
 .contact_form{
   max-width:500px;
   width: 100%;
-  box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.54);
+  /* box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.54); */
   border-radius: 5px;
   transition: all .5s;
 }
