@@ -8,7 +8,7 @@ const executiveoffices = () => {
         <div className="filter p-[5%] w-full h-full flex items-center">
           <div className="flex flex-col gap-4">
             <h1 className="main_heading">
-              <span className="yellow">Executive</span> Offices
+              <span className="yellow">P2</span> Offices
             </h1>
             <p className="text-white p2para">
               The P2 office at Businesshub Workspace is a collaborative space
