@@ -1,5 +1,5 @@
-import { Button } from '@heroui/react'
-import React from 'react'
+import { Button } from "@heroui/react";
+import React from "react";
 
 const openspaces = () => {
   return (
@@ -11,9 +11,11 @@ const openspaces = () => {
               <span className="yellow">Open</span> Spaces
             </h1>
             <p className="text-white p2para">
-              The P2 office at Businesshub Workspace is a collaborative space
-              designed for freelancers and small teams, offering a productive
-              environment for 5-6 people to work seamlessly together.
+              Open spaces provide a collaborative and flexible work environment,
+              promoting creativity and teamwork. With modern amenities and a
+              dynamic atmosphere, they are ideal for startups, freelancers, and
+              innovative professionals seeking productivity and networking
+              opportunities.
             </p>
             <div>
               <Button className="rounded-md yellow-bg font-bold text-whi">
@@ -25,7 +27,7 @@ const openspaces = () => {
       </div>
       <div className="p2contant"></div>
     </section>
-  )
-}
+  );
+};
 
-export default openspaces
+export default openspaces;

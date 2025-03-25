@@ -1,5 +1,5 @@
-import { Button } from '@heroui/react'
-import React from 'react'
+import { Button } from "@heroui/react";
+import React from "react";
 
 const premiumoffices = () => {
   return (
@@ -11,9 +11,10 @@ const premiumoffices = () => {
               <span className="yellow">Premium</span> Offices
             </h1>
             <p className="text-white p2para">
-              The P2 office at Businesshub Workspace is a collaborative space
-              designed for freelancers and small teams, offering a productive
-              environment for 5-6 people to work seamlessly together.
+              The executive office offers a premium workspace with modern
+              amenities, fostering productivity and professionalism. Ideal for
+              executives and teams, it provides a sophisticated environment for
+              meetings, decision-making, and strategic growth.
             </p>
             <div>
               <Button className="rounded-md yellow-bg font-bold text-white">
@@ -25,7 +26,7 @@ const premiumoffices = () => {
       </div>
       <div className="p2contant"></div>
     </section>
-  )
-}
+  );
+};
 
-export default premiumoffices
+export default premiumoffices;
