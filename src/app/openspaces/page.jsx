@@ -1,15 +1,14 @@
-import { Button } from "@heroui/react";
-import { Section } from "lucide-react";
-import React from "react";
+import { Button } from '@heroui/react'
+import React from 'react'
 
-const regularoffices = () => {
+const openspaces = () => {
   return (
     <section>
-      <div className="w-full h-[100vh] bg-[url(/p2-banner2.JPG)] bg-cover bg-no-repeat ">
+      <div className="w-full h-[100vh] bg-[url(/mazer9.JPG)] bg-cover bg-no-repeat ">
         <div className="filter p-[5%] w-full h-full flex items-center">
           <div className="flex flex-col gap-4">
             <h1 className="main_heading">
-              <span className="yellow">P2</span> Offices
+              <span className="yellow">Open</span> Spaces
             </h1>
             <p className="text-white p2para">
               The P2 office at Businesshub Workspace is a collaborative space
@@ -26,7 +25,7 @@ const regularoffices = () => {
       </div>
       <div className="p2contant"></div>
     </section>
-  );
-};
+  )
+}
 
-export default regularoffices;
+export default openspaces
