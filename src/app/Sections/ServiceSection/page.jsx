@@ -13,7 +13,7 @@ const ServiceSection = () => {
       {/* Mobile layout (1 column) */}
       <div className="grid grid-cols-1 gap-4 sm:gap-5 md:hidden">
         {/* Executive Offices */}
-        <div className="card_hover s_m card_hover bg-[url(/executive.JPG)]">
+        <div className="card_hover s_m card_hover bg-[url(/premium.JPG)]">
           <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Executive Offices</h3>
             <p className="text-white text-sm">
@@ -86,10 +86,10 @@ const ServiceSection = () => {
       {/* Tablet and Desktop layout */}
       <div className="hidden md:grid md:grid-cols-12 lg:grid-cols-12 gap-5 auto-rows-auto relative">
         {/* Executive Offices - Large left cell */}
-        <div className="relative inset-0 bg-[url(/executive.JPG)] bg-cover bg-center bg-no-repeat card_hover group  md:col-span-5 lg:col-span-5 md:row-span-2 rounded-lg overflow-hidden">
+        <div className="relative inset-0 bg-[url(/premium.JPG)] bg-cover bg-center bg-no-repeat card_hover group  md:col-span-5 lg:col-span-5 md:row-span-2 rounded-lg overflow-hidden">
           <div className="card_hover_animation absolute flex flex-col justify-end h-full filter transition-all duration-300">
             <div className="p-6 relative">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Executive Offices</h3>
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Premium Offices</h3>
               <p className="text-white text-sm lg:text-base w-[90%]">
                 Premium executive offices with modern furnishings, advanced amenities, and a professional environment
                 designed for business success.

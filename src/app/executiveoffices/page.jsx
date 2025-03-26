@@ -1,8 +1,7 @@
 import { Button } from "@heroui/react";
-import { Section } from "lucide-react";
 import React from "react";
 
-const regularoffices = () => {
+const executiveoffices = () => {
   return (
     <section>
       <div className="w-full h-[100vh] bg-[url(/p2-banner2.JPG)] bg-cover bg-no-repeat ">
@@ -29,4 +28,4 @@ const regularoffices = () => {
   );
 };
 
-export default regularoffices;
+export default executiveoffices;
