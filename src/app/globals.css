@@ -88,6 +88,11 @@
   --tw-shadow-colored: var(--heroui-box-shadow-small);
   box-shadow: var(--tw-ring-offset-shadow, 1px 1px #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 } 
+.itservices_card{
+  --tw-shadow: var(--heroui-box-shadow-small);
+  --tw-shadow-colored: var(--heroui-box-shadow-small);
+  box-shadow: var(--tw-ring-offset-shadow, 1px 1px #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+} 
 
 
 
@@ -195,6 +200,11 @@
 .rep{
   @apply card_hover_animation filter flex flex-col justify-end w-full h-full p-4 sm:p-5
 }
+.itservices_card{
+  @apply flex flex-col col-span-3 justify-center items-center space-y-3  p-5 blue_bg rounded-md
+  
+}
+
 .contact_form{
   max-width:500px;
   width: 100%;

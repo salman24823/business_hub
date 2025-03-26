@@ -9,6 +9,7 @@ import Form from "./Sections/Form/page";
 import LocationSection from "./Sections/LocationSection/page";
 import ServicesCards from "./Sections/ServeiceCrads/page";
 import Blank from "./Sections/Blank/page";
+import ITservices from "./Sections/ITservices/page";
 export default function Home() {
   return (
     <main>
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutSection />
       <MenuSection />
       <FeatureSection />
+      <ITservices />
       <ChooseUs />
       <TestimonialSection />
       <Form />
