@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import logo from "../../../../public/logo.svg";
 import workspace from "../../../../public/workspace.png";
-import { MapPin, Phone, ChevronRight, Mail } from "lucide-react";
+import { MapPin, Phone, ChevronRight, Mail, Facebook, Instagram, Youtube } from "lucide-react";
 import { Button } from "@heroui/react";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaWhatsappSquare } from "react-icons/fa";
 import { RiWhatsappLine } from "react-icons/ri";
 import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -43,14 +43,14 @@ const Footer = () => {
           <span className="point yellow">Quick Links</span>
           <div className="footer_links ">
             <Link className="ft-link" href={"/"}>Home</Link>
-            <Link className="ft-link" href={"/"}>About</Link>
+            <Link className="ft-link" href={"/about"}>About</Link>
             <Link className="ft-link" href={"/"}>Services</Link>
             <Link className="ft-link" href={"/"}>Pages</Link>
             <Link className="ft-link" href={"/"}>Blogs</Link>
           </div>
         </div>
         <div className="md:col-span-1 footer_cards col-span-1 lg:col-span-2 py-5 lg:py-5">
-        <span className="point yellow">Futher Links</span>
+        <span className="point yellow">Further Links</span>
           <div className="footer_links">
             <Link className="ft-link" href={"/"}>Terms and Conditions</Link>
             <Link className="ft-link" href={"/"}>News</Link>
@@ -59,11 +59,12 @@ const Footer = () => {
         </div>
         <div className="md:col-span-1 footer_cards col-span-1 lg:col-span-3 flex-col gap-5 lg:items-end">
         <div className="p-5 flex-col flex gap-5">
-        <span className="point yellow">Futher Links</span>
+        <span className="point yellow">Social Media</span>
           <div className="footer_links">
-            <Link className="ft-link " href={"/"}><span className="flex gap-2"><MapPin className="yellow" />Terms and Conditions</span></Link>
-            <Link className="ft-link " href={"/"}><span className="flex gap-2"><Phone  className="yellow"/>Recruitment</span></Link>
-            <Link className="ft-link " href={"/"}><span className="flex gap-2"><Mail   className="yellow"/>News</span></Link>
+            <Link className="ft-link " href={"/"}><span className="flex gap-2"><Facebook className="yellow" />Facebook</span></Link>
+            <Link className="ft-link " href={"/"}><span className="flex gap-2"><Instagram  className="yellow"/>Instagram</span></Link>
+            <Link className="ft-link " href={"/"}><span className="flex gap-2"><FaWhatsapp    className="yellow w-6 h-6"/>Whatsapp</span></Link>
+            <Link className="ft-link " href={"/"}><span className="flex gap-2"><Youtube    className="yellow"/>Youtube</span></Link>
           </div>
         </div>
         </div>
