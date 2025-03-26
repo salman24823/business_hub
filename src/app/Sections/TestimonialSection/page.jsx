@@ -3,10 +3,10 @@
 import React from "react";
 import Image from "next/image";
 import Slider from "react-slick";
-import ceo from "../../../../public/ceo.jpg";
+import ceo from "../../../../public/review2.JPG";
 import test2 from "../../../../public/test2.jpg";
-import test3 from "../../../../public/test3.jpg";
-import test4 from "../../../../public/test4.jpg";
+import test3 from "../../../../public/review3.JPG";
+import test4 from "../../../../public/review1.JPG";
 import { Button } from "@heroui/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
