@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import v1 from "../../../../public/v1.jpg";
-import v2 from "../../../../public/v2.jpg";
-import v3 from "../../../../public/v3.jpg";
-import v4 from "../../../../public/v4.jpg";
+import v1 from "../../../../public/vision1.JPG";
+import v2 from "../../../../public/vision2.jpg";
+import v3 from "../../../../public/vision3.jpg";
+import v4 from "../../../../public/review2.jpg";
 import { Button } from "@heroui/react";
 
 const VisionSection = () => {
@@ -16,28 +16,28 @@ const VisionSection = () => {
           <div className="col-span-1 row-span-1">
             <Image
               src={v1}
-              className="vision_img w-full h-auto"
+              className="effect_hover w-full h-auto"
               alt="Vision 1"
             />
           </div>
           <div className="col-span-2 row-span-1">
             <Image
               src={v2}
-              className="vision_img w-full h-auto"
+              className="effect_hover w-full h-full"
               alt="Vision 2"
             />
           </div>
           <div className="col-span-2 row-span-1">
             <Image
               src={v3}
-              className="vision_img w-full h-auto"
+              className="effect_hover w-full h-full"
               alt="Vision 3"
             />
           </div>
           <div className="col-span-1 row-span-1">
             <Image
               src={v4}
-              className="vision_img w-full h-auto"
+              className="effect_hover w-full h-auto"
               alt="Vision 4"
             />
           </div>

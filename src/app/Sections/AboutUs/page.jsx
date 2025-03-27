@@ -56,7 +56,7 @@ const AboutUs = () => {
         </div>
 
         {/* Yellow Section for Small Screens (Moved Below Counter Section) */}
-        <div className="bg-yellow-500 text-white p-4 rounded-lg shadow-lg w-full text-center order-2 lg:hidden">
+        <div className="effect_hover bg-yellow-500 text-white p-4 rounded-lg shadow-lg w-full text-center order-2 lg:hidden">
           <div className="space-y-2">
             <div className="flex justify-center items-center gap-2">
               <MapPin />
@@ -75,7 +75,7 @@ const AboutUs = () => {
 
         {/* Right-side (For Larger Screens) */}
         <div className="relative w-full flex justify-center lg:block">
-          <div className="vision_img absolute w-[250px] sm:w-[300px] bg-yellow-500 text-white p-4 rounded-lg top-0 right-0 shadow-lg">
+          <div className="absolute w-[250px] sm:w-[300px] bg-yellow-500 text-white p-4 rounded-lg top-0 right-0 shadow-lg">
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <MapPin />

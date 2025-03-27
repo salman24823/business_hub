@@ -9,6 +9,9 @@ const about = () => {
   return (
     <>
     <HeroSection />
+    <div className='my-20'>
+      <h1 className='text-3xl text-center'>About Us</h1>
+    </div>
     <AboutUs />
     <VisionSection />
     <AboutEndSection />
