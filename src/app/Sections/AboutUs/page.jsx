@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { HouseWifi, Projector, Building2, Cctv, MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@heroui/react";
-import abt_img from "../../../../public/abt-hero.jpg";
+import abt_img from "../../../../public/lvl.JPG";
 
 const Counter = ({ target }) => {
   const [count, setCount] = useState(0);
