@@ -2,7 +2,7 @@ import dbConnection from "@/config/dbConnection";
 import formModel from "@/models/formModel";
 import { NextResponse } from "next/server";
 
-export async function POST(req, res) {
+export async function POST(req) {
   try {
     await dbConnection();
     const { name, phone, email, message } = await req.json();
