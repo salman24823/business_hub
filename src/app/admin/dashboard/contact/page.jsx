@@ -46,14 +46,14 @@ const Contact = () => {
         </div>
       ) : (
         <div className="overflow-x-auto">
-          <h3 className="point text-center">Conatct Information</h3>
-          <table className="min-w-full border border-gray-300">
+          <h3 className="text-center text-xl font-semibold mb-4">Contact Information</h3>
+          <table className="min-w-full table-auto border border-gray-300">
             <thead className="bg-gray-200">
               <tr>
-                <th className="px-4 py-2 border">Name</th>
-                <th className="px-4 py-2 border">Phone</th>
-                <th className="px-4 py-2 border">Email</th>
-                <th className="px-4 py-2 border">Message</th>
+                <th className="px-4 py-2 border text-left">Name</th>
+                <th className="px-4 py-2 border text-left">Phone</th>
+                <th className="px-4 py-2 border text-left">Email</th>
+                <th className="px-4 py-2 border text-left">Message</th>
               </tr>
             </thead>
             <tbody>
