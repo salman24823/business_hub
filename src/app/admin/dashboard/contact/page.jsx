@@ -46,6 +46,7 @@ const Contact = () => {
         </div>
       ) : (
         <div className="overflow-x-auto">
+          <h3 className="point text-center">Conatct Information</h3>
           <table className="min-w-full border border-gray-300">
             <thead className="bg-gray-200">
               <tr>
