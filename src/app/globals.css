@@ -361,3 +361,11 @@ textarea:focus {
     @apply flex flex-col items-center;
   }
 }
+
+/* Hide the header when 'hide-header' class is added to the body */
+body.hide-header header {
+  display: none;
+}
+body.hide-footer footer {
+  display: none;
+}
