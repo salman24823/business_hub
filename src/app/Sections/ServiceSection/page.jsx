@@ -3,11 +3,16 @@ import { Button } from "@heroui/react";
 
 const ServiceSection = () => {
   return (
-    <main className="w-full p-[5%] ">
+    <main className="w-full p-[5%] flex flex-col gap-10">
       <div className="mb-8 md:mb-12">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0f172a] uppercase">
-          what <span className="text-yellow-400">we</span> Offers <span className="text-yellow-400">...</span>
+          what <span className="yellow">we</span> Offers <span className="yellow">...</span>
         </h2>
+      </div>
+      <div className="flex flex-col items-center">
+        <h2 className="sub_heading blue ">Rental<span className="yellow">Services</span></h2>
+       
+        <span className="sub_point blue xl:w-[60%] text-center">Empowering entrepreneurs with modern workspaces and resources designed for growth, collaboration, and success.</span>
       </div>
 
       {/* Mobile layout (1 column) */}

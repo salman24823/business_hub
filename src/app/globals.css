@@ -69,29 +69,23 @@
 .sub_point {
   @apply font-bold text-[1.2rem];
 }
-.feature_cards {
+.shadow_d{
   --tw-shadow: var(--heroui-box-shadow-small);
   --tw-shadow-colored: var(--heroui-box-shadow-small);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.feature_cards {
+ @apply shadow_d
+}
 .ser_card {
-  --tw-shadow: var(--heroui-box-shadow-small);
-  --tw-shadow-colored: var(--heroui-box-shadow-small);
-  box-shadow: var(--tw-ring-offset-shadow, 1px 1px #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  @apply shadow_d
 }
 .service_cardss {
-  --tw-shadow: var(--heroui-box-shadow-small);
-  --tw-shadow-colored: var(--heroui-box-shadow-small);
-  box-shadow: var(--tw-ring-offset-shadow, 1px 1px #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  @apply shadow_d
 }
 .contact_form {
-  --tw-shadow: var(--heroui-box-shadow-small);
-  --tw-shadow-colored: var(--heroui-box-shadow-small);
-  box-shadow: var(--tw-ring-offset-shadow, 1px 1px #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  @apply shadow_d
 }
 .itservices_card {
   --tw-shadow: var(--heroui-box-shadow-small);
@@ -204,8 +198,35 @@
   @apply card_hover_animation filter flex flex-col justify-end w-full h-full p-4 sm:p-5;
 }
 .itservices_card {
-  @apply flex flex-col col-span-3 justify-center items-center space-y-3  p-5 blue_bg rounded-md;
+  border-bottom: 5px solid var(--yellow-color);
+  /*  border-right: 3px solid var(--yellow-color);  */
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  @apply flex flex-col col-span-3 items-center space-y-4  p-5 ;
 }
+.service_card_hover{
+  transition: all .3s;
+  top: 100%;
+}
+.itservices_card:hover .service_card_hover{
+  top: -25px;
+}
+.first_child{
+  transition: all .3s;
+}
+.second_child{
+  transform: rotateY(180deg);
+  transition: all .3s;
+  border-radius: 20px;
+}
+.parenta:hover .first_child{
+  transform: rotateY(180deg);
+}
+.parenta:hover .second_child{
+  transform: rotateY(180deg);
+}
+
 .effect_hover {
   transition: all 0.2s ease-in-out;
 }
@@ -361,3 +382,109 @@ textarea:focus {
     @apply flex flex-col items-center;
   }
 }
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+
+
+/* Base SVG styles */
+.svg-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Common stroke styles for all paths */
+.svg-group path,
+.svg-group polygon {
+  stroke: var(--yellow-color);
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Fill colors */
+.svg-path-white {
+  fill: none;
+}
+
+.svg-polygon-green {
+  fill: none;}
+
+.svg-path-red {
+  fill: none;}
+
+.svg-path-green {
+  fill: none;}
+
+/* Animation preparation - hide all paths initially */
+
+
+/* @keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+} */

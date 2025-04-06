@@ -19,6 +19,14 @@ import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => {
+  const footerLinks = [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/" },
+    { label: "Pages", href: "/" },
+    { label: "Blogs", href: "/" },
+  ];
+
   return (
     <footer className="blue_bg flex flex-col items-center">
       <div className="footer_child_1 p-[5%] flex flex-col gap-20  md:flex-row md:justify-between w-full">
@@ -65,22 +73,12 @@ const Footer = () => {
         </div>
         <div className="md:col-span-1 footer_cards col-span-1 lg:col-span-3 p-5 ">
           <span className="point yellow">Quick Links</span>
-          <div className="footer_links ">
-            <Link className="ft-link" href={"/"}>
-              Home
-            </Link>
-            <Link className="ft-link" href={"/about"}>
-              About
-            </Link>
-            <Link className="ft-link" href={"/"}>
-              Services
-            </Link>
-            <Link className="ft-link" href={"/"}>
-              Pages
-            </Link>
-            <Link className="ft-link" href={"/"}>
-              Blogs
-            </Link>
+          <div className="footer_links">
+            {footerLinks.map((link, index) => (
+              <Link key={index} className="ft-link" href={link.href}>
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
         <div className="md:col-span-1 footer_cards col-span-1 lg:col-span-2 py-5 lg:py-5">
