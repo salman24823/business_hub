@@ -14,8 +14,8 @@ import "slick-carousel/slick/slick-theme.css";
 const data = [
   {
     id: 1,
-    name: "Lara Croft",
-    work: "Designer",
+    name: "Ayesha",
+    work: "Content Writer",
     image: ceo,
     text: "Fantastic office space with great amenities! The environment is professional and perfect for growing businesses.",
   },
@@ -28,15 +28,15 @@ const data = [
   },
   {
     id: 3,
-    name: "Mark Johnson",
-    work: "Creative Director",
+    name: "Maria Ashfaq",
+    work: "Digital Marketing",
     image: test3,
     text: "Highly secure and well-maintained workspace. The café and office services make workdays smooth and productive.",
   },
   {
     id: 4,
-    name: "Emily Brown",
-    work: "Product Manager",
+    name: "M.Imran",
+    work: "Bussinessman",
     image: test4,
     text: "Perfect location with top-notch facilities. The conference room and office services make business operations seamless.",
   },
