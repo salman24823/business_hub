@@ -7,6 +7,10 @@ import {
   Building2,
   Users,
   Podcast,
+  PlugZap,
+  Coffee,
+  Clapperboard,
+  Sofa,
 } from "lucide-react";
 import { Button } from "@heroui/react";
 
@@ -22,37 +26,70 @@ const FeatureSection = () => {
       id: 2,
       icon: <Building2 className="yellow w-16 h-16" />,
       title: "Large Building",
-      description: "There are six floors in the building, which are accessible by elevator.",
+      description:
+        "There are Eight floors in the building, which are accessible by Elevators.",
     },
     {
       id: 3,
       icon: <Projector className="yellow w-16 h-16" />,
-      title: "Conference Hall",
-      description: "Spacious conference room available for meetings and events.",
+      title: "Event Hall",
+      description:
+        "Spacious event hall available for meetings and events, seating up to 200 people.",
     },
     {
       id: 4,
       icon: <Presentation className="yellow w-16 h-16" />,
       title: "Furnished Office",
-      description: "Move-in ready offices with premium furniture and amenities.",
+      description:
+        "Move-in ready offices with premium furniture and amenities.",
     },
     {
       id: 5,
       icon: <Cctv className="yellow w-16 h-16" />,
-      title: "CCTV",
-      description: "Advanced CCTV system ensuring a safe environment.",
+      title: "CCTV & Security",
+      description: "Guarding what matters with cutting-edge CCTV and security.",
     },
     {
       id: 6,
       icon: <Podcast className="yellow w-16 h-16" />,
-      title: "Meeting Room",
-      description: "Well-equipped meeting rooms for productive discussions.",
+      title: "Podcast Room",
+      description:
+        "Soundproof podcast room equipped for high-quality recording and content creation.",
     },
     {
       id: 7,
       icon: <Users className="yellow w-16 h-16" />,
-      title: "Cafe & Office Boys",
-      description: "Enjoy a well-stocked café and professional support staff.",
+      title: "Office Boys",
+      description:
+        "Efficient and reliable office boys for seamless support and daily operations.",
+    },
+    {
+      id: 8,
+      icon: <PlugZap className="yellow w-16 h-16" />,
+      title: "Genrator & Solar Backup",
+      description:
+        "Uninterrupted power with reliable generator and solar backup solutions.",
+    },
+    {
+      id: 9,
+      icon: <Coffee className="yellow w-16 h-16" />,
+      title: "Cafe",
+      description:
+        "Each floor has a cozy cafe offering fresh brews and delicious bites, perfect for relaxing or meetings.",
+    },
+    {
+      id: 10,
+      icon: <Clapperboard className="yellow w-16 h-16" />,
+      title: "Club & Entertainment",
+      description:
+        "Vibrant club and entertainment space for unforgettable get-to-gathers and lively experiences.",
+    },
+    {
+      id: 11,
+      icon: <Sofa className="yellow w-16 h-16" />,
+      title: "Reception & Waiting Area",
+      description:
+        "Welcoming reception and comfortable waiting area for a professional and relaxing experience.",
     },
   ];
 
