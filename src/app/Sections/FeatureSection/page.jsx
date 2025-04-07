@@ -2,7 +2,6 @@ import React from "react";
 import {
   Wifi,
   Cctv,
-  Presentation,
   Projector,
   Building2,
   Users,
@@ -11,6 +10,7 @@ import {
   Coffee,
   Clapperboard,
   Sofa,
+  LampDesk,
 } from "lucide-react";
 import { Button } from "@heroui/react";
 
@@ -38,7 +38,7 @@ const FeatureSection = () => {
     },
     {
       id: 4,
-      icon: <Presentation className="yellow w-16 h-16" />,
+      icon: <LampDesk  className="yellow w-16 h-16" />,
       title: "Furnished Office",
       description:
         "Move-in ready offices with premium furniture and amenities.",
