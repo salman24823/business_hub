@@ -12,7 +12,13 @@ import {
   Youtube,
 } from "lucide-react";
 import { Button } from "@heroui/react";
-import { FaFacebookF, FaWhatsapp, FaWhatsappSquare } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaLinkedin,
+  FaTiktok,
+  FaWhatsapp,
+  FaWhatsappSquare,
+} from "react-icons/fa";
 import { RiWhatsappLine } from "react-icons/ri";
 import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -121,6 +127,18 @@ const Footer = () => {
                 <span className="flex gap-2">
                   <Youtube className="yellow" />
                   Youtube
+                </span>
+              </Link>
+              <Link className="ft-link " href={"/"}>
+                <span className="flex gap-2">
+                  <FaTiktok className="yellow w-6 h-6" />
+                  Tiktok
+                </span>
+              </Link>
+              <Link className="ft-link " href={"/"}>
+                <span className="flex gap-2">
+                  <FaLinkedin className="yellow w-6 h-6" />
+                  LinkedIn
                 </span>
               </Link>
             </div>

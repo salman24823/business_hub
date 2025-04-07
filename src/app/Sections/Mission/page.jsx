@@ -34,13 +34,21 @@ const Mission = () => {
         </div>
         <div className="space-y-6">
           <div className="point yellow">Our Mission & Vision</div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl blue font-bold leading-tight">ALL IN ONE
-             <br />
-            <span className="yellow"> HUB </span><br />
+          <h2 className="text-4xl md:text-5xl lg:text-6xl blue font-bold leading-tight">
+            ALL IN ONE
+            <br />
+            <span className="yellow"> HUB </span>
+            <br />
           </h2>
           <p className="text-gray-700 text-lg max-w-md">
-            Empowering entrepreneurs with modern workspaces and resources
-            designed for growth, collaboration, and success.
+            At Business Hub, we believe in transforming ideas into
+            achievements. From sourcing to sales, skill development to
+            professionalism, and individuals to thriving corporate teams — we
+            are with you every step of the way. Whether you're just beginning or
+            aiming for greatness, we provide the platform to grow. Here, a
+            fresher today can become a General Manager tomorrow. We don’t just
+            groom businesses — we shape personalities, build confidence, and
+            unlock true potential. Our mission is to support every journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             {/* <Button className="yellow-bg  text-white font-bold px-8 py-6">
