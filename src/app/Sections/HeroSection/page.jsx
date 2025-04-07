@@ -25,7 +25,7 @@ const HeroSection = () => {
   return (
     <main className="w-full relative">
       <div className="hero_section w-full h-[100vh] md:h-[110vh] bg-[url(/im.JPG)] bg-cover bg-no-repeat">
-        <div className="filter w-full h-[100%] px-[5%] py-[7%] flex flex-col justify-end items-end gap-24">
+        <div className="filter w-full h-[100%] px-[5%] py-[7%] flex flex-col justify-end gap-24">
           {/* hero-text */}
           <div className="hero_box py-[3%] px-4 nav_back w-full lg:w-[60%]">
             <span className="text-2xl font-semibold text-white yellow">

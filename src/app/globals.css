@@ -69,23 +69,23 @@
 .sub_point {
   @apply font-bold text-[1.2rem];
 }
-.shadow_d{
+.shadow_d {
   --tw-shadow: var(--heroui-box-shadow-small);
   --tw-shadow-colored: var(--heroui-box-shadow-small);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .feature_cards {
- @apply shadow_d
+  @apply shadow_d;
 }
 .ser_card {
-  @apply shadow_d
+  @apply shadow_d;
 }
 .service_cardss {
-  @apply shadow_d
+  @apply shadow_d;
 }
 .contact_form {
-  @apply shadow_d
+  @apply shadow_d;
 }
 .itservices_card {
   --tw-shadow: var(--heroui-box-shadow-small);
@@ -203,37 +203,28 @@
   height: 300px;
   border-radius: 20px;
   overflow: hidden;
-  @apply flex flex-col col-span-3 items-center space-y-4  p-5 ;
+  @apply flex flex-col col-span-3 items-center space-y-4  p-5;
 }
-.service_card_hover{
-  transition: all .3s;
+.service_card_hover {
+  transition: all 0.3s;
   top: 100%;
 }
-.itservices_card:hover .service_card_hover{
+.itservices_card:hover .service_card_hover {
   top: -25px;
 }
-.first_child{
-  transition: all .3s;
+.first_child {
+  transition: all 0.3s;
 }
-.second_child{
+.second_child {
   transform: rotateY(180deg);
-  transition: all .3s;
+  transition: all 0.3s;
   border-radius: 20px;
 }
-.parenta:hover .first_child{
+.parenta:hover .first_child {
   transform: rotateY(180deg);
 }
-.parenta:hover .second_child{
+.parenta:hover .second_child {
   transform: rotateY(180deg);
-}
-
-.effect_hover {
-  transition: all 0.2s ease-in-out;
-}
-
-.effect_hover:hover {
-  width: 97%;
-  height: auto;
 }
 
 .contact_form {
@@ -383,7 +374,6 @@ textarea:focus {
   }
 }
 
-
 /* @layer base {
   :root {
     --background: 0 0% 100%;
@@ -449,9 +439,6 @@ textarea:focus {
   }
 } */
 
-
-
-
 /* Base SVG styles */
 /* .svg-icon {
   display: block;
@@ -482,7 +469,6 @@ textarea:focus {
   fill: none;} */
 
 /* Animation preparation - hide all paths initially */
-
 
 /* @keyframes dash {
   to {

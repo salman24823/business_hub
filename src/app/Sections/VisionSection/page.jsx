@@ -16,28 +16,28 @@ const VisionSection = () => {
           <div className="col-span-1 row-span-1">
             <Image
               src={v1}
-              className="effect_hover w-full h-auto"
+              className="w-full h-auto"
               alt="Vision 1"
             />
           </div>
           <div className="col-span-2 row-span-1">
             <Image
               src={v2}
-              className="effect_hover w-full h-full"
+              className="w-full h-full"
               alt="Vision 2"
             />
           </div>
           <div className="col-span-2 row-span-1">
             <Image
               src={v3}
-              className="effect_hover w-full h-full"
+              className="w-full h-full"
               alt="Vision 3"
             />
           </div>
           <div className="col-span-1 row-span-1">
             <Image
               src={v4}
-              className="effect_hover w-full h-auto"
+              className="w-full h-auto"
               alt="Vision 4"
             />
           </div>
