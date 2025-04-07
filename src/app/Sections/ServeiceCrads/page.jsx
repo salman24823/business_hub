@@ -35,9 +35,9 @@ const ServicesCards = () => {
             <TbDeviceDesktopCode className="yellow size-14" />
             <span className=" text-2xl font-bold">IT Services</span>
             <p className="text-center  text-base">
-              Comprehensive IT services offering open spaces, premium offices,
-              and regular office rentals, tailored to support your business's
-              technology needs.
+              Expert IT services including web development, mobile app
+              development, graphic design, e-commerce and others solutions to
+              elevate your business.
             </p>
           </div>
         </div>
@@ -46,8 +46,8 @@ const ServicesCards = () => {
             <TbBusinessplan className="yellow size-14" />
             <span className=" text-2xl font-bold">Business Start Up</span>
             <p className="text-center  text-base">
-              Empowering business startups with flexible office spaces, IT
-              services, and all the support you need to grow.
+              Helping entrepreneurs turn ideas into reality with the right
+              resources, assets, and guidance for a successful startup.
             </p>
           </div>
         </div>
