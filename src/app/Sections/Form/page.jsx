@@ -105,7 +105,7 @@ const Form = () => {
             <input
               className="p-2 w-full border-gray-200 border-b font-light"
               type="text"
-              placeholder="Phone"
+              placeholder="Phone/Whatsapp"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
@@ -120,7 +120,7 @@ const Form = () => {
             />
             <textarea
               className="p-2 w-full border-gray-200 border-b font-light"
-              placeholder="Message"
+              placeholder="Query"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required

@@ -26,7 +26,7 @@ const Header = () => {
             <div className="clock flex items-center gap-2">
               <TbClockHour8Filled className="yellow text-xl" />
               <span className="font-semibold">
-                Opening : Mon-Fri 09:00 am - 11:00 pm
+              Open 24/7 – We're always here for you!
               </span>
             </div>
             <div className="social_links flex gap-8 items-center">
