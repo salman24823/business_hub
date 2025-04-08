@@ -26,7 +26,7 @@ const AboutSection = () => {
   return (
     <section className="container mx-auto p-[5%]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-6">
+        <div className="space-y-6" data-aos="fade-right">
           <div className="point yellow">About Us</div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl blue font-bold leading-tight">
             Build and Inspire <br />

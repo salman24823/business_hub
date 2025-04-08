@@ -83,7 +83,7 @@ export default function ServicesSection() {
     <section className="p-[5%]">
       <div className="container mx-auto px-6">
         <div className="max-w-screen-xl mx-auto">
-          <div className="mb-20">
+          <div className="mb-20 flex justify-center">
             
             <h2 className="sub_heading"><span className="yellow">Business</span> Services</h2>
           </div>

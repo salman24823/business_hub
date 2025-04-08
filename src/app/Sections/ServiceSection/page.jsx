@@ -18,7 +18,7 @@ const ServiceSection = () => {
       {/* Mobile layout (1 column) */}
       <div className="grid grid-cols-1 gap-4 sm:gap-5 md:hidden">
         {/* Executive Offices */}
-        <div className="card_hover s_m card_hover bg-[url(/premium.JPG)]">
+        <div className="card_hover s_m card_hover bg-[url(/premium.JPG)] " data-aos="zoom-in">
           <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Executive Offices</h3>
             <p className="text-white text-sm">
@@ -28,7 +28,7 @@ const ServiceSection = () => {
         </div>
 
         {/* THE SERVICE */}
-        <div className="p-4 sm:p-5 rounded-lg bg-white shadow-md">
+        <div className="p-4 sm:p-5 rounded-lg bg-white shadow-md" data-aos="zoom-in">
           <div className="flex flex-col gap-4">
             <span className="text-xl font-bold">THE SERVICE</span>
             <p>
@@ -40,7 +40,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Meeting Rooms */}
-        <div className="s_m card_hover bg-[url(/meeting-room.JPG)] ">
+        <div className="s_m card_hover bg-[url(/meeting-room.JPG)] " data-aos="zoom-in">
           <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Meeting Rooms</h3>
             <p className="text-white text-sm">
@@ -50,7 +50,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Conference Hall */}
-        <div className="s_m card_hover bg-[url(/conference.JPG)] ">
+        <div className="s_m card_hover bg-[url(/conference.JPG)] "data-aos="zoom-in">
           <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Conference Hall</h3>
             <p className="text-white text-sm">
@@ -60,7 +60,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Regular Offices */}
-        <div className="s_m card_hover bg-[url(/regular-office.JPG)] ">
+        <div className="s_m card_hover bg-[url(/regular-office.JPG)] "data-aos="zoom-in">
           <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Regular Offices</h3>
             <p className="text-white text-sm">Comfortable and functional regular offices with essential amenities.</p>
@@ -68,7 +68,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Open Workspace */}
-        <div className="s_m card_hover bg-[url(/im.JPG)] ">
+        <div className="s_m card_hover bg-[url(/im.JPG)] "data-aos="zoom-in">
           <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Open Workspace</h3>
             <p className="text-white text-sm">
@@ -78,7 +78,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Shops */}
-        <div className="s_m card_hover bg-[url(/slider3.jpg)] ">
+        <div className="s_m card_hover bg-[url(/slider3.jpg)] "data-aos="zoom-in">
           <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Shops</h3>
             <p className="text-white text-sm">
@@ -91,7 +91,7 @@ const ServiceSection = () => {
       {/* Tablet and Desktop layout */}
       <div className="hidden md:grid md:grid-cols-12 lg:grid-cols-12 gap-5 auto-rows-auto relative">
         {/* Executive Offices - Large left cell */}
-        <div className="relative inset-0 bg-[url(/premium.JPG)] bg-cover bg-center bg-no-repeat card_hover group  md:col-span-5 lg:col-span-5 md:row-span-2 rounded-lg overflow-hidden">
+        <div className="relative inset-0 bg-[url(/premium.JPG)] bg-cover bg-center bg-no-repeat card_hover group  md:col-span-5 lg:col-span-5 md:row-span-2 rounded-lg overflow-hidden"  data-aos="zoom-in">
           <div className="card_hover_animation absolute flex flex-col justify-end h-full filter transition-all duration-300">
             <div className="p-6 relative">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Premium Offices</h3>
@@ -105,7 +105,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Meeting Rooms */}
-        <div className="inset-0 card_hover bg-[url(/meeting-room.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-4 lg:col-span-4 rounded-lg overflow-hidden">
+        <div className="inset-0 card_hover bg-[url(/meeting-room.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-4 lg:col-span-4 rounded-lg overflow-hidden" data-aos="zoom-in">
           <div className="card_hover_animation filter flex flex-col justify-end h-full w-full p-5">
             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">Meeting Rooms</h3>
             <p className="text-white text-sm lg:text-base w-[90%]">
@@ -116,7 +116,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Conference Hall */}
-        <div className="inset-0 card_hover bg-[url(/conference.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-3 lg:col-span-3 rounded-lg overflow-hidden">
+        <div className="inset-0 card_hover bg-[url(/conference.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-3 lg:col-span-3 rounded-lg overflow-hidden" data-aos="zoom-in">
           <div className="card_hover_animation filter flex flex-col justify-end h-full w-full p-5">
             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">Conference Hall</h3>
             <p className="text-white text-sm lg:text-base w-[90%]">
@@ -138,7 +138,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Regular Offices */}
-        <div className="inset-0 card_hover bg-[url(/regular-office.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-4 lg:col-span-4 rounded-lg overflow-hidden">
+        <div className="inset-0 card_hover bg-[url(/regular-office.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-4 lg:col-span-4 rounded-lg overflow-hidden" data-aos="zoom-in">
           <div className="card_hover_animation filter flex flex-col justify-end h-full w-full p-5">
             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">Regular Offices</h3>
             <p className="text-white text-sm lg:text-base w-[90%]">
@@ -149,7 +149,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Open Workspace */}
-        <div className="inset-0 card_hover bg-[url(/im.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-8 lg:col-span-8 rounded-lg overflow-hidden">
+        <div className="inset-0 card_hover bg-[url(/im.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-8 lg:col-span-8 rounded-lg overflow-hidden" data-aos="zoom-in">
           <div className="card_hover_animation filter flex flex-col justify-end h-full w-full p-5">
             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">Open Workspace</h3>
             <p className="text-white text-sm lg:text-base w-[90%]">
@@ -160,7 +160,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Shops */}
-        <div className="inset-0 card_hover bg-[url(/slider3.jpg)] bg-cover bg-center bg-no-repeat group relative md:col-span-4 lg:col-span-4 rounded-lg overflow-hidden">
+        <div className="inset-0 card_hover bg-[url(/slider3.jpg)] bg-cover bg-center bg-no-repeat group relative md:col-span-4 lg:col-span-4 rounded-lg overflow-hidden" data-aos="zoom-in">
           <div className="card_hover_animation filter flex flex-col justify-end h-full w-full p-5">
             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">Shops</h3>
             <p className="text-white text-sm lg:text-base w-[90%]">

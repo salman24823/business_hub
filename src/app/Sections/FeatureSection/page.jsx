@@ -113,7 +113,7 @@ const FeatureSection = () => {
         </div>
         {/* Feature Cards */}
         {features.map(({ id, icon, title, description }) => (
-          <div key={id} className="vision_img feature_cards sm:col-span-1">
+          <div key={id} className="vision_img feature_cards sm:col-span-1" data-aos="zoom-in-down">
             {icon}
             <span className="sub_point">{title}</span>
             <p className="para text-center">{description}</p>
