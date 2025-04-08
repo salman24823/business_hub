@@ -1,6 +1,8 @@
 import { Button } from "@heroui/react";
 import { Section } from "lucide-react";
 import React from "react";
+import RegularofficesSpace from "./RegularofficesSpace/page";
+import Form from "../Sections/Form/page";
 
 const regularoffices = () => {
   return (
@@ -24,7 +26,8 @@ const regularoffices = () => {
           </div>
         </div>
       </div>
-      <div className="p2contant"></div>
+      <RegularofficesSpace />
+      <Form />
     </section>
   );
 };

@@ -383,8 +383,7 @@ textarea:focus {
   }
 }
 
-
-/* @layer base {
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -447,28 +446,28 @@ textarea:focus {
   body {
     @apply bg-background text-foreground;
   }
-} */
+}
 
 
 
 
 /* Base SVG styles */
-/* .svg-icon {
+.svg-icon {
   display: block;
   margin: 0 auto;
-} */
+}
 
 /* Common stroke styles for all paths */
-/* .svg-group path,
+.svg-group path,
 .svg-group polygon {
   stroke: var(--yellow-color);
   stroke-width: 2px;
   stroke-linecap: round;
   stroke-linejoin: round;
-} */
+}
 
 /* Fill colors */
-/* .svg-path-white {
+.svg-path-white {
   fill: none;
 }
 
@@ -479,7 +478,7 @@ textarea:focus {
   fill: none;}
 
 .svg-path-green {
-  fill: none;} */
+  fill: none;}
 
 /* Animation preparation - hide all paths initially */
 
@@ -489,12 +488,3 @@ textarea:focus {
     stroke-dashoffset: 0;
   }
 } */
-
-/* Hide the header when 'hide-header' class is added to the body */
-/* body.hide-header header {
-  display: none;
-}
-body.hide-footer footer {
-  display: none;
-}
->>>>>>> 8683bea36f8547ad664c5e815f2519424297767a */

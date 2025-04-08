@@ -11,6 +11,7 @@ import ServicesCards from "./Sections/ServeiceCrads/page";
 import Blank from "./Sections/Blank/page";
 import ITservices from "./Sections/ITservices/page";
 import Mission from "./Sections/Mission/page";
+import BusinessServicesSection from "./Sections/BusinessServicesSection/page";
 export default function Home() {
   return (
     <main>
@@ -20,6 +21,7 @@ export default function Home() {
       <MenuSection />
       <FeatureSection />
       <ITservices />
+      <BusinessServicesSection />
       <Mission />
       <ChooseUs />
       <TestimonialSection />
