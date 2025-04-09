@@ -27,20 +27,15 @@ const Footer = () => {
         return toast.error("Please enter a valid email.");
       }
 
-      const response = await fetch("/api/handleNewsletter", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+      const response = await fetch("/api/handleNewletter", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
       });
 
       const data = await response.json();
-      console.log(data)
-      if (!response.ok) {
-        return toast.error(data.message || "Email not added");
-      }
-
-      toast.success("Email added successfully!");
-      setEmail("");
+      setEmail(data);
     } catch (error) {
       console.error("Newsletter submission error:", error);
       toast.error("Something went wrong. Please try again.");
