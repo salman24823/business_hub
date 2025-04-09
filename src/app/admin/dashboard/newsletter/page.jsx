@@ -7,8 +7,8 @@ const Newsletter = () => {
 
   async function fetchEmails() {
     try {
-      const response = await fetch("/api/handleNewletter", {
-        method: GET,
+      const response = await fetch("/api/handleNewsletter", {
+        method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
@@ -22,7 +22,7 @@ const Newsletter = () => {
         return;
       }
 
-      setEmails(data); // Assuming API returns an array of emails
+      setEmails(data);
     } catch (error) {
       toast.error("Failed to fetch data");
     }
@@ -43,13 +43,19 @@ const Newsletter = () => {
             <tr className="bg-gray-100 text-left">
               <th className="p-3 border-b">#</th>
               <th className="p-3 border-b">Email</th>
+              <th className="p-3 border-b">Subscribed At</th> {/* 👈 New column */}
             </tr>
           </thead>
           <tbody>
-            {emails.map((item,index) => (
-              <tr key={index} className="hover:bg-gray-50">
+            {emails.map((item, index) => (
+              <tr key={item._id || index} className="hover:bg-gray-50">
                 <td className="p-3 border-b">{index + 1}</td>
                 <td className="p-3 border-b">{item.email}</td>
+                <td className="p-3 border-b">
+                  {item.createdAt
+                    ? new Date(item.createdAt).toLocaleString()
+                    : "N/A"}
+                </td>
               </tr>
             ))}
           </tbody>

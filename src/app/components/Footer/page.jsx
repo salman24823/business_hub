@@ -27,7 +27,7 @@ const Footer = () => {
         return toast.error("Please enter a valid email.");
       }
 
-      const response = await fetch("/api/handleNewletter", {
+      const response = await fetch("/api/handleNewsletter", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -36,6 +36,7 @@ const Footer = () => {
 
       const data = await response.json();
       setEmail(data);
+      setEmail("");
     } catch (error) {
       console.error("Newsletter submission error:", error);
       toast.error("Something went wrong. Please try again.");

@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     await dbConnection();
-    const newsletters = await newsletterModel.find({});
+    const newsletters = await newsletterModel.find();
 
     if (!newsletters || newsletters.length === 0) {
       return NextResponse.json(
