@@ -28,15 +28,19 @@ const Footer = () => {
       }
 
       const response = await fetch("/api/handleNewsletter", {
-        method: "GET",
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
+        body: JSON.stringify({ email }), // ← pass email in the body
       });
-
       const data = await response.json();
-      setEmail(data);
-      setEmail("");
+      if (response.ok) {
+        toast.success(data.message);
+        setEmail(""); // clear input
+      } else {
+        toast.error(data.message || "Failed to subscribe.");
+      }
     } catch (error) {
       console.error("Newsletter submission error:", error);
       toast.error("Something went wrong. Please try again.");

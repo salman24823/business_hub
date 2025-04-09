@@ -25,25 +25,28 @@ export async function GET() {
 }
 export async function POST(req) {
   try {
-    dbConnection();
+    await dbConnection();
     const { email } = await req.json();
+
     if (!email) {
       return NextResponse.json(
-        { statusCode: 400, message: "Email are Required" },
+        { statusCode: 400, message: "Email is required" },
         { status: 400 }
       );
     }
+
     const newsletter = new newsletterModel({ email });
     await newsletter.save();
+
     return NextResponse.json(
       { statusCode: 201, message: "Email saved successfully" },
       { status: 201 }
     );
   } catch (error) {
-    console.log(error);
-    return NextResponse.json({
-      message: "Server Error",
-      status: 500,
-    });
+    console.error("API Error:", error);
+    return NextResponse.json(
+      { message: "Server Error", status: 500 },
+      { status: 500 }
+    );
   }
 }
