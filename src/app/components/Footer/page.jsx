@@ -125,6 +125,18 @@ const Footer = () => {
             <Link className="ft-link" href={"/"}>
               Recruitment
             </Link>
+            <Link className="ft-link" href={"/"}>
+              <span className="flex gap-2">
+                <FaWhatsapp className="yellow w-6 h-6" />
+                Whatsapp
+              </span>
+            </Link>
+            <Link className="ft-link" href={"/"}>
+              <span className="flex gap-2">
+                <FaLinkedin className="yellow w-6 h-6" />
+                LinkedIn
+              </span>
+            </Link>
           </div>
         </div>
 
@@ -146,12 +158,6 @@ const Footer = () => {
               </Link>
               <Link className="ft-link" href={"/"}>
                 <span className="flex gap-2">
-                  <FaWhatsapp className="yellow w-6 h-6" />
-                  Whatsapp
-                </span>
-              </Link>
-              <Link className="ft-link" href={"/"}>
-                <span className="flex gap-2">
                   <Youtube className="yellow" />
                   Youtube
                 </span>
@@ -160,12 +166,6 @@ const Footer = () => {
                 <span className="flex gap-2">
                   <FaTiktok className="yellow w-6 h-6" />
                   Tiktok
-                </span>
-              </Link>
-              <Link className="ft-link" href={"/"}>
-                <span className="flex gap-2">
-                  <FaLinkedin className="yellow w-6 h-6" />
-                  LinkedIn
                 </span>
               </Link>
             </div>
