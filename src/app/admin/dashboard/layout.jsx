@@ -51,11 +51,6 @@ const Layout = ({ children }) => {
       path: "/admin/dashboard/newsletter",
       icon: <Mail className="w-5 h-5 text-gray-600" />,
     },
-    {
-      name: "Bookings",
-      path: "/admin/dashboard/booking",
-      icon: <BookCheck  className="w-5 h-5 text-gray-600" />,
-    },
   ];
 
   const logout = () => {
