@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LogOut, X, Contact, Mail } from "lucide-react"; // Assuming you're using Lucide icons
+import { LogOut, X, Contact, Mail, BookCheck } from "lucide-react"; // Assuming you're using Lucide icons
 import { Home } from "lucide-react";
 import { Button } from "@heroui/react";
 
@@ -50,6 +50,11 @@ const Layout = ({ children }) => {
       name: "NewsLetter",
       path: "/admin/dashboard/newsletter",
       icon: <Mail className="w-5 h-5 text-gray-600" />,
+    },
+    {
+      name: "Bookings",
+      path: "/admin/dashboard/booking",
+      icon: <BookCheck  className="w-5 h-5 text-gray-600" />,
     },
   ];
 
