@@ -1,49 +1,66 @@
-import Image from "next/image";
-import React from "react";
-import slider1 from "../../../../public/slider1.jpg";
-import slider2 from "../../../../public/slider2.jpg";
-import slider3 from "../../../../public/slider3.jpg";
+"use client";
+import React, { useEffect, useRef } from "react";
+import Typed from "typed.js";
+import { MonitorCheck, PencilRuler } from "lucide-react";
+import ServicesCards from "../ServeiceCrads/page";
+
 const HeroSection = () => {
+  const typedRef = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(typedRef.current, {
+      strings: ["IMMAGINATION", "CREATIVITY", "WORKING"],
+      typeSpeed: 80,
+      backSpeed: 50,
+      startDelay: 500,
+      backDelay: 1000,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
-    <main>
-      <div className="relative h-screen overflow-hidden">
-        <Image
-          src={slider1}
-          alt="Background 1"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 w-full h-full object-cover animate-zoom-fade"
-        />
-        <Image
-          src={slider2}
-          alt="Background 2"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 w-full h-full object-cover animate-zoom-fade animate-zoom-fade-delay-4"
-        />
-        <Image
-          src={slider3}
-          alt="Background 3"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 w-full h-full object-cover animate-zoom-fade animate-zoom-fade-delay-8"
-        />
-        <div className="absolute hero_back w-full h-[100vh] z-10 flex flex-col justify-center items-center">
-          <h1 className="main_heading opacity-[100%]">
-            <span className="text-[#f9d229]">Bussiness Hub</span>
-          </h1>
-          <h2 className="sub_heading text-white opacity-[100%]">
-            Coworking Creative Space
-          </h2>
-          <p className="text-center w-1/2 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            dicta reiciendis facere quae! Possimus beatae excepturi laudantium
-            repellat veritatis, odio tempora quae? Ipsum, facere iure? Velit a
-            recusandae placeat tempore!
-          </p>
-          <button className="bg-[#f9d229] px-12 py-2 rounded-lg mt-10">
-            Explore
-          </button>
+    <main className="w-full relative">
+      <div className="hero_section w-full h-[100vh] md:h-[110vh] bg-[url(/im.JPG)] bg-cover bg-no-repeat">
+        <div className="filter w-full h-[100%] px-[5%] py-[7%] flex flex-col justify-end gap-24">
+          {/* hero-text */}
+          <div className="hero_box py-[3%] px-4 nav_back w-full lg:w-[60%]">
+            <span className="text-2xl font-semibold text-white yellow">
+              BusinessHub Co-working Space
+            </span>
+            <h1 className="main_heading">THE SPACE FOR</h1>
+            <h1 className="main_heading text-yellow-400">
+              <span ref={typedRef}></span>{" "}
+            </h1>
+          </div>
+          {/* hero-icons */}
+          <div>
+          
+          </div>
+          <div className="hero_boxes flex  flex-wrap gap-10 md:gap-0 md:flex-nowrap ">
+          <ServicesCards />
+            {/* <div className="hero_card flex text-white">
+              <div className="hero_card_img p-5 blue_bg">
+                <MonitorCheck className="w-12 h-12 yellow" />
+              </div>
+              <div className="hero_card_cont px-4 flex flex-col justify-center gap-1">
+                <span className="text-2xl font-bold">IT Start Up</span>
+                <p>An ideal place to grow your business or startup.</p>
+              </div>
+            </div> */}
+            {/* <div className="hero_card flex text-white">
+              <div className="hero_card_img p-5 yellow-bg">
+                <PencilRuler className="w-12 h-12 blue" />
+              </div>
+              <div className="hero_card_cont px-4 flex flex-col justify-center gap-1">
+                <span className="text-2xl font-bold">Creative Studio</span>
+                <p>Perfect place to build your creative studio.</p>
+              </div>
+            </div> */}
+          </div>
         </div>
       </div>
     </main>
