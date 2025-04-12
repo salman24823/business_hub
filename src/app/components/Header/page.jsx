@@ -65,13 +65,13 @@ const Header = () => {
                     </span>
                   </Link>
                   <div className="p_dropdown absolute w-44 flex flex-col gap-2 blue_bg top-12">
-                    <Link href={"/"} className="drop_items px-6 py-3">
+                    <Link href={"/premiumoffices"} className="drop_items px-6 py-3">
                       Premium Office
                     </Link>
-                    <Link href={"/space"} className="drop_items px-6 py-3">
+                    <Link href={"/regularoffices"} className="drop_items px-6 py-3">
                       Regular Office
                     </Link>
-                    <Link href={"/gallery"} className="drop_items px-6 py-3">
+                    <Link href={"/openspaces"} className="drop_items px-6 py-3">
                       Open Spaces
                     </Link>
                     <Link href={"/"} className="drop_items px-6 py-3">
