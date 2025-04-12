@@ -18,8 +18,6 @@ export default function Home() {
       <HeroSection />
       <Blank />
       <AboutSection />
-      <About2 />
-
       <MenuSection />
       <FeatureSection />
       <ITservices />
