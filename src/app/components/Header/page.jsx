@@ -58,6 +58,30 @@ const Header = () => {
                     className="fade_right w-full flex flex-row items-center relative"
                   >
                     <span className="flex flex-row items-center relative gap-1">
+                      Services
+                      <span className="drop_arrow">
+                        <ChevronDown />
+                      </span>
+                    </span>
+                  </Link>
+                  <div className="p_dropdown absolute w-48 flex flex-col gap-2 blue_bg top-12">
+                    <Link href={"/premiumoffices"} className="drop_items px-4 py-3">
+                      Rental Services
+                    </Link>
+                    <Link href={"/regularoffices"} className="drop_items px-4 py-3">
+                      IT Services
+                    </Link>
+                    <Link href={"/openspaces"} className="drop_items px-4 py-3">
+                      Business Services
+                    </Link>
+                  </div>
+                </div>
+                <div className="page_dropdown relative">
+                  <Link
+                    href={"/blogs"}
+                    className="fade_right w-full flex flex-row items-center relative"
+                  >
+                    <span className="flex flex-row items-center relative gap-1">
                       Pages
                       <span className="drop_arrow">
                         <ChevronDown />

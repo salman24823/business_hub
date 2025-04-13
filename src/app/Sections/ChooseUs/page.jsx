@@ -24,7 +24,7 @@ const ChooseUs = () => {
           </div>
 
           <div className="ch_para">
-            <p className="para lg:w-3/4 ">
+            <p className="para lg:w-[90%] ">
               At our organization, we turn ideas into accomplishments — from
               sourcing to sales, from individual skills to corporate growth. We
               provide state-of-the-art office spaces with 24/7 electricity and
