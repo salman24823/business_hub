@@ -4,41 +4,25 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LogOut, X, Contact, Mail } from "lucide-react"; // Assuming you're using Lucide icons
+import { LogOut, X, Contact, Mail, BookCheck } from "lucide-react"; // Assuming you're using Lucide icons
 import { Home } from "lucide-react";
 import { Button } from "@heroui/react";
 
 const Layout = ({ children }) => {
-
   const pathname = usePathname();
 
   useEffect(() => {
     // Add a class to the body based on the current path
-    if (pathname.includes('admin')) {
-
-      document.body.classList.add('hide-header');
-      document.body.classList.add('hide-footer');
-      
-      
+    if (pathname.includes("admin")) {
+      document.body.classList.add("hide-header");
+      document.body.classList.add("hide-footer");
     } else {
-      document.body.classList.remove('hide-header');
-      document.body.classList.remove('hide-footer');
+      document.body.classList.remove("hide-header");
+      document.body.classList.remove("hide-footer");
     }
   }, [pathname]);
-  
-  
 
-  
-  
-  
-  
   const isAdmin = pathname.includes("admin"); // Check if the path contains "admin"
-
-
-
-
-
-
 
   useEffect(() => {
     if (isAdmin) {

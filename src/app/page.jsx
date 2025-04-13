@@ -26,7 +26,7 @@ export default function Home() {
       <ChooseUs />
       <TestimonialSection />
       <Form />
-      <LocationSection /> 
+      <LocationSection />
     </main>
   );
 }
