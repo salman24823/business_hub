@@ -60,7 +60,7 @@ const Form = () => {
             <span className="yellow">Have questions?</span> Fill out our form, and we’ll get back to you soon!
           </h2>
           <p className="text-white w-full md:w-[80%] blue" data-aos="fade-up" data-aos-delay="200">
-            We're here to help! Find answers to common questions about our products, services, and processes.
+            We&apos;re here to help! Find answers to common questions about our products, services, and processes.
           </p>
           <div className="ques_list text-white" data-aos="fade-up" data-aos-delay="400">
             <ul className="font-bold flex flex-col gap-4">
@@ -74,7 +74,7 @@ const Form = () => {
               </li>
               <li className="flex items-center gap-2 blue">
                 <FaRegCheckCircle className="blue" />
-                What's Your Terms and Conditions?
+                What&apos;s Your Terms and Conditions?
               </li>
               <li className="flex items-center gap-2 blue">
                 <FaRegCheckCircle className="blue" />

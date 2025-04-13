@@ -2,7 +2,7 @@ import { Button } from "@heroui/react";
 import React from "react";
 import Form from "../Sections/Form/page";
 
-const openspaces = () => {
+const OpenSpaces = () => {
   return (
     <section>
       <div className="w-full h-[100vh] bg-[url(/mazer9.JPG)] bg-cover bg-no-repeat ">
@@ -34,4 +34,4 @@ const openspaces = () => {
   );
 };
 
-export default openspaces;
+export default OpenSpaces;

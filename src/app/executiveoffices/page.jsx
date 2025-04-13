@@ -5,8 +5,10 @@ import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 import Form from "../Sections/Form/page";
+import Image from "next/image";
 
-const executiveoffices = () => {
+// const executiveoffices = () => {
+const ExecutiveOffices = () => {
   const P2Data = [
     {
       name: "One-Three Person Offices",
@@ -79,7 +81,7 @@ const executiveoffices = () => {
       const handleWheel = (e) => {
         if (container) {
           e.preventDefault(); // Prevent vertical scroll
-          
+
           // Smooth horizontal scroll with GSAP
           gsap.to(container, {
             scrollLeft: container.scrollLeft + e.deltaY, // Adjust scrolling based on wheel movement
@@ -145,7 +147,7 @@ const executiveoffices = () => {
 
       <div className="w-full bg-white flex flex-col">
         <div className="sub_heading p-[5%]">
-        Lets Build your
+          Lets Build your
           <span className="yellow"> Career </span>
           with us!
         </div>
@@ -175,7 +177,7 @@ const executiveoffices = () => {
                   style={{ width: "calc(33.333% - 16px)" }} // Exactly 1/3 of container width minus gap
                 >
                   <div className="">
-                    <img className="w-full h-auto rounded-sm" src={data.source || "/placeholder.svg"} alt="" />
+                    <Image className="w-full h-auto rounded-sm" src={data.source || "/placeholder.svg"} alt="" />
                   </div>
                   <div className="flex flex-col gap-3 rounded-sm p-3">
                     <strong className="font-bold text-xl">{data.name}</strong>
@@ -193,5 +195,5 @@ const executiveoffices = () => {
   );
 };
 
-export default executiveoffices;
+export default ExecutiveOffices;
 
