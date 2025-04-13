@@ -1,5 +1,6 @@
 import { Button } from "@heroui/react";
 import React from "react";
+import Form from "../Sections/Form/page";
 
 const openspaces = () => {
   return (
@@ -25,7 +26,10 @@ const openspaces = () => {
           </div>
         </div>
       </div>
-      <div className="p2contant"></div>
+      <div className="p2contant">
+        
+      </div>
+      <Form />
     </section>
   );
 };
