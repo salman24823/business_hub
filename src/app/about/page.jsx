@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { Award, Users, MessageSquare } from "lucide-react";
+import image1 from "../../../public/about1.JPG"
+import image2 from "../../../public/about2.jpeg"
+import image3 from "../../../public/about3.jpg"
+import image4 from "../../../public/about4.jpg"
 
 export default function AboutUsPage() {
   return (
@@ -12,8 +16,8 @@ export default function AboutUsPage() {
               <h1 className="sub_heading w-full text-center yellow">
                 <span className="">About</span> Us
               </h1>
-              <p className="text-xl text-white mb-8">
-                Creating innovative workspaces for tomorrow's visionaries
+              <p className="text-xl text-white mb-8 text-center px-2">
+                Creating innovative workspaces for tomorrow&rsquo;s visionaries
               </p>
             </div>
           </div>
@@ -31,7 +35,7 @@ export default function AboutUsPage() {
               <div className="w-20 h-1 bg-yellow-400 flex flex-col gap-"></div>
               <div className="flex flex-col gap-4 lg:w-[90%] py-3">
               <p className="text-gray-600 ">
-                At Business Hub, we don’t just build businesses — we build
+                At Business Hub, we don&rsquo;t just build businesses — we build
                 futures.
               </p>
               <p className="text-gray-600 ">
@@ -47,7 +51,7 @@ export default function AboutUsPage() {
               </p>
               <p className="text-gray-600">
                 Led by a visionary CEO driven by innovation and
-                entrepreneurship, we’re here to support every step of your
+                entrepreneurship, we&rsquo;re here to support every step of your
                 journey — from your first day to your biggest breakthrough.
               </p>
               </div>
@@ -55,7 +59,7 @@ export default function AboutUsPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-lg overflow-hidden h-64 shadow-md">
                 <Image
-                  src="/placeholder.svg?height=500&width=400"
+                  src={image1}
                   alt="Office Space 1"
                   width={400}
                   height={500}
@@ -64,7 +68,7 @@ export default function AboutUsPage() {
               </div>
               <div className="rounded-lg overflow-hidden h-64 mt-8 shadow-md">
                 <Image
-                  src="/placeholder.svg?height=500&width=400"
+                  src={image2}
                   alt="Office Space 2"
                   width={400}
                   height={500}
@@ -73,7 +77,7 @@ export default function AboutUsPage() {
               </div>
               <div className="rounded-lg overflow-hidden h-64 mt-8 shadow-md">
                 <Image
-                  src="/placeholder.svg?height=500&width=400"
+                  src={image3}
                   alt="Office Space 3"
                   width={400}
                   height={500}
@@ -82,7 +86,7 @@ export default function AboutUsPage() {
               </div>
               <div className="rounded-lg overflow-hidden h-64 shadow-md">
                 <Image
-                  src="/placeholder.svg?height=500&width=400"
+                  src={image4}
                   alt="Office Space 4"
                   width={400}
                   height={500}
@@ -145,7 +149,7 @@ export default function AboutUsPage() {
               </h3>
               <p className="text-gray-600">
                 We embrace innovation and continuously seek new ways to enhance
-                our spaces, services, and member experiences. We're committed to
+                our spaces, services, and member experiences. W&rsquo;re committed to
                 staying ahead of trends and anticipating the future needs of
                 businesses.
               </p>

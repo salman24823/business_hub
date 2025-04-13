@@ -44,9 +44,9 @@ const Mission = () => {
             At Business Hub, we believe in transforming ideas into
             achievements. From sourcing to sales, skill development to
             professionalism, and individuals to thriving corporate teams — we
-            are with you every step of the way. Whether you're just beginning or
+            are with you every step of the way. Whether you&apos;re just beginning or
             aiming for greatness, we provide the platform to grow. Here, a
-            fresher today can become a General Manager tomorrow. We don’t just
+            fresher today can become a General Manager tomorrow. We don&apos;t just
             groom businesses — we shape personalities, build confidence, and
             unlock true potential. Our mission is to support every journey.
           </p>

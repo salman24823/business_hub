@@ -1,11 +1,6 @@
 "use client"
 import React, { useEffect } from "react";
 import Image from "next/image";
-import ceo from "../../../../public/ceo.jpg";
-import about_img from "../../../../public/about.png";
-import { HiMiniBuildingOffice2 } from "react-icons/hi2";
-import { PiOfficeChairFill } from "react-icons/pi";
-
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, BarChart3, Building2, Users, Zap } from "lucide-react";
 import { Button } from "@heroui/react";

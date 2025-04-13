@@ -5,11 +5,12 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import Form from "../Sections/Form/page";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from "next/image";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-const premiumoffices = () => {
+const PremiumOffices = () => {
   const Edata = [
     {
       name: "One-Three Person Offices",
@@ -140,7 +141,7 @@ const premiumoffices = () => {
                 style={{ width: "calc(33.333% - 16px)" }} // Exactly 1/3 of container width minus gap
               >
                 <div className="">
-                  <img
+                  <Image
                     className="w-full h-auto rounded-sm"
                     src={data.source || "/placeholder.svg"}
                     alt=""
@@ -174,4 +175,4 @@ const premiumoffices = () => {
   );
 };
 
-export default premiumoffices;
+export default PremiumOffices;

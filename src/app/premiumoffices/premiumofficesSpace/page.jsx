@@ -4,8 +4,9 @@ import { Button } from "@heroui/react"
 import { useRef, useEffect } from "react"
 import gsap from "gsap"
 import { Draggable } from "gsap/Draggable"
+import Image from "next/image"
 
-const premiumofficeSpace = () => {
+const PremiumOfficeSpace = () => {
   const scrollContainerRef = useRef(null)
 
   const Edata = [
@@ -117,7 +118,7 @@ const premiumofficeSpace = () => {
               style={{ width: "calc(33.333% - 16px)" }} // Exactly 1/3 of container width minus gap
             >
               <div className="">
-                <img className="w-full h-auto rounded-sm" src={data.source || "/placeholder.svg"} alt="" />
+                <Image className="w-full h-auto rounded-sm" src={data.source || "/placeholder.svg"} alt="" />
               </div>
               <div className="flex flex-col gap-3 rounded-sm p-3">
                 <strong className="font-bold text-xl">{data.name}</strong>
@@ -132,7 +133,7 @@ const premiumofficeSpace = () => {
   )
 }
 
-export default premiumofficeSpace
+export default PremiumOfficeSpace
 
 
 

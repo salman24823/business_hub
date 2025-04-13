@@ -7,7 +7,7 @@ const VisionSection = () => {
         {/* Right-side (Text Content) */}
         <div className="w-full lg:w-1/2 text-center lg:text-left space-y-3">
           <span className="point yellow">Our Vision</span>
-          <h2 className="sub_heading blue">One Space for Everyone's Needs</h2>
+          <h2 className="sub_heading blue">One Space for Everyone&apos;s Needs</h2>
           <p className="text-gray-600">
             We provide dynamic, fully equipped workspaces designed to foster
             innovation, collaboration, and productivity. Our modern office
@@ -16,7 +16,7 @@ const VisionSection = () => {
             creativity and efficiency. With state-of-the-art amenities,
             high-speed internet, ergonomic furniture, and fully serviced meeting
             rooms, our workspaces are tailored to support your business needs.
-            Whether you're looking for a private office, a shared coworking
+            Whether you&apos;re looking for a private office, a shared coworking
             space, or a dedicated desk, we offer flexible plans that adapt to
             your evolving requirements.
           </p>

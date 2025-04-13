@@ -96,9 +96,9 @@ const TestimonialSection = () => {
               CUSTOMER <span className="yellow">TESTIMONIAL</span>
             </h1>
             <p className="para">
-              "See what our satisfied clients have to say about their experience
+              &quot;See what our satisfied clients have to say about their experience
               with us. Real feedback from businesses that found their perfect
-              workspace!"
+              workspace!&quot;
             </p>
             <Button className="yellow-bg abt_btn p-8 font-bold rounded-lg text-white">
               Explore more
