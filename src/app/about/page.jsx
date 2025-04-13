@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Award, Users, MessageSquare } from "lucide-react";
 import image1 from "../../../public/about1.JPG"
 import image2 from "../../../public/about2.jpeg"
-import image3 from "../../../public/abt3.JPG"
+import image3 from "../../../public/about3.JPG"
 import image4 from "../../../public/about4.jpg"
 
 export default function AboutUsPage() {
