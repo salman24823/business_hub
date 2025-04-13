@@ -95,11 +95,11 @@ const Header = () => {
                     <Link href={"/regularoffices"} className="drop_items px-6 py-3">
                       Regular Office
                     </Link>
-                    <Link href={"/openspaces"} className="drop_items px-6 py-3">
+                    {/* <Link href={"/openspaces"} className="drop_items px-6 py-3">
                       Open Spaces
-                    </Link>
-                    <Link href={"/"} className="drop_items px-6 py-3">
-                      Contact
+                    </Link> */}
+                    <Link href={"/blogs"} className="drop_items px-6 py-3">
+                      Blogs
                     </Link>
                   </div>
                 </div>
