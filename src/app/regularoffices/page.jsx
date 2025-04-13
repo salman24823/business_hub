@@ -80,7 +80,7 @@ const RegularOffices = () => {
       const handleWheel = (e) => {
         if (container) {
           e.preventDefault(); // Prevent vertical scroll
-          
+
           // Smooth horizontal scroll with GSAP
           gsap.to(container, {
             scrollLeft: container.scrollLeft + e.deltaY, // Adjust scrolling based on wheel movement
@@ -109,16 +109,21 @@ const RegularOffices = () => {
         { threshold: 0.5 }
       );
 
-      if (sectionRef.current) {
-        observer.observe(sectionRef.current); // Observe the section
+      const sectionElement = sectionRef.current;
+
+      if (sectionElement) {
+        observer.observe(sectionElement); // Observe the section
       }
 
       return () => {
         container.removeEventListener("wheel", handleWheel);
-        if (sectionRef.current) {
-          observer.unobserve(sectionRef.current);
+        if (sectionElement) {
+          observer.unobserve(sectionElement); // Use the same ref as above
         }
       };
+
+
+
     }
   }, []);
 
@@ -146,7 +151,7 @@ const RegularOffices = () => {
 
       <div className="w-full bg-white flex flex-col">
         <div className="sub_heading p-[5%]">
-        Lets Build your
+          Lets Build your
           <span className="yellow"> Career </span>
           with us!
         </div>
