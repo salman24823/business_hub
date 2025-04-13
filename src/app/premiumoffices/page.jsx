@@ -1,10 +1,13 @@
 "use client"; // Add this at the top of the file to make this a client-side component
 
 import { Button } from "@heroui/react";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
-import { Draggable } from "gsap/Draggable";
 import Form from "../Sections/Form/page";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const premiumoffices = () => {
   const Edata = [
@@ -13,116 +16,82 @@ const premiumoffices = () => {
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
       source: "/v2.JPG",
+      buttonText: "Book Now"
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
       source: "/v2.JPG",
+      buttonText: "Book Now"
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
       source: "/v2.JPG",
+      buttonText: "Book Now"
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
       source: "/v2.JPG",
+      buttonText: "Book Now"
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
       source: "/v2.JPG",
+      buttonText: "Book Now"
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
       source: "/v2.JPG",
+      buttonText: "Book Now"
     },
+    {
+      name: "",
+      discription:
+        "",
+      source: "",
+      buttonText: ""
+    }
   ];
 
-  const scrollContainerRef = useRef(null);
-  const sectionRef = useRef(null);
-  const [isHorizontalScrollActive, setIsHorizontalScrollActive] =
-    useState(false);
-  const [isScrolling, setIsScrolling] = useState(false); // Whether the user is scrolling horizontally or vertically
-
   useEffect(() => {
-    // Register Draggable plugin
-    gsap.registerPlugin(Draggable);
+    const components = document.querySelectorAll(".components");
+    const container = document.getElementById("container");
 
-    const container = scrollContainerRef.current;
-
-    if (container) {
-      // Create a draggable instance for horizontal scrolling
-      Draggable.create(container, {
-        type: "x",
-        bounds: {
-          minX: -container.scrollWidth + container.clientWidth,
-          maxX: 0,
-        },
-        inertia: true,
-        edgeResistance: 0.65,
-        throwProps: true,
-        onDrag: function () {
-          // Use GSAP to animate the scroll position for smoother drag movement
-          gsap.to(container, {
-            scrollLeft: container.scrollLeft,
-            duration: 0.5,
-            ease: "power1.out",
-          });
-        },
-      });
-
-      // Add wheel event listener to handle mouse scroll for horizontal scroll
-      const handleWheel = (e) => {
-        if (container) {
-          e.preventDefault(); // Prevent vertical scroll
-
-          // Smooth horizontal scroll with GSAP
-          gsap.to(container, {
-            scrollLeft: container.scrollLeft + e.deltaY, // Adjust scrolling based on wheel movement
-            duration: 0.5,
-            ease: "power1.out",
-          });
-
-          // Mark horizontal scroll active
-          setIsHorizontalScrollActive(true);
-        }
-      };
-
-      container.addEventListener("wheel", handleWheel);
-
-      // Intersection observer for detecting when the section is in view
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setIsScrolling(true); // Activate horizontal scrolling when section comes into view
-            } else {
-              setIsScrolling(false); // Deactivate horizontal scroll once section is out of view
-            }
-          });
-        },
-        { threshold: 0.5 }
+    if (components.length && container) {
+      // Calculate total width of all components
+      const totalWidth = Array.from(components).reduce(
+        (sum, comp) => sum + comp.offsetWidth,
+        0
       );
 
-      if (sectionRef.current) {
-        observer.observe(sectionRef.current); // Observe the section
-      }
+      // Calculate how much we need to scroll (total width - container width)
+      const scrollDistance = totalWidth - container.offsetWidth;
 
-      return () => {
-        container.removeEventListener("wheel", handleWheel);
-        if (sectionRef.current) {
-          observer.unobserve(sectionRef.current);
+      gsap.to(components, {
+        x: () => -scrollDistance,
+        ease: "none",
+        scrollTrigger: {
+          trigger: container,
+          pin: true,
+          scrub: 1,
+          end: () => `+=${scrollDistance}`,
+          invalidateOnRefresh: true
         }
-      };
+      });
     }
+
+    return () => {
+      ScrollTrigger.getAll().forEach(instance => instance.kill());
+    };
   }, []);
 
   return (
@@ -148,253 +117,61 @@ const premiumoffices = () => {
         </div>
       </div>
 
-      <div className="w-full bg-white flex flex-col">
-        <div className="sub_heading p-[5%]">
+      <div
+        id='container'
+        className="w-full bg-white flex flex-col">
+
+        <div 
+        
+        className="sub_heading p-[5%]">
           <span className="yellow">Premium</span> Offices
         </div>
 
-        <div className="overflow-hidden w-full">
+        <div className="  w-full">
+
           <div
-            ref={sectionRef}
-            className="overflow-hidden w-full"
-            style={{
-              paddingBottom: "20px",
-            }}
+            className="flex gap-4 overflow-x-hidden border-gray-300 border-t px-[5%]"
           >
-            <div
-              ref={scrollContainerRef}
-              className="flex gap-4 cursor-grab active:cursor-grabbing  border-gray-300 border-t px-[5%]"
-              style={{
-                overflowX: "auto",
-                scrollbarWidth: "none",
-                msOverflowStyle: "none",
-                WebkitOverflowScrolling: "touch",
-              }}
-            >
-              {Edata.map((data, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-8 border-gray-300 border-r"
-                  style={{ width: "calc(33.333% - 16px)" }} // Exactly 1/3 of container width minus gap
-                >
-                  <div className="">
-                    <img
-                      className="w-full h-auto rounded-sm"
-                      src={data.source || "/placeholder.svg"}
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex flex-col gap-3 rounded-sm p-3">
-                    <strong className="font-bold text-xl">{data.name}</strong>
-                    <p className="para text-sm">{data.discription}</p>
-                    <Button className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm">
-                      Book now
-                    </Button>
-                  </div>
+
+            {Edata.map((data, index) => (
+              <div
+                key={index}
+                className="components flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-8 border-gray-300 border-r"
+                style={{ width: "calc(33.333% - 16px)" }} // Exactly 1/3 of container width minus gap
+              >
+                <div className="">
+                  <img
+                    className="w-full h-auto rounded-sm"
+                    src={data.source || "/placeholder.svg"}
+                    alt=""
+                  />
                 </div>
-              ))}
-            </div>
+
+                <div className="flex flex-col gap-3 rounded-sm p-3">
+                  <strong className="font-bold text-xl">{data.name}</strong>
+                  <p className="para text-sm">{data.discription}</p>
+                  {
+                    data.buttonText !== "" ?
+
+                      <Button className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm">
+                        {data.buttonText}
+                      </Button>
+                      :
+                      ""
+                  }
+                </div>
+              </div>
+            ))}
+
+            {/* <div className="components w-40 h-auto">ASD</div> */}
+
           </div>
         </div>
       </div>
+
       <Form />
     </section>
   );
 };
 
 export default premiumoffices;
-
-// "use client"
-
-// import { Button } from "@heroui/react";
-// import React, { useRef, useEffect } from "react";
-// import gsap from "gsap";
-// import { Draggable } from "gsap/Draggable";
-
-// const premiumoffices = () => {
-//   // Data for the P2 Offices
-//   const Edata = [
-//     {
-//       name: "One-Three Person Offices",
-//       discription:
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-//       source: "/v2.JPG",
-//     },
-//     {
-//       name: "One-Three Person Offices",
-//       discription:
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-//       source: "/v2.JPG",
-//     },
-//     {
-//       name: "One-Three Person Offices",
-//       discription:
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-//       source: "/v2.JPG",
-//     },
-//     {
-//       name: "One-Three Person Offices",
-//       discription:
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-//       source: "/v2.JPG",
-//     },
-//     {
-//       name: "One-Three Person Offices",
-//       discription:
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-//       source: "/v2.JPG",
-//     },
-//     {
-//       name: "One-Three Person Offices",
-//       discription:
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-//       source: "/v2.JPG",
-//     },
-//   ];
-
-//   const scrollContainerRef = useRef(null);
-
-//   useEffect(() => {
-//     // Register Draggable plugin
-//     gsap.registerPlugin(Draggable);
-
-//     const container = scrollContainerRef.current;
-
-//     if (container) {
-//       // Create a draggable instance for horizontal scrolling
-//       Draggable.create(container, {
-//         type: "x",
-//         bounds: { minX: -container.scrollWidth + container.clientWidth, maxX: 0 },
-//         inertia: true,
-//         edgeResistance: 0.65,
-//         throwProps: true,
-//         onDrag: function () {
-//           // Use GSAP to animate the scroll position for smoother drag movement
-//           gsap.to(container, {
-//             scrollLeft: container.scrollLeft,
-//             duration: 0.5,
-//             ease: "power1.out",
-//           });
-//         },
-//       });
-
-//       // Add mouse wheel support for horizontal scrolling
-//       const handleWheel = (e) => {
-//         if (container) {
-//           e.preventDefault();
-//           // Smooth scroll with GSAP
-//           gsap.to(container, {
-//             scrollLeft: container.scrollLeft + e.deltaY,
-//             duration: 0.5,
-//             ease: "power1.out",
-//           });
-//         }
-//       };
-
-//       container.addEventListener("wheel", handleWheel);
-
-//       return () => {
-//         container.removeEventListener("wheel", handleWheel);
-//       };
-//     }
-//   }, []);
-
-//   return (
-//     <section>
-//       <div className="w-full h-[100vh] bg-[url(/p2-banner2.JPG)] bg-cover bg-no-repeat ">
-//         <div className="filter p-[5%] w-full h-full flex items-center">
-//           <div className="flex flex-col gap-4">
-//             <h1 className="main_heading">
-//               <span className="yellow">P2</span> Offices
-//             </h1>
-//             <p className="text-white p2para">
-//               The P2 office at Businesshub Workspace is a collaborative space
-//               designed for freelancers and small teams, offering a productive
-//               environment for 5-6 people to work seamlessly together.
-//             </p>
-//             <div>
-//               <Button className="rounded-md yellow-bg font-bold text-whi">
-//                 Book Now
-//               </Button>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       <div className="w-full bg-white flex flex-col">
-//         <div className="sub_heading p-[5%]">
-//           <span className="yellow">P2</span> Offices
-//         </div>
-
-//         <div className="overflow-hidden w-full">
-//           <div
-//             ref={scrollContainerRef}
-//             className="flex gap-4 cursor-grab active:cursor-grabbing  border-gray-300 border-t px-[5%]"
-//             style={{
-//               overflowX: "auto",
-//               scrollbarWidth: "none",
-//               msOverflowStyle: "none",
-//               WebkitOverflowScrolling: "touch",
-//               paddingBottom: "20px",
-//             }}
-//           >
-//             {Edata.map((data, index) => (
-//               <div
-//                 key={index}
-//                 className="flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-8 border-gray-300 border-r"
-//                 style={{ width: "calc(33.333% - 16px)" }} // Exactly 1/3 of container width minus gap
-//               >
-//                 <div className="">
-//                   <img className="w-full h-auto rounded-sm" src={data.source || "/placeholder.svg"} alt="" />
-//                 </div>
-//                 <div className="flex flex-col gap-3 rounded-sm p-3">
-//                   <strong className="font-bold text-xl">{data.name}</strong>
-//                   <p className="para text-sm">{data.discription}</p>
-//                   <Button className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm">Book now</Button>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-// =============
-// export default premiumoffices;
-
-// import { Button } from "@heroui/react";
-// import { Section } from "lucide-react";
-// import React from "react";
-// import premiumofficesSpace from "./premiumofficesSpace/page";
-// import Form from "../Sections/Form/page";
-
-// const premiumoffices = () => {
-//   return (
-//     <section>
-//       <div className="w-full h-[100vh] bg-[url(/p2-banner2.JPG)] bg-cover bg-no-repeat ">
-//         <div className="filter p-[5%] w-full h-full flex items-center">
-//           <div className="flex flex-col gap-4">
-//             <h1 className="main_heading">
-//               <span className="yellow">P2</span> Offices
-//             </h1>
-//             <p className="text-white p2para">
-//               The P2 office at Businesshub Workspace is a collaborative space
-//               designed for freelancers and small teams, offering a productive
-//               environment for 5-6 people to work seamlessly together.
-//             </p>
-//             <div>
-//               <Button className="rounded-md yellow-bg font-bold text-whi">
-//                 Book Now
-//               </Button>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//       <premiumofficesSpace />
-//       <Form />
-//     </section>
-//   );
-// };
-
-// export default premiumoffices;
