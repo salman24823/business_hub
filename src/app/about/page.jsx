@@ -16,7 +16,7 @@ export default function AboutUsPage() {
               <h1 className="sub_heading w-full text-center yellow">
                 <span className="">About</span> Us
               </h1>
-              <p className="text-xl text-white mb-8">
+              <p className="text-xl text-white mb-8 text-center px-2">
                 Creating innovative workspaces for tomorrow's visionaries
               </p>
             </div>
