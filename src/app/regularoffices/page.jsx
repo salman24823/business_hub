@@ -145,7 +145,9 @@ const regularoffices = () => {
 
       <div className="w-full bg-white flex flex-col">
         <div className="sub_heading p-[5%]">
-          <span className="yellow">P2</span> Offices
+        Lets Build your
+          <span className="yellow"> Career </span>
+          with us!
         </div>
 
         <div className="overflow-hidden w-full">
@@ -158,7 +160,7 @@ const regularoffices = () => {
           >
             <div
               ref={scrollContainerRef}
-              className="flex gap-4 cursor-grab active:cursor-grabbing  border-gray-300 border-t px-[5%]"
+              className="flex  cursor-grab active:cursor-grabbing  border-gray-300 border-t px-[5%]"
               style={{
                 overflowX: "auto",
                 scrollbarWidth: "none",
