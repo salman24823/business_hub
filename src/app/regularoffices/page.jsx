@@ -12,37 +12,37 @@ const regularoffices = () => {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/vision4.JPG",
+      source: "/p11.JPG",
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/vision4.JPG",
+      source: "/p12.JPG",
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/vision4.JPG",
+      source: "/p15.JPG",
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/vision4.JPG",
+      source: "/p16.JPG",
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/vision4.JPG",
+      source: "/p21.JPG",
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/vision4.JPG",
+      source: "/p22.JPG",
     },
   ];
 

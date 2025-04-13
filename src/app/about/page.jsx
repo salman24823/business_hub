@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { Award, Users, MessageSquare } from "lucide-react";
+import image1 from "../../../public/about1.JPG"
+import image2 from "../../../public/about2.jpeg"
+import image3 from "../../../public/abt3.JPG"
+import image4 from "../../../public/about4.jpg"
 
 export default function AboutUsPage() {
   return (
@@ -55,7 +59,7 @@ export default function AboutUsPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-lg overflow-hidden h-64 shadow-md">
                 <Image
-                  src="/placeholder.svg?height=500&width=400"
+                  src={image1}
                   alt="Office Space 1"
                   width={400}
                   height={500}
@@ -64,7 +68,7 @@ export default function AboutUsPage() {
               </div>
               <div className="rounded-lg overflow-hidden h-64 mt-8 shadow-md">
                 <Image
-                  src="/placeholder.svg?height=500&width=400"
+                  src={image2}
                   alt="Office Space 2"
                   width={400}
                   height={500}
@@ -73,7 +77,7 @@ export default function AboutUsPage() {
               </div>
               <div className="rounded-lg overflow-hidden h-64 mt-8 shadow-md">
                 <Image
-                  src="/placeholder.svg?height=500&width=400"
+                  src={image3}
                   alt="Office Space 3"
                   width={400}
                   height={500}
@@ -82,7 +86,7 @@ export default function AboutUsPage() {
               </div>
               <div className="rounded-lg overflow-hidden h-64 shadow-md">
                 <Image
-                  src="/placeholder.svg?height=500&width=400"
+                  src={image4}
                   alt="Office Space 4"
                   width={400}
                   height={500}
