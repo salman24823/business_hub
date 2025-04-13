@@ -6,16 +6,16 @@ import { Spinner } from "@heroui/react";
 
 const HeroSection = () => {
   const typedRef = useRef(null);
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1500);
 
-    return () => clearTimeout(timer); // Clean up the timeout
-  }, []);
+  //   return () => clearTimeout(timer); // Clean up the timeout
+  // }, []);
 
   useEffect(() => {
 
