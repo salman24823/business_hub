@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./../../../../public/logo.svg";
 import workspace from "../../../../public/workspace.png";
 import Image from "next/image";
@@ -11,13 +11,49 @@ import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { TbClockHour8Filled } from "react-icons/tb";
 import { ChevronDown, ChevronUp, MenuIcon, X } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const offset = -70; // adjust if your header height changes
+      const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: sectionTop + offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleScroll = (id) => {
+    if (pathname === "/") {
+      scrollToSection(id);
+    } else {
+      router.push(`/#${id}`);
+    }
+  };
+
+  useEffect(() => {
+    if (pathname === "/") {
+      const hash = window.location.hash;
+      if (hash) {
+        const id = hash.replace("#", "");
+        setTimeout(() => {
+          scrollToSection(id);
+        }, 300);
+      }
+    }
+  }, [pathname]);
+
   return (
     <main className="">
       <header className="px-[5%] font-bold text-white bg-transparent absolute w-full z-10">
@@ -26,7 +62,7 @@ const Header = () => {
             <div className="clock flex items-center gap-2">
               <TbClockHour8Filled className="yellow text-xl" />
               <span className="font-semibold">
-              Open 24/7 We&rsquo;re always here for you!
+                Open 24/7 We&rsquo;re always here for you!
               </span>
             </div>
             <div className="social_links flex gap-8 items-center">
@@ -42,7 +78,11 @@ const Header = () => {
               <h1 className="yellow text-lg lg:text-[2.2rem] mt-2 flex gap-1">
                 BUSINESS <span className=""> HUB</span>
               </h1>
-              <Image alt="workspace" src={workspace} className="w-16 lg:w-44 hidden md:block" />
+              <Image
+                alt="workspace"
+                src={workspace}
+                className="w-16 lg:w-44 hidden md:block"
+              />
             </div>
             <div className="flex items-center gap-10">
               <div className="nav-links flex gap-6 items-center">
@@ -53,9 +93,9 @@ const Header = () => {
                   About
                 </Link>
                 <div className="page_dropdown relative">
-                  <Link
-                    href={"/blogs"}
-                    className="fade_right w-full flex flex-row items-center relative"
+                  <div
+                    className="fade_right w-full flex flex-row items-center relative cursor-pointer"
+                    onClick={() => handleScroll("service")}
                   >
                     <span className="flex flex-row items-center relative gap-1">
                       Services
@@ -63,17 +103,26 @@ const Header = () => {
                         <ChevronDown />
                       </span>
                     </span>
-                  </Link>
+                  </div>
                   <div className="p_dropdown absolute w-48 flex flex-col gap-2 blue_bg top-12">
-                    <Link href={"/premiumoffices"} className="drop_items px-4 py-3">
+                    <span
+                      className="drop_items px-4 py-3 cursor-pointer"
+                      onClick={() => handleScroll("service")}
+                    >
                       Rental Services
-                    </Link>
-                    <Link href={"/regularoffices"} className="drop_items px-4 py-3">
+                    </span>
+                    <span
+                      className="drop_items px-4 py-3 cursor-pointer"
+                      onClick={() => handleScroll("IT-service")}
+                    >
                       IT Services
-                    </Link>
-                    <Link href={"/openspaces"} className="drop_items px-4 py-3">
+                    </span>
+                    <span
+                      className="drop_items px-4 py-3 cursor-pointer"
+                      onClick={() => handleScroll("bussiness")}
+                    >
                       Business Services
-                    </Link>
+                    </span>
                   </div>
                 </div>
                 <div className="page_dropdown relative">
@@ -89,18 +138,27 @@ const Header = () => {
                     </span>
                   </Link>
                   <div className="p_dropdown absolute w-44 flex flex-col gap-2 blue_bg top-12">
-                    <Link href={"/premiumoffices"} className="drop_items px-6 py-3">
+                    <Link
+                      href={"/premiumoffices"}
+                      className="drop_items px-6 py-3"
+                    >
                       Premium Office
                     </Link>
-                    <Link href={"/regularoffices"} className="drop_items px-6 py-3">
+                    <Link
+                      href={"/regularoffices"}
+                      className="drop_items px-6 py-3"
+                    >
                       Regular Office
                     </Link>
                     <Link href={"/openspaces"} className="drop_items px-6 py-3">
                       Open Spaces
                     </Link>
-                    <Link href={"/"} className="drop_items px-6 py-3">
+                    <span
+                      className="drop_items px-6 py-3 cursor-pointer"
+                      onClick={() => handleScroll("contact")}
+                    >
                       Contact
-                    </Link>
+                    </span>
                   </div>
                 </div>
                 <Link href={"/contact"} className="fade_right">
@@ -148,9 +206,15 @@ const Header = () => {
               <Link href="/blogs" className="text-lg" onClick={toggleMenu}>
                 Blogs
               </Link>
-              <Link href="/contact" className="text-lg" onClick={toggleMenu}>
+              <span
+                onClick={() => {
+                  toggleMenu();
+                  handleScroll("contact");
+                }}
+                className="text-lg cursor-pointer"
+              >
                 Contact
-              </Link>
+              </span>
               <Link href="/gallery" className="text-lg" onClick={toggleMenu}>
                 Gallery
               </Link>
