@@ -3,34 +3,34 @@ import { Building2, HandCoins, Wifi } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { PiHandCoinsBold } from "react-icons/pi";
 
-const features = [
-  {
-    icon: <PiHandCoinsBold className="w-16 h-16 blue" />,
-    title: "Competitive Price",
-    description:
-      "We offer the most competitive rental prices in the market, ensuring affordability without compromising on quality.",
-  },
-  {
-    icon: <Wifi className="w-16 h-16 blue" />,
-    title: "Best Connection",
-    description:
-      "Our properties provide high-speed internet and seamless connectivity to keep your business running smoothly.",
-  },
-  {
-    icon: <Building2 className="w-16 h-16 blue" />,
-    title: "Large Buildings",
-    description:
-      "Spacious and well-structured buildings that cater to the needs of IT startups and growing businesses.",
-  },
-];
-
-const stats = [
-  { label: "Services", percentage: 90, width: "w-[90%]" },
-  { label: "Offices", percentage: 70, width: "w-[70%]" },
-  { label: "Hospitality", percentage: 99, width: "w-[97%]" },
-];
-
 const AboutEndSection = () => {
+  const features = [
+    {
+      icon: <PiHandCoinsBold className="w-16 h-16 blue" />,
+      title: "Competitive Price",
+      description:
+        "We offer the most competitive rental prices in the market, ensuring affordability without compromising on quality.",
+    },
+    {
+      icon: <Wifi className="w-16 h-16 blue" />,
+      title: "Best Connection",
+      description:
+        "Our properties provide high-speed internet and seamless connectivity to keep your business running smoothly.",
+    },
+    {
+      icon: <Building2 className="w-16 h-16 blue" />,
+      title: "Large Buildings",
+      description:
+        "Spacious and well-structured buildings that cater to the needs of IT startups and growing businesses.",
+    },
+  ];
+
+  const stats = [
+    { label: "Services", percentage: 90, width: "w-[90%]" },
+    { label: "Offices", percentage: 70, width: "w-[70%]" },
+    { label: "Hospitality", percentage: 99, width: "w-[97%]" },
+  ];
+
   const [counters, setCounters] = useState(stats.map(() => 0));
 
   useEffect(() => {
