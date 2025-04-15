@@ -119,7 +119,7 @@ const RegularOffices = () => {
         </div>
 
         <div className="w-full">
-          <div className="flex gap-4 overflow-x-hidden border-t border-gray-300 px-4">
+          <div className="flex gap-4 overflow-x-hidden border-t border-gray-300 px-[5%]">
             {Edata.map((data, index) => (
               <div
                 key={index}
