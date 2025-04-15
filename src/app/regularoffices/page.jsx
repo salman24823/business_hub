@@ -119,14 +119,16 @@ const RegularOffices = () => {
         </div>
 
         <div className="w-full">
-          <div className="flex gap-4 overflow-x-hidden border-t border-gray-300 px-4">
+          <div className="flex gap-4 overflow-x-hidden border-gray-300 border-t px-[5%]">
             {Edata.map((data, index) => (
               <div
                 key={index}
-                className="components flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-4 border-r border-gray-300 w-[350px]" 
+                className="components flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-8 border-gray-300 border-r"
+                style={{ width: "calc(33.333% - 16px)" }}
               >
+                {/* 👇 Proper Image Wrapper */}
                 {data.source !== "" && (
-                  <div className="relative w-full h-48">
+                  <div className="relative w-full h-64">
                     <Image
                       src={data.source || "/placeholder.svg"}
                       alt=""
@@ -136,8 +138,8 @@ const RegularOffices = () => {
                   </div>
                 )}
 
-                <div className="flex flex-col gap-3 rounded-sm p-3 w-full">
-                  <strong className="font-bold text-lg">{data.name}</strong>
+                <div className="flex flex-col gap-3 rounded-sm p-3">
+                  <strong className="font-bold text-xl">{data.name}</strong>
                   <p className="para text-sm">{data.discription}</p>
                   {data.buttonText !== "" && (
                     <Button className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm">
