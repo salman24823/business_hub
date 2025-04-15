@@ -106,7 +106,7 @@ const RegularOffices = () => {
               customers.
             </p>
             <div>
-              <Button className="rounded-md yellow-bg font-bold text-whi">
+              <Button className="rounded-md yellow-bg font-bold text-white">
                 Book Now
               </Button>
             </div>
@@ -115,21 +115,21 @@ const RegularOffices = () => {
       </div>
 
       <div id="container" className="w-full bg-white flex flex-col">
-        <div className="sub_heading p-[5%]">
+        <div className="sub_heading py-[3%] px-[5%]">
           <span className="yellow">Premium</span> Offices
         </div>
 
         <div className="w-full">
-          <div className="flex gap-4 overflow-x-hidden border-gray-300 border-t px-[5%]">
+          <div className="flex  overflow-x-hidden border-gray-300 border-t px-[5%]">
             {Edata.map((data, index) => (
               <div
                 key={index}
-                className="components flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-8 border-gray-300 border-r"
-                style={{ width: "calc(33.333% - 16px)" }}
+                className="Gsap-com components flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-8 border-gray-300 border-r "
+                // style={{ width: "calc(33.333% - 16px)" }}
               >
                 {/* 👇 Proper Image Wrapper */}
                 {data.source !== "" && (
-                  <div className="relative w-full h-64">
+                  <div className="relative w-full h-52">
                     <Image
                       src={data.source || "/placeholder.svg"}
                       alt=""

@@ -114,7 +114,7 @@ const RegularOffices = () => {
       </div>
 
       <div id="container" className="w-full bg-white flex flex-col">
-        <div className="sub_heading p-[5%]">
+        <div className="sub_heading px-[5%] py-[3%]">
           <span className="yellow">P2</span> Offices
         </div>
 
@@ -123,12 +123,12 @@ const RegularOffices = () => {
             {Edata.map((data, index) => (
               <div
                 key={index}
-                className="components flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-8 border-gray-300 border-r"
-                style={{ width: "calc(33.333% - 16px)" }}
+                className="Gsap-com components flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-8 border-gray-300 border-r"
+                // style={{ width: "calc(33.333% - 16px)" }}
               >
                 {/* 👇 Proper Image Wrapper */}
                 {data.source !== "" && (
-                  <div className="relative w-full h-64">
+                  <div className="relative w-full h-52">
                     <Image
                       src={data.source || "/placeholder.svg"}
                       alt=""
