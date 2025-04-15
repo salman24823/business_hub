@@ -200,23 +200,55 @@ const Header = () => {
               <Link href="/about" className="text-lg" onClick={toggleMenu}>
                 About
               </Link>
-              <Link href="/service" className="text-lg" onClick={toggleMenu}>
-                Services
-              </Link>
+              <div className="page_dropdown relative">
+                <div
+                  className="fade_right w-full flex flex-row items-center relative cursor-pointer"
+                  onClick={() => handleScroll("service")}
+                >
+                  <span className="flex flex-row items-center relative gap-1">
+                    Services
+                    <span className="drop_arrow">
+                      <ChevronDown />
+                    </span>
+                  </span>
+                </div>
+                <div className="p_dropdown absolute w-48 flex flex-col gap-2 blue_bg top-12">
+                  <span
+                    className="drop_items px-4 py-3 cursor-pointer"
+                    onClick={() => handleScroll("service")}
+                  >
+                    Rental Services
+                  </span>
+                  <span
+                    className="drop_items px-4 py-3 cursor-pointer"
+                    onClick={() => handleScroll("IT-service")}
+                  >
+                    IT Services
+                  </span>
+                  <span
+                    className="drop_items px-4 py-3 cursor-pointer"
+                    onClick={() => handleScroll("bussiness")}
+                  >
+                    Business Services
+                  </span>
+                </div>
+              </div>
               <Link href="/blogs" className="text-lg" onClick={toggleMenu}>
                 Blogs
               </Link>
-              <span
-                onClick={() => {
-                  toggleMenu();
-                  handleScroll("contact");
-                }}
-                className="text-lg cursor-pointer"
+              <Link
+                href={"/premiumoffices"}
+                className="text-lg"
+                onClick={toggleMenu}
               >
-                Contact
-              </span>
-              <Link href="/gallery" className="text-lg" onClick={toggleMenu}>
-                Gallery
+                Premium Offices
+              </Link>
+              <Link
+                href={"/regularoffices"}
+                className="text-lg"
+                onClick={toggleMenu}
+              >
+                Regular Offices
               </Link>
             </div>
           </div>
