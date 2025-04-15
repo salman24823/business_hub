@@ -150,15 +150,12 @@ const Header = () => {
                     >
                       Regular Office
                     </Link>
-                    <Link href={"/openspaces"} className="drop_items px-6 py-3">
+                    {/* <Link href={"/openspaces"} className="drop_items px-6 py-3">
                       Open Spaces
+                    </Link> */}
+                    <Link href={"/blogs"} className="drop_items px-6 py-3">
+                      Blogs
                     </Link>
-                    <span
-                      className="drop_items px-6 py-3 cursor-pointer"
-                      onClick={() => handleScroll("contact")}
-                    >
-                      Contact
-                    </span>
                   </div>
                 </div>
                 <Link href={"/contact"} className="fade_right">
