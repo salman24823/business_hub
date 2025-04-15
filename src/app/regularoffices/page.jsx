@@ -12,45 +12,38 @@ gsap.registerPlugin(ScrollTrigger);
 const RegularOffices = () => {
   const Edata = [
     {
-      name: "One-Three Person Offices",
+      name: "Single Person Office",
       discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
+        "A private, fully equipped workspace designed for individual professionals seeking focus, comfort, and productivity daily.",
       source: "/p9.JPG",
       buttonText: "Book Now",
     },
     {
       name: "One-Three Person Offices",
       discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
+        "Ideal for small teams, these offices offer a collaborative, private space to work efficiently together.",
       source: "/p11.JPG",
       buttonText: "Book Now",
     },
     {
-      name: "One-Three Person Offices",
+      name: "Three-Five Person Offices",
       discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
+        "Perfect for growing teams, these offices provide a spacious, productive environment with essential amenities included.",
       source: "/p12.JPG",
       buttonText: "Book Now",
     },
     {
-      name: "One-Three Person Offices",
+      name: "Five-Eight Person Offices",
       discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
+        "Designed for mid-sized teams, these offices offer ample space, comfort, and all necessary work essentials.",
       source: "/p15.JPG",
       buttonText: "Book Now",
     },
     {
-      name: "One-Three Person Offices",
+      name: "P2 Open Spaces",
       discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
+        "Collaborative open workspace on P2 floor, ideal for dynamic teams needing flexibility, creativity, and connectivity.",
       source: "/p16.JPG",
-      buttonText: "Book Now",
-    },
-    {
-      name: "One-Three Person Offices",
-      discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/p21.JPG",
       buttonText: "Book Now",
     },
     {
