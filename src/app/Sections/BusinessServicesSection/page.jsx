@@ -21,61 +21,61 @@ export default function ServicesSection() {
     {
       title: "Product Hunting",
       description:
-        "Comprehensive market analysis to identify profitable product opportunities with high demand and low competition.",
+        "We help identify high-demand, low-competition products to maximize your sales and market potential.",
       icon: <Search className="h-6 w-6" />,
     },
     {
       title: "Product Sourcing",
       description:
-        "Connect with reliable manufacturers and suppliers to source high-quality products at competitive prices.",
+        "We connect you with reliable suppliers to ensure quality products at the best possible prices.",
       icon: <Package className="h-6 w-6" />,
     },
     {
       title: "Niched Market",
       description:
-        "End-to-end product development services from concept to manufacturing, including design, prototyping, and testing.",
+        "We target specific, profitable market segments to help your business grow with focused customer reach.",
       icon: <Factory className="h-6 w-6" />,
     },
     {
       title: "Marketing Support",
       description:
-        "Develop a compelling brand identity and positioning strategy to differentiate your business in the marketplace.",
+        "We provide strategic marketing assistance to boost your brand visibility, engagement, and business growth effectively.",
       icon: <Handshake className="h-6 w-6" />,
     },
     {
       title: "Networking Event",
       description:
-        "Professional setup and optimization of your e-commerce store on platforms like Shopify, WooCommerce, or Amazon.",
+        "We organize professional networking events to connect you with potential partners, clients, and industry experts.",
       icon: <Users className="h-6 w-6" />,
     },
     {
       title: "Traning & Development",
       description:
-        "Complete dropshipping solutions including product selection, supplier connections, and automated order fulfillment.",
+        "We offer skill-building programs to enhance employee performance, productivity, and professional growth across various roles.",
       icon: <Cog className="h-6 w-6" />,
     },
     {
       title: "Consultancy Services",
       description:
-        "Strategic guidance for entering new markets, including competitive analysis, positioning, and go-to-market planning.",
+        "We provide expert consultancy to guide your business decisions, ensuring strategic growth and long-term success.",
       icon: <NotebookPen className="h-6 w-6" />,
     },
     {
       title: "Strategy & Planing",
       description:
-        "Optimize your supply chain operations for efficiency, cost reduction, and improved delivery times.",
+        "We craft tailored strategies and actionable plans to help your business achieve sustainable growth and goals",
       icon: <Lightbulb className="h-6 w-6" />,
     },
     {
       title: "Research & Development",
       description:
-        "Connect with relevant influencers to promote your products and expand your brand reach to targeted audiences.",
+        "We conduct in-depth research and innovative development to create effective solutions and drive business advancement.",
       icon: <GraduationCap className="h-6 w-6" />,
     },
     {
       title: "Modern Technologies",
       description:
-        "Comprehensive quality assurance services to ensure your products meet industry standards and customer expectations.",
+        "We leverage cutting-edge technologies to streamline operations, enhance efficiency, and keep your business future-ready.",
       icon: <Microchip className="h-6 w-6" />,
     },
   ];
