@@ -80,7 +80,9 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section className="p-[5%]">
+    <section 
+    id="bussiness"
+    className="p-[5%]">
       <div className="container mx-auto px-6">
         <div className="max-w-screen-xl mx-auto">
           <div className="mb-20 flex justify-center">
