@@ -230,9 +230,6 @@ const Header = () => {
                   </span>
                 </div>
               </div>
-              <Link href="/blogs" className="text-lg" onClick={toggleMenu}>
-                Blogs
-              </Link>
               <Link
                 href={"/premiumoffices"}
                 className="text-lg"
@@ -246,6 +243,9 @@ const Header = () => {
                 onClick={toggleMenu}
               >
                 Regular Offices
+              </Link>
+              <Link href="/blogs" className="text-lg" onClick={toggleMenu}>
+                Blogs
               </Link>
             </div>
           </div>
