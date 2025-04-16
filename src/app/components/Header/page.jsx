@@ -9,7 +9,7 @@ import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { RiWhatsappLine } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import { TbClockHour8Filled } from "react-icons/tb";
-import { ChevronDown, ChevronUp, MenuIcon, X } from "lucide-react";
+import { ChevronDown, MenuIcon, X } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
 const Header = () => {
