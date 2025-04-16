@@ -5,9 +5,8 @@ import Logo from "./../../../../public/logo.svg";
 import workspace from "../../../../public/workspace.png";
 import Image from "next/image";
 import { Button } from "@heroui/react";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { RiWhatsappLine } from "react-icons/ri";
-import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { TbClockHour8Filled } from "react-icons/tb";
 import { ChevronDown, ChevronUp, MenuIcon, X } from "lucide-react";
@@ -66,10 +65,34 @@ const Header = () => {
               </span>
             </div>
             <div className="social_links flex gap-8 items-center">
-              <FaFacebookF className="text-lg cursor-pointer hover:text-[#ffe84e]" />
-              <RiWhatsappLine className="text-xl cursor-pointer hover:text-[#ffe84e]" />
-              <FaPinterestP className="text-lg cursor-pointer hover:text-[#ffe84e]" />
-              <FaInstagram className="text-lg cursor-pointer hover:text-[#ffe84e]" />
+              <a
+                href="https://www.facebook.com/share/1JdBspVFAa/"
+                target="_blank"
+                rel="noopenr noreferrer"
+              >
+                <FaFacebookF className="text-lg cursor-pointer hover:text-[#ffe84e]" />
+              </a>
+              <a
+                href="https://wa.me/+923007238256"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <RiWhatsappLine className="text-xl cursor-pointer hover:text-[#ffe84e]" />
+              </a>
+              <a
+                href="https://www.instagram.com/businesshubworkspace?igsh=MTlkZ3liMzVubTJhdw=="
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="text-lg cursor-pointer hover:text-[#ffe84e]" />
+              </a>
+              <a
+                href="https://youtube.com/@businesshubworkspace?si=9YJic6Eo5YP45kfn"
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                <FaYoutube className="text-lg cursor-pointer hover:text-[#ffe84e]" />
+              </a>
             </div>
           </div>
           <div className="blue_bg nav_ch_2 flex justify-between px-4 items-center text-white w-full h-[4rem] er">
