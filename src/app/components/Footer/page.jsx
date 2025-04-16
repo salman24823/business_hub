@@ -125,13 +125,18 @@ const Footer = () => {
             <Link className="ft-link" href={"/"}>
               Recruitment
             </Link>
-            <Link className="ft-link" href={"/"}>
+            <Link className="ft-link" href={"https://wa.me/+923007238256"}>
               <span className="flex gap-2">
                 <FaWhatsapp className="yellow w-6 h-6" />
                 Whatsapp
               </span>
             </Link>
-            <Link className="ft-link" href={"/"}>
+            <Link
+              className="ft-link"
+              href={
+                "https://www.tiktok.com/@businesshubworkspace?_t=ZS-8vaGvoE92pQ&_r=1"
+              }
+            >
               <span className="flex gap-2">
                 <FaLinkedin className="yellow w-6 h-6" />
                 LinkedIn
@@ -144,19 +149,32 @@ const Footer = () => {
           <div className="p-5 flex-col flex gap-5">
             <span className="point yellow">Social Media</span>
             <div className="footer_links">
-              <Link className="ft-link" href={"/"}>
+              <Link
+                className="ft-link"
+                href={"https://www.facebook.com/share/1JdBspVFAa/"}
+              >
                 <span className="flex gap-2">
                   <Facebook className="yellow" />
                   Facebook
                 </span>
               </Link>
-              <Link className="ft-link" href={"/"}>
+              <Link
+                className="ft-link"
+                href={
+                  "https://www.instagram.com/businesshubworkspace?igsh=MTlkZ3liMzVubTJhdw=="
+                }
+              >
                 <span className="flex gap-2">
                   <Instagram className="yellow" />
                   Instagram
                 </span>
               </Link>
-              <Link className="ft-link" href={"/"}>
+              <Link
+                className="ft-link"
+                href={
+                  "https://youtube.com/@businesshubworkspace?si=9YJic6Eo5YP45kfn"
+                }
+              >
                 <span className="flex gap-2">
                   <Youtube className="yellow" />
                   Youtube
