@@ -16,7 +16,7 @@ const ServicesCards = () => {
   return (
     <main
       id="services"
-      className="Main_cnt sections  w-full flex flex-col items-center gap-7 absolute left-0 top-[90%] px-[8%]"
+      className="Main_cnt sections  w-full flex flex-col items-center gap-7 absolute left-0 top-[90%] px-[8%] big_screen"
     >
       {/* <h2 className='sub_heading flex gap-2' data-aos="fade-up">Our Services</h2> */}
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-6 w-full ">

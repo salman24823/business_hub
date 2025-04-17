@@ -15,7 +15,7 @@ const Feature = ({ text }) => (
 
 const ChooseUs = () => {
   return (
-    <main className="p-[5%]">
+    <main className="p-[5%] big_screen">
       <div className="grid grid-cols-1 lg:grid-cols-2  gap-10 ">
         <div className="ch_cnt flex flex-col gap-8 col-span-1">
           <div className="flex gap-4 flex-col ch_headings">

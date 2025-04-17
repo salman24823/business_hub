@@ -55,7 +55,7 @@ const Header = () => {
 
   return (
     <main className="">
-      <header className="px-[5%] font-bold text-white bg-transparent absolute w-full z-10">
+      <header className="px-[5%] big_screen font-bold text-white bg-transparent absolute w-full z-10">
         <nav className="navbar">
           <div className="nav_ch_1 flex justify-between items-start p-3">
             <div className="clock flex items-center gap-2">

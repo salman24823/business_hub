@@ -2,8 +2,8 @@ import React from 'react'
 
 const LocationSection = () => {
   return (
-    <div className='w-full'>
-        <div className="flex flex-col gap-12 locationbox px-[5%] py-[10%]  md:p-[5%]">
+    <div className='w-full p-[5%] big_screen'>
+        <div className="flex flex-col gap-12 locationbox  form_main_div">
             <div>
             <h2 className='sub_heading yellow'><span className='blue'>BusinessHub Workspace </span> <br /> Location.</h2>
             </div>

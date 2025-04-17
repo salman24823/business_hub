@@ -35,11 +35,11 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <main className="w-full relative">
+    <main className="w-full relative ">
       {
         loading ?
 
-          <div className="w-full h-screen flex justify-center bg-[#00000099] items-center">
+          <div className="w-full h-screen flex justify-center bg-[#00000099] items-center ">
             <div className="flex flex-col gap-2 justify-center items-center text-center">
               <Spinner color="white" size="lg" />
               <p className="text-white">Loading...</p>
@@ -50,8 +50,8 @@ const HeroSection = () => {
           ""
       }
 
-      <div className="hero_section w-full h-[100vh] md:h-[110vh] bg-[url(/bg-hero.jpg)] bg-cover bg-no-repeat">
-        <div className="filter w-full h-[100%] px-[5%] py-[7%] flex flex-col justify-end gap-24">
+      <div className="hero_section  w-full h-[110vh] bg-[url(/bg-hero.jpg)] bg-cover bg-no-repeat">
+        <div className="big_screen filter w-full h-[100%] px-[5%] py-[7%] flex flex-col justify-end gap-24">
           {/* hero-text */}
           <div className="hero_box py-[3%] px-4 nav_back w-full lg:w-[60%]">
             <span className="text-2xl font-semibold text-white yellow">

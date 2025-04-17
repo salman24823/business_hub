@@ -332,8 +332,11 @@ textarea:focus {
 .Gsap-com{
   width: calc(33.333% - 16px) ;
 }
-@media (max-width: 640px) {
- 
+@media (max-height: 740px) {
+.iphonesm{
+  @apply h-[150vh]
+}
+
 }
 @media (max-width: 768px) {
   .main_heading {
@@ -347,6 +350,9 @@ textarea:focus {
   .ybh_h {
     @apply text-7xl;
   }
+  .hero_section{
+    @apply h-[100vh]
+  }
 }
 @media (max-width: 1024px) {
   .ybh_h {
@@ -354,6 +360,9 @@ textarea:focus {
   }
   .sub_heading {
     @apply text-5xl max-[770px]:text-3xl leading-tight font-bold;
+  }
+  .form_main_div{
+    @apply px-[5%] py-[10%]
   }
 }
 @media (max-width: 1080px) {
@@ -389,6 +398,30 @@ textarea:focus {
   body {
     @apply flex flex-col items-center;
   }
+}
+@media (min-width: 1900px) {
+
+  .big_screen{
+    @apply px-[10%]
+  }
+  .hero_section{
+    @apply h-[90vh]
+  }
+  .p_hero_section{
+    @apply h-[90vh]
+  }
+}
+@media (min-width: 2300px) {
+  .big_screen{
+    @apply px-[15%]
+  }
+  .hero_section{
+    @apply h-[70vh]
+  }
+  .p_hero_section{
+    @apply h-[70vh]
+  }
+
 }
 
 @layer base {

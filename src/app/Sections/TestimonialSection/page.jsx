@@ -63,7 +63,7 @@ const TestimonialSection = () => {
   };
 
   return (
-    <main className="w-full overflow-hidden p-[5%]">
+    <main className="w-full overflow-hidden p-[5%] big_screen">
       <div className="testimonial_sec grid  grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-20 w-full">
         <div className="test_sec_1 col-span-1 md:col-span-6 lg:col-span-7 py-[5%]">
           <Slider {...settings} className="relative">

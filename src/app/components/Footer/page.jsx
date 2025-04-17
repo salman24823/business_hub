@@ -49,7 +49,7 @@ const Footer = () => {
 
   return (
     <footer className="blue_bg flex flex-col items-center">
-      <div className="footer_child_1 p-[5%] flex flex-col gap-20 md:flex-row md:justify-between w-full">
+      <div className="footer_child_1 big_screen p-[5%] flex flex-col gap-20 md:flex-row md:justify-between w-full">
         <div className="">
           <h2 className="sub_heading uppercase text-white">
             Join <br />
@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer_child_2 px-[5%] py-[2%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 w-full">
+      <div className="footer_child_2 px-[5%] py-[2%] big_screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 w-full">
         <div className="md:col-span-1 footer_cards flex flex-col gap-6 col-span-1 lg:col-span-4 ">
           <div className="flex items-end">
             <Image src={logo} alt="logo" className="w-32" />

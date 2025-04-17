@@ -19,16 +19,16 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className="container mx-auto p-[5%]">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="p-[5%] big_screen w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center  w-full">
         <div className="space-y-6" data-aos="fade-right">
           <div className="point yellow">About Us</div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl blue font-bold leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl blue font-bold ">
             Build and Inspire <br />
             Your <span className="yellow">Business</span> with <br />
             Business Hub.
           </h2>
-          <p className="text-gray-700 text-lg max-w-md">
+          <p className="text-gray-700 text-lg ">
             Empowering entrepreneurs with modern workspaces and resources
             designed for growth, collaboration, and success.
           </p>

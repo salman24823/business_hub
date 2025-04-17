@@ -93,8 +93,8 @@ const RegularOffices = () => {
 
   return (
     <section>
-      <div className="w-full h-[100vh] bg-[url(/E-1.JPG)] bg-cover bg-no-repeat ">
-        <div className="filter p-[5%] w-full h-full flex items-center">
+      <div className="w-full h-[100vh] bg-[url(/E-1.JPG)] bg-cover bg-no-repeat p_hero_section">
+        <div className="filter p-[5%] big_screen w-full h-full flex items-center">
           <div className="flex flex-col gap-4">
             <h1 className="main_heading">
               <span className="yellow">Premium</span> Offices
@@ -115,12 +115,12 @@ const RegularOffices = () => {
       </div>
 
       <div id="container" className="w-full bg-white flex flex-col">
-        <div className="sub_heading py-[3%] px-[5%]">
+        <div className="sub_heading py-[3%] px-[5%] big_screen">
           <span className="yellow">Premium</span> Offices
         </div>
 
         <div className="w-full">
-          <div className="flex  overflow-x-hidden border-gray-300 border-t px-[5%]">
+          <div className="flex  overflow-x-hidden border-gray-300 border-t px-[5%] big_screen">
             {Edata.map((data, index) => (
               <div
                 key={index}

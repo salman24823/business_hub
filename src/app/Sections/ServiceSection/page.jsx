@@ -5,7 +5,7 @@ const ServiceSection = () => {
   return (
     <main 
     id="service"
-    className="w-full p-[5%] flex flex-col gap-10">
+    className="w-full p-[5%] flex flex-col gap-10 big_screen">
       <div className="mb-8 md:mb-12">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0f172a] uppercase">
           what <span className="yellow">we</span> Offers <span className="yellow">...</span>

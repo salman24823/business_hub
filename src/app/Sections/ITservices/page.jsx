@@ -112,7 +112,7 @@ const ITservices = () => {
   return (
     <main
     id="IT-service"
-    className="p-[5%] flex flex-col items-center gap-12">
+    className="p-[5%] flex flex-col items-center gap-12 big_screen">
       <div className="flex flex-col gap-1 items-center">
         <h2 className="sub_heading yellow">
           <span className="blue">IT</span>Services

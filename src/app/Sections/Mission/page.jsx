@@ -17,7 +17,7 @@ const Mission = () => {
   }, []);
 
   return (
-    <section className="container mx-auto p-[5%]">
+    <section className="container mx-auto p-[5%] big_screen">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div id="animated-svg">
           <svg

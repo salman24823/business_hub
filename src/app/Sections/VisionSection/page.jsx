@@ -3,7 +3,7 @@ import { Button } from "@heroui/react";
 
 const VisionSection = () => {
   return (
-    <main className="p-[5%] w-full">    
+    <main className="p-[5%] w-full big_screen">    
         {/* Right-side (Text Content) */}
         <div className="w-full lg:w-1/2 text-center lg:text-left space-y-3">
           <span className="point yellow">Our Vision</span>

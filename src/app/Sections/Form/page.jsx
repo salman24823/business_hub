@@ -52,7 +52,7 @@ const Form = () => {
   return (
     <main
       id="contact"
-      className="Main_cnt !overflow-hidden sections w-full px-[5%] py-[10%] md:p-[5%]"
+      className="!overflow-hidden form_main_div  w-full  p-[5%] big_screen"
     >
       <div className="contact_section grid grid-rows-1 grid-cols-1 md:grid-cols-[1.5fr,1fr] gap-8">
         <div className="flex flex-col gap-12" data-aos="fade-right">

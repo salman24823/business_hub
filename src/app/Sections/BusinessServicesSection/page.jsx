@@ -81,9 +81,9 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="bussiness" className="p-[5%]">
-      <div className="container mx-auto px-6">
-        <div className="max-w-screen-xl mx-auto">
+    <section id="bussiness" className="p-[5%] big_screen w-full flex flex-col items-center">
+      <div className="container ">
+        <div className=" flex flex-col items-center w-full">
           <div className="mb-20 flex justify-center">
             <h2 className="sub_heading">
               <span className="yellow">Business</span> Services
