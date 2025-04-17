@@ -131,12 +131,7 @@ const Footer = () => {
                 Whatsapp
               </span>
             </Link>
-            <Link
-              className="ft-link"
-              href={
-                "https://www.tiktok.com/@businesshubworkspace?_t=ZS-8vaGvoE92pQ&_r=1"
-              }
-            >
+            <Link className="ft-link" href={"/"}>
               <span className="flex gap-2">
                 <FaLinkedin className="yellow w-6 h-6" />
                 LinkedIn
@@ -180,7 +175,12 @@ const Footer = () => {
                   Youtube
                 </span>
               </Link>
-              <Link className="ft-link" href={"/"}>
+              <Link
+                className="ft-link"
+                href={
+                  "https://www.tiktok.com/@businesshubworkspace?_t=ZS-8vaGvoE92pQ&_r=1"
+                }
+              >
                 <span className="flex gap-2">
                   <FaTiktok className="yellow w-6 h-6" />
                   Tiktok
