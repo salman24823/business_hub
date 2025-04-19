@@ -52,7 +52,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Conference Hall */}
-        <div className="s_m card_hover bg-[url(/conference.JPG)] "data-aos="zoom-in">
+        <div className="s_m card_hover bg-[url(/hall.JPG)] "data-aos="zoom-in">
           <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">Conference Hall</h3>
             <p className="text-white text-sm">
@@ -118,7 +118,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Conference Hall */}
-        <div className="inset-0 card_hover bg-[url(/conference.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-3 lg:col-span-3 rounded-lg overflow-hidden" data-aos="zoom-in">
+        <div className="inset-0 card_hover bg-[url(/hall-1.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-3 lg:col-span-3 rounded-lg overflow-hidden" data-aos="zoom-in">
           <div className="card_hover_animation filter flex flex-col justify-end h-full w-full p-5">
             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">Conference Hall</h3>
             <p className="text-white text-sm lg:text-base w-[90%]">
