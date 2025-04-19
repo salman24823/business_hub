@@ -9,6 +9,18 @@ import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    const offset = -70; // adjust this based on your header height
+    const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: sectionTop + offset,
+      behavior: "smooth",
+    });
+  }
+};
+
 const RegularOffices = () => {
   const Edata = [
     {
@@ -98,7 +110,10 @@ const RegularOffices = () => {
               environment for 5-6 people to work seamlessly together.
             </p>
             <div>
-              <Button className="rounded-md yellow-bg font-bold text-whi">
+              <Button
+                onClick={() => scrollToSection("contact")}
+                className="rounded-md yellow-bg font-bold text-whi"
+              >
                 Book Now
               </Button>
             </div>
@@ -135,7 +150,10 @@ const RegularOffices = () => {
                   <strong className="font-bold text-xl">{data.name}</strong>
                   <p className="para text-sm">{data.discription}</p>
                   {data.buttonText !== "" && (
-                    <Button className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm">
+                    <Button
+                      className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm"
+                      onClick={() => scrollToSection("contact")}
+                    >
                       {data.buttonText}
                     </Button>
                   )}

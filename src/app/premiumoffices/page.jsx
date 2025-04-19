@@ -9,6 +9,19 @@ import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// ✅ Scroll function added here
+const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    const offset = -70; // adjust this based on your header height
+    const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: sectionTop + offset,
+      behavior: "smooth",
+    });
+  }
+};
+
 const RegularOffices = () => {
   const Edata = [
     {
@@ -106,28 +119,29 @@ const RegularOffices = () => {
               customers.
             </p>
             <div>
-              <Button className="rounded-md yellow-bg font-bold text-white">
+              {/* ✅ Scroll to Form on click */}
+              <Button
+                onClick={() => scrollToSection("contact")}
+                className="rounded-md yellow-bg font-bold text-white"
+              >
                 Book Now
               </Button>
             </div>
           </div>
         </div>
       </div>
-
       <div id="container" className="w-full bg-white flex flex-col">
         <div className="sub_heading py-[3%] px-[5%] big_screen">
           <span className="yellow">Premium</span> Offices
         </div>
 
         <div className="w-full">
-          <div className="flex  overflow-x-hidden border-gray-300 border-t px-[5%] big_screen">
+          <div className="flex overflow-x-hidden border-gray-300 border-t px-[5%] big_screen">
             {Edata.map((data, index) => (
               <div
                 key={index}
-                className="Gsap-com components flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-8 border-gray-300 border-r "
-                // style={{ width: "calc(33.333% - 16px)" }}
+                className="Gsap-com components flex-shrink-0 flex flex-col items-center bg-white overflow-hidden p-8 border-gray-300 border-r"
               >
-                {/* 👇 Proper Image Wrapper */}
                 {data.source !== "" && (
                   <div className="relative w-full h-52">
                     <Image
@@ -143,7 +157,10 @@ const RegularOffices = () => {
                   <strong className="font-bold text-xl">{data.name}</strong>
                   <p className="para text-sm">{data.discription}</p>
                   {data.buttonText !== "" && (
-                    <Button className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm">
+                    <Button
+                      onClick={() => scrollToSection("contact")}
+                      className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm"
+                    >
                       {data.buttonText}
                     </Button>
                   )}
@@ -153,7 +170,6 @@ const RegularOffices = () => {
           </div>
         </div>
       </div>
-
       <Form />
     </section>
   );
