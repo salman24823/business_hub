@@ -106,7 +106,7 @@ const RegularOffices = () => {
 
   return (
     <section>
-      <div className="w-full h-[100vh] bg-[url(/E-1.JPG)] bg-cover bg-no-repeat p_hero_section">
+      <div className="w-full h-[100vh] bg-[url(/pre-1.JPG)] bg-cover bg-no-repeat p_hero_section">
         <div className="filter p-[5%] big_screen w-full h-full flex items-center">
           <div className="flex flex-col gap-4">
             <h1 className="main_heading">
