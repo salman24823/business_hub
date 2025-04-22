@@ -176,8 +176,20 @@ const Header = () => {
                     {/* <Link href={"/openspaces"} className="drop_items px-6 py-3">
                       Open Spaces
                     </Link> */}
-                    <Link href={"/blogs"} className="drop_items px-6 py-3">
-                      Blogs
+                    <Link
+                      href={"/termsandconditions"}
+                      className="drop_items px-6 py-3"
+                    >
+                      Term & Conditions
+                    </Link>
+                    <Link
+                      href={"/privacypolicy"}
+                      className="drop_items px-6 py-3"
+                    >
+                      Privacy Policy
+                    </Link>
+                    <Link href={"/contact"} className="drop_items px-6 py-3">
+                      Contact
                     </Link>
                   </div>
                 </div>
