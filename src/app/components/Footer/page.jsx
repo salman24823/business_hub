@@ -116,15 +116,15 @@ const Footer = () => {
         <div className="md:col-span-1 footer_cards col-span-1 lg:col-span-2 py-5 lg:py-5">
           <span className="point yellow">Further Links</span>
           <div className="footer_links">
-            <Link className="ft-link" href={"/"}>
-              Terms and Conditions
+            <Link className="ft-link" href={"/privacypolicy"}>
+              Privacy Policy
             </Link>
-            <Link className="ft-link" href={"/"}>
+            {/* <Link className="ft-link" href={"/"}>
               News
             </Link>
             <Link className="ft-link" href={"/"}>
               Recruitment
-            </Link>
+            </Link> */}
             <Link className="ft-link" href={"https://wa.me/+923007238256"}>
               <span className="flex gap-2">
                 <FaWhatsapp className="yellow w-6 h-6" />
