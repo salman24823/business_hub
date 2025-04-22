@@ -119,10 +119,10 @@ const Footer = () => {
             <Link className="ft-link" href={"/privacypolicy"}>
               Privacy Policy
             </Link>
-            {/* <Link className="ft-link" href={"/"}>
-              News
+            <Link className="ft-link" href={"/termsandconditions"}>
+              Term & Conditions
             </Link>
-            <Link className="ft-link" href={"/"}>
+            {/* <Link className="ft-link" href={"/"}>
               Recruitment
             </Link> */}
             <Link className="ft-link" href={"https://wa.me/+923007238256"}>
