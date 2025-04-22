@@ -128,14 +128,14 @@ export default function ServicesSection() {
             ))}
           </div>
 
-          <div className="mt-24 text-center">
+          {/* <div className="mt-24 text-center">
             <a
               href="#"
               className="inline-block border-b border-[#f7d02e] pb-1 text-sm tracking-wide hover:pb-2 transition-all duration-300"
             >
               View all services
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

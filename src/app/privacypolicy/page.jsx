@@ -10,12 +10,7 @@ const privacypolicy = () => {
             <span className="yellow">Privacy</span> Policy
           </h2>
           <p className="text-lg font-semibold text-gray-500 text-center">
-            At Business Hub, your privacy is our top priority. This Privacy
-            Policy outlines how we collect, use, disclose, and protect your
-            personal information when you interact with our services, including
-            those connected to TikTok and other third-party platforms. By
-            accessing or using our services, you agree to the terms outlined in
-            this Privacy Policy.
+          At Business Hub, your privacy is important to us. This Privacy Policy outlines how we collect, use, and protect your personal information when you interact with our website and services.
           </p>
         </div>
       </section>
@@ -66,10 +61,10 @@ const privacypolicy = () => {
               agency-related services
             </li>
             <li>Service providers who assist us in our operations</li>
-            <li>
+            {/* <li>
               Connect you with opportunities, including through TikTok Agency
               services
-            </li>
+            </li> */}
           </ul>
           <span className="text-gray-500">
             All data shared is limited to the purpose intended and protected
@@ -86,8 +81,7 @@ const privacypolicy = () => {
             <li>Opt-out of promotional communications</li>
           </ul>
           <span className="text-gray-500">
-            To exercise any of these rights, please contact us at: [Insert email
-            or contact method]
+            To exercise any of these rights, please contact us at: <span className="font-bold"> businesshubworkspace@gmail.com</span>
           </span>
         </div>
         {/* ===5th=== */}
@@ -124,6 +118,7 @@ const privacypolicy = () => {
           </span>
           <strong>Business Hub</strong>
           <span><span className="font-bold blue">Email:</span>businesshubworspace@gmail.com</span>
+          <span><span className="font-bold blue">Phone: </span> +923007238256</span>
         </div>
       </section>
     </>
