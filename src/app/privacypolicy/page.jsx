@@ -3,7 +3,7 @@ import React from "react";
 const privacypolicy = () => {
   return (
     <>
-      <section className="w-full h-[80vh] p-[5%] flex items-center justify-center">
+      <section className="w-full h-auto lg:h-[80vh] p-[5%] flex items-center justify-center">
         <div className="w-full flex flex-col items-center gap-6">
           <h2 className="sub_heading">
             {" "}
