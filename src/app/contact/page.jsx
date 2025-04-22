@@ -12,7 +12,7 @@ export default function Contact() {
 
       <div className="text-center mb-12 text-gray-600">
         <p>
-          Have questions about our services? Need more information? We're here to help.
+          Have questions about our services? Need more information? We&rsquo;re here to help.
           <br />
           Use our contact information below to reach out to us.
         </p>
