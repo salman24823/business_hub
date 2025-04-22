@@ -193,7 +193,7 @@ const Header = () => {
                     </Link>
                   </div>
                 </div>
-                <Link href={"/contact"} className="fade_right">
+                <Link href={"/blogs"} className="fade_right">
                   Blogs
                 </Link>
               </div>
