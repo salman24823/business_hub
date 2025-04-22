@@ -79,7 +79,7 @@ const PrivacyPolicy = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <span className="point">Children's Privacy</span>
+          <span className="point">Children&rsquo;s Privacy</span>
           <span className="text-gray-500">
             Our services are not directed toward individuals under the age of 13. We do not knowingly collect information from children. If you believe we have done so, please contact us for immediate removal.
           </span>
