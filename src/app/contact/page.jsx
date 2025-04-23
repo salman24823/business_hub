@@ -1,7 +1,16 @@
-"use client"
+"use client";
 
-import { Mail, Phone, MapPin, Clock, Globe, Facebook, Instagram, Twitter } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  Globe,
+  Facebook,
+  Instagram,
+} from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -12,7 +21,8 @@ export default function Contact() {
 
       <div className="text-center mb-12 text-gray-600">
         <p>
-          Have questions about our services? Need more information? We&rsquo;re here to help.
+          Have questions about our services? Need more information? We&rsquo;re
+          here to help.
           <br />
           Use our contact information below to reach out to us.
         </p>
@@ -52,14 +62,19 @@ export default function Contact() {
 
         <Card>
           <CardContent className="p-6">
-            <h2 className="text-xl font-bold mb-6 border-b pb-2">Get In Touch</h2>
+            <h2 className="text-xl font-bold mb-6 border-b pb-2">
+              Get In Touch
+            </h2>
 
             <div className="space-y-6">
               <div className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-yellow-400 mt-0.5" />
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <a href="mailto:businesshubworspace@gmail.com" className="text-gray-600 hover:text-yellow-500">
+                  <a
+                    href="mailto:businesshubworspace@gmail.com"
+                    className="text-gray-600 hover:text-yellow-500"
+                  >
                     businesshubworspace@gmail.com
                   </a>
                 </div>
@@ -69,7 +84,10 @@ export default function Contact() {
                 <Phone className="h-5 w-5 text-yellow-400 mt-0.5" />
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <a href="tel:+923007238256" className="text-gray-600 hover:text-yellow-500">
+                  <a
+                    href="tel:+923007238256"
+                    className="text-gray-600 hover:text-yellow-500"
+                  >
                     +923007238256
                   </a>
                 </div>
@@ -79,7 +97,10 @@ export default function Contact() {
                 <Globe className="h-5 w-5 text-yellow-400 mt-0.5" />
                 <div>
                   <h3 className="font-medium">Website</h3>
-                  <a href="https://www.businesshub.com" className="text-gray-600 hover:text-yellow-500">
+                  <a
+                    href="https://www.businesshub.com"
+                    className="text-gray-600 hover:text-yellow-500"
+                  >
                     www.businesshub.com
                   </a>
                 </div>
@@ -112,33 +133,43 @@ export default function Contact() {
 
         <Card>
           <CardContent className="p-6">
-            <h2 className="text-xl font-bold mb-6 border-b pb-2">Connect With Us</h2>
+            <h2 className="text-xl font-bold mb-6 border-b pb-2">
+              Connect With Us
+            </h2>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://facebook.com/businesshub"
+                href="https://www.facebook.com/share/1JdBspVFAa/"
                 className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-md transition-colors"
               >
                 <Facebook className="h-5 w-5 text-blue-600" />
                 <span>Facebook</span>
               </a>
               <a
-                href="https://instagram.com/businesshub"
+                href="https://www.instagram.com/businesshubworkspace?igsh=MTlkZ3liMzVubTJhdw=="
                 className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-md transition-colors"
               >
                 <Instagram className="h-5 w-5 text-pink-600" />
                 <span>Instagram</span>
               </a>
               <a
-                href="https://twitter.com/businesshub"
+                href="https://www.tiktok.com/@businesshubworkspace?_t=ZS-8vaGvoE92pQ&_r=1"
                 className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-md transition-colors"
               >
-                <Twitter className="h-5 w-5 text-blue-400" />
-                <span>Twitter</span>
+                <FaTiktok className="h-5 w-5 text-black" />
+                <span>Tiktok</span>
+              </a>
+              <a
+                href="https://youtube.com/@businesshubworkspace?si=9YJic6Eo5YP45kfn"
+                className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-md transition-colors"
+              >
+                <FaYoutube className="h-5 w-5 text-red-600" />
+                <span>Youtube</span>
               </a>
             </div>
             <div className="mt-6">
               <p className="text-gray-600">
-                Follow us on social media to stay updated with our latest news, offers, and resources.
+                Follow us on social media to stay updated with our latest news,
+                offers, and resources.
               </p>
             </div>
           </CardContent>
@@ -154,5 +185,5 @@ export default function Contact() {
         </p>
       </div>
     </div>
-  )
+  );
 }
