@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 import { LogOut, X, Contact, Mail, BookCheck } from "lucide-react"; // Assuming you're using Lucide icons
 import { Home } from "lucide-react";
 import { Button } from "@heroui/react";
+import { MdAddComment } from "react-icons/md";
+import { RiBloggerFill } from "react-icons/ri";
 
 const Layout = ({ children }) => {
   const pathname = usePathname();
@@ -50,6 +52,16 @@ const Layout = ({ children }) => {
       name: "NewsLetter",
       path: "/admin/dashboard/newsletter",
       icon: <Mail className="w-5 h-5 text-gray-600" />,
+    },
+    {
+      name: "Reviews",
+      path: "/admin/dashboard/reviews",
+      icon: <MdAddComment className="w-5 h-5 text-gray-600" />,
+    },
+    {
+      name: "blogs",
+      path: "/admin/dashboard/blogs",
+      icon: <RiBloggerFill className="w-5 h-5 text-gray-600" />,
     },
   ];
 

@@ -10,6 +10,25 @@ import test4 from "../../../../public/review1.JPG";
 import { Button } from "@heroui/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { toast } from "react-toastify";
+
+async function formdata() {
+  try {
+    const response = await fetch("/api/hanldeTestimonials", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await response.json();
+    console.log("API resposne", data);
+    if (!response.ok) {
+      toast.error(data.message || "Failed to fetch Reviews");
+    }
+  } catch (error) {
+    toast.error("Not able to show data");
+  }
+}
 
 const data = [
   {
@@ -96,9 +115,9 @@ const TestimonialSection = () => {
               CUSTOMER <span className="yellow">TESTIMONIAL</span>
             </h1>
             <p className="para">
-              &quot;See what our satisfied clients have to say about their experience
-              with us. Real feedback from businesses that found their perfect
-              workspace!&quot;
+              &quot;See what our satisfied clients have to say about their
+              experience with us. Real feedback from businesses that found their
+              perfect workspace!&quot;
             </p>
             <Button className="yellow-bg abt_btn p-8 font-bold rounded-lg text-white">
               Explore more
