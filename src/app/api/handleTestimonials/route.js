@@ -2,6 +2,28 @@ import dbConnection from "@/config/dbConnection";
 import testimonialModel from "@/models/testimonialsModel";
 import { NextResponse } from "next/server";
 
+export async function GET(req) {
+  try {
+    await dbConnection();
+    const testimonials = await testimonialModel.find({});
+    if (!testimonials) {
+      return NextResponse.json(
+        { statusCode: 404, message: "No Data found" },
+        { status: 404 }
+      );
+    }
+    return NextResponse.json(
+      { statusCode: 200, data: testimonials },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.log(error);
+    return NextResponse.json({
+      message: "Server Error",
+      status: 500,
+    });
+  }
+}
 export async function POST(req) {
   try {
     await dbConnection();

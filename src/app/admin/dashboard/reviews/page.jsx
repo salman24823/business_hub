@@ -106,7 +106,7 @@ const ReviewsForm = () => {
 
           <Button
             type="submit"
-            className="w-full text-white rounded-[5px] py-2 font-bold yellow-bg"
+            className="w-full rounded-[5px] py-2 font-bold text-white bg-blue-500"
             disabled={isLoading}
           >
             {isLoading ? "Submitting..." : "Submit"}
