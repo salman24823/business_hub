@@ -122,6 +122,12 @@ const Footer = () => {
             <Link className="ft-link" href={"/termsandconditions"}>
               Term & Conditions
             </Link>
+            <Link className="ft-link" href={"/link_us"}>
+              Link_us
+            </Link>
+            <Link className="ft-link" href={"/site_map"}>
+              Site_map
+            </Link>
             {/* <Link className="ft-link" href={"/"}>
               Recruitment
             </Link> */}

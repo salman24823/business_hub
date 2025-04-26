@@ -47,69 +47,81 @@ const ReviewsForm = () => {
     }
   };
 
-  return (
-    <main className="form_main_div w-full p-[5%] big_screen">
-      <div className="contact_section grid grid-cols-1 md:grid-cols-[1.5fr,1fr] gap-8">
-        <form
-          onSubmit={handleSubmit}
-          className="contact_form flex flex-col items-center gap-4 p-8 bg-white w-full"
-          data-aos="zoom-in"
-        >
-          <span className="text-3xl font-bold green">Add Any Review</span>
 
+  // Get request to show the data in the tabular form 
+  async function fetchData(){
+    try {
+      
+    } catch (error) {
+      toast.error("Failed to show data")
+    }
+  }
+  return (
+    <main className="w-full p-8 md:p-16 bg-gradient-to-b from-green-50 to-white min-h-screen">
+      <div className="max-w-4xl mx-auto shadow-xl rounded-2xl bg-white p-10 space-y-8" data-aos="fade-up">
+        <h2 className="text-4xl font-bold text-center text-green-600">Add a Review</h2>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <input
-            className="p-2 w-full border-b border-gray-200 font-light"
+            className="p-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 transition"
             type="text"
-            placeholder="Name"
+            placeholder="Your Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
 
           <input
-            className="p-2 w-full border-b border-gray-200 font-light"
+            className="p-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 transition"
             type="text"
-            placeholder="Role (e.g., Entrepreneur, Freelancer)"
+            placeholder="Your Role (e.g., Entrepreneur, Freelancer)"
             value={role}
             onChange={(e) => setRole(e.target.value)}
             required
           />
 
           <textarea
-            className="p-2 w-full border-b border-gray-200 font-light"
-            placeholder="Message"
+            className="p-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 transition"
+            placeholder="Write your message..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            rows={3}
+            rows={4}
           ></textarea>
 
-          <CldUploadWidget
-            uploadPreset="ml_default"
-            options={{ sources: ["local", "url"] }}
-            onSuccess={(result) => {
-              setImageURL(result.info.secure_url);
-            }}
-          >
-            {({ open }) => (
-              <button
-                type="button"
-                onClick={() => open()}
-                className="text-white font-semibold text-sm rounded-lg px-4 py-2 bg-blue-500"
-              >
-                Upload Image
-              </button>
-            )}
-          </CldUploadWidget>
+          <div className="flex flex-col items-center gap-4">
+            <CldUploadWidget
+              uploadPreset="ml_default"
+              options={{ sources: ["local", "url"] }}
+              onSuccess={(result) => {
+                setImageURL(result.info.secure_url);
+              }}
+            >
+              {({ open }) => (
+                <button
+                  type="button"
+                  onClick={() => open()}
+                  className="px-6 py-2 bg-green-500 text-white font-semibold rounded-full hover:bg-green-600 transition"
+                >
+                  Upload Image
+                </button>
+              )}
+            </CldUploadWidget>
 
-          {imageURL && <img src={imageURL} alt="Uploaded" className="w-36" />}
+            {imageURL && (
+              <img
+                src={imageURL}
+                alt="Uploaded"
+                className="w-32 h-32 rounded-full object-cover border-2 border-green-400 shadow-md"
+              />
+            )}
+          </div>
 
           <Button
             type="submit"
-            className="w-full rounded-[5px] py-2 font-bold text-white bg-blue-500"
+            className="mt-4 w-full rounded-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 text-lg transition"
             disabled={isLoading}
           >
-            {isLoading ? "Submitting..." : "Submit"}
+            {isLoading ? "Submitting..." : "Submit Review"}
           </Button>
         </form>
       </div>
