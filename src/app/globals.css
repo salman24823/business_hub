@@ -5,6 +5,7 @@
 
 :root {
   --blue-color: #091020;
+  --light-blue-color:#111c35;
   --liyellow-color: #091020;
   --yellow-color: #f7d02e;
   --heroui-box-shadow-small: 0px 0px 5px 0px rgb(0 0 0 / 0.02),
@@ -44,6 +45,9 @@
 .blue_bg {
   background-color: var(--blue-color);
 }
+.lightblue_bg {
+  background-color: var(--light-blue-color);
+}
 .blue {
   color: var(--blue-color);
 }
@@ -68,6 +72,10 @@
 }
 .sub_point {
   @apply font-bold text-[1.2rem];
+}
+.bottom_style{
+  border-bottom-right-radius:50% ;
+  border-bottom-left-radius:50% ;
 }
 .shadow_d {
   --tw-shadow: var(--heroui-box-shadow-small);
@@ -543,3 +551,7 @@ body.hide-footer footer {
   padding: 0 5%;
   @apply lg:px-[2%]
 }
+
+
+
+

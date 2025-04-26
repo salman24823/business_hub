@@ -7,11 +7,11 @@ import image4 from "../../../public/about4.jpg"
 
 export default function AboutUsPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen overflow-hidden">
       {/* Hero Section */}
       <section className="relative ">
-        <div className="w-full">
-          <div className="h-[90vh] flex justify-center items-center bg-[linear-gradient(to_top,_#091020_60%,_#0b1630_95%,_#f5f5f5_100%)]">
+        <div className="w-full flex flex-col items-center">
+          <div className="h-[80vh] flex justify-center items-center lightblue_bg w-[150%] bottom_style">
             <div className="max-w-2xl">
               <h1 className="sub_heading w-full text-center yellow">
                 <span className="">About</span> Us
