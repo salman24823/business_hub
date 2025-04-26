@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Award, Users, MessageSquare } from "lucide-react";
-import image1 from "../../../public/about1.JPG"
-import image2 from "../../../public/about2.jpeg"
-import image3 from "../../../public/about3.jpg"
-import image4 from "../../../public/about4.jpg"
+import image1 from "../../../../public/about.jpeg";
+import image2 from "../../../../public/about2.jpeg";
+import image3 from "../../../../public/about3.jpg";
+import image4 from "../../../../public/about4.jpg";
 
 export default function AboutUsPage() {
   return (
@@ -23,7 +23,6 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
-
       {/* Our Story Section */}
       <section className="p-[5%] big_screen">
         <div className="container mx-auto px-4">
@@ -34,26 +33,27 @@ export default function AboutUsPage() {
               </h2>
               <div className="w-20 h-1 bg-yellow-400 flex flex-col gap-"></div>
               <div className="flex flex-col gap-4 lg:w-[90%] py-3">
-              <p className="text-gray-600 ">
-                At Business Hub, we don&rsquo;t just build businesses — we build
-                futures.
-              </p>
-              <p className="text-gray-600 ">
-                It all started with a simple idea: create a space where fresh
-                talent turns into future leaders. A place where ambition is
-                guided, and dreams are shaped into reality.
-              </p>
-              <p className="text-gray-600">
-                More than just an office, Business Hub is a culture — of growth,
-                collaboration, and transformation. With 24/7 power, security,
-                and inspiring coworking spaces, we offer everything you need to
-                rise.
-              </p>
-              <p className="text-gray-600">
-                Led by a visionary CEO driven by innovation and
-                entrepreneurship, we&rsquo;re here to support every step of your
-                journey — from your first day to your biggest breakthrough.
-              </p>
+                <p className="text-gray-600 ">
+                  At Business Hub, we don&rsquo;t just build businesses — we
+                  build futures.
+                </p>
+                <p className="text-gray-600 ">
+                  It all started with a simple idea: create a space where fresh
+                  talent turns into future leaders. A place where ambition is
+                  guided, and dreams are shaped into reality.
+                </p>
+                <p className="text-gray-600">
+                  More than just an office, Business Hub is a culture — of
+                  growth, collaboration, and transformation. With 24/7 power,
+                  security, and inspiring coworking spaces, we offer everything
+                  you need to rise.
+                </p>
+                <p className="text-gray-600">
+                  Led by a visionary CEO driven by innovation and
+                  entrepreneurship, we&rsquo;re here to support every step of
+                  your journey — from your first day to your biggest
+                  breakthrough.
+                </p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -97,7 +97,6 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
-
       {/* Values Section */}
       <section className="p-[5%] big_screen bg-gray-100">
         <div className="container mx-auto px-4">
@@ -149,15 +148,14 @@ export default function AboutUsPage() {
               </h3>
               <p className="text-gray-600">
                 We embrace innovation and continuously seek new ways to enhance
-                our spaces, services, and member experiences. W&rsquo;re committed to
-                staying ahead of trends and anticipating the future needs of
-                businesses.
+                our spaces, services, and member experiences. W&rsquo;re
+                committed to staying ahead of trends and anticipating the future
+                needs of businesses.
               </p>
             </div>
           </div>
         </div>
       </section>
-
       {/* Stats Section */}
       <section className="p-[5%] big_screen">
         <div className="container mx-auto px-4">
@@ -183,7 +181,6 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
-
       {/* Team Section */}
       <section className="p-[5%] big_screen bg-gray-100">
         <div className="container mx-auto px-4">
@@ -222,9 +219,6 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
-
-      {/* Testimonials */}
     </div>
   );
 }
-
