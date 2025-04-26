@@ -102,7 +102,7 @@ const Content = ({ data }) => {
       {data.map((item) => (
         <div
           key={item.id}
-          className=" overflow-hidden flex flex-col items-center"
+          className="overflow-hidden flex flex-col items-center"
         >
           <div className="w-[150%] h-[80vh] gap-6 px-[5%] flex flex-col justify-center items-center lightblue_bg bottom_style">
             <h2 className="sub_heading text-white">{item.dataTitle}</h2>
@@ -115,6 +115,8 @@ const Content = ({ data }) => {
           <div className="grid px-[5%] grid-cols-6">
 
             <div className="services_include col-span-4 p-[5%] flex flex-col w-full gap-6">
+
+
               {item.subTitle2 && (
                 <h2 className="text-3xl font-bold">{item.subTitle2}</h2>
               )}
@@ -146,7 +148,9 @@ const Content = ({ data }) => {
                   <p className="">{item.whyChooseUs}</p>
                 )}
               </div>
+
             </div>
+
 
             <div className="col-span-2 space-y-3 py-8">
               {features.map((feature, index) => (

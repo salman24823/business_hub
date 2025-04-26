@@ -322,6 +322,7 @@ const Detail = () => {
   return (
     <div>
       <Content data={filteredData} />
+      <hr />
     </div>
   );
 };
