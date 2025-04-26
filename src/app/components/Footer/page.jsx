@@ -15,8 +15,8 @@ const Footer = () => {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
-    { label: "Pages", href: "/" },
-    { label: "Blogs", href: "/" },
+    // { label: "Pages", href: "/" },
+    { label: "Blogs", href: "/blogs" },
   ];
 
   async function submitEmail(e) {
@@ -199,7 +199,7 @@ const Footer = () => {
 
       <hr className="w-[90%]" />
       <div className="footer_line w-full p-[2%] flex justify-center items-center">
-        <span className="yellow">Copyright © 2025 Business Hub Workspace</span>
+        <span className="yellow">Copyright © 2025 Business Hub Workspace.</span>
       </div>
     </footer>
   );

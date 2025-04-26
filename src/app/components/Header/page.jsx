@@ -290,7 +290,11 @@ const Header = () => {
               >
                 Regular Offices
               </Link>
-              <Link href="/blogs" className="text-lg" onClick={toggleMenu}>
+              <Link
+                href="https://blog.businesshubworkspace.com"
+                className="text-lg"
+                onClick={toggleMenu}
+              >
                 Blogs
               </Link>
             </div>
