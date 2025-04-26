@@ -150,7 +150,7 @@ const Header = () => {
                 </div>
                 <div className="page_dropdown relative">
                   <Link
-                    href={"/blogs"}
+                    href={"/"}
                     className="fade_right w-full flex flex-row items-center relative"
                   >
                     <span className="flex flex-row items-center relative gap-1">

@@ -16,7 +16,7 @@ const Footer = () => {
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
     // { label: "Pages", href: "/" },
-    { label: "Blogs", href: "/blogs" },
+    { label: "Blogs", href: "https://blog.businesshubworkspace.com" },
   ];
 
   async function submitEmail(e) {
