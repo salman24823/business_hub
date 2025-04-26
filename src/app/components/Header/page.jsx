@@ -150,7 +150,7 @@ const Header = () => {
                 </div>
                 <div className="page_dropdown relative">
                   <Link
-                    href={"/blogs"}
+                    href={"/"}
                     className="fade_right w-full flex flex-row items-center relative"
                   >
                     <span className="flex flex-row items-center relative gap-1">
@@ -193,7 +193,10 @@ const Header = () => {
                     </Link>
                   </div>
                 </div>
-                <Link href={"/blogs"} className="fade_right">
+                <Link
+                  href={"https://blog.businesshubworkspace.com"}
+                  className="fade_right"
+                >
                   Blogs
                 </Link>
               </div>
@@ -290,7 +293,11 @@ const Header = () => {
               >
                 Regular Offices
               </Link>
-              <Link href="/blogs" className="text-lg" onClick={toggleMenu}>
+              <Link
+                href="https://blog.businesshubworkspace.com"
+                className="text-lg"
+                onClick={toggleMenu}
+              >
                 Blogs
               </Link>
             </div>

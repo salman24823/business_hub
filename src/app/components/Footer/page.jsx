@@ -14,9 +14,9 @@ const Footer = () => {
   const footerLinks = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Services", href: "/" },
-    { label: "Pages", href: "/" },
-    { label: "Blogs", href: "/" },
+    { label: "Contact", href: "/contact" },
+    // { label: "Pages", href: "/" },
+    { label: "Blogs", href: "https://blog.businesshubworkspace.com" },
   ];
 
   async function submitEmail(e) {
@@ -137,12 +137,6 @@ const Footer = () => {
                 Whatsapp
               </span>
             </Link>
-            <Link className="ft-link" href={"/"}>
-              <span className="flex gap-2">
-                <FaLinkedin className="yellow w-6 h-6" />
-                LinkedIn
-              </span>
-            </Link>
           </div>
         </div>
 
@@ -192,6 +186,12 @@ const Footer = () => {
                   Tiktok
                 </span>
               </Link>
+              <Link className="ft-link" href={"/"}>
+                <span className="flex gap-2">
+                  <FaLinkedin className="yellow w-6 h-6" />
+                  LinkedIn
+                </span>
+              </Link>
             </div>
           </div>
         </div>
@@ -199,7 +199,7 @@ const Footer = () => {
 
       <hr className="w-[90%]" />
       <div className="footer_line w-full p-[2%] flex justify-center items-center">
-        <span className="yellow">Copyright © 2025 Business Hub Workspace</span>
+        <span className="yellow">Copyright © 2025 Business Hub Workspace.</span>
       </div>
     </footer>
   );

@@ -43,12 +43,13 @@ const ChooseUs = () => {
             <Feature text="Modern & Comfortable" />
             <Feature text="Customized Space" />
             <Feature text="Saving Your Time" />
+            <Feature text="Supportive Staff" />
           </div>
 
           <div>
-            <Button className="web-btn yellow-bg  rounded-lg text-white">
+            {/* <Button className="web-btn yellow-bg  rounded-lg text-white">
               Explore More
-            </Button>
+            </Button> */}
           </div>
         </div>
 

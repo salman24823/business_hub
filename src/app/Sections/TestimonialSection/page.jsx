@@ -6,10 +6,6 @@ import Slider from "react-slick";
 import { toast } from "react-toastify";
 import { Button } from "@heroui/react";
 
-import ceo from "../../../../public/review2.JPG";
-import test2 from "../../../../public/test2.jpg";
-import test3 from "../../../../public/review3.JPG";
-import test4 from "../../../../public/review1.JPG";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -106,9 +102,9 @@ const TestimonialSection = () => {
               experience with us. Real feedback from businesses that found their
               perfect workspace!&quot;
             </p>
-            <Button className="yellow-bg abt_btn p-8 font-bold rounded-lg text-white">
+            {/* <Button className="yellow-bg abt_btn p-8 font-bold rounded-lg text-white">
               Explore more
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
