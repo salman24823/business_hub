@@ -122,10 +122,16 @@ const Footer = () => {
             <Link className="ft-link" href={"/termsandconditions"}>
               Term & Conditions
             </Link>
+            <Link className="ft-link" href={"/link_us"}>
+              Link us
+            </Link>
+            <Link className="ft-link" href={"/site_map"}>
+              Site map
+            </Link>
             {/* <Link className="ft-link" href={"/"}>
               Recruitment
             </Link> */}
-            <Link className="ft-link" href={"https://wa.me/+923007238256"}>
+            <Link className="ft-link" href={"https://wa.me/+923008405105"}>
               <span className="flex gap-2">
                 <FaWhatsapp className="yellow w-6 h-6" />
                 Whatsapp

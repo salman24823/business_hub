@@ -1,6 +1,6 @@
 import { Button } from "@heroui/react";
 import React from "react";
-import Form from "../Sections/Form/page";
+import Form from "../../Sections/Form/page";
 
 const OpenSpaces = () => {
   return (
