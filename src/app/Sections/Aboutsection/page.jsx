@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from "react";
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
+
 import { ArrowRight, BarChart3, Building2, Users, Zap } from "lucide-react";
 import { Button } from "@heroui/react";
 import Vivus from "vivus";
