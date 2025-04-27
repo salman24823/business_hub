@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Award, Users, MessageSquare } from "lucide-react";
-import image1 from "../../../../public/about.jpeg";
-import image2 from "../../../../public/about2.jpeg";
-import image3 from "../../../../public/about3.jpg";
-import image4 from "../../../../public/about4.jpg";
+import image1 from "../../../../public/pic-1.jpg";
+import image2 from "../../../../public/pic-2.jpg";
+import image3 from "../../../../public/pic-3.jpg";
+import image4 from "../../../../public/pic-4.jpg";
 
 export default function AboutUsPage() {
   return (
