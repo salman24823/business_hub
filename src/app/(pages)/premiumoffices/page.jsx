@@ -3,9 +3,10 @@
 import { Button } from "@heroui/react";
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import Form from "../Sections/Form/page";
+import Form from '../../Sections/Form/page'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+// import Form from "@/app/Sections/Form/page";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,28 +29,28 @@ const RegularOffices = () => {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/v2.JPG",
+      source: "/premium_1.jpg",
       buttonText: "Book Now",
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/v2.JPG",
+      source: "/premium_2.jpg",
       buttonText: "Book Now",
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/v2.JPG",
+      source: "/premium_3.jpg",
       buttonText: "Book Now",
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/v2.JPG",
+      source: "/premium_4.jpg",
       buttonText: "Book Now",
     },
     {
