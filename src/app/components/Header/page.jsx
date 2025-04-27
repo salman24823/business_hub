@@ -203,7 +203,7 @@ const Header = () => {
               <div className="nav_btn hidden md:block">
                 <Button
                   className="yellow-bg px-6 font-bold py-2 rounded-lg text-white md:hidden lg:block"
-                  onClick={() => handleScroll("contact")} // Change "contact" to your actual section ID
+                  onPress={() => handleScroll("contact")} // Change "contact" to your actual section ID
                 >
                   Book Now
                 </Button>
@@ -305,7 +305,7 @@ const Header = () => {
           <div className="p-5 flex justify-center">
             <Button
               className="yellow-bg px-6 font-bold py-2 rounded-lg text-white w-full"
-              onClick={() => {
+              onPress={() => {
                 toggleMenu(); // Close the menu
                 handleScroll("contact"); // Scroll to the section
               }}

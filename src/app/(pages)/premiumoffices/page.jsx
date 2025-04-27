@@ -122,7 +122,7 @@ const RegularOffices = () => {
             <div>
               {/* ✅ Scroll to Form on click */}
               <Button
-                onClick={() => scrollToSection("contact")}
+                onPress={() => scrollToSection("contact")}
                 className="rounded-md yellow-bg font-bold text-white"
               >
                 Book Now
@@ -159,7 +159,7 @@ const RegularOffices = () => {
                   <p className="para text-sm">{data.discription}</p>
                   {data.buttonText !== "" && (
                     <Button
-                      onClick={() => scrollToSection("contact")}
+                      onPress={() => scrollToSection("contact")}
                       className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm"
                     >
                       {data.buttonText}

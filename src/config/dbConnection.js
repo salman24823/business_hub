@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
 const dbConnection = async () => {
-
   if (mongoose.connection.readyState >= 1) {
     console.log("mongodb is Already Connected!");
     return;
@@ -13,9 +12,7 @@ const dbConnection = async () => {
   } catch (error) {
     console.log(error, "Error From Mongodb Connection Error");
   }
-
-
 };
 export default dbConnection;
 
-await dbConnection()
+await dbConnection();

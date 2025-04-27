@@ -1,4 +1,3 @@
-import dbConnection from "@/config/dbConnection";
 import blogModel from "@/models/blogModel";
 import { NextResponse } from "next/server";
 
