@@ -1,5 +1,5 @@
-import dbConnection from "@/config/dbConnection";
-import formModel from "@/models/formModel"; // Ensure correct import
+import dbConnection from "@/app/config/dbConnection";
+import formModel from "@/app/models/formModel"; // Ensure correct import
 import { NextResponse } from "next/server";
 
 // GET request - Retrieve all form submissions

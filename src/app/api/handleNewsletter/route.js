@@ -1,5 +1,5 @@
-import dbConnection from "@/config/dbConnection";
-import newsletterModel from "@/models/newsletterModel";
+import dbConnection from "@/app/config/dbConnection";
+import newsletterModel from "@/app/models/newsletterModel";
 import { NextResponse } from "next/server";
 
 export async function GET() {
