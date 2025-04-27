@@ -3,7 +3,7 @@
 import { Button } from "@heroui/react";
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import Form from "../Sections/Form/page";
+import Form from "../../Sections/Form/page";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 
