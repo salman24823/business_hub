@@ -3,9 +3,10 @@
 import { Button } from "@heroui/react";
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import Form from "../Sections/Form/page";
+// import Form from "./Sections/Form/page";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Form from "../../Sections/Form/page";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -135,7 +136,7 @@ const RegularOffices = () => {
           <span className="yellow">Premium</span> Offices
         </div>
 
-        <div className="w-full">
+        <div className="w-full premium-desktop">
           <div className="flex overflow-x-hidden border-gray-300 border-t px-[5%] big_screen">
             {Edata.map((data, index) => (
               <div
@@ -168,6 +169,38 @@ const RegularOffices = () => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="premium-mobile md:hidden">
+        {Edata.map((data, index) => (
+              <div
+                key={index}
+                className="flex flex-col p-[5%]"
+              >
+                {data.source !== "" && (
+                  <div className="relative w-full h-52">
+                    <Image
+                      src={data.source || "/placeholder.svg"}
+                      alt=""
+                      fill
+                      className="object-cover rounded-sm"
+                    />
+                  </div>
+                )}
+
+                <div className="flex flex-col gap-3 rounded-sm p-3">
+                  <strong className="font-bold text-xl">{data.name}</strong>
+                  <p className="para text-sm">{data.discription}</p>
+                  {data.buttonText !== "" && (
+                    <Button
+                      onClick={() => scrollToSection("contact")}
+                      className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm"
+                    >
+                      {data.buttonText}
+                    </Button>
+                  )}
+                </div>
+              </div>
+            ))}
         </div>
       </div>
       <Form />
