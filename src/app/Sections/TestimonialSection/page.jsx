@@ -6,7 +6,6 @@ import Slider from "react-slick";
 import { toast } from "react-toastify";
 import { Button } from "@heroui/react";
 
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -15,7 +14,7 @@ const TestimonialSection = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("/api/handleTestimonials", {
+      const response = await fetch("/api/handleReview", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

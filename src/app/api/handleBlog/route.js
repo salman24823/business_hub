@@ -5,6 +5,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     await dbConnection();
+    
   } catch (error) {}
 }
 export async function POST(req) {

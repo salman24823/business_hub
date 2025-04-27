@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
-import { Button } from "@heroui/react";
+import { Button, Table, TableCell, TableHeader } from "@heroui/react";
 import { CldUploadWidget } from "next-cloudinary";
 
 const ReviewsForm = () => {
+  const [info, setInfo] = useState([]);
   const [name, setName] = useState("");
   const [role, setRole] = useState("");
   const [message, setMessage] = useState("");
@@ -23,7 +24,7 @@ const ReviewsForm = () => {
     setIsLoading(true);
 
     try {
-      const res = await fetch("/api/handleTestimonials", {
+      const res = await fetch("/api/handleReview", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, role, message, image: imageURL }),
@@ -47,19 +48,38 @@ const ReviewsForm = () => {
     }
   };
 
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-  // Get request to show the data in the tabular form 
-  async function fetchData(){
+  // Get request to show the data in the tabular form
+  async function fetchData() {
     try {
-      
+      const response = await fetch("/api/handleReview", {
+        method: "GET",
+      });
+      const data = await response.json();
+      console.log("API Response:", data);
+
+      if (!response.ok) {
+        toast.error(data.message || "Failed to fetch testimonials");
+        return;
+      }
+      setInfo(data.data); // Access the 'data' field inside the response
     } catch (error) {
-      toast.error("Failed to show data")
+      toast.error("Failed to show testimonials");
     }
   }
+
   return (
     <main className="w-full p-8 md:p-16 bg-gradient-to-b from-green-50 to-white min-h-screen">
-      <div className="max-w-4xl mx-auto shadow-xl rounded-2xl bg-white p-10 space-y-8" data-aos="fade-up">
-        <h2 className="text-4xl font-bold text-center text-green-600">Add a Review</h2>
+      <div
+        className="max-w-4xl mx-auto shadow-xl rounded-2xl bg-white p-10 space-y-8"
+        data-aos="fade-up"
+      >
+        <h2 className="text-4xl font-bold text-center text-green-600">
+          Add a Review
+        </h2>
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <input
             className="p-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 transition"
@@ -124,6 +144,77 @@ const ReviewsForm = () => {
             {isLoading ? "Submitting..." : "Submit Review"}
           </Button>
         </form>
+        {/* ====== Table Section Start ====== */}
+        <div
+          className="max-w-6xl mx-auto mt-12 bg-white p-8 rounded-2xl shadow-xl"
+          data-aos="fade-up"
+        >
+          <h2 className="text-3xl font-bold text-green-600 mb-6 text-center">
+            Reviews Table
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-green-100">
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                    Name
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                    Role
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                    Message
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                    Image
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {info.length > 0 ? (
+                  info.map((review) => (
+                    <tr key={review._id}>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        {review.name}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        {review.role}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        {review.message}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <img
+                          src={review.image}
+                          alt={review.name}
+                          className="w-16 h-16 object-cover rounded-full border-2 border-green-400"
+                        />
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <button
+                          onClick={() => handleDelete(review._id)}
+                          className="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-full transition"
+                        >
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan="5" className="text-center py-6 text-gray-500">
+                      No reviews found.
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        {/* ====== Table Section End ====== */}
       </div>
     </main>
   );
