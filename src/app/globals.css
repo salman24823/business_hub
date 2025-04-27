@@ -361,6 +361,9 @@ textarea:focus {
   .hero_section{
     @apply h-[100vh]
   }
+  .premium-desktop{
+    display: none;
+  }
 }
 @media (max-width: 1024px) {
   .ybh_h {

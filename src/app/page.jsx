@@ -24,6 +24,7 @@ export default function Home() {
       <BusinessServicesSection />
       <Mission />
       <ChooseUs />
+      {/* <TestimonialSection /> */}
       <Form />
       <LocationSection />
     </main>
