@@ -434,7 +434,7 @@ textarea:focus {
   }
 
 }
-
+/* 
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -498,7 +498,7 @@ textarea:focus {
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
 
 /* Base SVG styles */
 .svg-icon {

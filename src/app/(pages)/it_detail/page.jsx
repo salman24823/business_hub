@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
+import React , { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Content from "./Content"; // assuming default export
 
-const Detail = () => {
+const DetailContent = () => {
   const searchParams = useSearchParams();
   const param = searchParams.get("params");
 
@@ -324,6 +324,15 @@ const Detail = () => {
       <Content data={filteredData} />
       <hr />
     </div>
+  );
+};
+
+
+const Detail = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DetailContent />
+    </Suspense>
   );
 };
 
