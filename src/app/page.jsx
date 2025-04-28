@@ -10,6 +10,8 @@ import Blank from "./Sections/Blank/page";
 import ITservices from "./Sections/ITservices/page";
 import Mission from "./Sections/Mission/page";
 import BusinessServicesSection from "./Sections/BusinessServicesSection/page";
+import TestimonialSection from "./Sections/TestimonialSection/page";
+
 export default function Home() {
   return (
     <main>
@@ -22,7 +24,7 @@ export default function Home() {
       <BusinessServicesSection />
       <Mission />
       <ChooseUs />
-      {/* <TestimonialSection /> */}
+      <TestimonialSection />
       <Form />
       <LocationSection />
     </main>
