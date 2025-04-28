@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { SquareCheckBig } from "lucide-react";
-import { Button } from "@heroui/react";
-import about_img1 from "../../../../public/about.jpg";
-import about_img2 from "../../../../public/about2.jpg";
+import about_img1 from "../../../../public/choose_us1.jpg";
+import about_img2 from "../../../../public/choose_us2.jpg";
 
 // Reusable Component for the "feature" section
 const Feature = ({ text }) => (
@@ -57,14 +56,14 @@ const ChooseUs = () => {
         <div className="chos_img flex relative  md:flex-row gap-3 items-center col-span-1">
           {/* First Image */}
           <div className="relative w-[60%] ">
-            <div className="absolute flex flex-wrap w-[90px] h-[90px] md:w-[150px] md:h-[150px] place-content-start">
+            {/* <div className="absolute flex flex-wrap w-[90px] h-[90px] md:w-[150px] md:h-[150px] place-content-start">
               <div className="w-[50%] h-[50%] bg-white" />
               <div className="w-[50%] h-[50%] bg-transparent" />
               <div className="w-[50%] h-[50%] bg-transparent" />
               <div className="w-[50%] h-[50%] yellow-bg" />
-            </div>
+            </div> */}
             <Image
-              src={about_img1}
+              src={about_img2}
               alt="Office Image 1"
               className="w-[full] h-[full]"
             />
@@ -72,14 +71,14 @@ const ChooseUs = () => {
 
           {/* Second Image */}
           <div className="relative w-[40%] ">
-            <div className="absolute flex flex-wrap w-[100px] h-[100px] bottom-0 right-0">
+            {/* <div className="absolute flex flex-wrap w-[100px] h-[100px] bottom-0 right-0">
               <div className="w-[50%] h-[50%] yellow-bg" />
               <div className="w-[50%] h-[50%] bg-transparent" />
               <div className="w-[50%] h-[50%] bg-transparent" />
               <div className="w-[50%] h-[50%] bg-white" />
-            </div>
+            </div> */}
             <Image
-              src={about_img2}
+              src={about_img1}
               alt="Office Image 2"
               className="w-[full] h-[full]"
             />

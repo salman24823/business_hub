@@ -154,7 +154,7 @@ const Header = () => {
                     className="fade_right w-full flex flex-row items-center relative"
                   >
                     <span className="flex flex-row items-center relative gap-1">
-                      Pages
+                      Offices
                       <span className="drop_arrow">
                         <ChevronDown />
                       </span>
@@ -188,16 +188,10 @@ const Header = () => {
                     >
                       Privacy Policy
                     </Link> */}
-                    <Link href={"/contact"} className="drop_items px-6 py-3">
-                      Contact
-                    </Link>
                   </div>
                 </div>
-                <Link
-                  href={"https://blog.businesshubworkspace.com"}
-                  className="fade_right"
-                >
-                  Blogs
+                <Link href={"/contact"} className="fade_right">
+                  Contact
                 </Link>
               </div>
               <div className="nav_btn hidden md:block">
@@ -293,12 +287,8 @@ const Header = () => {
               >
                 Regular Offices
               </Link>
-              <Link
-                href="https://blog.businesshubworkspace.com"
-                className="text-lg"
-                onClick={toggleMenu}
-              >
-                Blogs
+              <Link href="/contact" className="text-lg" onClick={toggleMenu}>
+                Contact
               </Link>
             </div>
           </div>

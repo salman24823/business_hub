@@ -27,35 +27,35 @@ const RegularOffices = () => {
       name: "Single Person Office",
       discription:
         "A private, fully equipped workspace designed for individual professionals seeking focus, comfort, and productivity daily.",
-      source: "/p9.JPG",
+      source: "/pic-5.jpg",
       buttonText: "Book Now",
     },
     {
       name: "One-Three Person Offices",
       discription:
         "Ideal for small teams, these offices offer a collaborative, private space to work efficiently together.",
-      source: "/p11.JPG",
+      source: "/3_person.jpg",
       buttonText: "Book Now",
     },
     {
       name: "Three-Five Person Offices",
       discription:
         "Perfect for growing teams, these offices provide a spacious, productive environment with essential amenities included.",
-      source: "/p12.JPG",
+      source: "/5_person.jpg",
       buttonText: "Book Now",
     },
     {
       name: "Five-Eight Person Offices",
       discription:
         "Designed for mid-sized teams, these offices offer ample space, comfort, and all necessary work essentials.",
-      source: "/p15.JPG",
+      source: "/8_person.jpg",
       buttonText: "Book Now",
     },
     {
       name: "P2 Open Spaces",
       discription:
         "Collaborative open workspace on P2 floor, ideal for dynamic teams needing flexibility, creativity, and connectivity.",
-      source: "/p16.JPG",
+      source: "/open_1.JPG",
       buttonText: "Book Now",
     },
     {
@@ -102,12 +102,12 @@ const RegularOffices = () => {
         <div className="filter p-[5%] big_screen w-full h-full flex items-center">
           <div className="flex flex-col gap-4">
             <h1 className="main_heading">
-              <span className="yellow">P2</span> Offices
+              <span className="yellow">Regular</span> Offices
             </h1>
             <p className="text-white p2para">
-              The P2 office at Businesshub Workspace is a collaborative space
-              designed for freelancers and small teams, offering a productive
-              environment for 5-6 people to work seamlessly together.
+              The Regular office at Businesshub Workspace is a collaborative
+              space designed for freelancers and small teams, offering a
+              productive environment for 5-6 people to work seamlessly together.
             </p>
             <div>
               <Button
@@ -123,7 +123,7 @@ const RegularOffices = () => {
 
       <div id="container" className="w-full bg-white flex flex-col">
         <div className="sub_heading px-[5%] big_screen py-[3%]">
-          <span className="yellow">P2</span> Offices
+          <span className="yellow">Regular</span> Offices
         </div>
 
         <div className="w-full">

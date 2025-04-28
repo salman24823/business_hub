@@ -50,20 +50,6 @@ const RegularOffices = () => {
       name: "One-Three Person Offices",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/premium_4.jpg",
-      buttonText: "Book Now",
-    },
-    {
-      name: "One-Three Person Offices",
-      discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
-      source: "/v2.JPG",
-      buttonText: "Book Now",
-    },
-    {
-      name: "One-Three Person Offices",
-      discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
       source: "/v2.JPG",
       buttonText: "Book Now",
     },

@@ -4,8 +4,37 @@ import image1 from "../../../../public/pic-1.jpg";
 import image2 from "../../../../public/pic-2.jpg";
 import image3 from "../../../../public/pic-3.jpg";
 import image4 from "../../../../public/pic-4.jpg";
+import ceo from "../../../../public/ceo.jpg";
+import ceo2 from "../.../../../../../public/ceo-2.jpg";
 
 export default function AboutUsPage() {
+  const teamMembers = [
+    {
+      id: 1,
+      name: "Team Member 1",
+      position: "CEO",
+      image: ceo,
+      description:
+        "Leader with a decade of experience in workspace innovation and real estate solutions.",
+    },
+    {
+      id: 2,
+      name: "Team Member 2",
+      position: "Chief Operations Officer",
+      image: ceo2,
+      description:
+        "Expert in operational excellence and customer-centric workspace management.",
+    },
+    {
+      id: 3,
+      name: "Team Member 3",
+      position: "Head of Technology",
+      image: ceo,
+      description:
+        "Passionate about integrating technology into modern work environments.",
+    },
+  ];
+
   return (
     <div className="bg-white min-h-screen overflow-hidden">
       {/* Hero Section */}
@@ -184,36 +213,54 @@ export default function AboutUsPage() {
       {/* Team Section */}
       <section className="p-[5%] big_screen bg-gray-100">
         <div className="container mx-auto px-4">
+          {/* Section Heading */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-2 text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
               Meet Our Leadership Team
             </h2>
             <div className="w-20 h-1 bg-yellow-400 mx-auto mb-6"></div>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-lg">
               Our diverse team of experts brings together decades of experience
               in real estate, hospitality, technology, and business management
               to create exceptional workspace solutions.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((member) => (
-              <div key={member} className="text-center">
-                <div className="rounded-full overflow-hidden h-48 w-48 mx-auto mb-6 shadow-md">
+          {/* Team Members Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+            {teamMembers.map((member) => (
+              <div
+                key={member.id}
+                className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition duration-300"
+              >
+                {/* Image */}
+                <div className="rounded-full overflow-hidden h-40 w-40 mx-auto mb-6">
                   <Image
-                    src={`/placeholder.svg?height=200&width=200&text=Team Member ${member}`}
-                    alt={`Team Member ${member}`}
-                    width={200}
-                    height={200}
+                    src={
+                      member.image ||
+                      `/placeholder.svg?height=200&width=200&text=${encodeURIComponent(
+                        member.name
+                      )}`
+                    }
+                    alt={member.name}
+                    width={160}
+                    height={160}
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <h3 className="text-xl font-bold mb-1">Team Member {member}</h3>
-                <p className=" font-medium mb-4">Position Title</p>
-                <p className="text-gray-600">
-                  Brief description about the team member and their expertise in
-                  the industry.
+
+                {/* Name */}
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {member.name}
+                </h3>
+
+                {/* Position */}
+                <p className="text-yellow-500 font-medium mb-4">
+                  {member.position}
                 </p>
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm">{member.description}</p>
               </div>
             ))}
           </div>

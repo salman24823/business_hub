@@ -120,7 +120,7 @@ const ServiceSection = () => {
 
         {/* Shops */}
         <div
-          className="s_m card_hover bg-[url(/slider3.jpg)] "
+          className="s_m card_hover bg-[url(/shop_img.jpg)] "
           data-aos="zoom-in"
         >
           <div className="rep">
@@ -237,7 +237,7 @@ const ServiceSection = () => {
 
         {/* Shops */}
         <div
-          className="inset-0 card_hover bg-[url(/slider3.jpg)] bg-cover bg-center bg-no-repeat group relative md:col-span-4 lg:col-span-4 rounded-lg overflow-hidden"
+          className="inset-0 card_hover bg-[url(/shop_img.jpg)] bg-cover bg-center bg-no-repeat group relative md:col-span-4 lg:col-span-4 rounded-lg overflow-hidden"
           data-aos="zoom-in"
         >
           <div className="card_hover_animation filter flex flex-col justify-end h-full w-full p-5">
