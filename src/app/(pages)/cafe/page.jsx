@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import cafe_img1 from "../../../../public/cafe-1.jpg";
+import { Button } from "@heroui/react";
 
 export default function RooftopWorkspaceCafe() {
   return (
@@ -8,26 +9,26 @@ export default function RooftopWorkspaceCafe() {
       {/* Hero Section */}
       <section className="relative h-[100vh] overflow-hidden">
         <div className="absolute inset-0">
-          <Image
+          {/* <Image
             src={cafe_img1}
             alt="Rooftop workspace cafe view"
             fill
             sizes="100vw"
             className="object-center object-cover"
             priority
-          />
+          /> */}
           <div className="absolute inset-0"></div>
         </div>
         <div className="relative h-full flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
-            <span className="text-yellow-300">SKY</span>WORK
+            <span className="text-yellow-300">Business Hub</span> Cafe
           </h1>
           <p className="text-xl md:text-2xl text-white mb-8">
             Elevate Your Workspace Experience
           </p>
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full transition-colors shadow-lg">
-            Explore Workspace
-          </button>
+          <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white">
+            Coming Soon
+          </Button>
         </div>
       </section>
 
@@ -117,7 +118,7 @@ export default function RooftopWorkspaceCafe() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold yellow mb-6">
                 A Workspace Above The City
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -134,8 +135,8 @@ export default function RooftopWorkspaceCafe() {
                 workplace needs.
               </p>
               <div className="flex space-x-4">
-                <div className="h-1 w-20 bg-yellow-400"></div>
-                <div className="h-1 w-10 bg-blue-600"></div>
+                <div className="h-1 w-20 yellow-bg"></div>
+                <div className="h-1 w-10 blue_bg"></div>
               </div>
             </div>
             <div className="md:w-1/2 grid grid-cols-2 gap-4">
@@ -164,7 +165,7 @@ export default function RooftopWorkspaceCafe() {
       <section id="amenities" className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold yellow mb-4">
               Workspace Amenities
             </h2>
             <p className="text-gray-700 max-w-2xl mx-auto">
@@ -176,7 +177,7 @@ export default function RooftopWorkspaceCafe() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Amenity 1 */}
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="w-16 h-16 bg-blue-600 text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 blue_bg text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8"
@@ -192,7 +193,7 @@ export default function RooftopWorkspaceCafe() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-blue-600 mb-4 text-center">
+              <h3 className="text-xl font-bold yellow mb-4 text-center">
                 High-Speed WiFi
               </h3>
               <p className="text-gray-600 text-center">
@@ -203,7 +204,7 @@ export default function RooftopWorkspaceCafe() {
 
             {/* Amenity 2 */}
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="w-16 h-16 bg-blue-600 text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 blue_bg text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8"
@@ -219,7 +220,7 @@ export default function RooftopWorkspaceCafe() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-blue-600 mb-4 text-center">
+              <h3 className="text-xl font-bold yellow mb-4 text-center">
                 Extended Hours
               </h3>
               <p className="text-gray-600 text-center">
@@ -230,7 +231,7 @@ export default function RooftopWorkspaceCafe() {
 
             {/* Amenity 3 */}
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="w-16 h-16 bg-blue-600 text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 blue_bg text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8"
@@ -246,7 +247,7 @@ export default function RooftopWorkspaceCafe() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-blue-600 mb-4 text-center">
+              <h3 className="text-xl font-bold yellow mb-4 text-center">
                 Power Everywhere
               </h3>
               <p className="text-gray-600 text-center">
@@ -257,7 +258,7 @@ export default function RooftopWorkspaceCafe() {
 
             {/* Amenity 4 */}
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="w-16 h-16 bg-blue-600 text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 blue_bg text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8"
@@ -273,7 +274,7 @@ export default function RooftopWorkspaceCafe() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-blue-600 mb-4 text-center">
+              <h3 className="text-xl font-bold yellow mb-4 text-center">
                 Meeting Spaces
               </h3>
               <p className="text-gray-600 text-center">
@@ -284,7 +285,7 @@ export default function RooftopWorkspaceCafe() {
 
             {/* Amenity 5 */}
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="w-16 h-16 bg-blue-600 text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 blue_bg text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8"
@@ -300,7 +301,7 @@ export default function RooftopWorkspaceCafe() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-blue-600 mb-4 text-center">
+              <h3 className="text-xl font-bold yellow mb-4 text-center">
                 Comfort & Design
               </h3>
               <p className="text-gray-600 text-center">
@@ -311,7 +312,7 @@ export default function RooftopWorkspaceCafe() {
 
             {/* Amenity 6 */}
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="w-16 h-16 bg-blue-600 text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 blue_bg text-yellow-300 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8"
@@ -327,7 +328,7 @@ export default function RooftopWorkspaceCafe() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-blue-600 mb-4 text-center">
+              <h3 className="text-xl font-bold yellow mb-4 text-center">
                 Printing Services
               </h3>
               <p className="text-gray-600 text-center">
@@ -343,7 +344,7 @@ export default function RooftopWorkspaceCafe() {
       <section id="menu" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold yellow mb-4">
               Café Menu
             </h2>
             <p className="text-gray-700 max-w-2xl mx-auto">
@@ -354,7 +355,7 @@ export default function RooftopWorkspaceCafe() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-blue-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-blue-600 mb-6 flex items-center">
+              <h3 className="text-2xl font-bold yellow mb-6 flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-2"
@@ -374,14 +375,14 @@ export default function RooftopWorkspaceCafe() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center border-b border-blue-100 pb-2">
                   <div>
-                    <h4 className="font-semibold text-blue-800">Espresso</h4>
+                    <h4 className="font-semibold yellow">Espresso</h4>
                     <p className="text-sm text-gray-600">Rich and bold</p>
                   </div>
                   <div className="text-yellow-600 font-bold">$2.50</div>
                 </div>
                 <div className="flex justify-between items-center border-b border-blue-100 pb-2">
                   <div>
-                    <h4 className="font-semibold text-blue-800">Cappuccino</h4>
+                    <h4 className="font-semibold yellow">Cappuccino</h4>
                     <p className="text-sm text-gray-600">
                       Espresso with steamed milk and foam
                     </p>
@@ -390,7 +391,7 @@ export default function RooftopWorkspaceCafe() {
                 </div>
                 <div className="flex justify-between items-center border-b border-blue-100 pb-2">
                   <div>
-                    <h4 className="font-semibold text-blue-800">Latte</h4>
+                    <h4 className="font-semibold yellow">Latte</h4>
                     <p className="text-sm text-gray-600">
                       Espresso with steamed milk
                     </p>
@@ -399,7 +400,7 @@ export default function RooftopWorkspaceCafe() {
                 </div>
                 <div className="flex justify-between items-center border-b border-blue-100 pb-2">
                   <div>
-                    <h4 className="font-semibold text-blue-800">Cold Brew</h4>
+                    <h4 className="font-semibold yellow">Cold Brew</h4>
                     <p className="text-sm text-gray-600">
                       Smooth, slow-steeped coffee
                     </p>
@@ -408,7 +409,7 @@ export default function RooftopWorkspaceCafe() {
                 </div>
                 <div className="flex justify-between items-center border-b border-blue-100 pb-2">
                   <div>
-                    <h4 className="font-semibold text-blue-800">Herbal Tea</h4>
+                    <h4 className="font-semibold yellow">Herbal Tea</h4>
                     <p className="text-sm text-gray-600">
                       Selection of premium teas
                     </p>
@@ -417,7 +418,7 @@ export default function RooftopWorkspaceCafe() {
                 </div>
                 <div className="flex justify-between items-center">
                   <div>
-                    <h4 className="font-semibold text-blue-800">Fresh Juice</h4>
+                    <h4 className="font-semibold yellow">Fresh Juice</h4>
                     <p className="text-sm text-gray-600">
                       Orange, apple, or green blend
                     </p>
@@ -428,7 +429,7 @@ export default function RooftopWorkspaceCafe() {
             </div>
 
             <div className="bg-yellow-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-blue-600 mb-6 flex items-center">
+              <h3 className="text-2xl font-bold yellow mb-6 flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-2"
@@ -448,9 +449,7 @@ export default function RooftopWorkspaceCafe() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center border-b border-yellow-100 pb-2">
                   <div>
-                    <h4 className="font-semibold text-blue-800">
-                      Avocado Toast
-                    </h4>
+                    <h4 className="font-semibold yellow">Avocado Toast</h4>
                     <p className="text-sm text-gray-600">
                       Whole grain toast with avocado and toppings
                     </p>
@@ -459,7 +458,7 @@ export default function RooftopWorkspaceCafe() {
                 </div>
                 <div className="flex justify-between items-center border-b border-yellow-100 pb-2">
                   <div>
-                    <h4 className="font-semibold text-blue-800">
+                    <h4 className="font-semibold yellow">
                       Greek Yogurt Parfait
                     </h4>
                     <p className="text-sm text-gray-600">
@@ -470,9 +469,7 @@ export default function RooftopWorkspaceCafe() {
                 </div>
                 <div className="flex justify-between items-center border-b border-yellow-100 pb-2">
                   <div>
-                    <h4 className="font-semibold text-blue-800">
-                      Chicken Wrap
-                    </h4>
+                    <h4 className="font-semibold yellow">Chicken Wrap</h4>
                     <p className="text-sm text-gray-600">
                       Grilled chicken with veggies and hummus
                     </p>
@@ -481,9 +478,7 @@ export default function RooftopWorkspaceCafe() {
                 </div>
                 <div className="flex justify-between items-center border-b border-yellow-100 pb-2">
                   <div>
-                    <h4 className="font-semibold text-blue-800">
-                      Quinoa Salad
-                    </h4>
+                    <h4 className="font-semibold yellow">Quinoa Salad</h4>
                     <p className="text-sm text-gray-600">
                       With roasted vegetables and feta
                     </p>
@@ -492,18 +487,14 @@ export default function RooftopWorkspaceCafe() {
                 </div>
                 <div className="flex justify-between items-center border-b border-yellow-100 pb-2">
                   <div>
-                    <h4 className="font-semibold text-blue-800">
-                      Fresh Fruit Cup
-                    </h4>
+                    <h4 className="font-semibold yellow">Fresh Fruit Cup</h4>
                     <p className="text-sm text-gray-600">Seasonal selection</p>
                   </div>
                   <div className="text-yellow-600 font-bold">$4.25</div>
                 </div>
                 <div className="flex justify-between items-center">
                   <div>
-                    <h4 className="font-semibold text-blue-800">
-                      Pastry Selection
-                    </h4>
+                    <h4 className="font-semibold yellow">Pastry Selection</h4>
                     <p className="text-sm text-gray-600">Daily baked goods</p>
                   </div>
                   <div className="text-yellow-600 font-bold">$3.50</div>
@@ -518,7 +509,7 @@ export default function RooftopWorkspaceCafe() {
       <section id="gallery" className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold yellow mb-4">
               Workspace Gallery
             </h2>
             <p className="text-gray-700 max-w-2xl mx-auto">
@@ -597,10 +588,10 @@ export default function RooftopWorkspaceCafe() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-blue-600 text-white">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl yellow font-bold mb-4">
               What Our Team Says
             </h2>
             <div className="flex justify-center">
@@ -610,11 +601,11 @@ export default function RooftopWorkspaceCafe() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Testimonial 1 */}
-            <div className="bg-blue-700 p-8 rounded-xl relative">
+            <div className="blue_bg p-8 rounded-xl relative">
               <div className="text-yellow-300 text-6xl absolute -top-6 left-4 opacity-30">
                 "
               </div>
-              <p className="mb-6 relative z-10">
+              <p className="mb-6 para relative z-10">
                 The rooftop workspace has transformed my workday. I'm more
                 productive, and the change of scenery helps me think more
                 creatively. Plus, the coffee is excellent!
@@ -622,46 +613,46 @@ export default function RooftopWorkspaceCafe() {
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-yellow-300 mr-4"></div>
                 <div>
-                  <div className="font-bold">Alex Johnson</div>
-                  <div className="text-blue-200 text-sm">Marketing Team</div>
+                  <div className="font-bold yellow">Alex Johnson</div>
+                  <div className="yellow text-sm">Marketing Team</div>
                 </div>
               </div>
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-blue-700 p-8 rounded-xl relative">
+            <div className="blue_bg p-8 rounded-xl relative">
               <div className="text-yellow-300 text-6xl absolute -top-6 left-4 opacity-30">
                 "
               </div>
-              <p className="mb-6 relative z-10">
-                I love having client meetings in the rooftop café. It's
-                impressive, comfortable, and the views make for a great
-                conversation starter. It's become my go-to spot.
+              <p className="mb-6 para relative z-10">
+                The rooftop workspace has transformed my workday. I'm more
+                productive, and the change of scenery helps me think more
+                creatively. Plus, the coffee is excellent!
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-yellow-300 mr-4"></div>
                 <div>
-                  <div className="font-bold">Samantha Chen</div>
-                  <div className="text-blue-200 text-sm">Sales Director</div>
+                  <div className="font-bold yellow">Alex Johnson</div>
+                  <div className="yellow text-sm">Marketing Team</div>
                 </div>
               </div>
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-blue-700 p-8 rounded-xl relative">
+            <div className="blue_bg p-8 rounded-xl relative">
               <div className="text-yellow-300 text-6xl absolute -top-6 left-4 opacity-30">
                 "
               </div>
-              <p className="mb-6 relative z-10">
-                The workspace has been a game-changer for our team
-                collaborations. We hold our brainstorming sessions there, and
-                the relaxed environment leads to our best ideas.
+              <p className="mb-6 para relative z-10">
+                The rooftop workspace has transformed my workday. I'm more
+                productive, and the change of scenery helps me think more
+                creatively. Plus, the coffee is excellent!
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-yellow-300 mr-4"></div>
                 <div>
-                  <div className="font-bold">David Rodriguez</div>
-                  <div className="text-blue-200 text-sm">Creative Director</div>
+                  <div className="font-bold yellow">Alex Johnson</div>
+                  <div className="yellow text-sm">Marketing Team</div>
                 </div>
               </div>
             </div>
@@ -674,7 +665,7 @@ export default function RooftopWorkspaceCafe() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-12">
             <div className="md:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold yellow mb-6">
                 Hours & Information
               </h2>
               <p className="text-gray-700 mb-8">
@@ -684,7 +675,7 @@ export default function RooftopWorkspaceCafe() {
               </p>
 
               <div className="bg-white p-8 rounded-xl shadow-md">
-                <h3 className="text-xl font-bold text-blue-600 mb-4">
+                <h3 className="text-xl font-bold yellow mb-4">
                   Operating Hours
                 </h3>
                 <div className="space-y-3">
@@ -702,14 +693,14 @@ export default function RooftopWorkspaceCafe() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-blue-600 mt-8 mb-4">
+                <h3 className="text-xl font-bold yellow mt-8 mb-4">
                   Contact Information
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-blue-600 mr-2 mt-0.5"
+                      className="h-5 w-5 yellow mr-2 mt-0.5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -726,7 +717,7 @@ export default function RooftopWorkspaceCafe() {
                   <div className="flex items-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-blue-600 mr-2 mt-0.5"
+                      className="h-5 w-5 yellow mr-2 mt-0.5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -743,7 +734,7 @@ export default function RooftopWorkspaceCafe() {
                   <div className="flex items-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-blue-600 mr-2 mt-0.5"
+                      className="h-5 w-5 yellow mr-2 mt-0.5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"

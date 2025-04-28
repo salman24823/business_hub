@@ -15,6 +15,7 @@ const Footer = () => {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
+    { label: "Cafetria", href: "/cafe" },
     // { label: "Pages", href: "/" },
     { label: "Blogs", href: "https://blog.businesshubworkspace.com" },
   ];
