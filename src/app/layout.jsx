@@ -2,6 +2,8 @@ import "./globals.css";
 import Header from "./components/Header/page";
 import Footer from "./components/Footer/page";
 import { HeroUIProvider } from "@heroui/react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const metadata = {
   title: "Business Hub",
