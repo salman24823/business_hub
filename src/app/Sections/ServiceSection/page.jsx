@@ -157,7 +157,7 @@ const ServiceSection = () => {
 
         {/* Meeting Rooms */}
         <div
-          className="inset-0 card_hover bg-[url(/meeting-room.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-4 lg:col-span-4 rounded-lg overflow-hidden"
+          className="inset-0 card_hover bg-[url(/hall-1.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-4 lg:col-span-4 rounded-lg overflow-hidden"
           data-aos="zoom-in"
         >
           <div className="card_hover_animation filter flex flex-col justify-end h-full w-full p-5">
@@ -174,7 +174,7 @@ const ServiceSection = () => {
 
         {/* Conference Hall */}
         <div
-          className="inset-0 card_hover bg-[url(/hall-1.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-3 lg:col-span-3 rounded-lg overflow-hidden"
+          className="inset-0 card_hover bg-[url(/conference.JPG)] bg-cover bg-center bg-no-repeat group relative md:col-span-3 lg:col-span-3 rounded-lg overflow-hidden"
           data-aos="zoom-in"
         >
           <div className="card_hover_animation filter flex flex-col justify-end h-full w-full p-5">

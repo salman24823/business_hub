@@ -1,12 +1,20 @@
-"use client"
-import { CircleDollarSign, Code, Mail, Newspaper, PenTool, PodcastIcon, PresentationIcon } from "lucide-react"
-import { FaLongArrowAltRight } from "react-icons/fa"
-import { TbSettingsSearch } from "react-icons/tb"
-import { RiAdvertisementFill } from "react-icons/ri"
-import { MdMobileFriendly } from "react-icons/md"
-import { FaPaintBrush, FaShoppingBag } from "react-icons/fa"
-import Link from "next/link"
-import Detail from "../../(pages)/it_detail/page"
+"use client";
+import {
+  CircleDollarSign,
+  Code,
+  Mail,
+  Newspaper,
+  PenTool,
+  PodcastIcon,
+  PresentationIcon,
+} from "lucide-react";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { TbSettingsSearch } from "react-icons/tb";
+import { RiAdvertisementFill } from "react-icons/ri";
+import { MdMobileFriendly } from "react-icons/md";
+import { FaPaintBrush, FaShoppingBag } from "react-icons/fa";
+import Link from "next/link";
+import Detail from "../../(pages)/it_detail/page";
 
 const ITservices = () => {
   const features = [
@@ -15,7 +23,8 @@ const ITservices = () => {
       icon: <Code className="yellow w-16 h-16" />,
       title: "Web Development",
       slug: "web-development",
-      description: "Custom websites are built to enhance both performance and user experience.",
+      description:
+        "Custom websites are built to enhance both performance and user experience.",
     },
     {
       id: 2,
@@ -70,14 +79,16 @@ const ITservices = () => {
       id: 9,
       icon: <PodcastIcon className="yellow w-16 h-16" />,
       title: "Podcasting",
-      description: "Expert IT services for podcast setup, editing, and distribution support.",
+      description:
+        "Expert IT services for podcast setup, editing, and distribution support.",
       slug: "podcasting",
     },
     {
       id: 10,
       icon: <CircleDollarSign className="yellow w-16 h-16" />,
       title: "Digital Trading Service",
-      description: "IT services for digital trading, including platforms, tools, and support.",
+      description:
+        "IT services for digital trading, including platforms, tools, and support.",
       slug: "digital-trading-service",
     },
     {
@@ -93,19 +104,23 @@ const ITservices = () => {
       icon: <Mail className="yellow w-16 h-16" />,
       title: "Email Marketing",
       slug: "email-marketing",
-      description: "Drive engagement and conversions with targeted, personalized email marketing campaigns.",
+      description:
+        "Drive engagement and conversions with targeted, personalized email marketing campaigns.",
     },
-  ]
+  ];
 
   return (
-    <main id="IT-service" className="p-[5%] flex flex-col items-center gap-12 big_screen">
+    <main
+      id="IT-service"
+      className="p-[5%] flex flex-col items-center gap-12 big_screen"
+    >
       <div className="flex flex-col gap-1 items-center">
         <h2 className="sub_heading yellow">
           <span className="blue">IT</span>Services
         </h2>
         <p className="sub_point blue xl:w-[60%] text-center">
-          Empowering businesses with cutting-edge technology solutions to drive growth and innovation in the digital
-          era.
+          Empowering businesses with cutting-edge technology solutions to drive
+          growth and innovation in the digital era.
         </p>
       </div>
 
@@ -114,18 +129,25 @@ const ITservices = () => {
         {/* Feature Cards */}
 
         {features.map(({ id, icon, title, description }) => (
-          <div  key={id} className="relative itservices_card sm:col-span-1 flex flex-col items-center yellow">
+          <div
+            key={id}
+            className="relative itservices_card sm:col-span-1 flex flex-col items-center yellow"
+          >
             <div className="w-20 h-20 p-3 rounded-[50%] flex justify-center items-center">
               <span>{icon}</span>
             </div>
-            <span className="text-[1.4rem] font-bold text-center blue">{title}</span>
-            <p className="text-[16px] text-center text-gray-500">{description}</p>
+            <span className="text-[1.4rem] font-bold text-center blue">
+              {title}
+            </span>
+            <p className="text-[16px] text-center text-gray-500">
+              {description}
+            </p>
             <div className="service_card_hover w-full h-[110%] absolute flex justify-center items-center yellow-bg">
               <Link
                 href={`/it_detail?params=${id}`}
-                className="border-none yellow-bg text-white px-6 rounded-md font-bold text-2xl"
+                className="flex gap-1 items-center border-none yellow-bg text-white px-6 rounded-md font-bold text-2xl"
               >
-                Hire us
+                <p>Read More</p>
                 <FaLongArrowAltRight />
               </Link>
             </div>
@@ -133,10 +155,9 @@ const ITservices = () => {
         ))}
       </div>
 
-        {/* <Detail features /> */}
-
+      {/* <Detail features /> */}
     </main>
-  )
-}
+  );
+};
 
-export default ITservices
+export default ITservices;

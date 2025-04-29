@@ -98,7 +98,7 @@ const RegularOffices = () => {
 
   return (
     <section>
-      <div className="w-full h-[100vh] bg-[url(/p2-banner2.JPG)] bg-cover bg-no-repeat p_hero_section">
+      <div className="w-full h-[100vh] bg-hero-mobile bg-hero-desktop bg-cover bg-no-repeat p_hero_section">
         <div className="filter p-[5%] big_screen w-full h-full flex items-center">
           <div className="flex flex-col gap-4">
             <h1 className="main_heading">
@@ -126,7 +126,7 @@ const RegularOffices = () => {
           <span className="yellow">Regular</span> Offices
         </div>
 
-        <div className="w-full">
+        <div className="w-full premium-desktop">
           <div className="flex gap-4 overflow-x-hidden border-t border-gray-300 px-[5%] big_screen">
             {Edata.map((data, index) => (
               <div
@@ -162,6 +162,35 @@ const RegularOffices = () => {
             ))}
           </div>
         </div>
+         <div className="premium-mobile md:hidden">
+                  {Edata.map((data, index) => (
+                    <div key={index} className="flex flex-col p-[5%]">
+                      {data.source !== "" && (
+                        <div className="relative w-full h-52">
+                          <Image
+                            src={data.source || "/placeholder.svg"}
+                            alt=""
+                            fill
+                            className="object-cover rounded-sm"
+                          />
+                        </div>
+                      )}
+        
+                      <div className="flex flex-col gap-3 rounded-sm p-3">
+                        <strong className="font-bold text-xl">{data.name}</strong>
+                        <p className="para text-sm">{data.discription}</p>
+                        {data.buttonText !== "" && (
+                          <Button
+                            onClick={() => scrollToSection("contact")}
+                            className="yellow-bg text-white p-3 px-6 font-bold w-full rounded-sm"
+                          >
+                            {data.buttonText}
+                          </Button>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
       </div>
 
       <Form />

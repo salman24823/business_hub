@@ -11,7 +11,7 @@ export default function AboutUsPage() {
   const teamMembers = [
     {
       id: 1,
-      name: "Team Member 1",
+      name: "Mehboob Anjum",
       position: "CEO",
       image: ceo,
       description:
@@ -19,8 +19,8 @@ export default function AboutUsPage() {
     },
     {
       id: 2,
-      name: "Team Member 2",
-      position: "Chief Operations Officer",
+      name: "Naeem ur Rehman",
+      position: "Managing Head",
       image: ceo2,
       description:
         "Expert in operational excellence and customer-centric workspace management.",
