@@ -77,7 +77,7 @@ const ServiceSection = () => {
         </div>
 
         {/* Conference Hall */}
-        <div className="s_m card_hover bg-[url(/hall.JPG)] " data-aos="zoom-in">
+        <div className="s_m card_hover bg-[url(/hall-1.JPG)] " data-aos="zoom-in">
           <div className="rep">
             <h3 className="text-xl font-bold text-white mb-2">
               Conference Hall
