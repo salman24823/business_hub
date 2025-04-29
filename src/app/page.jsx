@@ -5,7 +5,6 @@ import FeatureSection from "./Sections/FeatureSection/page";
 import MenuSection from "./Sections/ServiceSection/page";
 import Form from "./Sections/Form/page";
 import LocationSection from "./Sections/LocationSection/page";
-import ServicesCards from "./Sections/ServeiceCrads/page";
 import Blank from "./Sections/Blank/page";
 import ITservices from "./Sections/ITservices/page";
 import Mission from "./Sections/Mission/page";
