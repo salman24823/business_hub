@@ -98,9 +98,11 @@ const Header = () => {
           <div className="blue_bg nav_ch_2 flex justify-between px-4 items-center text-white w-full h-[4rem] er">
             <div className="flex items-center justify-center gap-1">
               <Image alt="logo" src={Logo} className="w-12 lg:w-12" />
-              <h1 className="yellow text-lg lg:text-[2.2rem] mt-2 flex gap-1">
-                BUSINESS <span className=""> HUB</span>
-              </h1>
+              <Link href={"/"}>
+                <h1 className="yellow text-lg lg:text-[2.2rem] mt-2 flex gap-1">
+                  BUSINESS <span className=""> HUB</span>
+                </h1>
+              </Link>
               <Image
                 alt="workspace"
                 src={workspace}
