@@ -33,7 +33,7 @@ export default function RooftopWorkspaceCafe() {
             className="object-center object-cover"
             priority
           /> */}
-          <div className="absolute inset-0"></div>
+          <div className="absolute inset-0 bg-blue-900/100"></div>
         </div>
         <div className="relative h-full flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
