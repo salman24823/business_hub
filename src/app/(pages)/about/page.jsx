@@ -6,11 +6,20 @@ import image3 from "../../../../public/pic-3.jpg";
 import image4 from "../../../../public/pic-4.jpg";
 import ceo from "../../../../public/ceo.jpg";
 import ceo2 from "../.../../../../../public/ceo-2.jpg";
+import director from "../../../../public/ceo-img.jpg";
 
 export default function AboutUsPage() {
   const teamMembers = [
     {
       id: 1,
+      name: "Abdur Rehman",
+      position: "Director",
+      image: director,
+      description:
+        "Tech innovator and IT expert with a decade of leadership in workspace solutions and digital transformation.",
+    },
+    {
+      id: 2,
       name: "Mehboob Anjum",
       position: "CEO",
       image: ceo,
@@ -18,20 +27,12 @@ export default function AboutUsPage() {
         "Leader with a decade of experience in workspace innovation and real estate solutions.",
     },
     {
-      id: 2,
+      id: 3,
       name: "Naeem ur Rehman",
       position: "Managing Head",
       image: ceo2,
       description:
         "Expert in operational excellence and customer-centric workspace management.",
-    },
-    {
-      id: 3,
-      name: "Team Member 3",
-      position: "Head of Technology",
-      image: ceo,
-      description:
-        "Passionate about integrating technology into modern work environments.",
     },
   ];
 

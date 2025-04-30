@@ -25,30 +25,30 @@ const scrollToSection = (id) => {
 const RegularOffices = () => {
   const Edata = [
     {
-      name: "One-Three Person Offices",
+      name: "Premium Offices",
       discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
+        "Stylish furniture, ergonomic seating, and ready-to-use workstations.",
       source: "/premium_1.jpg",
       buttonText: "Book Now",
     },
     {
-      name: "One-Three Person Offices",
+      name: "Premium Offices",
       discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
+        "Meeting rooms, lounges, and reception for a seamless work experience.",
       source: "/premium_2.jpg",
       buttonText: "Book Now",
     },
     {
-      name: "One-Three Person Offices",
+      name: "Premium Offices",
       discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
+        "Located in the business hub with easy access to transport, dining, and banks.",
       source: "/premium_3.jpg",
       buttonText: "Book Now",
     },
     {
-      name: "One-Three Person Offices",
+      name: "Premium Offices",
       discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eos omnis. Unde, perspiciatis aliquam!",
+        "Secure entry, CCTV, and 24/7 access for safe, flexible business operations.",
       source: "/v2.JPG",
       buttonText: "Book Now",
     },

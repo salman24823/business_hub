@@ -8,39 +8,30 @@ import cafe3 from "../../../../public/cafe_3.jpeg";
 import cafe5 from "../../../../public/cafe_5.jpg";
 import cafe6 from "../../../../public/cafe_6.jpg";
 import cafe7 from "../../../../public/cafe_7.webp";
-import cafe8 from '../../../../public/cafe_8.jpg';
-import cafe9 from '../../../../public/cafe_9.jpg';
-import cafe10 from '../../../../public/cafe_10.jpg';
-import cafe11 from '../../../../public/cafe_11.jpg';
-import cafe12 from '../../../../public/cafe_12.jpg';
-import cafe13 from '../../../../public/cafe_13.jpg';
-import cafe14 from '../../../../public/cafe_14.jpg';
-import cafe15 from '../../../../public/cafe_15.jpg';
-import hero from '../../../../public/cafe_hero.jpg'
-
+import cafe8 from "../../../../public/cafe_8.jpg";
+import cafe9 from "../../../../public/cafe_9.jpg";
+import cafe10 from "../../../../public/cafe_10.jpg";
+import cafe11 from "../../../../public/cafe_11.jpg";
+import cafe12 from "../../../../public/cafe_12.jpg";
+import cafe13 from "../../../../public/cafe_13.jpg";
+import cafe14 from "../../../../public/cafe_14.jpg";
+import cafe15 from "../../../../public/cafe_15.jpg";
+import hero from "../../../../public/cafe_hero.jpg";
+import heroimg from "../../../../public/hero_1.jpg";
+import heroimg2 from "../../../../public/hero_2.jpg";
 
 export default function RooftopWorkspaceCafe() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-yellow-50">
       {/* Hero Section */}
-      <section className="relative h-[100vh] overflow-hidden">
-        <div className="absolute inset-0">
-          {/* <Image
-            src={cafe_img1}
-            alt="Rooftop workspace cafe view"
-            fill
-            sizes="100vw"
-            className="object-center object-cover"
-            priority
-          /> */}
-          <div className="absolute inset-0 bg-blue-900/100"></div>
-        </div>
+      <section className="bg-[url('/hero_1.jpg')] bg-cover relative h-[145vh] overflow-hidden">
+        <div className="absolute inset-0"></div>
         <div className="relative h-full flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
             <span className="text-yellow-300">Business Hub</span> Cafe
           </h1>
           <p className="text-xl md:text-2xl text-white mb-8">
-            Elevate Your Workspace Experience
+            A cup of tea or coffee isn&apos;t just a drink—it&apos;s a moment of clarity
           </p>
           <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white">
             Coming Soon
@@ -111,17 +102,17 @@ export default function RooftopWorkspaceCafe() {
             {/* Image 4 */}
             <div className="group relative overflow-hidden rounded-xl shadow-lg h-80">
               <Image
-                src={hero}
+                src={cafe5}
                 alt="City skyline view"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white">
-                    Light Up the View
-                  </h3>
-                  <p className="text-yellow-300">Inspiring city skyline</p>
+                  <h3 className="text-xl font-bold text-white">Tea Bar</h3>
+                  <p className="text-yellow-300">
+                    Have a Tea to boost you mind
+                  </p>
                 </div>
               </div>
             </div>
@@ -138,17 +129,18 @@ export default function RooftopWorkspaceCafe() {
                 A Workspace Above The City
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Perched atop our office building, SkyWork Café offers
-                breathtaking panoramic views and a refreshing environment to
-                boost your productivity. Our rooftop workspace combines
-                comfortable seating, high-speed internet, and a relaxed
-                atmosphere to help you do your best work.
+                Located within the heart of our Business Hub, the upcoming café
+                is designed to bring energy, comfort, and connection to your
+                workday. With stylish interiors, open seating, and freshly
+                brewed coffee, it will be the ideal place to take a break, meet
+                colleagues, or simply enjoy a moment of calm.
               </p>
               <p className="text-gray-700 mb-8 leading-relaxed">
-                Whether you need a change of scenery from your desk, a place for
-                informal meetings, or simply want to enjoy your coffee with a
-                view, SkyWork Café provides the perfect setting for all your
-                workplace needs.
+                Whether you're fueling up before a big meeting or winding down
+                after a productive day, our café offers the perfect blend of
+                ambiance and convenience—right where you work. This vibrant
+                space will soon become your favorite go-to spot in the Business
+                Hub.
               </p>
               <div className="flex space-x-4">
                 <div className="h-1 w-20 yellow-bg"></div>
@@ -356,171 +348,6 @@ export default function RooftopWorkspaceCafe() {
         </div>
       </section>
 
-      {/* Menu Highlights */}
-      {/* <section id="menu" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold yellow mb-4">
-              Café Menu
-            </h2>
-            <p className="text-gray-700 max-w-2xl mx-auto">
-              Fuel your workday with our selection of premium coffees, teas, and
-              light bites, all available without leaving the building.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-blue-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold yellow mb-6 flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                  />
-                </svg>
-                Coffee & Beverages
-              </h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center border-b border-blue-100 pb-2">
-                  <div>
-                    <h4 className="font-semibold yellow">Espresso</h4>
-                    <p className="text-sm text-gray-600">Rich and bold</p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$2.50</div>
-                </div>
-                <div className="flex justify-between items-center border-b border-blue-100 pb-2">
-                  <div>
-                    <h4 className="font-semibold yellow">Cappuccino</h4>
-                    <p className="text-sm text-gray-600">
-                      Espresso with steamed milk and foam
-                    </p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$3.75</div>
-                </div>
-                <div className="flex justify-between items-center border-b border-blue-100 pb-2">
-                  <div>
-                    <h4 className="font-semibold yellow">Latte</h4>
-                    <p className="text-sm text-gray-600">
-                      Espresso with steamed milk
-                    </p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$3.75</div>
-                </div>
-                <div className="flex justify-between items-center border-b border-blue-100 pb-2">
-                  <div>
-                    <h4 className="font-semibold yellow">Cold Brew</h4>
-                    <p className="text-sm text-gray-600">
-                      Smooth, slow-steeped coffee
-                    </p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$4.00</div>
-                </div>
-                <div className="flex justify-between items-center border-b border-blue-100 pb-2">
-                  <div>
-                    <h4 className="font-semibold yellow">Herbal Tea</h4>
-                    <p className="text-sm text-gray-600">
-                      Selection of premium teas
-                    </p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$2.75</div>
-                </div>
-                <div className="flex justify-between items-center">
-                  <div>
-                    <h4 className="font-semibold yellow">Fresh Juice</h4>
-                    <p className="text-sm text-gray-600">
-                      Orange, apple, or green blend
-                    </p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$4.50</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-yellow-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold yellow mb-6 flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                  />
-                </svg>
-                Light Bites
-              </h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center border-b border-yellow-100 pb-2">
-                  <div>
-                    <h4 className="font-semibold yellow">Avocado Toast</h4>
-                    <p className="text-sm text-gray-600">
-                      Whole grain toast with avocado and toppings
-                    </p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$6.50</div>
-                </div>
-                <div className="flex justify-between items-center border-b border-yellow-100 pb-2">
-                  <div>
-                    <h4 className="font-semibold yellow">
-                      Greek Yogurt Parfait
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      With granola and fresh berries
-                    </p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$5.25</div>
-                </div>
-                <div className="flex justify-between items-center border-b border-yellow-100 pb-2">
-                  <div>
-                    <h4 className="font-semibold yellow">Chicken Wrap</h4>
-                    <p className="text-sm text-gray-600">
-                      Grilled chicken with veggies and hummus
-                    </p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$7.95</div>
-                </div>
-                <div className="flex justify-between items-center border-b border-yellow-100 pb-2">
-                  <div>
-                    <h4 className="font-semibold yellow">Quinoa Salad</h4>
-                    <p className="text-sm text-gray-600">
-                      With roasted vegetables and feta
-                    </p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$8.50</div>
-                </div>
-                <div className="flex justify-between items-center border-b border-yellow-100 pb-2">
-                  <div>
-                    <h4 className="font-semibold yellow">Fresh Fruit Cup</h4>
-                    <p className="text-sm text-gray-600">Seasonal selection</p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$4.25</div>
-                </div>
-                <div className="flex justify-between items-center">
-                  <div>
-                    <h4 className="font-semibold yellow">Pastry Selection</h4>
-                    <p className="text-sm text-gray-600">Daily baked goods</p>
-                  </div>
-                  <div className="text-yellow-600 font-bold">$3.50</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* Gallery Section */}
       <section id="gallery" className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
@@ -529,8 +356,8 @@ export default function RooftopWorkspaceCafe() {
               Workspace Gallery
             </h2>
             <p className="text-gray-700 max-w-2xl mx-auto">
-              Take a visual tour of our rooftop workspace and see the
-              environment that awaits you.
+              These are conceptual images of our upcoming café, introduced
+              within the Business Hub coworking space.
             </p>
           </div>
 
@@ -604,7 +431,7 @@ export default function RooftopWorkspaceCafe() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl yellow font-bold mb-4">
@@ -616,7 +443,26 @@ export default function RooftopWorkspaceCafe() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
+           
+            <div className="blue_bg p-8 rounded-xl relative">
+              <div className="text-yellow-300 text-6xl absolute -top-6 left-4 opacity-30">
+                "
+              </div>
+              <p className="mb-6 para relative z-10">
+                The rooftop workspace has transformed my workday. I'm more
+                productive, and the change of scenery helps me think more
+                creatively. Plus, the coffee is excellent!
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-yellow-300 mr-4"></div>
+                <div>
+                  <div className="font-bold yellow">Almeer Khan</div>
+                  <div className="yellow text-sm">Content Writer </div>
+                </div>
+              </div>
+            </div>
+
+            
             <div className="blue_bg p-8 rounded-xl relative">
               <div className="text-yellow-300 text-6xl absolute -top-6 left-4 opacity-30">
                 "
@@ -635,26 +481,7 @@ export default function RooftopWorkspaceCafe() {
               </div>
             </div>
 
-            {/* Testimonial 2 */}
-            <div className="blue_bg p-8 rounded-xl relative">
-              <div className="text-yellow-300 text-6xl absolute -top-6 left-4 opacity-30">
-                "
-              </div>
-              <p className="mb-6 para relative z-10">
-                The rooftop workspace has transformed my workday. I'm more
-                productive, and the change of scenery helps me think more
-                creatively. Plus, the coffee is excellent!
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-yellow-300 mr-4"></div>
-                <div>
-                  <div className="font-bold yellow">Alex Johnson</div>
-                  <div className="yellow text-sm">Marketing Team</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 3 */}
+            
             <div className="blue_bg p-8 rounded-xl relative">
               <div className="text-yellow-300 text-6xl absolute -top-6 left-4 opacity-30">
                 "
@@ -674,7 +501,7 @@ export default function RooftopWorkspaceCafe() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact/Hours Section */}
       <section id="contact" className="py-20 bg-yellow-50">
@@ -728,7 +555,7 @@ export default function RooftopWorkspaceCafe() {
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
-                    <span>workspace@company.com</span>
+                    <span>businesshubworspace@gmail.com</span>
                   </div>
                   <div className="flex items-start">
                     <svg
@@ -777,7 +604,7 @@ export default function RooftopWorkspaceCafe() {
             <div className="md:w-1/2">
               <div className="relative h-96 md:h-full rounded-xl overflow-hidden">
                 <Image
-                  src={cafe5}
+                  src={hero}
                   alt="Workspace at sunset"
                   fill
                   className="object-cover"
