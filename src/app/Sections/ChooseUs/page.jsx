@@ -65,7 +65,7 @@ const ChooseUs = () => {
             <Image
               src={about_img2}
               alt="Office Image 1"
-              className="w-[full] h-[full]"
+              className="w-[full] h-[full] rounded-lg"
             />
           </div>
 
@@ -80,7 +80,7 @@ const ChooseUs = () => {
             <Image
               src={about_img1}
               alt="Office Image 2"
-              className="w-[full] h-[full]"
+              className="w-[full] h-[full] rounded-lg"
             />
           </div>
         </div>

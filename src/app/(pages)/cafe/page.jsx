@@ -2,6 +2,22 @@ import Image from "next/image";
 import Link from "next/link";
 import cafe_img1 from "../../../../public/cafe-1.jpg";
 import { Button } from "@heroui/react";
+import cafe1 from "../../../../public/cafe_1.jpeg";
+import cafe2 from "../../../../public/cafe_2.webp";
+import cafe3 from "../../../../public/cafe_3.jpeg";
+import cafe5 from "../../../../public/cafe_5.jpg";
+import cafe6 from "../../../../public/cafe_6.jpg";
+import cafe7 from "../../../../public/cafe_7.webp";
+import cafe8 from '../../../../public/cafe_8.jpg';
+import cafe9 from '../../../../public/cafe_9.jpg';
+import cafe10 from '../../../../public/cafe_10.jpg';
+import cafe11 from '../../../../public/cafe_11.jpg';
+import cafe12 from '../../../../public/cafe_12.jpg';
+import cafe13 from '../../../../public/cafe_13.jpg';
+import cafe14 from '../../../../public/cafe_14.jpg';
+import cafe15 from '../../../../public/cafe_15.jpg';
+import hero from '../../../../public/cafe_hero.jpg'
+
 
 export default function RooftopWorkspaceCafe() {
   return (
@@ -39,7 +55,7 @@ export default function RooftopWorkspaceCafe() {
             {/* Image 1 */}
             <div className="group relative overflow-hidden rounded-xl shadow-lg h-80">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe1}
                 alt="Rooftop seating area"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -59,7 +75,7 @@ export default function RooftopWorkspaceCafe() {
             {/* Image 2 */}
             <div className="group relative overflow-hidden rounded-xl shadow-lg h-80">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe2}
                 alt="Coffee bar"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -75,7 +91,7 @@ export default function RooftopWorkspaceCafe() {
             {/* Image 3 */}
             <div className="group relative overflow-hidden rounded-xl shadow-lg h-80">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe3}
                 alt="Collaborative workspace"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -95,7 +111,7 @@ export default function RooftopWorkspaceCafe() {
             {/* Image 4 */}
             <div className="group relative overflow-hidden rounded-xl shadow-lg h-80">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={hero}
                 alt="City skyline view"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -103,7 +119,7 @@ export default function RooftopWorkspaceCafe() {
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-white">
-                    Panoramic Views
+                    Light Up the View
                   </h3>
                   <p className="text-yellow-300">Inspiring city skyline</p>
                 </div>
@@ -142,18 +158,18 @@ export default function RooftopWorkspaceCafe() {
             <div className="md:w-1/2 grid grid-cols-2 gap-4">
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=400"
+                  src={cafe6}
                   alt="Workspace seating area"
                   fill
-                  className="object-cover"
+                  className="object-cover bg-no-repeat"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden mt-8">
                 <Image
-                  src="/placeholder.svg?height=600&width=400"
+                  src={cafe7}
                   alt="Coffee bar area"
                   fill
-                  className="object-cover"
+                  className="object-cover bg-cover bg-no-repeat w-full h-full"
                 />
               </div>
             </div>
@@ -521,7 +537,7 @@ export default function RooftopWorkspaceCafe() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative h-64 md:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe8}
                 alt="Workspace seating"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-500"
@@ -529,7 +545,7 @@ export default function RooftopWorkspaceCafe() {
             </div>
             <div className="relative h-64 md:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe9}
                 alt="Coffee bar"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-500"
@@ -537,7 +553,7 @@ export default function RooftopWorkspaceCafe() {
             </div>
             <div className="relative h-64 md:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe10}
                 alt="Meeting area"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-500"
@@ -545,7 +561,7 @@ export default function RooftopWorkspaceCafe() {
             </div>
             <div className="relative h-64 md:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe11}
                 alt="City view"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-500"
@@ -553,7 +569,7 @@ export default function RooftopWorkspaceCafe() {
             </div>
             <div className="relative h-64 md:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe12}
                 alt="Lounge area"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-500"
@@ -561,7 +577,7 @@ export default function RooftopWorkspaceCafe() {
             </div>
             <div className="relative h-64 md:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe13}
                 alt="Barista preparing coffee"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-500"
@@ -569,7 +585,7 @@ export default function RooftopWorkspaceCafe() {
             </div>
             <div className="relative h-64 md:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe14}
                 alt="Outdoor seating"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-500"
@@ -577,7 +593,7 @@ export default function RooftopWorkspaceCafe() {
             </div>
             <div className="relative h-64 md:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src={cafe15}
                 alt="Sunset view"
                 fill
                 className="object-cover hover:scale-110 transition-transform duration-500"
@@ -729,7 +745,7 @@ export default function RooftopWorkspaceCafe() {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
-                    <span>Ext. 4567</span>
+                    <span>0418718800</span>
                   </div>
                   <div className="flex items-start">
                     <svg
@@ -752,7 +768,7 @@ export default function RooftopWorkspaceCafe() {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <span>15th Floor, Main Building</span>
+                    <span>BusinessHub Workspace D-Ground Zainab Center</span>
                   </div>
                 </div>
               </div>
@@ -761,7 +777,7 @@ export default function RooftopWorkspaceCafe() {
             <div className="md:w-1/2">
               <div className="relative h-96 md:h-full rounded-xl overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=800&width=600"
+                  src={cafe5}
                   alt="Workspace at sunset"
                   fill
                   className="object-cover"
