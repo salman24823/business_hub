@@ -31,11 +31,9 @@ export default function RooftopWorkspaceCafe() {
             <span className="text-yellow-300">Business Hub</span> Cafe
           </h1>
           <p className="text-xl md:text-2xl text-white mb-8">
-            A cup of tea or coffee isn&apos;t just a drink—it&apos;s a moment of clarity
+            A cup of tea or coffee isn&apos;t just a drink—it&apos;s a moment of
+            clarity
           </p>
-          <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white">
-            Coming Soon
-          </Button>
         </div>
       </section>
 
