@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import cafe_img1 from "../../../../public/cafe-1.jpg";
-import { Button } from "@heroui/react";
 import cafe1 from "../../../../public/cafe_1.jpeg";
-import cafe2 from "../../../../public/cafe_2.webp";
+import cafe2 from "../../../../public/cafe_2.jpg";
 import cafe3 from "../../../../public/cafe_3.jpeg";
 import cafe5 from "../../../../public/cafe_5.jpg";
 import cafe6 from "../../../../public/cafe_6.jpg";
