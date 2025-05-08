@@ -14,7 +14,6 @@ import { RiAdvertisementFill } from "react-icons/ri";
 import { MdMobileFriendly } from "react-icons/md";
 import { FaPaintBrush, FaShoppingBag } from "react-icons/fa";
 import Link from "next/link";
-import Detail from "../../(pages)/it_detail/page";
 
 const ITservices = () => {
   const features = [
