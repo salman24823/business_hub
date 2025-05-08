@@ -1,40 +1,22 @@
 import Image from "next/image";
-import Link from "next/link";
-import {
-  Mic,
-  Play,
-  AudioWaveformIcon as Waveform,
-  Zap,
-  Settings,
-  Edit,
-  FileAudio,
-} from "lucide-react";
+import { Mic, Play, Zap, Settings, Edit, FileAudio } from "lucide-react";
 
 export default function Podcast() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <main className="flex-1">
+    <div className="flex min-h-screen flex-col overflow-x-hidden">
+      <main className="flex-1 p-[5%]">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
+        <section className="relative overflow-hidden py-16 md:py-24">
+          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl break-words text-balance">
                   AI-powered audio tools that elevate your voice
                 </h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl">
                   Create high-quality podcasts and recordings that sound
                   professional with SoundWave Podcast.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <button className="rounded-md bg-blue-600 px-4 py-2.5 text-base font-medium text-white shadow-sm hover:bg-blue-700">
-                    Get Started
-                  </button>
-                  <button className="rounded-md border border-gray-300 bg-white px-4 py-2.5 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 flex items-center">
-                    <Play className="mr-2 h-4 w-4" />
-                    Watch Demo
-                  </button>
-                </div>
               </div>
               <div className="relative lg:ml-10">
                 <Image
@@ -42,7 +24,7 @@ export default function Podcast() {
                   alt="Podcast illustration"
                   width={500}
                   height={400}
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover w-full h-auto"
                   priority
                 />
                 <div className="absolute -top-6 -left-6 h-24 w-24 rounded-full bg-yellow-300 opacity-50 blur-xl"></div>
@@ -54,7 +36,7 @@ export default function Podcast() {
 
         {/* Feature Cards */}
         <section className="py-12 md:py-16">
-          <div className="container mx-auto px-4 md:px-6">
+          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid gap-6 md:grid-cols-2 lg:gap-12">
               <div className="overflow-hidden rounded-lg blue_bg text-white shadow-md">
                 <div className="p-6 flex items-start gap-4">
@@ -66,9 +48,6 @@ export default function Podcast() {
                     <p className="text-blue-100">
                       Remove background noise and enhance voice clarity
                     </p>
-                    <button className="mt-2 rounded-md bg-white/20 px-3 py-1.5 text-sm font-medium text-white hover:bg-white/30">
-                      Learn more
-                    </button>
                   </div>
                 </div>
               </div>
@@ -82,9 +61,6 @@ export default function Podcast() {
                     <p className="text-yellow-100">
                       Studio-quality recording in your browser
                     </p>
-                    <button className="mt-2 rounded-md bg-white/20 px-3 py-1.5 text-sm font-medium text-white hover:bg-white/30">
-                      Learn more
-                    </button>
                   </div>
                 </div>
               </div>
@@ -94,48 +70,30 @@ export default function Podcast() {
 
         {/* Features Grid */}
         <section className="py-8 md:py-12 bg-gray-50">
-          <div className="container mx-auto px-4 md:px-6">
+          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100">
-                  <Zap className="h-5 w-5 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-medium">Transcribe audio</h3>
-                  <p className="text-sm text-gray-500">
-                    Automatic text from your audio
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100">
-                  <Edit className="h-5 w-5 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-medium">Edit like a doc</h3>
-                  <p className="text-sm text-gray-500">
-                    Cut and edit your audio easily
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100">
-                  <Settings className="h-5 w-5 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-medium">Quick export</h3>
-                  <p className="text-sm text-gray-500">
-                    Share to multiple platforms
-                  </p>
-                </div>
-              </div>
+              <FeatureBox
+                icon={<Zap className="h-5 w-5 text-blue-600" />}
+                title="Transcribe audio"
+                desc="Automatic text from your audio"
+              />
+              <FeatureBox
+                icon={<Edit className="h-5 w-5 text-blue-600" />}
+                title="Edit like a doc"
+                desc="Cut and edit your audio easily"
+              />
+              <FeatureBox
+                icon={<Settings className="h-5 w-5 text-blue-600" />}
+                title="Quick export"
+                desc="Share to multiple platforms"
+              />
             </div>
           </div>
         </section>
 
         {/* Main Features */}
         <section className="py-12 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
+          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Record, edit, and enhance your voice without downloading any
@@ -152,7 +110,7 @@ export default function Podcast() {
                   alt="Podcast editor interface"
                   width={1200}
                   height={600}
-                  className="rounded-lg w-full"
+                  className="rounded-lg w-full h-auto object-cover"
                 />
               </div>
             </div>
@@ -161,7 +119,7 @@ export default function Podcast() {
 
         {/* Project Templates */}
         <section className="py-12 md:py-24 bg-gray-50">
-          <div className="container mx-auto px-4 md:px-6">
+          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold tracking-tighter mb-12 text-center">
               Jump into a project
             </h2>
@@ -258,7 +216,7 @@ function PodcastCard({ title, image, category }) {
 function FeatureSection({ title, description, image, color, reverse }) {
   return (
     <section className="py-12 md:py-24">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className={`grid gap-6 lg:grid-cols-2 lg:gap-12 items-center ${
             reverse ? "lg:grid-flow-dense" : ""
@@ -271,9 +229,6 @@ function FeatureSection({ title, description, image, color, reverse }) {
             <p className="max-w-[600px] text-gray-500 md:text-xl">
               {description}
             </p>
-            <button className="rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50">
-              Learn more
-            </button>
           </div>
           <div className={`relative ${reverse ? "lg:col-start-1" : ""}`}>
             <div
@@ -284,11 +239,25 @@ function FeatureSection({ title, description, image, color, reverse }) {
               alt={title}
               width={500}
               height={400}
-              className="rounded-lg object-cover mx-auto"
+              className="rounded-lg object-cover mx-auto w-full h-auto"
             />
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function FeatureBox({ icon, title, desc }) {
+  return (
+    <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100">
+        {icon}
+      </div>
+      <div>
+        <h3 className="font-medium">{title}</h3>
+        <p className="text-sm text-gray-500">{desc}</p>
+      </div>
+    </div>
   );
 }
