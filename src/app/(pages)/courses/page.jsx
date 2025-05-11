@@ -1,11 +1,14 @@
 "use client";
-import React, { useState } from "react";
 import { FaMedal } from "react-icons/fa";
 import { MdOutlineHeadphones } from "react-icons/md";
 import { PiCertificateBold } from "react-icons/pi";
 import web from "../../../../public/web.jpg";
 import mobile from "../../../../public/mobile.jpg";
-import office from '../../../../public/office.jpg'
+import office from "../../../../public/office.jpg";
+import ui from "../../../../public/ui.jpg";
+import graphic from "../../../../public/graphics.jpg";
+import seo from "../../../../public/seo.jpg";
+import cyber from "../../../../public/cyber.jpg";
 
 const TrainingWebsite = () => {
   // Sample course data
@@ -26,24 +29,39 @@ const TrainingWebsite = () => {
       price: 79.99,
     },
     {
+      title: "UI/UX Design Masterclass",
+      image: ui,
+      price: 79.99,
+    },
+    {
+      title: "Graphic Designing",
+      image: graphic,
+      price: 79.99,
+    },
+    {
+      title: "Search Engine Optimization",
+      image: seo,
+      price: 69.99,
+    },
+    {
+      title: "Cybersecurity Fundamentals",
+      image: cyber,
+      price: 139.99,
+    },
+    {
+      title: "Digital Marketing",
+      image: "/placeholder.svg?height=200&width=300",
+      price: 69.99,
+    },
+    {
       title: "Data Science Fundamentals",
       image: "/placeholder.svg?height=200&width=300",
       price: 129.99,
     },
     {
-      title: "UI/UX Design Masterclass",
-      image: "/placeholder.svg?height=200&width=300",
-      price: 79.99,
-    },
-    {
       title: "Cloud Computing Essentials",
       image: "/placeholder.svg?height=200&width=300",
       price: 149.99,
-    },
-    {
-      title: "Digital Marketing Strategy",
-      image: "/placeholder.svg?height=200&width=300",
-      price: 69.99,
     },
     {
       title: "Artificial Intelligence Basics",
@@ -54,11 +72,6 @@ const TrainingWebsite = () => {
       title: "Project Management Professional",
       image: "/placeholder.svg?height=200&width=300",
       price: 159.99,
-    },
-    {
-      title: "Cybersecurity Fundamentals",
-      image: "/placeholder.svg?height=200&width=300",
-      price: 139.99,
     },
     {
       title: "Shopify Store",
@@ -130,7 +143,11 @@ const TrainingWebsite = () => {
               >
                 <div className="h-48 relative">
                   <img
-                    src={course.image || "/placeholder.svg"}
+                    src={
+                      typeof course.image === "string"
+                        ? course.image
+                        : course.image.src
+                    }
                     alt={course.title}
                     className="w-full h-full object-cover"
                   />
