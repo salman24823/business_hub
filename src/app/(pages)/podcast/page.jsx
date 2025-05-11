@@ -1,263 +1,440 @@
-import Image from "next/image";
-import { Mic, Play, Zap, Settings, Edit, FileAudio } from "lucide-react";
+"use client"
 
-export default function Podcast() {
+
+import { useState } from "react"
+import Image from "next/image"
+
+export default function AdobePodcastLanding() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    course: "podcast-basics",
+  })
+
+ 
   return (
-    <div className="flex min-h-screen flex-col overflow-x-hidden">
-      <main className="flex-1 p-[5%]">
-        {/* Hero Section */}
-        <section className="relative overflow-hidden py-16 md:py-24">
-          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl break-words text-balance">
-                  AI-powered audio tools that elevate your voice
-                </h1>
-                <p className="max-w-[600px] text-gray-500 md:text-xl">
-                  Create high-quality podcasts and recordings that sound
-                  professional with SoundWave Podcast.
-                </p>
-              </div>
-              <div className="relative lg:ml-10">
-                <Image
-                  src="/placeholder.svg?height=400&width=500"
-                  alt="Podcast illustration"
-                  width={500}
-                  height={400}
-                  className="rounded-lg object-cover w-full h-auto"
-                  priority
-                />
-                <div className="absolute -top-6 -left-6 h-24 w-24 rounded-full bg-yellow-300 opacity-50 blur-xl"></div>
-                <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-blue-300 opacity-50 blur-xl"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Feature Cards */}
-        <section className="py-12 md:py-16">
-          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-6 md:grid-cols-2 lg:gap-12">
-              <div className="overflow-hidden rounded-lg blue_bg text-white shadow-md">
-                <div className="p-6 flex items-start gap-4">
-                  <div className="rounded-full bg-white/20 p-2">
-                    <Mic className="h-6 w-6" />
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold">Enhance Speech</h3>
-                    <p className="text-blue-100">
-                      Remove background noise and enhance voice clarity
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="overflow-hidden rounded-lg yellow-bg text-white shadow-md">
-                <div className="p-6 flex items-start gap-4">
-                  <div className="rounded-full bg-white/20 p-2">
-                    <FileAudio className="h-6 w-6" />
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold">Record a podcast</h3>
-                    <p className="text-yellow-100">
-                      Studio-quality recording in your browser
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Features Grid */}
-        <section className="py-8 md:py-12 bg-gray-50">
-          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <FeatureBox
-                icon={<Zap className="h-5 w-5 text-blue-600" />}
-                title="Transcribe audio"
-                desc="Automatic text from your audio"
-              />
-              <FeatureBox
-                icon={<Edit className="h-5 w-5 text-blue-600" />}
-                title="Edit like a doc"
-                desc="Cut and edit your audio easily"
-              />
-              <FeatureBox
-                icon={<Settings className="h-5 w-5 text-blue-600" />}
-                title="Quick export"
-                desc="Share to multiple platforms"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Main Features */}
-        <section className="py-12 md:py-24">
-          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Record, edit, and enhance your voice without downloading any
-                software
-              </h2>
-              <p className="mt-4 text-gray-500 md:text-xl">
-                Use SoundWave Podcast right in the browser.
-              </p>
-            </div>
-            <div className="mt-16">
-              <div className="rounded-xl border bg-white p-1 shadow-sm">
-                <Image
-                  src="/placeholder.svg?height=600&width=1200"
-                  alt="Podcast editor interface"
-                  width={1200}
-                  height={600}
-                  className="rounded-lg w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Project Templates */}
-        <section className="py-12 md:py-24 bg-gray-50">
-          <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold tracking-tighter mb-12 text-center">
-              Jump into a project
-            </h2>
-            <div className="grid gap-6 md:grid-cols-3">
-              <PodcastCard
-                title="True Crime Podcast"
-                image="/placeholder.svg?height=300&width=300"
-                category="Start project"
-              />
-              <PodcastCard
-                title="Class Lecture"
-                image="/placeholder.svg?height=300&width=300"
-                category="Start project"
-              />
-              <PodcastCard
-                title="Fashion Podcast"
-                image="/placeholder.svg?height=300&width=300"
-                category="Start project"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Feature Sections */}
-        <FeatureSection
-          title="Enhance spoken audio with just one click"
-          description="Focus on your story and your voice. SoundWave AI makes your recordings sound as if they were recorded in a professional studio."
-          image="/placeholder.svg?height=400&width=500"
-          color="bg-yellow-500"
-          reverse={false}
-        />
-
-        <FeatureSection
-          title="Analyze your recording setup with AI"
-          description="SoundWave Podcast AI helps you get professional sound without expensive equipment. Get personalized recommendations to get better sound from your microphone and recording environment."
-          image="/placeholder.svg?height=400&width=500"
-          color="bg-blue-500"
-          reverse={true}
-        />
-
-        <FeatureSection
-          title="Edit audio like a doc"
-          description="Remove filler words and mistakes by simply highlighting and deleting them. SoundWave Podcast lets you edit your audio just like a text document."
-          image="/placeholder.svg?height=400&width=500"
-          color="bg-yellow-500"
-          reverse={false}
-        />
-
-        <FeatureSection
-          title="Professional-grade recording"
-          description="Record high-quality audio by yourself or with remote guests. SoundWave Podcast can capture everyone's audio as individual tracks so you can edit them separately."
-          image="/placeholder.svg?height=400&width=500"
-          color="bg-blue-500"
-          reverse={true}
-        />
-
-        <FeatureSection
-          title="Pre-edited royalty free music"
-          description="Your podcast needs great music. Choose from podcast-ready background music with intros, outros, and loops for perfect background tracks."
-          image="/placeholder.svg?height=400&width=500"
-          color="bg-yellow-500"
-          reverse={false}
-        />
-      </main>
-    </div>
-  );
-}
-
-function PodcastCard({ title, image, category }) {
-  return (
-    <div className="group relative overflow-hidden rounded-lg border bg-white shadow-sm transition-all hover:shadow-md">
-      <div className="aspect-square overflow-hidden">
-        <Image
-          src={image || "/placeholder.svg"}
-          alt={title}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover transition-transform group-hover:scale-105"
-        />
-      </div>
-      <div className="p-4">
-        <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100">
-            <Play className="h-4 w-4" />
-          </div>
-          <span className="text-sm font-medium text-gray-500">{category}</span>
+    <div className="">
+      {/* Hero Section */}
+      <section className="min-h-screen px-6 py-16 md:py-24 flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto">
+        <div className="md:w-1/2 mb-10 md:mb-0">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            AI-powered audio tools that elevate your voice
+          </h1>
+          <p className="text-lg mb-6">
+            Create high-quality podcasts and voiceovers that sound professional with Adobe Podcast.
+          </p>
         </div>
-        <h3 className="mt-2 font-semibold">{title}</h3>
-      </div>
-    </div>
-  );
-}
-
-function FeatureSection({ title, description, image, color, reverse }) {
-  return (
-    <section className="py-12 md:py-24">
-      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className={`grid gap-6 lg:grid-cols-2 lg:gap-12 items-center ${
-            reverse ? "lg:grid-flow-dense" : ""
-          }`}
-        >
-          <div className={`space-y-4 ${reverse ? "lg:col-start-2" : ""}`}>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-              {title}
-            </h2>
-            <p className="max-w-[600px] text-gray-500 md:text-xl">
-              {description}
-            </p>
+        <div className="md:w-1/2 relative">
+          <div className="relative h-[300px] w-full">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#ff7675] rounded-full opacity-20"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#6c5ce7] rounded-full opacity-20"></div>
+            <div className="absolute top-20 left-20 w-32 h-32 bg-[#fdcb6e] rounded-full opacity-20"></div>
+            <div className="relative z-10 h-full flex items-center justify-center">
+              {/* <Image
+                src="/placeholder.svg?height=300&width=300"
+                alt="Person with audio tools"
+                width={300}
+                height={300}
+                className="object-contain"
+              /> */}
+            </div>
           </div>
-          <div className={`relative ${reverse ? "lg:col-start-1" : ""}`}>
-            <div
-              className={`absolute inset-0 -z-10 ${color} opacity-10 blur-2xl rounded-full transform -translate-x-1/2 -translate-y-1/2`}
-            ></div>
+        </div>
+      </section>
+
+      {/* Feature Cards */}
+      <section className="px-6 py-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="bg-[#6c5ce7] text-white p-8 rounded-2xl flex flex-col items-start">
+            <div className="bg-white p-3 rounded-full mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#6c5ce7"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" x2="12" y1="19" y2="22"></line>
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold mb-2">Enhance Speech</h3>
+            <p className="mb-4">Noise reduction and clarity enhancement</p>
+            <button className="bg-white text-[#6c5ce7] px-4 py-2 rounded-full text-sm font-medium">Get started</button>
+          </div>
+          <div className="bg-[#ff7675] text-white p-8 rounded-2xl flex flex-col items-start">
+            <div className="bg-white p-3 rounded-full mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ff7675"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold mb-2">Record a podcast</h3>
+            <p className="mb-4">Studio-quality recording in your browser</p>
+            <button className="bg-white text-[#ff7675] px-4 py-2 rounded-full text-sm font-medium">Get started</button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="flex items-center gap-3 p-4 rounded-lg border border-gray-200">
+            <div className="bg-[#6c5ce7] p-2 rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" x2="12" y1="19" y2="22"></line>
+              </svg>
+            </div>
+            <div>
+              <h4 className="font-medium">Transcribe audio</h4>
+              <p className="text-sm text-gray-600">Automatic speech-to-text</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-4 rounded-lg border border-gray-200">
+            <div className="bg-[#6c5ce7] p-2 rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M21 15V6"></path>
+                <path d="M18.5 18a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"></path>
+                <path d="M12 12H3"></path>
+                <path d="M16 6H3"></path>
+                <path d="M12 18H3"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 className="font-medium">Edit audio</h4>
+              <p className="text-sm text-gray-600">AI tools to enhance your story</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-4 rounded-lg border border-gray-200">
+            <div className="bg-[#6c5ce7] p-2 rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 className="font-medium">Quick analysis</h4>
+              <p className="text-sm text-gray-600">Insights from AI recording</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Record, edit, enhance section */}
+      <section className="px-6 py-12 max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-2">Record, edit, and enhance your voice</h2>
+        <p className="text-center mb-12">without downloading any software</p>
+        <p className="text-center mb-8">Use Adobe Podcast right in the browser.</p>
+
+        <div className="border border-gray-200 rounded-xl overflow-hidden shadow-lg">
+          <div className="bg-gray-100 p-2 border-b border-gray-200 flex items-center gap-2">
+            <div className="flex gap-1">
+              <div className="w-3 h-3 rounded-full bg-red-500"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+            <div className="text-xs text-gray-500">podcast.adobe.com</div>
+          </div>
+          <div className="p-4 bg-white">
             <Image
-              src={image || "/placeholder.svg"}
-              alt={title}
-              width={500}
+              src="/placeholder.svg?height=400&width=800"
+              alt="Adobe Podcast Interface"
+              width={800}
               height={400}
-              className="rounded-lg object-cover mx-auto w-full h-auto"
+              className="w-full h-auto rounded-lg"
             />
           </div>
         </div>
-      </div>
-    </section>
-  );
-}
+      </section>
 
-function FeatureBox({ icon, title, desc }) {
-  return (
-    <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100">
-        {icon}
-      </div>
-      <div>
-        <h3 className="font-medium">{title}</h3>
-        <p className="text-sm text-gray-500">{desc}</p>
-      </div>
+      {/* Jump into a project */}
+      <section className="px-6 py-12 max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-6">Jump into a project</h2>
+        <p className="text-center mb-12">
+          Try Adobe Podcast Studio with a true crime podcast, class lecture, or audio newsletter.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="border border-gray-200 rounded-xl overflow-hidden">
+            <div className="p-4">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="bg-black text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">
+                  1
+                </div>
+                <span className="text-sm font-medium">True crime podcast</span>
+              </div>
+              <div className="bg-[#ff7675] p-4 rounded-lg">
+                <Image
+                  src="/placeholder.svg?height=200&width=200"
+                  alt="True crime podcast"
+                  width={200}
+                  height={200}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="border border-gray-200 rounded-xl overflow-hidden">
+            <div className="p-4">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="bg-black text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">
+                  2
+                </div>
+                <span className="text-sm font-medium">Class lecture</span>
+              </div>
+              <div className="bg-[#74b9ff] p-4 rounded-lg">
+                <Image
+                  src="/placeholder.svg?height=200&width=200"
+                  alt="Class lecture"
+                  width={200}
+                  height={200}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="border border-gray-200 rounded-xl overflow-hidden">
+            <div className="p-4">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="bg-black text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">
+                  3
+                </div>
+                <span className="text-sm font-medium">Fashion podcast</span>
+              </div>
+              <div className="bg-[#fdcb6e] p-4 rounded-lg">
+                <Image
+                  src="/placeholder.svg?height=200&width=200"
+                  alt="Fashion podcast"
+                  width={200}
+                  height={200}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Enhance spoken audio */}
+      <section className="px-6 py-12 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+        <div className="md:w-1/2">
+          <h2 className="text-3xl font-bold mb-4">Enhance spoken audio with just one click</h2>
+          <p className="mb-4">
+            Focus on your story, not your sound. Adobe Podcast AI makes noisy recordings sound as if they were recorded
+            in a studio.
+          </p>
+        </div>
+        <div className="md:w-1/2">
+          <div className="bg-[#ff7675] rounded-xl p-8 h-[250px] flex items-center justify-center">
+            <Image
+              src="/placeholder.svg?height=150&width=150"
+              alt="Audio enhancement"
+              width={150}
+              height={150}
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Analyze your recording */}
+      <section className="px-6 py-12 max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8">
+        <div className="md:w-1/2">
+          <h2 className="text-3xl font-bold mb-4">Analyze your recording setup with AI</h2>
+          <p className="mb-4">
+            Adobe Podcast AI helps you get professional sound without expensive equipment. Get personalized advice to
+            clear issues from your microphone and recording environment.
+          </p>
+        </div>
+        <div className="md:w-1/2">
+          <div className="bg-[#6c5ce7] rounded-xl p-8 h-[250px] flex items-center justify-center">
+            <Image
+              src="/placeholder.svg?height=150&width=150"
+              alt="Recording analysis"
+              width={150}
+              height={150}
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Edit audio like a doc */}
+      <section className="px-6 py-12 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+        <div className="md:w-1/2">
+          <h2 className="text-3xl font-bold mb-4">Edit audio like a doc</h2>
+          <p className="mb-4">
+            Delete words, fix mistakes, and rearrange by editing the same transcript. Adobe Podcast transcription is
+            highly accurate, so you can cut, copy, and paste your audio just like a text document, editing audio has
+            never been easier.
+          </p>
+        </div>
+        <div className="md:w-1/2">
+          <div className="bg-[#fdcb6e] rounded-xl p-8 h-[250px] flex items-center justify-center">
+            <Image
+              src="/placeholder.svg?height=150&width=150"
+              alt="Audio editing"
+              width={150}
+              height={150}
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Professional-grade recording */}
+      <section className="px-6 py-12 max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8">
+        <div className="md:w-1/2">
+          <h2 className="text-3xl font-bold mb-4">Professional-grade recording</h2>
+          <p className="mb-4">
+            Record high-quality audio by yourself or with remote guests. Adobe Podcast records everyone's audio as
+            individual tracks so for later edits, even if someone's internet connection isn't perfect.
+          </p>
+        </div>
+        <div className="md:w-1/2">
+          <div className="bg-[#6c5ce7] rounded-xl p-8 h-[250px] flex items-center justify-center">
+            <Image
+              src="/placeholder.svg?height=150&width=150"
+              alt="Professional recording"
+              width={150}
+              height={150}
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Pre-edited royalty free music */}
+      <section className="px-6 py-12 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+        <div className="md:w-1/2">
+          <h2 className="text-3xl font-bold mb-4">Pre-edited royalty free music</h2>
+          <p className="mb-4">
+            Your podcast needs good music. Choose from podcast-ready background music with intros, outros, transitions,
+            and background music.
+          </p>
+        </div>
+        <div className="md:w-1/2">
+          <div className="bg-[#ff7675] rounded-xl p-8 h-[250px] flex items-center justify-center">
+            <Image
+              src="/placeholder.svg?height=150&width=150"
+              alt="Royalty free music"
+              width={150}
+              height={150}
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Course Enrollment Form */}
+      <section className="px-6 py-16 bg-[#f8f9fa]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-2">Enroll in our Audio Production Courses</h2>
+          <p className="text-center mb-8">Take your audio skills to the next level with our expert-led courses</p>
+
+          <form className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="mb-6">
+              <label htmlFor="name" className="block text-sm font-medium mb-2">
+                Full Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c5ce7]"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div className="mb-6">
+              <label htmlFor="email" className="block text-sm font-medium mb-2">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c5ce7]"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+
+            <div className="mb-8">
+              <label htmlFor="course" className="block text-sm font-medium mb-2">
+                Select Course
+              </label>
+              <select
+                id="course"
+                name="course"
+                value={formData.course}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c5ce7]"
+                required
+              >
+                <option value="podcast-basics">Podcast Basics: From Idea to Launch</option>
+                <option value="audio-editing">Advanced Audio Editing Techniques</option>
+                <option value="voice-training">Voice Training for Podcasters</option>
+                <option value="podcast-monetization">Podcast Monetization Strategies</option>
+              </select>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-[#6c5ce7] text-white py-3 px-6 rounded-lg font-medium hover:bg-[#5a4ad1] transition-colors"
+            >
+              Enroll Now
+            </button>
+          </form>
+        </div>
+      </section>
+
     </div>
-  );
+  )
 }
