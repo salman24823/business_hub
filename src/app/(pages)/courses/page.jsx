@@ -16,6 +16,7 @@ import amazon from "../../../../public/amazon.jpg";
 import ai from "../../../../public/ai.jpeg";
 import video from "../../../../public/video.webp";
 import oracle from "../../../../public/oracle.jpg";
+import game from "../../../../public/gaming.jpg";
 
 const TrainingWebsite = () => {
   // Sample course data
@@ -92,7 +93,7 @@ const TrainingWebsite = () => {
     },
     {
       title: "Game Development",
-      image: "/placeholder.svg?height=200&width=300",
+      image: game,
       price: 129.99,
     },
     {
