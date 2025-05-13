@@ -9,6 +9,13 @@ import ui from "../../../../public/ui.jpg";
 import graphic from "../../../../public/graphics.jpg";
 import seo from "../../../../public/seo.jpg";
 import cyber from "../../../../public/cyber.jpg";
+import shopify from "../../../../public/shopify.jpg";
+import marketing from "../../../../public/marketing.webp";
+import wordpress from "../../../../public/wordpress.png";
+import amazon from "../../../../public/amazon.jpg";
+import ai from "../../../../public/ai.jpeg";
+import video from "../../../../public/video.webp";
+import oracle from "../../../../public/oracle.jpg";
 
 const TrainingWebsite = () => {
   // Sample course data
@@ -49,12 +56,42 @@ const TrainingWebsite = () => {
       price: 139.99,
     },
     {
+      title: "Shopify Store",
+      image: shopify,
+      price: 79.99,
+    },
+    {
       title: "Digital Marketing",
-      image: "/placeholder.svg?height=200&width=300",
+      image: marketing,
       price: 69.99,
     },
     {
-      title: "Data Science Fundamentals",
+      title: "WordPress Development",
+      image: wordpress,
+      price: 69.99,
+    },
+    {
+      title: "Amazon Ecommerce",
+      image: amazon,
+      price: 69.99,
+    },
+    {
+      title: "Artificial Intelligence Basics",
+      image: ai,
+      price: 199.99,
+    },
+    {
+      title: "Video Editing",
+      image: video,
+      price: 129.99,
+    },
+    {
+      title: "Oracle",
+      image: oracle,
+      price: 129.99,
+    },
+    {
+      title: "Game Development",
       image: "/placeholder.svg?height=200&width=300",
       price: 129.99,
     },
@@ -64,24 +101,9 @@ const TrainingWebsite = () => {
       price: 149.99,
     },
     {
-      title: "Artificial Intelligence Basics",
-      image: "/placeholder.svg?height=200&width=300",
-      price: 199.99,
-    },
-    {
       title: "Project Management Professional",
       image: "/placeholder.svg?height=200&width=300",
       price: 159.99,
-    },
-    {
-      title: "Shopify Store",
-      image: "/placeholder.svg?height=200&width=300",
-      price: 79.99,
-    },
-    {
-      title: "Social media marketing",
-      image: "/placeholder.svg?height=200&width=300",
-      price: 79.99,
     },
   ];
 
