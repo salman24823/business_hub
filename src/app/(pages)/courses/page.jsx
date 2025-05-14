@@ -96,16 +96,6 @@ const TrainingWebsite = () => {
       image: game,
       price: 129.99,
     },
-    {
-      title: "Cloud Computing Essentials",
-      image: "/placeholder.svg?height=200&width=300",
-      price: 149.99,
-    },
-    {
-      title: "Project Management Professional",
-      image: "/placeholder.svg?height=200&width=300",
-      price: 159.99,
-    },
   ];
 
   return (
@@ -137,24 +127,22 @@ const TrainingWebsite = () => {
             <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <PiCertificateBold alt="Certified" className="w-8 h-8" />
             </div>
-            <h3 className="font-bold text-lg mb-2">Certified</h3>
-            <p className="text-gray-600">Globally recognized certifications</p>
+            <h3 className="font-bold point mb-2">Certified</h3>
+            <p className="para">Globally recognized certifications</p>
           </div>
 
           <div className="text-center">
             <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <MdOutlineHeadphones alt="Support" className="w-8 h-8" />
             </div>
-            <h3 className="font-bold text-lg mb-2">24/7 Support</h3>
-            <p className="text-gray-600">
-              Round-the-clock assistance for all students
-            </p>
+            <h3 className="font-bold point mb-2">24/7 Support</h3>
+            <p className="para">Round-the-clock assistance for all students</p>
           </div>
         </section>
 
         {/* Top Rated Courses */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold yellow point mb-8 text-center">
+          <h2 className="point font-bold yellow point mb-8 text-center">
             Our Top Rated Courses
           </h2>
 

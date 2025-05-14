@@ -1,17 +1,15 @@
-"use client"
+"use client";
 
-
-import { useState } from "react"
-import Image from "next/image"
+import { useState } from "react";
+import Image from "next/image";
 
 export default function AdobePodcastLanding() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     course: "podcast-basics",
-  })
+  });
 
- 
   return (
     <div className="">
       {/* Hero Section */}
@@ -21,7 +19,8 @@ export default function AdobePodcastLanding() {
             AI-powered audio tools that elevate your voice
           </h1>
           <p className="text-lg mb-6">
-            Create high-quality podcasts and voiceovers that sound professional with Adobe Podcast.
+            Create high-quality podcasts and voiceovers that sound professional
+            with Adobe Podcast.
           </p>
         </div>
         <div className="md:w-1/2 relative">
@@ -29,15 +28,7 @@ export default function AdobePodcastLanding() {
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#ff7675] rounded-full opacity-20"></div>
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#6c5ce7] rounded-full opacity-20"></div>
             <div className="absolute top-20 left-20 w-32 h-32 bg-[#fdcb6e] rounded-full opacity-20"></div>
-            <div className="relative z-10 h-full flex items-center justify-center">
-              {/* <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Person with audio tools"
-                width={300}
-                height={300}
-                className="object-contain"
-              /> */}
-            </div>
+            <div className="relative z-10 h-full flex items-center justify-center"></div>
           </div>
         </div>
       </section>
@@ -65,7 +56,9 @@ export default function AdobePodcastLanding() {
             </div>
             <h3 className="text-xl font-bold mb-2">Enhance Speech</h3>
             <p className="mb-4">Noise reduction and clarity enhancement</p>
-            <button className="bg-white text-[#6c5ce7] px-4 py-2 rounded-full text-sm font-medium">Get started</button>
+            <button className="bg-white text-[#6c5ce7] px-4 py-2 rounded-full text-sm font-medium">
+              Get started
+            </button>
           </div>
           <div className="bg-[#ff7675] text-white p-8 rounded-2xl flex flex-col items-start">
             <div className="bg-white p-3 rounded-full mb-4">
@@ -87,7 +80,9 @@ export default function AdobePodcastLanding() {
             </div>
             <h3 className="text-xl font-bold mb-2">Record a podcast</h3>
             <p className="mb-4">Studio-quality recording in your browser</p>
-            <button className="bg-white text-[#ff7675] px-4 py-2 rounded-full text-sm font-medium">Get started</button>
+            <button className="bg-white text-[#ff7675] px-4 py-2 rounded-full text-sm font-medium">
+              Get started
+            </button>
           </div>
         </div>
 
@@ -137,7 +132,9 @@ export default function AdobePodcastLanding() {
             </div>
             <div>
               <h4 className="font-medium">Edit audio</h4>
-              <p className="text-sm text-gray-600">AI tools to enhance your story</p>
+              <p className="text-sm text-gray-600">
+                AI tools to enhance your story
+              </p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-4 rounded-lg border border-gray-200">
@@ -158,44 +155,22 @@ export default function AdobePodcastLanding() {
             </div>
             <div>
               <h4 className="font-medium">Quick analysis</h4>
-              <p className="text-sm text-gray-600">Insights from AI recording</p>
+              <p className="text-sm text-gray-600">
+                Insights from AI recording
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Record, edit, enhance section */}
-      <section className="px-6 py-12 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-2">Record, edit, and enhance your voice</h2>
-        <p className="text-center mb-12">without downloading any software</p>
-        <p className="text-center mb-8">Use Adobe Podcast right in the browser.</p>
-
-        <div className="border border-gray-200 rounded-xl overflow-hidden shadow-lg">
-          <div className="bg-gray-100 p-2 border-b border-gray-200 flex items-center gap-2">
-            <div className="flex gap-1">
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
-            </div>
-            <div className="text-xs text-gray-500">podcast.adobe.com</div>
-          </div>
-          <div className="p-4 bg-white">
-            <Image
-              src="/placeholder.svg?height=400&width=800"
-              alt="Adobe Podcast Interface"
-              width={800}
-              height={400}
-              className="w-full h-auto rounded-lg"
-            />
           </div>
         </div>
       </section>
 
       {/* Jump into a project */}
       <section className="px-6 py-12 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-6">Jump into a project</h2>
+        <h2 className="text-3xl font-bold text-center mb-6">
+          Jump into a project
+        </h2>
         <p className="text-center mb-12">
-          Try Adobe Podcast Studio with a true crime podcast, class lecture, or audio newsletter.
+          Try Adobe Podcast Studio with a true crime podcast, class lecture, or
+          audio newsletter.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -262,10 +237,12 @@ export default function AdobePodcastLanding() {
       {/* Enhance spoken audio */}
       <section className="px-6 py-12 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4">Enhance spoken audio with just one click</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Enhance spoken audio with just one click
+          </h2>
           <p className="mb-4">
-            Focus on your story, not your sound. Adobe Podcast AI makes noisy recordings sound as if they were recorded
-            in a studio.
+            Focus on your story, not your sound. Adobe Podcast AI makes noisy
+            recordings sound as if they were recorded in a studio.
           </p>
         </div>
         <div className="md:w-1/2">
@@ -284,10 +261,13 @@ export default function AdobePodcastLanding() {
       {/* Analyze your recording */}
       <section className="px-6 py-12 max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8">
         <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4">Analyze your recording setup with AI</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Analyze your recording setup with AI
+          </h2>
           <p className="mb-4">
-            Adobe Podcast AI helps you get professional sound without expensive equipment. Get personalized advice to
-            clear issues from your microphone and recording environment.
+            Adobe Podcast AI helps you get professional sound without expensive
+            equipment. Get personalized advice to clear issues from your
+            microphone and recording environment.
           </p>
         </div>
         <div className="md:w-1/2">
@@ -308,9 +288,10 @@ export default function AdobePodcastLanding() {
         <div className="md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">Edit audio like a doc</h2>
           <p className="mb-4">
-            Delete words, fix mistakes, and rearrange by editing the same transcript. Adobe Podcast transcription is
-            highly accurate, so you can cut, copy, and paste your audio just like a text document, editing audio has
-            never been easier.
+            Delete words, fix mistakes, and rearrange by editing the same
+            transcript. Adobe Podcast transcription is highly accurate, so you
+            can cut, copy, and paste your audio just like a text document,
+            editing audio has never been easier.
           </p>
         </div>
         <div className="md:w-1/2">
@@ -329,10 +310,13 @@ export default function AdobePodcastLanding() {
       {/* Professional-grade recording */}
       <section className="px-6 py-12 max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8">
         <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4">Professional-grade recording</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Professional-grade recording
+          </h2>
           <p className="mb-4">
-            Record high-quality audio by yourself or with remote guests. Adobe Podcast records everyone's audio as
-            individual tracks so for later edits, even if someone's internet connection isn't perfect.
+            Record high-quality audio by yourself or with remote guests. Adobe
+            Podcast records everyone's audio as individual tracks so for later
+            edits, even if someone's internet connection isn't perfect.
           </p>
         </div>
         <div className="md:w-1/2">
@@ -351,10 +335,12 @@ export default function AdobePodcastLanding() {
       {/* Pre-edited royalty free music */}
       <section className="px-6 py-12 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4">Pre-edited royalty free music</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Pre-edited royalty free music
+          </h2>
           <p className="mb-4">
-            Your podcast needs good music. Choose from podcast-ready background music with intros, outros, transitions,
-            and background music.
+            Your podcast needs good music. Choose from podcast-ready background
+            music with intros, outros, transitions, and background music.
           </p>
         </div>
         <div className="md:w-1/2">
@@ -369,72 +355,6 @@ export default function AdobePodcastLanding() {
           </div>
         </div>
       </section>
-
-      {/* Course Enrollment Form */}
-      <section className="px-6 py-16 bg-[#f8f9fa]">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-2">Enroll in our Audio Production Courses</h2>
-          <p className="text-center mb-8">Take your audio skills to the next level with our expert-led courses</p>
-
-          <form className="bg-white p-8 rounded-xl shadow-lg">
-            <div className="mb-6">
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
-                Full Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c5ce7]"
-                placeholder="Enter your full name"
-                required
-              />
-            </div>
-
-            <div className="mb-6">
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c5ce7]"
-                placeholder="Enter your email address"
-                required
-              />
-            </div>
-
-            <div className="mb-8">
-              <label htmlFor="course" className="block text-sm font-medium mb-2">
-                Select Course
-              </label>
-              <select
-                id="course"
-                name="course"
-                value={formData.course}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c5ce7]"
-                required
-              >
-                <option value="podcast-basics">Podcast Basics: From Idea to Launch</option>
-                <option value="audio-editing">Advanced Audio Editing Techniques</option>
-                <option value="voice-training">Voice Training for Podcasters</option>
-                <option value="podcast-monetization">Podcast Monetization Strategies</option>
-              </select>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-[#6c5ce7] text-white py-3 px-6 rounded-lg font-medium hover:bg-[#5a4ad1] transition-colors"
-            >
-              Enroll Now
-            </button>
-          </form>
-        </div>
-      </section>
-
     </div>
-  )
+  );
 }
