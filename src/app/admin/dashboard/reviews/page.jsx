@@ -216,7 +216,7 @@ const ReviewsForm = () => {
                         <img
                           src={review.image}
                           alt={review.name}
-                          className="w-48 h-10 object-cover rounded-full border-2 border-green-400"
+                          className="w-16 h-16 object-cover rounded-full border-2 border-green-400"
                         />
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
@@ -226,7 +226,6 @@ const ReviewsForm = () => {
                         >
                           Delete
                         </button>
-
                       </td>
                     </tr>
                   ))

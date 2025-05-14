@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import cafe_img1 from "../../../../public/cafe-1.jpg";
+import { Button } from "@heroui/react";
 import cafe1 from "../../../../public/cafe_1.jpeg";
-import cafe2 from "../../../../public/cafe_2.jpg";
-import cafe3 from "../../../../public/cafe_3.jpg";
+import cafe2 from "../../../../public/cafe_2.webp";
+import cafe3 from "../../../../public/cafe_3.jpeg";
 import cafe5 from "../../../../public/cafe_5.jpg";
 import cafe6 from "../../../../public/cafe_6.jpg";
-import cafe7 from "../../../../public/cafe_7.jpg";
+import cafe7 from "../../../../public/cafe_7.webp";
 import cafe8 from "../../../../public/cafe_8.jpg";
 import cafe9 from "../../../../public/cafe_9.jpg";
 import cafe10 from "../../../../public/cafe_10.jpg";
@@ -29,9 +31,11 @@ export default function RooftopWorkspaceCafe() {
             <span className="text-yellow-300">Business Hub</span> Cafe
           </h1>
           <p className="text-xl md:text-2xl text-white mb-8">
-            A cup of tea or coffee isn&apos;t just a drink—it&apos;s a moment of
-            clarity
+            A cup of tea or coffee isn&apos;t just a drink—it&apos;s a moment of clarity
           </p>
+          <Button className="yellow-bg px-6 font-bold py-2 rounded-lg text-white">
+            Coming Soon
+          </Button>
         </div>
       </section>
 

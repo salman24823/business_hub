@@ -1,3 +1,5 @@
+// import dbConnection from "@/config/dbConnection.js";
+// import testimonialModel from "@/models/testimonialsModel";
 import dbConnection from "@/app/config/dbConnection";
 import testimonialModel from "@/app/models/testimonialsModel";
 import { NextResponse } from "next/server";
@@ -14,7 +16,9 @@ export async function GET() {
       );
     }
 
-    return NextResponse.json({ status: 200, data: testimonials });
+    return NextResponse.json(
+      { status: 200, data: testimonials },
+    );
   } catch (error) {
     console.error(error);
     return NextResponse.json(
@@ -73,4 +77,3 @@ export async function DELETE(req) {
     );
   }
 }
-

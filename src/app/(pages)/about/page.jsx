@@ -20,16 +20,16 @@ export default function AboutUsPage() {
     },
     {
       id: 2,
-      name: "Mahboob Anjum",
+      name: "Mehboob Anjum",
       position: "CEO",
       image: ceo,
       description:
-        "Leader with more than a decade of experience in workspaces, innovation, real estate solutions, IT strategy, and business development.",
+        "Leader with a decade of experience in workspace innovation and real estate solutions.",
     },
     {
       id: 3,
       name: "Naeem ur Rehman",
-      position: "Genral Manager",
+      position: "Managing Head",
       image: ceo2,
       description:
         "Expert in operational excellence and customer-centric workspace management.",
