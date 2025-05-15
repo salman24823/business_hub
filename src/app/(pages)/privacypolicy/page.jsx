@@ -2,8 +2,8 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <>
-      <section className="w-full h-auto lg:h-[80vh] p-[5%] flex items-center justify-center">
+    <div className="max-w-4xl mx-auto px-4 py-[10%]">
+      <section className="max-w-4xl mx-auto px-4 py-[10%]">
         <div className="w-full flex flex-col items-center gap-6">
           <h2 className="sub_heading">
             <span className="yellow">Privacy</span> Policy
@@ -107,7 +107,7 @@ const PrivacyPolicy = () => {
           </span>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

@@ -123,7 +123,7 @@ const Footer = () => {
             <Link className="ft-link" href={"/termsandconditions"}>
               Term & Conditions
             </Link>
-            <Link className="ft-link" href={"/link_us"}>
+            <Link className="ft-link" href={"/links"}>
               Link us
             </Link>
             <Link className="ft-link" href={"/site_map"}>
